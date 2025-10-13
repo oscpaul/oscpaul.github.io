@@ -1,0 +1,143 @@
+#sqs-cart-root{
+border:1px solid blue;
+}
+
+#sqs-cart-container{
+border:1px solid blue;
+}
+
+#footer-sections{
+border:1px solid blue;
+}
+
+.container{
+border:1px solid blue;
+}
+
+.cart1{
+position:relative;
+height:30vh;
+width:100%;
+left:0;
+border:1px solid yellow;
+}
+
+.page-section-8-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-8-box {
+border:1px solid blue; opacity:.1;
+  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+
+.page-section-7-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-7-box {
+border:1px solid blue;opacity:.1;
+  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+.page-section-6-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-6-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+.page-section-5-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-5-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+.page-section-4-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-4-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+
+.page-section-3-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-3-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+.page-section-2-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-2-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
