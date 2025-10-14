@@ -8,6 +8,25 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+.movieflexbox{
+position:relative;
+display:flex;
+left:5vw;
+border:1px solid blue;
+width:90%;
+height:100%;
+border:1px solid blue;
+}
+
+.flexboximg{
+
+height:320px;
+width:180px;
+}
+.individual-animation-site-default-1{
+position:relative;
+border:1px solid blue;
+}
 #slideshow {
     position:relative;
     width:800px;
