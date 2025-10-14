@@ -1561,25 +1561,32 @@ object-fit: cover; width:40%; height:40%;" class="sqs-product-block-main-image" 
   
 
 <section>
-<div class="flexbox">
-            <img class="flexboximg" data-src="" data-image=""  data-image-focal-point="0.5,0.5" alt="Placeholder" data-load="false" elementtiming="system-image-block" data-sqsp-image-block-image src="" width="32" alt="" sizes="1000vw" style="display:block;object-fit: cover; object-position: 50% 50%" srcset="8.png 2500w" loading="lazy" decoding="async" data-loader="sqs">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<div class="movieflexbox">
+<div class="flexboximg" id="flexboximg1">
 
 
-     <video class="flexboximg" width="320" height="240" controls autoplay>
-  <source src="mp41.mp4" type="video/mp4">
- Please upgrade your browser to view videos. 
-</video>
+  </div>
+  </div>
+  
 
-  <video class="flexboximg" width="320" height="240" controls autoplay>
-  <source src="mp42.mp4" type="video/mp4">
- Please upgrade your browser to view videos. 
-</video>
+<script type="text/javascript">
+     const clickableArea = document.getElementById('flexboximg1');
+    clickableArea.addEventListener('click', handleClick);
+   function handleClick() {
+        console.log('Area clicked!');
+        // Add your desired functionality here
+    }
+$(window).bind("load", function() {  
+	$('.movieflexbox').load('movie1.html');
+	$('.movieflexbox').load('movie2.html');
+  	$('.movieflexbox').load('movie3.html');
+    	$('.movieflexbox').load('movie4.html');
+}); 
+</script>
 
-  <video class="flexboximg" width="320" height="240" controls autoplay>
-  <source src="mp43.mp4" type="video/mp4">
- Please upgrade your browser to view videos. 
-</video>
-     </div> 
+  
 </section>
 
 
