@@ -20,9 +20,15 @@ border:1px solid blue;
 
 .flexboximg{
 
-height:320px;
-width:180px;
+height:520px;
+width:380px;
+border:1px solid blue;
 }
+.individual-animation-site-default-1{
+position:relative;
+border:1px solid blue;
+}
+
 .individual-animation-site-default-1{
 position:relative;
 border:1px solid blue;
