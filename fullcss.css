@@ -75,8 +75,7 @@ border:1px solid blue;
     width:auto;
     height:500px;
 
-    margin-left:-400px;
-    margin-top:-200px;
+   
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
     -webkit-transition-duration: 3s, 10s;
