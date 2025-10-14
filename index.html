@@ -2445,18 +2445,8 @@ object-fit: cover; width:100%; height:100%; object-position: 50% 50%;" class="sq
 
 // we set the 'fx' class on the first image when the page loads
   
+document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
 
-  var height=images[i].naturalHeight;
-  var width;
- if (height>1000){
-  height=400;
-   images[i].style.width="auto";
-    console.log('height');
- }
-  
-  images[i].style.height=height+"px";
-  
- console.log();
   
 // this calls the kenBurns function every 4 seconds
 // you can increase or decrease this value to get different effects
