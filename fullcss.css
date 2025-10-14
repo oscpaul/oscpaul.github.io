@@ -10,6 +10,7 @@
 @media screen and (max-width: 800px) {
   /* CSS rules to apply when the screen width is 768px or less */
   .smallscreen {
+    position:relative;
       height:300px;
     width: 171px;
   }
