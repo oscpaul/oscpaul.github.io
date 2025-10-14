@@ -16,6 +16,13 @@
   
 }
 
+.acuity-block-wrapper{
+
+width:400px;
+height:500px;
+
+}
+
 .movieflexbox{
 position:relative;
 display:flex;
