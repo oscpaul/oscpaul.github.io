@@ -11,7 +11,7 @@
 #slideshow {
     position:relative;
     width:800px;
-    height:400px;
+    height:600px;
     overflow:hidden;
     border:8px solid #ccc;
 }
@@ -26,8 +26,8 @@
 
 #slideshow img {
     position:absolute;
-    width:800px;
-    height:400px;
+    width:auto;
+    height:500px;
     top:50%;
     left:50%;
     margin-left:-400px;
@@ -103,6 +103,12 @@
          -o-transform: scale(1.1);
             transform: scale(1.1);
 }
+
+
+
+
+
+
 .page-section-8-box{
 position:absolute;
 width:100%;
