@@ -2417,6 +2417,7 @@ object-fit: cover; width:100%; height:100%; object-position: 50% 50%;" class="sq
 </div></div></div><div class="fe-block fe-block-cf59633eb7555b2c86f9"><div class="sqs-block website-component-block sqs-block-website-component" data-block-css="[&quot;&quot;]" data-block-scripts="[&quot;&quot;]" data-block-type="1337" data-definition-name="website.components.product" id="block-cf59633eb7555b2c86f9"><div class="sqs-block-content">
 
 
+
 <div id="slideshow">
 
 	<img src="IMG_0427.jpeg">
@@ -2426,7 +2427,11 @@ object-fit: cover; width:100%; height:100%; object-position: 50% 50%;" class="sq
 	<img src="IMG_0431.jpeg">
 	<img src="IMG_0432.jpeg">
 </div>
-<script>/**
+
+
+<script>
+
+  /**
  * See: http://www.css-101.org/articles/ken-burns_effect/css-transition.php
  */
 
@@ -2439,11 +2444,13 @@ object-fit: cover; width:100%; height:100%; object-position: 50% 50%;" class="sq
 (function(){
 
 // we set the 'fx' class on the first image when the page loads
-  document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
+  
+
+document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
   
 // this calls the kenBurns function every 4 seconds
 // you can increase or decrease this value to get different effects
-  window.setInterval(kenBurns, 6000);		
+  window.setInterval(kenBurns, 1000);		
   
 // the third variable is to keep track of where we are in the loop
 // if it is set to 1 (instead of 0) it is because the first image is styled when the page loads
@@ -2454,18 +2461,27 @@ object-fit: cover; width:100%; height:100%; object-position: 50% 50%;" class="sq
   function kenBurns() {
   if(i==numberOfImages){ i = 0;}
   images[i].className = "fx";
-
+  var height=images[i].naturalHeight;
+  var width;
+ if (height>1000){
+  height=400;
+   images[i].style.width="auto";
+    console.log('height');
+ }
+  
+  images[i].style.height=height+"px";
+  
+ console.log();
 // we can't remove the class from the previous element or we'd get a bouncing effect so we clean up the one before last
 // (there must be a smarter way to do this though)
-  if(i===0){ images[numberOfImages-2].className = "";}
-  if(i===1){ images[numberOfImages-1].className = "";}
-  if(i>1){ images[i-2].className = "";}
+  if(i===0){ images[numberOfImages-1].className = "";}
+
+  if(i>0){ images[i-1].className = "";}
   i++;
 
   }
 })();
 </script>
-	
 <script>document.querySelector('[data-definition-name="website.components.product"] .product-block').classList.add('is-first-product-block');</script>
 
 </div></div></div><div class="fe-block fe-block-4e2bea60c98dd77246e5"><div class="sqs-block website-component-block sqs-block-website-component" data-block-css="[&quot;&quot;]" data-block-scripts="[&quot;&quot;]" data-block-type="1337" data-definition-name="website.components.product" id="block-4e2bea60c98dd77246e5"><div class="sqs-block-content">
