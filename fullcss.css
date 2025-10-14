@@ -7,6 +7,14 @@
  * 
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
+@media screen and (max-width: 800px) {
+  /* CSS rules to apply when the screen width is 768px or less */
+  .smallscreen {
+      height:300px;
+    width: 171px;
+  }
+  
+}
 
 .movieflexbox{
 position:relative;
