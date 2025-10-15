@@ -36,20 +36,22 @@ height:500px;
 }
 
 .movieflexbox{
-position:relative;
-display:flex;
-left:5vw;
-border:1px solid blue;
-width:90%;
-height:100%;
-border:1px solid blue;
+  display: flex; /* Makes the container a flex container */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  width: 400px; /* Example width for the container */
+  border: 1px solid black;
 }
 
 .flexboximg{
-
-height:520px;
-width:380px;
-border:1px solid blue;
+  flex: 1 1 calc(50% - 20px); /* Adjusts width for two items per row with spacing */
+  /* flex-grow: 1; flex-shrink: 1; flex-basis: calc(50% - 20px); */
+  height: 100px; /* Example height for items */
+  margin: 10px; /* Adds spacing between items */
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 .individual-animation-site-default-1{
 position:relative;
