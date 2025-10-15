@@ -509,7 +509,14 @@
   
 
 const element= document.getElementById('slideshow').getElementsByTagName('img');
-element[0].className = "fx";
+   var height=images[i].naturalHeight;
+	if (height>1000){
+  height=400;
+   images[i].style.height=height+"px";
+   images[0].style.width="auto";
+
+ }
+	element[0].className = "fx";
   
 // this calls the kenBurns function every 4 seconds
 // you can increase or decrease this value to get different effects
