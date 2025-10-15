@@ -108,8 +108,8 @@ border:1px solid blue;
   justify-content:center;
   align-items:center;
     position:relative;
-    width:55vw;
-    height:55vh;
+    width:100vw;
+    height:100vh;
     overflow:hidden;
     border:8px solid #ccc;
 }
