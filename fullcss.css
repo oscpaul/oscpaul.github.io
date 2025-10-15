@@ -29,13 +29,7 @@ height:500px;
 
 
 @media screen and (max-width: 900px) {
-  .acuity-block-wrapper
-  {
-width:300px;
-    height:200px;
-border:1px solid blue;
-    
-  }
+
 }
 
 .movieflexbox{
