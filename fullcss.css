@@ -8,6 +8,12 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+
+.img{
+width:10vw;
+  height:10vw;
+  border:1px solid blue;
+}
   .smallscreen {
     position:relative;
    
