@@ -8,6 +8,15 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+.section-8{
+display:flex;
+  border:2px solid blue;
+  height:45vh;
+        margin: 10px 30px; /* Top/bottom margin: 10px, Left/right margin: 30px */
+
+  
+}
+
 .section-6{
 display:flex;
   align-items:center;
