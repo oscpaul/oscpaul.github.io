@@ -10,6 +10,9 @@
 
 .section-8{
 height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 border:1px solid blue;
 }
 
