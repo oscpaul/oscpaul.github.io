@@ -16,20 +16,23 @@ width:50vw;
 }
   .smallscreen {
     position:relative;
-   
-  
   }
 
 .acuity-block-wrapper{
-
+position:relative;
+border:1px solid blue;
 width:400px;
 height:500px;
-
 }
 
 
 @media screen and (max-width: 900px) {
-
+.acuity-block-wrapper{
+position:relative;
+border:1px solid green;
+width:400px;
+height:500px;
+}
 }
 
 .movieflexbox{
