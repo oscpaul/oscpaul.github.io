@@ -13,23 +13,6 @@
    
   
   }
-@media screen and (min-width: 901px) {
-
-  .smallscreen {
-     height: 342px; 
-   width:600px;
-   
-    border:1px solid green;}
-}
-@media screen and (max-width: 900px) {
-
-  .smallscreen {
-   
-    height: 150px; 
-    width:200px;
-    border:1px solid red;}
-}
-
 
 
 
