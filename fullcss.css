@@ -27,6 +27,15 @@ display:flex;
   
 }
 
+.section-4{
+        margin: 10px 30px; /* Top/bottom margin: 10px, Left/right margin: 30px */
+
+    height:30vw;
+display:flex;
+  align-items:center;
+  
+}
+
 html{
 overflow-x: hidden;
   
