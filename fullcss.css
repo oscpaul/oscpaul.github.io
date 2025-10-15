@@ -11,7 +11,8 @@
 .section-8{
 display:flex;
   border:2px solid blue;
-  height:45vh;
+  height:100vh;
+  width:100%;
         margin: 10px 30px; /* Top/bottom margin: 10px, Left/right margin: 30px */
 
   
