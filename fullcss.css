@@ -14,6 +14,12 @@ display:flex;
   
 }
 
+.section-5{
+display:flex;
+  align-items:center;
+  
+}
+
 html{
 overflow-x: hidden;
   
