@@ -8,12 +8,14 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+.content-fill-5{
+display:flex;
+position:relative;
+border:1px solid blue;
 
-.img{
-width:50vw;
-  height:50vw;
-  border:1px solid blue;
 }
+
+
   .smallscreen {
     position:relative;
   }
