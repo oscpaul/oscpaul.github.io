@@ -772,6 +772,7 @@ object-fit: cover; width:20vw; height:auto;" class="sqs-product-block-main-image
         Your browser does not support the video tag.
     </video>
 </figure>
+<script>
 	$(document).ready(function() {
     // Get media - with autoplay disabled (audio or video).
     var media = $('video').not("[autoplay='autoplay']");
@@ -796,7 +797,57 @@ object-fit: cover; width:20vw; height:auto;" class="sqs-product-block-main-image
     }
     $(document).on('scroll', checkMedia);
 });
-  
+			</script>
+
+
+
+
+
+
+
+<style>
+	.button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  // play state
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+
+  &.paused {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+  }
+
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+  }
+}
+
+
+
+</style>
+
+
+<button class='button'></button>
+<script>
+$(document).ready(function() {
+  var btn = $(".button");
+  btn.click(function() {
+    btn.toggleClass("paused");
+    return false;
+  });
+});
+</script>
+
+	
 </div>
 
 
