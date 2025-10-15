@@ -769,7 +769,43 @@ object-fit: cover; width:20vw; height:auto;" class="sqs-product-block-main-image
 		</section>
 
 
+<section class= 'page-section-7 section-7'>
+<div class="page-section-7-box"></div>
 
+	
+<div class="movieflexbox">
+<div class="flexboximg" id="flexboximg1">
+
+
+  </div>
+	<div class="flexboximg" id="flexboximg2">
+
+
+  </div>
+	<div class="flexboximg" id="flexboximg3">
+
+
+  </div>
+  </div>
+  
+
+<script type="text/javascript">
+     const clickableArea = document.getElementById('flexboximg1');
+    clickableArea.addEventListener('click', handleClick);
+   function handleClick() {
+        console.log('Area clicked!');
+        // Add your desired functionality here
+    }
+$(window).bind("load", function() {  
+	$('#flexboximg1').load('movie1.html');
+	$('#flexboximg2').load('movie2.html');
+  	$('#flexboximg3').load('movie3.html');
+  
+}); 
+</script>
+
+  
+</section>
 
 
 
