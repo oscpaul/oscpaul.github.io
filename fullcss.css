@@ -10,12 +10,23 @@
 
   .smallscreen {
     position:relative;
-      height:300px;
-    width: 171px;
-    border:1px solid blue;
-  }
+   
   
+  }
 
+@media screen and (max-width: 900px) {
+  .smallscreen {
+   height:600px;
+    width: 342px; 
+    border:1px solid blue;}
+}
+
+@media screen and (min-width: 901px) {
+  .smallscreen {
+   height:300px;
+    width: 171px; 
+    border:1px solid red;}
+}
 
 
 
@@ -50,8 +61,8 @@ border:1px solid blue;
   justify-content:center;
   align-items:center;
     position:relative;
-    width:800px;
-    height:600px;
+    width:55vw;
+    height:55vh;
     overflow:hidden;
     border:8px solid #ccc;
 }
