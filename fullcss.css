@@ -9,13 +9,25 @@
  */
 
 .section-8{
+  position:relative;
 height:90vh;
   display:flex;
   justify-content:center;
   align-items:center;
 border:1px solid blue;
 }
+.section-8-div-1{
+  position:relative;
+display:flex;
+height:40vh;
+  width:40vw;
+  
+}
 
+.section-8-div-1 > *{
+  flex:1;
+  
+}
 .content-fill-5{
 display:flex;
 position:relative;
