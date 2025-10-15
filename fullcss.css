@@ -7,25 +7,34 @@
  * 
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
-@media screen and (max-width: 800px) {
-  /* CSS rules to apply when the screen width is 768px or less */
+
   .smallscreen {
     position:relative;
       height:300px;
     width: 171px;
+    border:1px solid blue;
   }
   
-}
 
+
+
+@media screen and (max-width: 900px) {
  .acuity-block-wrapper{
 
-width:100px;
-height:200px;
+width:400px;
+height:400px;
     border:1px solid blue;
 
 }
 
+@media screen and (min-width: 901px) {
+ .acuity-block-wrapper{
 
+width:600px;
+height:500px;
+    border:2px solid red;
+
+}
 
 .movieflexbox{
 position:relative;
