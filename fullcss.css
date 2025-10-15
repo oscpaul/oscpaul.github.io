@@ -19,12 +19,18 @@ border:1px solid blue;
 .section-8-div-1{
   position:relative;
 display:flex;
+  flex-direction:column;
 height:40vh;
   width:40vw;
-  
 }
 
-.section-8-div-1 > *{
+.section-8-div-1-1{
+  position:relative;
+display:flex;
+  flex:1;
+}
+
+.section-8-div-1-1 > *{
   flex:1;
   
 }
