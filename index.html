@@ -60,11 +60,11 @@
   
 
 const element= document.getElementById('slideshow').getElementsByTagName('img');
-   var height=images[0].naturalHeight;
+   var height=element[0].naturalHeight;
 	if (height>1000){
   height=400;
-   images[0].style.height=height+"px";
-   images[0].style.width="auto";
+   element[0].style.height=height+"px";
+   element[0].style.width="auto";
 
  }
 	element[0].className = "fx";
