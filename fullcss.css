@@ -61,27 +61,12 @@ height:100%;
   position:relative;
 display:flex;
   flex-direction:column;
-  height:30vh;
-  width:30vw;
+  height:300px;
+  width:300px;
 
 }
 
-.section-8-div-1-1{
-  border:1px solid blue;
-  position:relative;
-display:flex;
-  flex:1;
-}
-.section-8-div-1-2{
-  border:1px solid blue;
-  position:relative;
-  flex:1;
-}
 
-.section-8-div-1-1 > *{
-  flex:1;
-  
-}
 
 
   .smallscreen {
