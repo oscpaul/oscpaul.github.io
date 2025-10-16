@@ -7,11 +7,33 @@
  * 
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
+.content-fill-7{
+display:flex;
+}
+  @media screen and (max-width: 600px) {
 @media(orientation:portrait){
+.content-fill-7{
+flex-direction:column;
+}
+  
+} 
+    }
 
+
+  @media screen and (min-width: 601px) {
+.content-fill-7{
+flex-direction:row;
+}
+    }
+
+
+
+.content-fill{
+  width:40vw;
+  height:40vw;
+display:flex;
   
 }
-
 
 
 .section-8{
@@ -47,18 +69,7 @@ display:flex;
   flex:1;
   
 }
-.content-fill-5{
-display:flex;
-position:relative;
-border:1px solid blue;
 
-}
-.content-fill{
-  width:40vw;
-  height:40vw;
-display:flex;
-  
-}
 
   .smallscreen {
     width:20vw; 
@@ -100,8 +111,8 @@ border:1px solid blue;
   justify-content:center;
   align-items:center;
     position:relative;
-    width:75vh;
-    height:75vw;
+    width:75vw;
+    height:75vh;
     overflow:hidden;
     border:8px solid #ccc;
 }
