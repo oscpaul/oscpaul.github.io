@@ -42,14 +42,18 @@ width:100%;
     }}
 
 
+  @media screen and (min-width: 601px) {
+@media(orientation:landscape){
 
- @media screen and (min-width: 600px) {
- .iframediv{
 
-
-    border:1px solid blue;
+  .iframediv{
+height:100%;
+ 
+    
   }
- }
+  
+ 
+    }}
 
 
 .iframediv{
@@ -59,7 +63,7 @@ width:100%;
 
 
   
-    }
+    
 
 
 .smallscreen{
