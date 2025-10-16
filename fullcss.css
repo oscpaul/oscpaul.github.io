@@ -140,7 +140,7 @@ border:1px solid blue;
   align-items:center;
     position:relative;
     width:50vw;
-    height:50vh;
+    height:50vw;
     overflow:hidden;
     border:8px solid #ccc;
 }
