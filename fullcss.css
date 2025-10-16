@@ -17,18 +17,8 @@ position:relative;
 width:500px; 
 top:0;
 border:1px solid blue;
- }
-
-@media screen and (max-width: 600px) {
- .acuity{
-
- height: 350px;
-width:250px; 
-border:1px solid green;
- }
-}
-
-
+       
+} 
 .smallscreen{
 position:relative;
  
@@ -123,10 +113,11 @@ border:1px solid blue;
 
        margin: 0.5em 1em 1.5em 2em; /* Top, Right, Bottom, Left margins respectively */
 
- 
+ display:flex;
+
     position:relative;
-    width:4vw;
-    height:5vw;
+    width:60vw;
+    height:50vh;
     overflow:hidden;
     border:8px solid #ccc;
 }
@@ -142,8 +133,8 @@ border:1px solid blue;
 #slideshow img {
     position:absolute;
     width:auto;
-    height:30vw;
-
+    height:30vh;
+    left:0%;
 
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
