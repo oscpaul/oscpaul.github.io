@@ -7,6 +7,18 @@
  * 
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
+.flexslideshow{
+
+display:flex;
+flex-direction:column;
+}
+.flexrows{
+
+display:flex;
+border:1px solid blue;
+}
+
+
 .content-fill-7{
 display:flex;
 }
