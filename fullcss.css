@@ -30,8 +30,8 @@ height:200px;
 
 .acuity-block-wrapper{
 border:1px solid blue;
-width:400px;
-height:500px;
+width:20vw;
+height:40vh;
 } 
 
   
@@ -80,8 +80,8 @@ height:100%;
 
 
   .smallscreen {
-    width:50vw; 
-    height:auto;
+    width:auto; 
+    height:40vh;
     position:relative;
   }
 
