@@ -45,7 +45,8 @@ width:100%;
 
  @media screen and (min-width: 600px) {
  .iframediv{
-  height:75%;
+  height:500px;
+  width:100%;
 
     border:1px solid blue;
   }
