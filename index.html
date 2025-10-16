@@ -172,7 +172,7 @@ window.mobileCheck = function() {
 };
 
 
-	document.querySelector('.h2div').textContent="window.mobileCheck()";
+	document.querySelector('.h2div').textContent=window.mobileCheck();
 	
 		
 	
@@ -185,14 +185,14 @@ function handleOrientationChange(event) {
 		if (window.mobileCheck())
 		{
   if (event.matches) {
-	  const element = document.querySelector('acuity');
+	  const element = document.querySelector('.acuity');
 
 	  element.style.border="1px solid orange";
 
     console.log("Orientation changed to portrait.");
     // Execute code for portrait mode
   } else {
-	  const element = document.querySelector('acuity');
+	  const element = document.querySelector('.acuity');
 
 	  element.style.border="2px solid red";
 
