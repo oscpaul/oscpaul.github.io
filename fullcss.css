@@ -18,6 +18,7 @@ display:flex;
 } 
 
 .iframediv{
+ position:relative;
 display:flex;
  
 }
@@ -61,7 +62,10 @@ width:auto;
     }
 
 
-
+.smallscreen{
+position:relative;
+ 
+}
 .content-fill{
   width:40vw;
   height:40vw;
