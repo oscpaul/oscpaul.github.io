@@ -45,7 +45,7 @@ width:100%;
 
  @media screen and (min-width: 600px) {
  .iframediv{
-  height:100%;
+  height:75%;
 width:auto;
     border:1px solid blue;
   }
@@ -85,7 +85,7 @@ height:100%;
 
 .section-7{
   position:relative;
-height:200%;
+height:125%;
   width:100%;
   display:flex;
   justify-content:center;
