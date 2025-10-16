@@ -61,6 +61,8 @@ display:flex;
 }
 
   .smallscreen {
+    width:20vw; 
+    height:auto;
     position:relative;
   }
 
