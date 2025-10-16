@@ -154,7 +154,7 @@ border:1px solid blue;
 
 #slideshow img {
 
-  object-fit: cover; /* Ensures the image fills the container while maintaining its aspect ratio, potentially cropping parts */
+  /* Ensures the image fills the container while maintaining its aspect ratio, potentially cropping parts */
 
   width: 200px; /* Ensure the image takes up the full width of its container */
   aspect-ratio: 16 / 9; /* Sets a 16:9 aspect ratio (width:height) */
