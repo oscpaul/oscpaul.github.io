@@ -17,7 +17,11 @@ flex-direction:column;
 display:flex;
 border:1px solid blue;
 }
+.flexrows-1{
 
+display:flex;
+border:1px solid blue;
+}
 
 .content-fill-7{
 display:flex;
@@ -88,6 +92,8 @@ height:150vh;
 }
 
 .section-7{
+  margin-top: 20vw; /* Sets a 20-pixel top margin for all paragraph elements */
+
   position:relative;
 height:100%;
   width:100%;
