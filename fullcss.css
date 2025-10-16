@@ -43,9 +43,10 @@ height:100%;
   display:flex;
   justify-content:center;
   align-items:center;
-border:1px solid blue;
+
 }
 .section-8-div-1{
+  border:1px solid blue;
   position:relative;
 display:flex;
   flex-direction:column;
