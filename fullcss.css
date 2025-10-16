@@ -165,7 +165,8 @@ border:1px solid blue;
     width:auto;
     height:30vw;
 
-   
+   top:0;
+ left:0;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
     -webkit-transition-duration: 3s, 10s;
