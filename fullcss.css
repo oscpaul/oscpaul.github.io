@@ -11,6 +11,9 @@
 
   
 }
+
+
+
 .section-8{
   position:relative;
 height:90vh;
@@ -66,10 +69,10 @@ position:relative;
 border:1px solid blue;
 width:400px;
 height:500px;
-}
+} 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-height: 500px) {
 .acuity-block-wrapper{
   display:flex;
 position:relative;
