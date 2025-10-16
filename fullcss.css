@@ -11,6 +11,12 @@
 display:flex;
 }
 
+ .acuity-block-wrapper{
+        width: 100%;
+        height: 100%; 
+        aspect-ratio: 16 / 9;  
+} 
+
 
   @media screen and (max-width: 600px) {
 @media(orientation:portrait){
@@ -26,11 +32,6 @@ height:400px;
     width:200px;
     
   }
- .acuity-block-wrapper{
-        width: 100%;
-        height: 100%; 
-        aspect-ratio: 16 / 9;  
-} 
   
  
     }}
@@ -41,7 +42,7 @@ height:400px;
  .iframediv{
 height:200px;
     width:100px;
-    
+    border:1px solid blue;
   }
  }
 
