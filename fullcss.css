@@ -30,8 +30,8 @@ width:300px;
 
 .smallscreen{
 position:relative;
- width:40%;
-height:40%;
+ width:20%;
+height:auto;
 }
 .iframediv{
  position:relative;
