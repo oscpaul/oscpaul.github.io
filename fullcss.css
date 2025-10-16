@@ -139,7 +139,7 @@ border:1px solid blue;
 
     position:relative;
     width:80vw;
-    height:50vh;
+    height:75vh;
     overflow:hidden;
     border:8px solid #ccc;
 }
@@ -157,7 +157,7 @@ border:1px solid blue;
     width:auto;
     height:300px;
     left:0%;
-
+top:0%;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
     -webkit-transition-duration: 3s, 10s;
