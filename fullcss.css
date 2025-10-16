@@ -20,7 +20,7 @@ border:1px solid blue;
 .flexrows-1{
   width:200px;
   height:200px;
-  margin-top: 10vw; /* Sets a 20-pixel top margin for all paragraph elements */
+  margin-top: 40vw; /* Sets a 20-pixel top margin for all paragraph elements */
 
 display:flex;
 border:1px solid blue;
