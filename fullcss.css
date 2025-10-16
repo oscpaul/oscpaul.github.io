@@ -56,12 +56,22 @@ height:100%;
   align-items:center;
 
 }
+
 .section-8-div-1{
   border:1px solid blue;
   position:relative;
-display:flex;
-  flex-direction:column;
+
+ flex:1;
   height:300px;
+  width:300px;
+}
+
+.section-8-div-2{
+  border:1px solid blue;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  height:600px;
   width:300px;
 
 }
