@@ -73,7 +73,7 @@ height:500px;
 } 
 
 
-@media screen and (max-height: 500px) {
+@media screen and (max-width: 500px) {
 .acuity-block-wrapper{
   display:flex;
 position:relative;
