@@ -19,11 +19,20 @@ flex-direction:column;
 } 
     }
 
-
+.acuity-block-wrapper{
+  position:relative;
+}
   @media screen and (min-width: 601px) {
 .content-fill-7{
 flex-direction:row;
 }
+.acuity-block-wrapper{
+border:1px solid blue;
+width:400px;
+height:500px;
+} 
+
+  
     }
 
 
