@@ -157,7 +157,7 @@ border:1px solid blue;
   aspect-ratio: 16 / 9; /* Sets a 16:9 aspect ratio (width:height) */
 }
  #slideshow img {
-max-width:100%;
+max-width:90%;
   height:auto;
   /* Ensures the image fills the container while maintaining its aspect ratio, potentially cropping parts */
 object-fit:cover;
