@@ -64,24 +64,7 @@ display:flex;
     position:relative;
   }
 
-.acuity-block-wrapper{
-  display:flex;
-position:relative;
-border:1px solid blue;
-width:400px;
-height:500px;
-} 
 
-
-@media screen and (max-width: 500px) {
-.acuity-block-wrapper{
-  display:flex;
-position:relative;
-border:1px solid green;
-width:300px;
-height:200px;
-}
-}
 
 .movieflexbox{
   display: flex; /* Makes the container a flex container */
