@@ -159,7 +159,7 @@ border:1px solid blue;
 #slideshow img {
     position:absolute;
     width:auto;
-    height:100px;
+    height:30vw;
 
    
     opacity:0;
