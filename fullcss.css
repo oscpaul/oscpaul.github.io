@@ -20,7 +20,7 @@ width:100px;
 height:200px;
 
 }
- .acuity-block-wrapper{
+ .iframediv{
 border:1px solid blue;
 width:10vw;
 height:250px;
@@ -32,7 +32,7 @@ height:250px;
 
 
 
-.acuity-block-wrapper{
+.iframediv{
   position:relative;
 }
  
