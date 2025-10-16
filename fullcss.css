@@ -138,8 +138,8 @@ border:1px solid blue;
  display:flex;
 
     position:relative;
-    width:90vw;
-    height:90vh;
+    width:45vw;
+    height:45vw;
     overflow:hidden;
     border:8px solid #ccc;
 }
