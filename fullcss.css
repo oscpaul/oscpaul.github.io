@@ -92,7 +92,6 @@ height:150vh;
 }
 
 .section-7{
-  margin-top: 20vw; /* Sets a 20-pixel top margin for all paragraph elements */
 
   position:relative;
 height:100%;
@@ -104,6 +103,17 @@ height:100%;
 }
 
 
+.section-6{
+  margin-top: 20vw; /* Sets a 20-pixel top margin for all paragraph elements */
+
+  position:relative;
+height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
 
 
 
