@@ -18,6 +18,14 @@ display:flex;
 border:1px solid blue;
 }
 .flexrows-1{
+  margin-top: 10vw; /* Sets a 20-pixel top margin for all paragraph elements */
+
+display:flex;
+border:1px solid blue;
+}
+
+.flexrows-2{
+  margin-top: 20vw; /* Sets a 20-pixel top margin for all paragraph elements */
 
 display:flex;
 border:1px solid blue;
@@ -92,6 +100,8 @@ height:110vh;
 }
 
 .section-7{
+
+  margin-top: -20vw; /* Sets a 20-pixel top margin for all paragraph elements */
 
   position:relative;
 height:100%;
