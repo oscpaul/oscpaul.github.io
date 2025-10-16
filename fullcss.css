@@ -142,8 +142,8 @@ border:1px solid blue;
   justify-content:center;
   align-items:center;
     position:relative;
-    width:50vw;
-    height:50vw;
+    width:45vw;
+    height:45vw;
     overflow:hidden;
     border:8px solid #ccc;
 }
