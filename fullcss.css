@@ -152,7 +152,7 @@ border:1px solid blue;
  * Finally, we set the transition (property and duration). Note that duration values are different for opacity and transform as we want the "fade-in" effect to be faster than the "panning" effect.
  */
 
-#slideshow img1 {
+#slideshow img {
 
   aspect-ratio: 16 / 9; /* Sets a 16:9 aspect ratio (width:height) */
 }
