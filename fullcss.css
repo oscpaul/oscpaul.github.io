@@ -138,8 +138,8 @@ border:1px solid blue;
  display:flex;
 
     position:relative;
-    width:8vw;
-    height:7vh;
+    width:30vw;
+    height:50vh;
     overflow:hidden;
     border:8px solid #ccc;
 }
@@ -155,9 +155,7 @@ border:1px solid blue;
 #slideshow img {
     position:absolute;
     width:auto;
-    height:100px;
-    left:0%;
-top:0%;
+    height:300px;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
     -webkit-transition-duration: 3s, 10s;
