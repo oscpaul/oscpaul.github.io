@@ -210,9 +210,9 @@ object-fit:cover;
  #slideshow img {
 
   max-width: 100%;
-  max-height: 100%;
-  height: auto; /* Ensure aspect ratio is maintained */
-  width: auto; /* Ensure aspect ratio is maintained *
+  
+  height: auto;
+  width: auto; 
   
 
   /* Ensure the image takes up the full width of its container */
