@@ -18,10 +18,9 @@ display:flex;
 border:1px solid blue;
 }
 .flexrows-1{
+  position:relative;
   width:200px;
   height:200px;
-  margin-top: 40vw; /* Sets a 20-pixel top margin for all paragraph elements */
-
 display:flex;
 border:1px solid blue;
 }
@@ -57,10 +56,19 @@ width:300px;
  } 
 }
 
+.smallscreen img{
+
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; 
+  width: auto; 
+  
+}
 .smallscreen{
 position:relative;
- width:20%;
-height:auto;
+width:40vw;
+  height:40vh;
+
 }
 .iframediv{
  position:relative;
