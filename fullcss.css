@@ -28,6 +28,22 @@
   border: 1px solid black;
   margin-bottom: 25px;
 }
+
+
+.image-container-1 {
+
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.flexrows-2{
+
+  width:100%;
+  display:flex;
+  position:relative;
+
+}
+
 .flexrows-1{
 
   width:100%;
