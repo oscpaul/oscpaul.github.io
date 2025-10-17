@@ -29,12 +29,13 @@ border:1px solid blue;
 }
 
 .flexrows-2{
+  width:100%;
+  display:flex;
   position:relative;
-  width:200px;
-  height:200px;
 border:1px solid blue;
 }
 .flexrows-2 img {
+  flex:1;
   max-width: 100%;
   max-height: 100%;
   height: auto; 
