@@ -16,6 +16,13 @@ border:1px solid black;
  
 }
 
+.smallscreen{
+height:50%;
+
+border:1px solid black;
+ 
+}
+
 .small-container {
   width: 5vw;
   height: 5vh;
