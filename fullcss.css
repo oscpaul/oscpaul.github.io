@@ -21,10 +21,9 @@ display:flex;
 border:1px solid blue;
 }
 .flexrows-1{
+  width:100%;
+  display:flex;
   position:relative;
-  width:200px;
-  height:200px;
-display:flex;
 border:1px solid blue;
 }
 
