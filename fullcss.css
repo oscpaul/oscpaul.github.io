@@ -151,11 +151,24 @@ height:100%;
 
 
 
+.numbertext {
+ position: absolute;
+  font-size: 12px;
+padding: 8px 12px;
+
+}
+.dots{
+text-align:center;
+border:1px solid black;
+height:15px;
+position:relative;
+}
 
 
-
-
-
+.div-wrapper{
+display:flex;
+flex-direction:column;
+}
 
 .dot {
   height: 15px;
