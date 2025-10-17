@@ -30,72 +30,88 @@
 	<div class="page-section-8-box"></div>	
 
 
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+<div class="image-container">
 
-<div id="slideshow">
-<a href="cart.html"><img src="IMG_0427.jpeg"" alt="HTML tutorial"></a>
-<a href="cart.html"><img src="IMG_0428.jpeg"" alt="HTML tutorial"></a>
-	<a href="cart.html"><img src="IMG_0429.jpeg"" alt="HTML tutorial"></a>
-	<a href="cart.html"><img src="IMG_0430.jpeg"" alt="HTML tutorial"></a>
-	<a href="cart.html"><img src="IMG_0431.jpeg"" alt="HTML tutorial"></a>
-	<a href="cart.html"><img src="IMG_0432.jpeg"" alt="HTML tutorial"></a>
-	
+
+  <div class="mySlides fade">
+  <div class="numbertext">1/6</div>
+  <img src="IMG_0427.jpeg" alt="Paris" width="400" height="300">
+</div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">2/6</div>
+  <img src="IMG_0428.jpeg" alt="Paris" width="400" height="300">
+</div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">3/6</div>
+  <img src="IMG_0429.jpeg" alt="Paris" width="400" height="300">
+</div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">4/6</div>
+  <img src="IMG_0430.jpeg" alt="Paris" width="400" height="300">
+</div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">5/6</div>
+  <img src="IMG_0431.jpeg" alt="Paris" width="400" height="300">
+</div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">6/6</div>
+  <img src="IMG_0432.jpeg" alt="Paris" width="400" height="300">
+</div>
+
+
+
+
 
 </div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+
 <script>
+let slideIndex = 0;
+showSlides();
 
-  /**
- * See: http://www.css-101.org/articles/ken-burns_effect/css-transition.php
- */
-
-/**
- * The idea is to cycle through the images to apply the "fx" class to them every n seconds. 
- * We can't simply set and remove that class though, because that would make the previous image move back into its original position while the new one fades in. 
- * We need to keep the class on two images at a time (the two that are involved with the transition).
- */
-
-(function(){
-
-// we set the 'fx' class on the first image when the page loads
-  
-
-
-  
-// this calls the kenBurns function every 4 seconds
-// you can increase or decrease this value to get different effects
-  window.setInterval(kenBurns, 1000);		
-  
-// the third variable is to keep track of where we are in the loop
-// if it is set to 1 (instead of 0) it is because the first image is styled when the page loads
-  var images          = document.getElementById('slideshow').getElementsByTagName('img'),
-      numberOfImages  = images.length,
-      i               = 1;
-
-  function kenBurns() {
-  if(i==numberOfImages){ i = 0;}
-  images[i].className = "fx";
-  var height=images[i].naturalHeight;
-  var width;
- if (height>1000){
-  height=400;
-   images[i].style.width="auto";
-
- }
-  
-  images[i].style.height=height+"px";
-  
- console.log();
-// we can't remove the class from the previous element or we'd get a bouncing effect so we clean up the one before last
-// (there must be a smarter way to do this though)
-  if(i===0){ images[numberOfImages-1].className = "";}
-
-  if(i>0){ images[i-1].className = "";}
-  i++;
-
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-})();
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 </script>
 
-</div>
+
+
+
+
+
+	</div>
+
 
 
 
