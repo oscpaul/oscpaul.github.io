@@ -12,14 +12,14 @@
 .smallscreen{
   width: 5vw;
   height: 5vh;
-  border: 1px solid black;
+
  
 }
 
 .small-container {
   width: 5vw;
   height: 5vh;
-  border: 1px solid black;
+ 
 
 }
 
@@ -33,7 +33,7 @@
   width:100%;
   display:flex;
   position:relative;
-border:1px solid blue;
+
 }
 
 
@@ -66,7 +66,7 @@ position:relative;
         height: 700px;
 width:500px; 
 
-border:1px solid blue;
+border:1px solid black;
  } 
 
 
@@ -168,14 +168,14 @@ padding: 8px 12px;
 }
 .dots{
 text-align:center;
-border:1px solid black;
+
 height:15px;
 position:relative;
 }
 
 
 .div-wrapper{
-  border:1px solid blue;
+
 display:flex;
 flex-direction:column;
 }
@@ -220,7 +220,7 @@ flex-direction:column;
 .image-container {
   width: 45vw;
   height: 45vh;
-  border: 1px solid black;
+ 
   margin-bottom: 25px;
 }
 
