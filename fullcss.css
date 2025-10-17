@@ -15,6 +15,12 @@
 
 }
 
+.image-container-1 {
+  width: 45vw;
+  height: 45vw;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
 .flexrows-1{
 
   width:100%;
@@ -214,12 +220,6 @@ flex-direction:column;
 
 
 
-.image-container-1 {
-  width: 45vw;
-  height: 45vw;
-  border: 1px solid black;
-  margin-bottom: 25px;
-}
 
 .image-container-1 img {
   width: 100%;
