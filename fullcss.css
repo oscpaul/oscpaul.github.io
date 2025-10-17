@@ -8,9 +8,7 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
-iframe[src*="squareup"] {
-      height: 300px !important;
-    }
+
 
 .smallscreen{
 height:25vh;
@@ -100,7 +98,7 @@ display:flex;
 }
 
  .acuity{
-margin-top:50vh;
+margin-top:30vh;
 position:relative;
         height: 700px;
 width:300px; 
