@@ -28,7 +28,6 @@ border:1px solid blue;
 .flexrows-2{
     width:200px;
   height:200px;
-  margin-top: 20vw; /* Sets a 20-pixel top margin for all paragraph elements */
 
 display:flex;
 border:1px solid blue;
