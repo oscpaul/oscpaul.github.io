@@ -31,14 +31,12 @@ border:1px solid blue;
   height:200px;
 border:1px solid blue;
 }
-.flexrows-2 > * {
+.flexrows-2 img {
   max-width: 100%;
   max-height: 100%;
-  height: auto; /* Ensure aspect ratio is maintained */
-  width: auto; /* Ensure aspect ratio is maintained *
-
-  
-}
+  height: auto; 
+  width: auto;
+  }
 
 .content-fill-7{
 display:flex;
