@@ -32,7 +32,7 @@ border:1px solid blue;
   width:100%;
   display:flex;
   position:relative;
-border:1px solid blue;
+
 }
 .flexrows-2 img {
   flex:1;
