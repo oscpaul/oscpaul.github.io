@@ -200,7 +200,7 @@ flex-direction:column;
 
 .image-container {
   width: 45vw;
-  height: 45vw;
+  height: 45vh;
   border: 1px solid black;
   margin-bottom: 25px;
 }
