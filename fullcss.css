@@ -31,7 +31,8 @@ border:1px solid blue;
 
 
 .image-container-2 {
-height:20vh;
+  
+height:100%;
   border: 1px solid black;
   margin-bottom: 25px;
 }
