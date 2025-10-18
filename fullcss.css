@@ -11,12 +11,8 @@
 
 
 
-.anchor-button {
+.lottie {
   anchor-name: --my-button-anchor;
-    transform: translateX(50%); /* Adjust for perfect centering */
-top:0;
-  border:1px solid blue;
-  /* Other styling for the button */
 }
 
 
@@ -33,6 +29,7 @@ border:1px solid blue;
 z-index:2;
   position: absolute;
 
+  position-anchor: --my-button-anchor;
 
   transform: translateX(50%); /* Adjust for perfect centering */
 top:-10px;
