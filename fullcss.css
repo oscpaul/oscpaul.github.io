@@ -13,7 +13,7 @@ position:absolute;
 width:20vw;
 height:20vh;
  position-anchor:--myAnchor;
-top:anchor(50%);
+bottom:anchor(50%);
 left:anchor(0%);
   border:1px solid blue;
 z-index:2;
@@ -176,7 +176,7 @@ height:100vh;
 .section-7{
 
   position:relative;
-height:70vh;
+height:50vh;
   width:100%;
   display:flex;
   justify-content:center;
