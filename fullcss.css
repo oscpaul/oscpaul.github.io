@@ -10,10 +10,14 @@
 
 
 
-
-.lottie {
+.lottiewrapper{
   display:flex;
   justify-content:center;
+  
+}
+.lottie {
+  border:1px solid blue;
+
   width:300px;
   height:500px;
   anchor-name: --my-button-anchor;
