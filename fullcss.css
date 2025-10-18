@@ -8,11 +8,40 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+
+
+
+.anchor-button {
+  anchor-name: --my-button-anchor;
+  /* Other styling for the button */
+}
+
+
+.tooltip img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tooltip {
+width:20vw;
+height:20vh;
+border:1px solid blue;
+z-index:1;
+  position: absolute;
+  position-anchor: --my-button-anchor;
+  top: anchor(center); /* Position tooltip below the button */
+  left: anchor(center); /* Center tooltip horizontally with the button */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  /* Other styling for the tooltip */
+}
+
+
 .lottie{
 position:absolute;
 width:20vw;
 height:20vh;
- position-anchor:--myAnchor;
+ position-anchor: --myAnchor;
 bottom:anchor(30%);
 left:0%;
   border:1px solid blue;
@@ -113,7 +142,7 @@ display:flex;
 }
 
  .acuity{
-   anchor-name:--myAnchor;
+   anchor-name: --myAnchor;
 position:relative;
         height: 700px;
 width:75vw; 
