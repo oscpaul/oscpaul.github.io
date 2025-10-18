@@ -31,7 +31,7 @@ z-index:1;
   position: absolute;
   position-anchor: --my-button-anchor;
 
-  transform: translateX(-50%); /* Adjust for perfect centering */
+  transform: translateX(50%); /* Adjust for perfect centering */
   /* Other styling for the tooltip */
 }
 
