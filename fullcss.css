@@ -10,9 +10,18 @@
 
 .lottie{
 position:absolute;
-  top:10%;
+width:20vw;
+height:20vh;
+  top:30%;
   left:0%;
   border:1px solid blue;
+z-index:2;
+}
+
+.lottie img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .smallscreen{
