@@ -18,17 +18,6 @@ details summary::before {
       content: "▼"; /* Custom arrow for expanded state */
     }
 
-details{
-margin-top:1em;
-  border-radius:1em;
-  background-color:black;
-  
-}
-
-details summary{
-  padding:1em;
-  font-size:1.7rem:
-}
 
 .lottiewrapper{
   width:100%;
