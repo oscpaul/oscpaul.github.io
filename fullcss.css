@@ -9,6 +9,111 @@
  */
 
 
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	background: #eee;
+	z-index: 9999;
+	transition: all 300ms ease-in-out;
+}
+
+.logo{
+font-weight:bold;
+font-size:1.125reml
+}
+
+.flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.inner{
+width:60%;
+margin:0 auto;
+}
+
+
+
+nav ul{
+
+list-style-type:none;
+display:flex;
+
+}
+
+a{padding:1em 1.5em;
+
+&:hover{background:rgb(235,235,245);
+}
+}
+
+
+.active{font-weight:bold;
+position:relative;
+&:before{
+content: '';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:3em;
+}
+}
+
+
+
+.subhead{
+font-size:1.5rem;
+line-height:1.4em;
+}
+
+.scroll-down {
+		transform: translate3d(0, -100%, 0);
+	
+}
+
+.scroll-up {
+	header {
+		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+	}
+}
+
+.menu-is-open {
+	overflow: hidden;
+
+	header {
+		filter: none;
+	}
+}
+
+
+  summary {
+      cursor: pointer; /* Changes cursor to a pointer when hovering over summary */
+      display: flex; /* Allows for alignment of text and custom arrow */
+      align-items: center; /* Vertically centers text and arrow */
+    }
+
+    summary::after {
+      content: ' ▶'; /* Right-pointing arrow for closed state */
+      margin-left: 5px; /* Spacing between summary text and arrow */
+      transition: transform 0.2s ease-in-out; /* Smooth transition for arrow rotation */
+    }
+
+    details[open] summary::after {
+      content: ' ▼'; /* Down-pointing arrow for open state */
+    }
+
+ summary {
+      list-style: none; /* Hides the default bullet/marker */
+    }
+    summary::-webkit-details-marker { /* For WebKit browsers like Chrome/Safari */
+      display: none;
+    }
 
 
 .anchor-button {
@@ -403,96 +508,6 @@ border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one
   background-size: 40px 40px; /* Size of each square in the checkerboard */
   background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
 }
-
-
-
-
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 20px 0;
-	text-align: center;
-	background: #eee;
-	z-index: 9999;
-	transition: all 300ms ease-in-out;
-}
-
-.logo{
-font-weight:bold;
-font-size:1.125reml
-}
-
-.flex{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.inner{
-width:60%;
-margin:0 auto;
-}
-
-
-
-nav ul{
-
-list-style-type:none;
-display:flex;
-
-}
-
-a{padding:1em 1.5em;
-
-&:hover{background:rgb(235,235,245);
-}
-}
-
-
-.active{font-weight:bold;
-position:relative;
-&:before{
-content: '';
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
-height:3em;
-}
-}
-
-
-
-.subhead{
-font-size:1.5rem;
-line-height:1.4em;
-}
-
-.scroll-down {
-		transform: translate3d(0, -100%, 0);
-	
-}
-
-.scroll-up {
-	header {
-		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
-	}
-}
-
-.menu-is-open {
-	overflow: hidden;
-
-	header {
-		filter: none;
-	}
-}
-
-
-
-
-
 
 
 
