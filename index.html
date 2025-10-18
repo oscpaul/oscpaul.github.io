@@ -47,11 +47,12 @@ const currentScroll=window.pageYOffset;
 	scrollupdown+=(currentScroll-lastScroll);
 	if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
 		scrollupdown=0;
+	
 if (currentScroll<=0){
 document.querySelector(".header1").classList.remove("scroll-up")
 }
 
-
+if (Math.sign(currentScroll-lastScroll)==1){
 	if (scrollupdown>300)
 	{
 if(currentScroll>lastScroll && !body.classList.contains("scroll-down")){
@@ -59,6 +60,7 @@ document.querySelector(".header1").classList.remove("scroll-up");
 document.querySelector(".header1").classList.add("scroll-down");
 }
 	}
+}
 
 if(currentScroll<lastScroll && !body.classList.contains("scroll-down")){
 document.querySelector(".header1").classList.remove("scroll-down");
