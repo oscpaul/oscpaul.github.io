@@ -8,7 +8,15 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+.details{
+margin-top:1em;
+  border-radius:1em;
+  background-color:black;
+  
+}
 
+.details summary{
+}
 
 .lottiewrapper{
   width:100%;
