@@ -128,20 +128,7 @@ line-height:1.4em;
   object-fit: contain;
 }
 
-.tooltip {
-width:20vw;
-height:20vh;
-border:1px solid blue;
-z-index:1;
-  position: absolute;
-  position-anchor: --my-button-anchor;
-  top: anchor(center); /* Position tooltip below the button */
-  left: anchor(center); /* Center tooltip horizontally with the button */
-	  top: 0%; /* Position tooltip below the button */
-  left: 0%; /* Center tooltip horizontally with the button */
-  transform: translateX(-50%); /* Adjust for perfect centering */
-  /* Other styling for the tooltip */
-}
+
 
  .acuity{
 anchor-name: --myAnchor;
@@ -541,8 +528,8 @@ border:1px solid blue;
 z-index:2;
   position: absolute;
   position-anchor: --my-button-anchor;
-  transform: translateX(50%); /* Adjust for perfect centering */
-  transform: translateY(160%);
+  transform: translateX(30%); /* Adjust for perfect centering */
+  transform: translateY(130%);
     border:1px solid blue;
 
 
