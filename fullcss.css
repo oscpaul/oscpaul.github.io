@@ -12,6 +12,8 @@
 
 
 .lottie {
+  display:flex;
+  justify-content:center;
   width:300px;
   height:500px;
   anchor-name: --my-button-anchor;
