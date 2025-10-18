@@ -13,7 +13,7 @@ position:absolute;
 width:20vw;
 height:20vh;
  position-anchor:--myAnchor;
-top:anchor(30%);
+top:anchor(50%);
 left:anchor(0%);
   border:1px solid blue;
 z-index:2;
@@ -114,7 +114,6 @@ display:flex;
 
  .acuity{
    anchor-name:--myAnchor;
-margin-top:40vh;
 position:relative;
         height: 700px;
 width:75vw; 
