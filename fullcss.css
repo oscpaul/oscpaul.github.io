@@ -137,6 +137,8 @@ z-index:1;
   position-anchor: --my-button-anchor;
   top: anchor(center); /* Position tooltip below the button */
   left: anchor(center); /* Center tooltip horizontally with the button */
+	  top: 0%; /* Position tooltip below the button */
+  left: 0%; /* Center tooltip horizontally with the button */
   transform: translateX(-50%); /* Adjust for perfect centering */
   /* Other styling for the tooltip */
 }
