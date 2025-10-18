@@ -47,24 +47,7 @@ body {
 
 
 
-summary::after {
-        content: ' ►'; /* Unicode character for a right-pointing triangle */
-        color: black; /* Set the color of the arrow */
-        margin-left: 5px; /* Adjust spacing as needed */
-    }
-    details[open] summary::after {
-        content: ' ▼'; /* Change to a down-pointing triangle when open */
-    }
 
-    summary {
-        list-style: none; /* Removes the default list-style marker */
-    }
-    summary::-webkit-details-marker { /* For Webkit browsers (Chrome, Safari) */
-        display: none;
-    }
-    summary::marker { /* For other browsers (Firefox) */
-        content: none;
-    }
 
 
 .lottiewrapper{
