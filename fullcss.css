@@ -8,6 +8,16 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+
+details summary::before {
+      content: "▶"; /* Custom arrow for collapsed state */
+      margin-right: 5px;
+    }
+
+    details[open] summary::before {
+      content: "▼"; /* Custom arrow for expanded state */
+    }
+
 details{
 margin-top:1em;
   border-radius:1em;
