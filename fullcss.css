@@ -13,7 +13,7 @@ position:absolute;
 width:20vw;
 height:20vh;
  position-anchor:--myAnchor;
-top:anchor(0%);
+top:anchor(30%);
 left:anchor(0%);
   border:1px solid blue;
 z-index:2;
