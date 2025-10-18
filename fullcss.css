@@ -121,28 +121,6 @@ height:100%;
   object-fit: contain;
 }
 
-.content-fill-7{
-display:flex;
-}
-
- .acuity{
-   anchor-name: --myAnchor;
-position:relative;
-        height: 700px;
-width:75vw; 
-
-border:1px solid black;
- } 
-
-.acuity-iframe{
-
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 
 
 
@@ -158,22 +136,6 @@ display:flex;
 
 
 
-.iframediv{
-  position:relative;
-}
- 
-
-
-  
-    
-
-
-.content-fill{
-  width:40vw;
-  height:40vw;
-display:flex;
-  
-}
 
 
 .section-8{
@@ -249,7 +211,7 @@ flex-direction:column;
 
 .div-wrapper-2{
  position:relative;
-height:55vh;
+height:5vh;
 border:1px solid black;
 display:flex;
 
