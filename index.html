@@ -45,7 +45,7 @@ const currentScroll=window.pageYOffset;
 
 	
 	scrollupdown+=(currentScroll-lastScroll);
-	if (currentScroll<lastScroll)
+	if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
 		scrollupdown=0;
 if (currentScroll<=0){
 document.querySelector(".header1").classList.remove("scroll-up")
