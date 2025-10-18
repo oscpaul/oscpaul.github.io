@@ -8,7 +8,12 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
-
+.lottie{
+position:absolute;
+  top:10%;
+  left:0%;
+  border:1px solid blue;
+}
 
 .smallscreen{
 height:25vh;
@@ -103,7 +108,7 @@ position:relative;
         height: 700px;
 width:75vw; 
 
-border:3px solid black;
+border:1px solid black;
  } 
 
 .acuity-iframe{
