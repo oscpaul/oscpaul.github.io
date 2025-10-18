@@ -8,14 +8,14 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
-.details{
+details{
 margin-top:1em;
   border-radius:1em;
   background-color:black;
   
 }
 
-.details summary{
+details summary{
   padding:1em;
   font-size:1.7rem:
 }
