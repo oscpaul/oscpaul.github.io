@@ -181,12 +181,12 @@ height:50vh;
   display:flex;
   justify-content:center;
   align-items:center;
-border:2px solid blue;
+
 }
 
 
 .section-6{
-
+border:2px solid blue;
   position:relative;
 height:100%;
   width:100%;
