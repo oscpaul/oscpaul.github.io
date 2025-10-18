@@ -8,6 +8,18 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+header{
+
+        position:fixed;
+        
+top:0;
+        width:100%;
+        background-color:#744744;
+        
+        
+}
+
+
 
 summary::after {
         content: ' ►'; /* Unicode character for a right-pointing triangle */
