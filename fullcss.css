@@ -14,7 +14,8 @@
 .anchor-button {
   anchor-name: --my-button-anchor;
     transform: translateX(50%); /* Adjust for perfect centering */
-top:-100%;
+top:0;
+  border:1px solid blue;
   /* Other styling for the button */
 }
 
@@ -34,7 +35,9 @@ z-index:1;
   position-anchor: --my-button-anchor;
 
   transform: translateX(50%); /* Adjust for perfect centering */
-top:100%;
+top:0%;
+    border:1px solid blue;
+
 
   /* Other styling for the tooltip */
 }
