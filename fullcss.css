@@ -8,6 +8,405 @@
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
 
+
+
+
+.anchor-button {
+  anchor-name: --my-button-anchor;
+  /* Other styling for the button */
+}
+
+
+.tooltip img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tooltip {
+width:20vw;
+height:20vh;
+border:1px solid blue;
+z-index:1;
+  position: absolute;
+  position-anchor: --my-button-anchor;
+  top: anchor(center); /* Position tooltip below the button */
+  left: anchor(center); /* Center tooltip horizontally with the button */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  /* Other styling for the tooltip */
+}
+
+ .acuity{
+anchor-name: --myAnchor;
+
+position:absolute;;
+        height: 700px;
+width:500px; 
+
+border:1px solid blue;
+ } 
+
+
+.lottie{
+position:absolute;
+position-anchor: --myAnchor;
+left:anchor(center);
+
+
+width:20vw;
+height:20vh;
+
+  border:1px solid blue;
+z-index:2;
+}
+
+.lottie img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ .acuity{
+
+position:absolute;
+        height: 700px;
+width:75vw; 
+
+border:1px solid black;
+ } 
+
+.acuity-iframe{
+
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+.numbertext {
+ position: absolute;
+  font-size: 12px;
+padding: 8px 12px;
+
+}
+.dots{
+text-align:center;
+border:1px solid black;
+height:15px;
+position:relative;
+}
+.dot {
+position:relative;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+    animation-timing-function: ease-in; /* Easing from 0% to 50% */
+
+}
+.mySlides {display: none;}
+
+
+.div-wrapper{
+  
+height:50vh;
+border:1px solid black;
+display:flex;
+flex-direction:column;
+}
+
+
+.div-wrapper-2{
+ position:relative;
+height:45vh;
+border:1px solid black;
+display:flex;
+flex-direction:column;
+}
+
+
+.image-container {
+
+  width: 45vw;
+  height: 45vh;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+.flexrows-1{
+  height:20vw;
+  width:100%;
+  display:flex;
+  position:relative;
+border:1px solid blue;
+}
+
+.flexrows-1 img {
+  flex:1;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; 
+  width: auto;
+  }
+
+.flexrows-2{
+  width:100%;
+  display:flex;
+  position:relative;
+
+}
+.flexrows-2 img {
+  flex:1;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; 
+  width: auto;
+  }
+
+.content-fill-7{
+display:flex;
+}
+
+
+
+
+
+.iframediv{
+ position:relative;
+display:flex;
+ 
+}
+
+
+
+
+
+
+.iframediv{
+  position:relative;
+}
+ 
+
+
+  
+    
+
+
+.smallscreen{
+position:relative;
+ 
+}
+.content-fill{
+  width:40vw;
+  height:40vw;
+display:flex;
+  
+}
+
+
+.section-8{
+
+  position:relative;
+height:100vh;
+  width:100%;
+
+}
+
+.section-7{
+
+  position:relative;
+height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+
+.section-6{
+border:1px solid blue;
+  position:relative;
+height:100%;
+  width:100%;
+  display:flex;
+
+
+}
+
+
+
+
+
+
+.movieflexbox{
+  display: flex; /* Makes the container a flex container */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  width: 400px; /* Example width for the container */
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+.page-section-8-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-8-box {
+border:1px solid blue; opacity:.1;
+  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+
+.page-section-7-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-7-box {
+border:1px solid blue;opacity:.1;
+  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+.page-section-6-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-6-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+.page-section-5-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-5-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+.page-section-4-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-4-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+
+.page-section-3-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-3-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+.page-section-2-box{
+position:absolute;
+width:100%;
+height:100%;
+}
+.page-section-2-box {
+border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one square */
+  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(-45deg, #ccc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #ccc 75%),
+                    linear-gradient(-45deg, transparent 75%, #ccc 75%);
+  background-size: 40px 40px; /* Size of each square in the checkerboard */
+  background-position: 0 0, 20px 0, 20px 20px, 0 20px; /* Positioning for seamless pattern */
+}
+
+
+
+
 header {
 	position: fixed;
 	top: 0;
@@ -20,10 +419,60 @@ header {
 	transition: all 300ms ease-in-out;
 }
 
+.logo{
+font-weight:bold;
+font-size:1.125reml
+}
+
+.flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.inner{
+width:60%;
+margin:0 auto;
+}
+
+
+
+nav ul{
+
+list-style-type:none;
+display:flex;
+
+}
+
+a{padding:1em 1.5em;
+
+&:hover{background:rgb(235,235,245);
+}
+}
+
+
+.active{font-weight:bold;
+position:relative;
+&:before{
+content: '';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:3em;
+}
+}
+
+
+
+.subhead{
+font-size:1.5rem;
+line-height:1.4em;
+}
+
 .scroll-down {
-	header {
 		transform: translate3d(0, -100%, 0);
-	}
+	
 }
 
 .scroll-up {
