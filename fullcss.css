@@ -278,8 +278,10 @@ display:flex;
 
 
 .image-container {
-  width: 60vw;
-  height: 25vh;
+        left:2.5vw:
+                position:relative;
+  width: 90vw;
+  height: 35vh;
  border:1px solid blue;
   margin-bottom: 25px;
 }
