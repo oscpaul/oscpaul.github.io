@@ -28,11 +28,9 @@ height:20vh;
 border:1px solid blue;
 z-index:2;
   position: absolute;
-
   position-anchor: --my-button-anchor;
-
+    top: anchor(center); /* Position tooltip below the button */
   transform: translateX(50%); /* Adjust for perfect centering */
-top:-10px;
     border:1px solid blue;
 
 
