@@ -12,8 +12,9 @@
 position:absolute;
 width:20vw;
 height:20vh;
-  top:30%;
-  left:0%;
+ position-anchor:--myAnchor;
+top:anchor(0%);
+left:anchor(0%);
   border:1px solid blue;
 z-index:2;
 }
@@ -112,6 +113,7 @@ display:flex;
 }
 
  .acuity{
+   anchor-name:--myAnchor;
 margin-top:40vh;
 position:relative;
         height: 700px;
