@@ -37,6 +37,7 @@ border:1px solid blue;
     }
 
 header {
+	border:1px solid gray;
 	position: fixed;
 	top: 0;
 	left: 0;
