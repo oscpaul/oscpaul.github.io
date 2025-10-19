@@ -511,7 +511,7 @@ border:1px solid blue;opacity:.1;  background-color: #eee; /* Base color for one
 
 .lottiewrapper{
   width:100%;
-    border:1px solid blue;
+  
   display:flex;
   justify-content:center;
   
