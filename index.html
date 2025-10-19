@@ -62,6 +62,26 @@ document.querySelector(".header1").classList.add("scroll-down");
 	}
 }
 
+
+
+
+
+
+if (Math.sign(currentScroll-lastScroll)==-1){
+	if (scrollupdown<-300)
+	{
+if(currentScroll>lastScroll && !body.classList.contains("scroll-down")){
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+}
+	}
+}
+
+	
+
+
+	
+
 if(currentScroll<lastScroll && !body.classList.contains("scroll-down")){
 document.querySelector(".header1").classList.remove("scroll-down");
 document.querySelector(".header1").classList.add("scroll-up");
