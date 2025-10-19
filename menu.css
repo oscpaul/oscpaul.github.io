@@ -38,9 +38,12 @@ $menu_WIDTH: 150px;
     0.2s 0.2s border-top ease-out,
     0.3s border-top-color;
 }
-
-.menu-title:hover { background: #8db842; }
-.menu-title:hover:before { border-top-color: #8db842; }
+.menu-title:hover { background: #8db842; 
+height:40vh;
+width:50vw;}
+.menu-title:hover:before { 
+height:40vh;
+width:50vw;border-top-color: #8db842; }
 
 .menu:hover > .menu-title:before {
   border-top-width: 0;
@@ -84,8 +87,7 @@ $menu_WIDTH: 150px;
 .menu-title_4th:hover:before { border-top-color: #cb9b48; }
 
 .menu-dropdown {
-  width:50vw;
-height:40vw;
+  min-width: 100%;
   padding: 0px 0;
   position: absolute;
   background: #ebebeb;
@@ -172,5 +174,6 @@ border:1px solid black;
   margin-left: 0;
 
 }
+
 
 
