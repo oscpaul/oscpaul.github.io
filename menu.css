@@ -84,10 +84,12 @@ $menu_WIDTH: 150px;
 .menu-title_4th:hover:before { border-top-color: #cb9b48; }
 
 .menu-dropdown {
-  min-width: 100%;
-  padding: 15px 0;
+  width:50vw;
+height:40vw;
+  padding: 0px 0;
   position: absolute;
   background: #ebebeb;
+border:1px solid black;
   z-index: 100;
   transition:
     0.5s padding,
@@ -170,4 +172,5 @@ $menu_WIDTH: 150px;
   margin-left: 0;
 
 }
+
 
