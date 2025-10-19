@@ -508,7 +508,7 @@ border:1px solid blue;
 z-index:2;
   position: absolute;
   position-anchor: --my-button-anchor;
-  transform: translateX(-50%); /* Adjust for perfect centering */
+  transform: translateX(0%); /* Adjust for perfect centering */
   transform: translateY(-10%);
     border:1px solid blue;
 
