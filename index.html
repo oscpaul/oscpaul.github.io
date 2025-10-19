@@ -37,63 +37,47 @@
 
 
 <script>
-	let scrollupdown=0;
-const body=document.body;
 let lastScroll=0;
-window.addEventListener('scroll' ,() => {
+	let scrollupdown=0;
+
+
+  window.addEventListener('scroll' ,() => {
 const currentScroll=window.pageYOffset;
+scrollupdown+=(currentScroll-lastScroll);
 
-	
-	scrollupdown+=(currentScroll-lastScroll);
-	if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
+if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
+{
 		scrollupdown=0;
-	
-if (currentScroll<=0){
-document.querySelector(".header1").classList.remove("scroll-up")
-}
-
-if (Math.sign(currentScroll-lastScroll)==1){
-	if (scrollupdown>300)
-	{
-if(currentScroll>lastScroll && !body.classList.contains("scroll-down")){
-document.querySelector(".header1").classList.remove("scroll-up");
-document.querySelector(".header1").classList.add("scroll-down");
-}
-	}
-}
-
-
-
-
-
-
-if (Math.sign(currentScroll-lastScroll)==-1){
-	console.log("ok");
-	if (scrollupdown<-300)
-	{
-if(currentScroll>lastScroll && !body.classList.contains("scroll-down")){
-document.querySelector(".header1").classList.remove("scroll-up");
-document.querySelector(".header1").classList.add("scroll-down");
-}
-	}
-}
-
-	
-
-
-	
-
-if(currentScroll<lastScroll && !body.classList.contains("scroll-down")){
 document.querySelector(".header1").classList.remove("scroll-down");
 document.querySelector(".header1").classList.add("scroll-up");
 }
 
-if (currentScroll<lastScroll)
-	(true)
+
+if (Math.sign(currentScroll-lastScroll)==1){
+	if (scrollupdown>300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==-1){
+	if (scrollupdown<=-300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+  
+
+
+
+
+
 lastScroll=currentScroll;
 
-});
-
+  });
 </script>
 
 
