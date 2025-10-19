@@ -157,6 +157,8 @@ $menu_WIDTH: 150px;
 }
 
 .hList {
+  height:100%;
+
   //overflow: hidden;
 }
 
@@ -168,3 +170,4 @@ $menu_WIDTH: 150px;
   margin-left: 0;
 
 }
+
