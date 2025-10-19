@@ -1,5 +1,8 @@
 $menu_WIDTH: 150px;
+.inner flex{
 
+  height:10px;
+}
 .menu {
   display: block;
   position: relative;
@@ -9,7 +12,7 @@ $menu_WIDTH: 150px;
 .menu-title {
   display: block;
   width: $menu_WIDTH;
-  height: 40px;
+  height: 20px;
   padding: 12px 0 0;
   background: #9dc852;
   text-align: center;
@@ -163,4 +166,5 @@ $menu_WIDTH: 150px;
 
 .hList > * + * {
   margin-left: 0;
+
 }
