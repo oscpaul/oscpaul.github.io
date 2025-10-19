@@ -7,7 +7,16 @@
  * 
  * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
  */
+  summary::after {
+        content: ' \25BA'; /* Black right-pointing pointer (►) */
+        color: black;
+        font-size: 1em; /* Adjust size as needed */
+        margin-left: 0.5em; /* Spacing between summary text and arrow */
+    }
 
+    details[open] summary::after {
+        content: ' \25BC'; /* Black down-pointing triangle (▼) when open */
+    }
 
 header {
 	position: fixed;
