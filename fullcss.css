@@ -10,10 +10,24 @@
 body {
   overscroll-behavior-x: none;
 }
+
+@font-face {
+    font-family: __LateralStandard_2942cb;
+    src: url(ff80beb5aa3af6c2-s.p.woff2) format("woff2");
+    font-display: block;
+    font-weight: 400;
+    font-style: normal
+}
+
 .text-grey2{
+font-family: __LateralStandard_2942cb;
 color:rgb(204,204,204);
 }
 
+.text-black{
+font-family: __LateralStandard_2942cb;
+color:black;
+}
 .back-video{
 position:absolute;
 right:0;
