@@ -1,5 +1,32 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
+const scrollContainer = document.getElementById('yourScrollableElementId'); // Replace with your element's ID
+let lastScrollLeft = scrollContainer.scrollLeft;
+
+scrollContainer.addEventListener('scroll', () => {
+    const currentScrollLeft = scrollContainer.scrollLeft;
+
+    if (currentScrollLeft !== lastScrollLeft) {
+        // Horizontal scroll detected
+        if (currentScrollLeft > lastScrollLeft) {
+            console.log('Scrolling right');
+        } else {
+            console.log('Scrolling left');
+        }
+        // Perform actions based on horizontal scroll
+        // Example: update a UI element, trigger an animation, etc.
+        
+    }
+
+    lastScrollLeft = currentScrollLeft; // Update for the next scroll event
+});
+
+
+
+
+
+
+ 
 var var1=1;
 
 const mask = document.querySelectorAll(".mask");
@@ -115,6 +142,7 @@ duration:0,
   width: "0%",
 duration:0,
 });
+
 
 
 
