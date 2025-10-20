@@ -89,14 +89,11 @@ html, body {
 }
 
 /* Optional: Add different background colors to distinguish the sections */
-.section-1 { background-color: #f1c40f; }
-.section-2 { background-color: #3498db; }
-.section-3 { background-color: #2ecc71; }
-.section-4 { background-color: #e74c3c; }
 
 /* Optional: Hide the scrollbar for a cleaner look on most modern browsers */
 .scroll-container::-webkit-scrollbar {
   display: none;
 }
+
 
 
