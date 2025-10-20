@@ -138,7 +138,7 @@ duration:0,
 })
 
 
-.to(mask, {
+.to(mask4, {
   width: "0%",
 duration:0,
 });
@@ -149,3 +149,4 @@ duration:0,
 
 
 });
+
