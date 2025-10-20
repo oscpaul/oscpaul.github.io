@@ -39,4 +39,18 @@ align-items:center;
 }
 .svgtext{
 flex:1;
+
+}
+
+
+
+
+.undrawwrap{
+justify-content:center;
+align-items:center;
+display:flex;
+border:1px solid blue;
+height:25vw;
+width:100%;
+align-items:center;
 }
