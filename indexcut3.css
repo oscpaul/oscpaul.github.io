@@ -1,0 +1,42 @@
+
+
+
+
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+svg {
+    position: relative;
+    flex:1;
+ 
+    width: 20vw;
+
+    .mask {
+        width: 0;
+    }
+}
+
+
+
+.svgwrap{
+display:flex;
+border:1px solid blue;
+height:5vw;
+width:100%;
+align-items:center;
+}
+
+
+.textwrap{
+display:flex;
+border:1px solid blue;
+height:25vw;
+width:100%;
+align-items:center;
+}
+.svgtext{
+flex:1;
+}
