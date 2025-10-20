@@ -75,7 +75,7 @@ html, body {
 }
 
 /* The individual full-screen sections */
-.section {
+.containersection {
   flex-shrink: 0; /* Prevents sections from shrinking */
   width: 100vw; /* Sets each section to be the full width of the viewport */
   height: 100vh; /* Sets each section to be the full height of the viewport */
@@ -94,6 +94,7 @@ html, body {
 .scroll-container::-webkit-scrollbar {
   display: none;
 }
+
 
 
 
