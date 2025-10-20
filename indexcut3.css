@@ -54,3 +54,49 @@ height:25vw;
 width:100%;
 align-items:center;
 }
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents an unwanted horizontal scrollbar on the body */
+  box-sizing: border-box;
+}
+
+/* The parent container for the scrollable content */
+.scroll-container {
+  display: flex; /* Arranges children horizontally */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snaps the scroll to specific points on the x-axis */
+  width: 100%;
+}
+
+/* The individual full-screen sections */
+.section {
+  flex-shrink: 0; /* Prevents sections from shrinking */
+  width: 100vw; /* Sets each section to be the full width of the viewport */
+  height: 100vh; /* Sets each section to be the full height of the viewport */
+  scroll-snap-align: start; /* Aligns the start of each section to the start of the scroll container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Optional: Add different background colors to distinguish the sections */
+.section-1 { background-color: #f1c40f; }
+.section-2 { background-color: #3498db; }
+.section-3 { background-color: #2ecc71; }
+.section-4 { background-color: #e74c3c; }
+
+/* Optional: Hide the scrollbar for a cleaner look on most modern browsers */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+
