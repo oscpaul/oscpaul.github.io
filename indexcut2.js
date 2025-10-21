@@ -24,7 +24,12 @@ var myDraggable = Draggable.create(".snap-wrapper", {
   },
 
 
-
+ onDragEnd: function() {
+    gsap.to(this.target, {
+      x: this.x,
+      ease: "power2.out"
+    });
+  }
 
 
 
@@ -34,6 +39,7 @@ var myDraggable = Draggable.create(".snap-wrapper", {
 
 
 });
+
 
 
 
