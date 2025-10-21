@@ -84,7 +84,7 @@ const dragThreshold = 100;
     if (distanceX >= dragThreshold ) {
         console.log("drag threshold");
       // Snap to the target if the threshold is met
-      gsap.to(this.target, { x:-0 });
+      gsap.to(".panel.one", { x:0 });
     } else {
       // Snap back to the original position if not
       gsap.to(this.target, { xPercent:-0 });
@@ -99,6 +99,7 @@ const dragThreshold = 100;
     console.log(window.mobileCheck())
 
 });
+
 
 
 
