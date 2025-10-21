@@ -1,47 +1,8 @@
-
-
-.scroll-container {
-  display: flex; /* Arranges children horizontally */
-
-  width: 400vw;
+#draggableDiv {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  position: absolute; /* or fixed */
+  cursor: grab;
+  touch-action: none; /* Prevents default browser touch gestures */
 }
-
-containersection::-webkit-scrollbar {
-
-  display: none;
-}
-/* The individual full-screen sections */
-.containersection {
-    border:1px solid blue;
-  flex-shrink: 0; /* Prevents sections from shrinking */
-  width: 80vw; /* Sets each section to be the full width of the viewport */
-  height: 100vh; /* Sets each section to be the full height of the viewport */
-  scroll-snap-align: start; /* Aligns the start of each section to the start of the scroll container */
-  display: flex;
-  justify-content: center;
-flex-direction:column;
-
-  font-family: sans-serif;
-  color: #fff;
-  font-size: 2rem;
-}
-
-.svgtext{
-border:1px solid blue;
-position:relative;
-top:0;
-left:0%;
-}
-
-
-svg {
-    position: relative;
-
- border:1px solid blue;
-    width: 50vw;
-
-    .mask {
-        width: 0;
-    }
-}
-
