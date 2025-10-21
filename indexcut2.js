@@ -26,7 +26,19 @@ x:this.x,
 duration:0,
 });
 
+if (distanceXend >= -calculateVwToPx(210))
+      // Snap to the target if the threshold is met
+{
 
+console.log('three disable');
+this.disable();
+draggable2.enable();
+
+gsap.to(".panel.three",{
+x:-calculateVwToPx(180),
+duration:0,
+});
+}
 
 
 }
@@ -294,6 +306,7 @@ duration:0,
 
 
 });
+
 
 
 
