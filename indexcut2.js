@@ -20,7 +20,7 @@ onDrag:function(){
 const distanceXend = (this.x)
 
 
-if (distanceXend >= -2100 ) {
+if (distanceXend >= -calculateVwToPx(170) ) {
 
 gsap.to(".panel.two",{
 x:this.x,
@@ -28,7 +28,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -1300)
+if (distanceXend >= -calculateVwToPx(80)
       // Snap to the target if the threshold is met
 {
 
@@ -66,7 +66,7 @@ onDrag:function(){
 const distanceXend = (this.x)
 
 
-if (distanceXend >= -900 ) {
+if (distanceXend >= -calculateVwToPx(80) ) {
 
 gsap.to(".panel.one",{
 x:this.x,
@@ -74,7 +74,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -100)
+if (distanceXend >= -calculateVwToPx(10))
       // Snap to the target if the threshold is met
 {
 
@@ -95,7 +95,7 @@ duration:0,
 
 
 
-if (distanceXend <= -2100)
+if (distanceXend <= -calculateVwToPx(170))
       // Snap to the target if the threshold is met
 {
 
@@ -188,3 +188,4 @@ duration:0,
 
 
 });
+
