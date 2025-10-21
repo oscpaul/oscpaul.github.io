@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
-     Observer.create({
+    Observer.create({
         target: window, // Or any specific element you want to observe
         type: "wheel,touch,scroll,pointer", // Listen for various input types
         onLeft: () => {
@@ -20,11 +20,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
 window.addEventListener('wheel', event => {
   if (event.deltaX < 0) {
     console.log('Scrolling up (or attempting to)');
-  } else if (event.deltaX > 0) {
+  } else if (event.deltaX*25 > 250) {
 
 gsap.to(".panel.one",{
-x:-event.deltaX,
-
+x:-calculateVwToPx(90),
+});
+gsap.to(".panel.two",{
+x:-calculateVwToPx(90),
 });
 
     console.log('Scrolling right (or attempting to)');
@@ -36,5 +38,6 @@ x:-event.deltaX,
 
 
 });
+
 
 
