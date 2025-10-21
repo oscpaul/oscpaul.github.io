@@ -33,9 +33,9 @@ scrollableElement.addEventListener('scroll', (event) => {
 
     
 window.addEventListener('scroll', event => {
-  if (event.deltaX < 0) {
+  if (event.scrollX < 0) {
     console.log('Scrolling up (or attempting to)');
-  } else if (event.deltaX*25 > 250) {
+  } else if (event.scrollX*25 > 250) {
 
 gsap.to(".panel.one",{
 x:-calculateVwToPx(90),
@@ -45,7 +45,7 @@ x:-calculateVwToPx(90),
 });
 
     console.log('Scrolling right (or attempting to)');
- console.log(event.deltaX);
+ console.log(event.scrollX);
   }
   // You can also analyze event.deltaX for horizontal wheeling
 });
@@ -53,6 +53,7 @@ x:-calculateVwToPx(90),
 
 
 });
+
 
 
 
