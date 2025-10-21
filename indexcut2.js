@@ -21,31 +21,33 @@ const distanceXend = (this.x)
 
 if (distanceXend >= -calculateVwToPx(270) ) {
 
-gsap.to(".panel.three",{
+gsap.to(".panel.two",{
 x:this.x,
 duration:0,
 });
 
 
-
-
-
-if (distanceXend >= -calculateVwToPx(185))
+if (distanceXend >= -calculateVwToPx(210))
       // Snap to the target if the threshold is met
 {
 
-console.log('snap');
+console.log('three disable');
 this.disable();
-draggable3.enable();
+draggable2.enable();
 
+gsap.to(".panel.three",{
+x:-calculateVwToPx(180),
+duration:0,
+});
+
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(180),
+
+});
 
 
 }
-
-
-
-
-
 
 }
 
@@ -312,5 +314,6 @@ duration:0,
 
 
 });
+
 
 
