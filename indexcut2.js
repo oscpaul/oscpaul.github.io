@@ -32,7 +32,7 @@ if (distanceXend >= -calculateVwToPx(210))
 
 console.log('three disable');
 this.disable();
-draggable2.enable();
+draggable3.enable();
 
 gsap.to(".panel.three",{
 x:-calculateVwToPx(180),
@@ -306,6 +306,7 @@ duration:0,
 
 
 });
+
 
 
 
