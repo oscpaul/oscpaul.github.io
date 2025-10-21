@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 const draggableElement = document.querySelector(".panel.one");
 const startX = draggableElement.offsetLeft;
 const myDiv = document.getElementById('svgtext2');
+
+
+let draggable4= Draggable.create(".panel.four",{
+type:"x",
+
+})[0];
+draggable4.disable();
+
+
 let draggable3= Draggable.create(".panel.three",{
 type:"x",
 
@@ -36,7 +45,38 @@ console.log('snap');
 this.disable();
 draggable2.enable();
 
+
+
 }
+
+}
+
+else{
+
+
+gsap.to(".panel.four",{
+x:this.x,
+duration:0,
+});
+
+if (distanceXend <= -calculateVwToPx(255))
+      // Snap to the target if the threshold is met
+{
+
+gsap.to(".panel.three",{
+x:-calculateVwToPx(270),
+});
+
+gsap.to(".panel.four",{
+x:-calculateVwToPx(270),
+});
+
+console.log('snap');
+this.disable();
+draggable4.enable();
+
+}
+
 
 }
 
@@ -95,17 +135,32 @@ duration:0,
 
 
 
-if (distanceXend <= -calculateVwToPx(170))
+if (distanceXend <= -calculateVwToPx(175))
       // Snap to the target if the threshold is met
 {
+
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(180),
+
+});
+
+gsap.to(".panel.three",{
+x:-calculateVwToPx(180),
+
+});
+
+gsap.to(".panel.four",{
+x:-calculateVwToPx(180),
+duration:0,
+});
+
 
 console.log('snap');
 this.disable();
 draggable3.enable();
 
 }
-
-
 
 
 
@@ -152,21 +207,25 @@ x:0,
     const distanceXend = (this.x)
     
 
-if (distanceXend <= - calculateVwToPx(80) ) {
+if (distanceXend <= - calculateVwToPx(85) ) {
       // Snap to the target if the threshold is met
 console.log("distancexend");
 
 
 gsap.to(".panel.one",{
-x:-calculateVwToPx(80),
+x:-calculateVwToPx(90),
 
 });
 
 gsap.to(".panel.two",{
-x:-calculateVwToPx(80),
+x:-calculateVwToPx(90),
 
 });
 
+gsap.to(".panel.three",{
+x:-calculateVwToPx(90),
+duration:0,
+});
 
 this.disable();
 draggable2.enable();
@@ -188,5 +247,4 @@ duration:0,
 
 
 });
-
 
