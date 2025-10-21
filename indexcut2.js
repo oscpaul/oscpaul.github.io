@@ -25,7 +25,7 @@ scrollContainer.addEventListener('scroll', () => {
 const horizontalSections = gsap.utils.toArray(".containersection"); // Select all sections
 
 gsap.to(horizontalSections, {
-  xPercent: -100 * (horizontalSections.length - 1)*, // Move the wrapper left
+  xPercent: -100 * (horizontalSections.length - 1), // Move the wrapper left
   ease: "none", // No easing for a linear scroll
  
 });
@@ -155,5 +155,6 @@ duration:0,
 
 
 });
+
 
 
