@@ -13,7 +13,7 @@ body {
 }
 .panel {
   flex-shrink: 0;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -26,3 +26,4 @@ body {
 .two { background-color: #6a9c9f; }
 .three { background-color: #e56b6f; }
 .four { background-color: #4c6a99; }
+
