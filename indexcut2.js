@@ -23,13 +23,13 @@ const myDiv = document.getElementById('svgtext2');
 
 myDiv.addEventListener('click', function() {
 gsap.to(".panel.one", {
-  xPercent: -90,
+  xPercent: -100,
   duration: 1,
   ease: "power2.inOut"
 });
 
 gsap.to(".panel.two", {
-  xPercent: -90,
+  xPercent: -100,
   duration: 1,
   ease: "power2.inOut"
 });
@@ -98,6 +98,7 @@ const dragThreshold = 100;
     console.log(window.mobileCheck())
 
 });
+
 
 
 
