@@ -1,4 +1,4 @@
-=    function calculateVwToPx(vwValue) {
+    function calculateVwToPx(vwValue) {
         const viewportWidth = window.innerWidth;
         return (viewportWidth * vwValue) / 100;
     }
@@ -312,4 +312,5 @@ duration:0,
 
 
 });
+
 
