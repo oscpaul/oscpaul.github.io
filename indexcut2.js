@@ -68,22 +68,12 @@ duration:0,
 })
 
 
-.to( '.svgtext4', {
-color:"blue",
-duration:0,
-})
-.to(mask4, {
-  width: "100%",
-duration:20,
-})
-.to( '.svgtext4', {
-color:"black",
-duration:0,
-})
+
 
 
 
 });
+
 
 
 
