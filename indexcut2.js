@@ -23,7 +23,12 @@ gsap.to(".section-2", {
 
 });
 
+// Assuming you've included the swiped-events library
+document.addEventListener('swiped-left', function(e) {
+  console.log('Swiped left!', e.target);
+});
 
+    
 window.addEventListener("wheel", (event) => {
   // event.deltaY will be positive for scrolling down, negative for scrolling up
   // event.deltaX will be positive for scrolling right, negative for scrolling left
@@ -74,6 +79,7 @@ scrollableDiv.addEventListener('scroll', function() {
 
 
 });
+
 
 
 
