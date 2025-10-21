@@ -21,7 +21,7 @@ const distanceXend = (this.x)
 
 if (distanceXend >= -calculateVwToPx(270) ) {
 
-gsap.to(".panel.two",{
+gsap.to(".panel.three",{
 x:this.x,
 duration:0,
 });
@@ -35,13 +35,13 @@ console.log('three disable');
 this.disable();
 draggable2.enable();
 
-gsap.to(".panel.three",{
+gsap.to(".panel.two",{
 x:-calculateVwToPx(180),
 duration:0,
 });
 
 
-gsap.to(".panel.two",{
+gsap.to(".panel.three",{
 x:-calculateVwToPx(180),
 
 });
@@ -314,6 +314,7 @@ duration:0,
 
 
 });
+
 
 
 
