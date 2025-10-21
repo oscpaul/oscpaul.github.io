@@ -158,12 +158,12 @@ console.log("distancexend");
 
 
 gsap.to(".panel.one",{
-x:-900,
+x:-calculateVwToPx(80),
 
 });
 
 gsap.to(".panel.two",{
-x:-900,
+x:-calculateVwToPx(80),
 
 });
 
@@ -188,4 +188,5 @@ duration:0,
 
 
 });
+
 
