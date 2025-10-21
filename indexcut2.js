@@ -33,13 +33,13 @@ let myObserver = Observer.create({
 
 
 gsap.to(".panel.one", {
-  xPercent: -90,
+  xPercent: 0,
   duration: 1,
   ease: "power2.inOut"
 });
 
 gsap.to(".panel.two", {
-  xPercent: -90,
+  xPercent: 0,
   duration: 1,
   ease: "power2.inOut"
 });
@@ -62,6 +62,7 @@ gsap.to(".panel.two", {
 
 
 });
+
 
 
 
