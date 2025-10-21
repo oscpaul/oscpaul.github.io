@@ -1,37 +1,92 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 
- Observer.create({
-        target: window, // Or any specific element you want to observe
-        type: "wheel,touch,scroll,pointer", // Listen for various input types
-        onLeft: () => {
-            console.log("Scrolling left!");
-            // Add your animation or logic here
-        },
-        onChangeX: (self) => {
-            // This callback fires on any change in the x-axis scroll
+ 
+const element = document.querySelector('.panel.one');
+const rect = element.getBoundingClientRect();
+
+var xRelativeToViewport = rect.left+calculateVwToPx(20);
+
+
+console.log(`Element X relative to viewport: ${xRelativeToViewport}`);
+
+const draggableElement = document.querySelector(".panel.one");
+const startX = draggableElement.offsetLeft;
+const myDiv = document.getElementById('svgtext2');
+
+
+let draggable2= Draggable.create(".panel.two",{
+})[0];
+draggable2.disable();
+
+
+let draggable1= Draggable.create(".panel.one",{
+type:"x",
+intertia:true,
+
+onDrag:function(){
+  const distanceX = (this.x - startX);
+if (distanceX >= 10 ) {
+      // Snap to the target if the threshold is met
+console.log("distance");
+gsap.to(".panel.one",{
+x:0,
+});
+
+gsap.to(".panel.two",{
+x:0,
+});
+
+
+    } else {
+      // Snap back to the original position if not
+    }
+
+
+
+    const distanceXend = (this.x)
+    
+
+if (distanceXend <= -900 ) {
+      // Snap to the target if the threshold is met
+console.log("distancexend");
+
+
+gsap.to(".panel.one",{
+x:-900,
+
+});
+
+gsap.to(".panel.two",{
+x:-900,
+
+});
+
+
+this.disable();
+draggable2.enable();
+
+    } else {
+      // Snap back to the original position if not
+    }
     
 
 
 
-        }
-    });
-
-
-window.addEventListener('wheel', event => {
-  if (event.deltaX < 0) {
-    console.log('Scrolling up (or attempting to)');
-  } else if (event.deltaX > 0) {
-
-gsap.to(".panel.one",{
-x:-event.deltaX,
+gsap.to(".panel.two",{
+x:this.x,
+duration:0,
 
 });
+},
+ onDragEnd: function() {
 
-    console.log('Scrolling right (or attempting to)');
- console.log(event.deltaX);
   }
-  // You can also analyze event.deltaX for horizontal wheeling
-});
 
 
+
+
+
+})[0];
+
 });
+
