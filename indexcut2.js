@@ -33,7 +33,7 @@ gsap.to(".panel.two", {
   duration: 1,
   ease: "power2.inOut"
 });
-
+});
 
 
 let myObserver = Observer.create({
@@ -68,10 +68,28 @@ gsap.to(".panel.two", {
     console.log("Pointer release detected.");
   },
 });
+const draggableElement = document.querySelector(".panel.one");
+const startX = draggableElement.offsetLeft;
+const startY = draggableElement.offsetTop;
 
+const dragThreshold = 100;
+    var t1=Draggable.create(".panel.one", {
+  type: "x",
+  inertia: true, // Requires InertiaPlugin for this snap to work
+  onDragEnd: function() {
+    // Calculate the distance dragged from the starting position
+    const distanceX = Math.abs(this.x - startX);
+    
+
+    if (distanceX >= dragThreshold ) {
+      // Snap to the target if the threshold is met
+      gsap.to(this.target, { xPercent:-90 });
+    } else {
+      // Snap back to the original position if not
+      gsap.to(this.target, { xPercent:-90 });
+    }
+  }
 });
-
-
 
 }
 
@@ -80,6 +98,7 @@ gsap.to(".panel.two", {
     console.log(window.mobileCheck())
 
 });
+
 
 
 
