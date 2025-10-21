@@ -14,7 +14,7 @@ body {
 .panel {
   flex-shrink: 0;
   width: 90vw;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
 
@@ -35,5 +35,6 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
