@@ -22,8 +22,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 
+const scrollableElement = document.querySelector('.horizontal-container'); // Replace with your element's selector
 
-window.addEventListener('wheel', event => {
+scrollableElement.addEventListener('scroll', (event) => {
+  const scrollPositionX = event.target.scrollLeft;
+  console.log('Horizontal scroll position:', scrollPositionX);
+  // Implement your desired logic here based on scrollPositionX
+});
+
+
+    
+window.addEventListener('scroll', event => {
   if (event.deltaX < 0) {
     console.log('Scrolling up (or attempting to)');
   } else if (event.deltaX*25 > 250) {
@@ -44,6 +53,7 @@ x:-calculateVwToPx(90),
 
 
 });
+
 
 
 
