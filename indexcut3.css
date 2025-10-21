@@ -27,3 +27,11 @@ body {
 .three { background-color: #e56b6f; }
 .four { background-color: #4c6a99; }
 
+
+
+.svgtext{
+border:1px solid blue;
+position:relative;
+top:0;
+left:0;
+}
