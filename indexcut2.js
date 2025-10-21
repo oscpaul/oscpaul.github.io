@@ -9,48 +9,84 @@
 
 document.addEventListener("DOMContentLoaded", (event) => {
 
+const draggableElement = document.querySelector(".panel.one");
+const startX = draggableElement.offsetLeft;
+const myDiv = document.getElementById('svgtext2');
 
 
 
-
+let draggable2= Draggable.create(".panel.two",{
+})[0];
+draggable2.disable();
  
+let draggable1= Draggable.create(".panel.one",{
+type:"x",
+intertia:true,
+
+onDrag:function(){
+  const distanceX = (this.x - startX);
+if (distanceX >= 10 ) {
+      // Snap to the target if the threshold is met
+console.log("distance");
+gsap.to(".panel.one",{
+x:0,
+});
+
+gsap.to(".panel.two",{
+x:0,
+});
+
+
+    } else {
+      // Snap back to the original position if not
+    }
 
 
 
-   const targetElement = document.querySelector('.horizontal-container');
-    let startX = 0;
-    let currentX = 0;
-    let isSwiping = false;
+    const distanceXend = (this.x)
+    
 
-    targetElement.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        isSwiping = true;
-    });
+if (distanceXend <= -900 ) {
+      // Snap to the target if the threshold is met
+console.log("distancexend");
 
-    targetElement.addEventListener('touchmove', (e) => {
-        if (!isSwiping) return;
-        currentX = e.touches[0].clientX;
-        const diffX = currentX - startX;
 
-        // You can use diffX to determine the direction and magnitude of the swipe
-        if (diffX > 0) {
-            console.log('Swiping right:', diffX);
-            // Implement your desired action for swiping right
-        } else if (diffX < 0) {
-            console.log('Swiping left:', diffX);
-            // Implement your desired action for swiping left
-        }
-        // Optionally, prevent default touchmove behavior if you don't want native scrolling
-        // e.preventDefault();
-    });
+gsap.to(".panel.one",{
+x:-900,
 
-    targetElement.addEventListener('touchend', () => {
-        isSwiping = false;
-        // Reset startX or perform final actions
-    });
+});
 
+gsap.to(".panel.two",{
+x:-900,
 
 });
 
 
+this.disable();
+draggable2.enable();
 
+    } else {
+      // Snap back to the original position if not
+    }
+    
+
+
+
+gsap.to(".panel.two",{
+x:this.x,
+duration:0,
+
+});
+},
+ onDragEnd: function() {
+
+  }
+
+
+
+
+
+})[0];
+
+
+});
