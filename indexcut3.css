@@ -6,7 +6,8 @@
   width: 400vw;
 }
 
-html::-webkit-scrollbar {
+containersection::-webkit-scrollbar {
+  border:1px solid blue;
   display: none;
 }
 /* The individual full-screen sections */
@@ -42,3 +43,4 @@ svg {
         width: 0;
     }
 }
+
