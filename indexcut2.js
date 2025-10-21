@@ -6,79 +6,66 @@ document.addEventListener("DOMContentLoaded", (event) => {
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
-const myDiv = document.getElementById('svgtext2');
+const draggableDiv = document.getElementById('draggableDiv');
 
-myDiv.addEventListener('click', function() {
-gsap.to(".section-1", {
-  xPercent: -90,
-  duration: 1,
-  ease: "power2.inOut"
+let isDragging = false;
+let startX, startY;
+let initialX, initialY;
+
+draggableDiv.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  const touch = e.touches[0];
+  startX = touch.clientX;
+  startY = touch.clientY;
+  initialX = draggableDiv.offsetLeft;
+  initialY = draggableDiv.offsetTop;
+  draggableDiv.style.cursor = 'grabbing';
 });
 
-gsap.to(".section-2", {
-  xPercent: -90,
-  duration: 1,
-  ease: "power2.inOut"
-},"<");
+draggableDiv.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault(); // Prevent default scrolling behavior
+  const touch = e.touches[0];
+  const deltaX = touch.clientX - startX;
+  const deltaY = touch.clientY - startY;
 
+  draggableDiv.style.left = (initialX + deltaX) + 'px';
+  draggableDiv.style.top = (initialY + deltaY) + 'px';
 });
 
-// Assuming you've included the swiped-events library
-document.addEventListener('swiped-left', function(e) {
-  console.log('Swiped left!', e.target);
+draggableDiv.addEventListener('touchend', () => {
+  isDragging = false;
+  draggableDiv.style.cursor = 'grab';
 });
 
-    
-window.addEventListener("wheel", (event) => {
-  // event.deltaY will be positive for scrolling down, negative for scrolling up
-  // event.deltaX will be positive for scrolling right, negative for scrolling left
-
-  if (event.deltaX > 0) {
-    console.log("Simulated scroll down detected (no room to scroll)");
-    // Perform actions for "scrolling down"
-  } else if (event.deltaX < 0) {
-    console.log("Simulated scroll up detected (no room to scroll)");
-   gsap.to(".section-1", {
-  xPercent: 0,
-  duration: 1,
-  ease: "power2.inOut"
+// Optional: Add mouse events for desktop compatibility
+draggableDiv.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.clientX;
+  startY = e.clientY;
+  initialX = draggableDiv.offsetLeft;
+  initialY = draggableDiv.offsetTop;
+  draggableDiv.style.cursor = 'grabbing';
 });
 
-gsap.to(".section-2", {
-  xPercent: 0,
-  duration: 1,
-  ease: "power2.inOut"
-},"<");
-  }
+document.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const deltaX = e.clientX - startX;
+  const deltaY = e.clientY - startY;
 
-  // You can also prevent default scroll behavior if desired,
-  // though it might not be necessary if there's no actual scrollable content.
-  // event.preventDefault();
+  draggableDiv.style.left = (initialX + deltaX) + 'px';
+  draggableDiv.style.top = (initialY + deltaY) + 'px';
 });
 
-const mask = document.querySelectorAll(".mask");
-const mask2 = document.querySelectorAll(".mask2");
-const mask3 = document.querySelectorAll(".mask3");
-const mask4 = document.querySelectorAll(".mask4");
-
-let t1=gsap.timeline();
-
-// For the entire window/page
-window.addEventListener('scroll', function() {
-  // Code to execute when the page is scrolled
-  console.log('Page scrolled!');
-});
-
-// For a specific element
-const scrollableDiv = document.getElementById('yourScrollableElementId');
-scrollableDiv.addEventListener('scroll', function() {
-  // Code to execute when the div is scrolled
-  console.log('Div scrolled!');
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  draggableDiv.style.cursor = 'grab';
 });
 
 
-
 });
+
 
 
 
