@@ -1,3 +1,9 @@
+    function calculateVwToPx(vwValue) {
+        const viewportWidth = window.innerWidth;
+        return (viewportWidth * vwValue) / 100;
+    }
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
 
     Observer.create({
@@ -38,6 +44,7 @@ x:-calculateVwToPx(90),
 
 
 });
+
 
 
 
