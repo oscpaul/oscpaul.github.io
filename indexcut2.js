@@ -3,17 +3,22 @@
         return (viewportWidth * vwValue) / 100;
     }
 document.addEventListener("DOMContentLoaded", (event) => {
+// Register the Draggable and Inertia plugins
+gsap.registerPlugin(Draggable, InertiaPlugin);
 
+// Get the array of sections
 let sections = gsap.utils.toArray(".panel");
 let totalWidth = (sections.length - 1) * 100; // Total percentage to drag
 
-// Example using Draggable from GSAP with InertiaPlugin
-var myDraggable = Draggable.create(".snap-wrapper", {
-    type: "x", // or "x", or "y"
-    inertia: true,
+Draggable.create(".snap-wrapper", {
+  type: "x", // Restrict dragging to the horizontal axis
+  inertia: true, // Enable inertia for a smooth snap effect
+  
+  // Set the boundaries for the dragging motion
   bounds: ".horizontal-container",
   
- snap: {
+  // Configure snapping
+  snap: {
     x: gsap.utils.snap(-100, (value) => {
       // Calculate the snap value based on the closest multiple of -100
       // Clamping ensures the snap point stays within the allowed boundaries
@@ -22,23 +27,18 @@ var myDraggable = Draggable.create(".snap-wrapper", {
       return snapTarget;
     })
   },
-
-
- onDragEnd: function() {
+  
+  // When the drag ends, animate to the snapped position
+  onDragEnd: function() {
     gsap.to(this.target, {
       x: this.x,
       ease: "power2.out"
     });
   }
-
-
-
-
+});
 
 });
 
-
-});
 
 
 
