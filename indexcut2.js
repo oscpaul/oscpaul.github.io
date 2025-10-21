@@ -8,11 +8,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const myDiv = document.getElementById('svgtext2');
 
-myDiv.addEventListener('click', function() {
-gsap.to(window, { scrollTo: { x: ".section-2" }, duration: 1 });
 
-
-});
 
 const mask = document.querySelectorAll(".mask");
 const mask2 = document.querySelectorAll(".mask2");
@@ -88,6 +84,7 @@ duration:0,
 
 
 });
+
 
 
 
