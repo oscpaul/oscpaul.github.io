@@ -4,36 +4,40 @@
     }
 document.addEventListener("DOMContentLoaded", (event) => {
 
-let sections = gsap.utils.toArray(".panel");
-let totalWidth = (sections.length - 1) * 100; // Total percentage to drag
 
-// Example using Draggable from GSAP with InertiaPlugin
-var myDraggable = Draggable.create(".snap-wrapper", {
-    type: "x", // or "x", or "y"
-    inertia: true,
-  bounds: ".horizontal-container",
-  
- snap: {
-    x: gsap.utils.snap(-100, (value) => {
-      // Calculate the snap value based on the closest multiple of -100
-      // Clamping ensures the snap point stays within the allowed boundaries
-      let clampedValue = Math.min(0, Math.max(-totalWidth, value));
-      let snapTarget = Math.round(clampedValue / 100) * 100;
-      return snapTarget;
-    })
+
+
+
+const myDiv = document.getElementById('svgtext2');
+
+myDiv.addEventListener('click', function() {
+gsap.to(".panel.one", {
+  xPercent: -90,
+  duration: 1,
+  ease: "power2.inOut"
+});
+
+gsap.to(".panel.two", {
+  xPercent: -90,
+  duration: 1,
+  ease: "power2.inOut"
+});
+
+
+
+let myObserver = Observer.create({
+  target: ".panel.one",
+  type: "pointer", // Listens for mouse and touch events
+  onDrag: () => {
+    console.log("Observer is detecting a drag!");
   },
-
-
-
- onDragEnd: function() {
-    gsap.to(this.target, {
-      x: this.x,
-      ease: "power2.out"
-    });
-  }
-
-
-
+  onPress: () => {
+    console.log("Pointer press detected.");
+  },
+  onRelease: () => {
+    console.log("Pointer release detected.");
+  },
+});
 
 });
 
