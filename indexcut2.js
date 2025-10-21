@@ -1,4 +1,4 @@
-    function calculateVwToPx(vwValue) {
+=    function calculateVwToPx(vwValue) {
         const viewportWidth = window.innerWidth;
         return (viewportWidth * vwValue) / 100;
     }
@@ -16,6 +16,49 @@ const myDiv = document.getElementById('svgtext2');
 
 let draggable4= Draggable.create(".panel.four",{
 type:"x",
+onDrag:function(){
+const distanceXend = (this.x)
+
+if (distanceXend >= -calculateVwToPx(270) ) {
+
+gsap.to(".panel.three",{
+x:this.x,
+duration:0,
+});
+
+
+
+
+
+if (distanceXend >= -calculateVwToPx(185))
+      // Snap to the target if the threshold is met
+{
+
+console.log('snap');
+this.disable();
+draggable3.enable();
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+},
+
+
 
 })[0];
 draggable4.disable();
@@ -29,7 +72,7 @@ onDrag:function(){
 const distanceXend = (this.x)
 
 
-if (distanceXend >= -calculateVwToPx(170) ) {
+if (distanceXend >= -calculateVwToPx(180) ) {
 
 gsap.to(".panel.two",{
 x:this.x,
@@ -37,14 +80,24 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(80))
+if (distanceXend >= -calculateVwToPx(120))
       // Snap to the target if the threshold is met
 {
 
-console.log('snap');
+console.log('three disable');
 this.disable();
 draggable2.enable();
 
+gsap.to(".panel.three",{
+x:-calculateVwToPx(90),
+duration:0,
+});
+
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(90),
+
+});
 
 
 }
@@ -59,7 +112,7 @@ x:this.x,
 duration:0,
 });
 
-if (distanceXend <= -calculateVwToPx(255))
+if (distanceXend <= -calculateVwToPx(225))
       // Snap to the target if the threshold is met
 {
 
@@ -106,7 +159,7 @@ onDrag:function(){
 const distanceXend = (this.x)
 
 
-if (distanceXend >= -calculateVwToPx(80) ) {
+if (distanceXend >= -calculateVwToPx(90) ) {
 
 gsap.to(".panel.one",{
 x:this.x,
@@ -114,13 +167,25 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(10))
+if (distanceXend >= -calculateVwToPx(30))
       // Snap to the target if the threshold is met
 {
 
-console.log('snap');
+console.log('two disable');
 this.disable();
 draggable1.enable();
+
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(0),
+duration:0,
+});
+
+
+gsap.to(".panel.one",{
+x:-calculateVwToPx(0),
+
+});
 
 }
 
@@ -135,7 +200,7 @@ duration:0,
 
 
 
-if (distanceXend <= -calculateVwToPx(175))
+if (distanceXend <= -calculateVwToPx(145))
       // Snap to the target if the threshold is met
 {
 
@@ -156,7 +221,7 @@ duration:0,
 });
 
 
-console.log('snap');
+
 this.disable();
 draggable3.enable();
 
@@ -207,7 +272,7 @@ x:0,
     const distanceXend = (this.x)
     
 
-if (distanceXend <= - calculateVwToPx(85) ) {
+if (distanceXend <= - calculateVwToPx(55) ) {
       // Snap to the target if the threshold is met
 console.log("distancexend");
 
