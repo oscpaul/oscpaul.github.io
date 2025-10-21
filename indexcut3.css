@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  overflow: hidden;
+
 }
 .horizontal-container {
   overflow: hidden;
@@ -35,4 +35,5 @@ position:relative;
 top:0;
 left:0;
 }
+
 
