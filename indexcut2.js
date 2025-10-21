@@ -152,7 +152,7 @@ x:0,
     const distanceXend = (this.x)
     
 
-if (distanceXend <= -900 ) {
+if (distanceXend <= - calculateVwToPx(80) ) {
       // Snap to the target if the threshold is met
 console.log("distancexend");
 
@@ -188,4 +188,5 @@ duration:0,
 
 
 });
+
 
