@@ -45,7 +45,7 @@ duration:0,
 });
 
 
-gsap.to(".panel.one",{
+gsap.to(".panel.four",{
 x:-calculateVwToPx(180),
 duration:0,
 });
@@ -319,6 +319,7 @@ duration:0,
 
 
 });
+
 
 
 
