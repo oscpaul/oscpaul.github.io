@@ -38,6 +38,19 @@ gsap.to(".panel.three",{
 x:-calculateVwToPx(180),
 duration:0,
 });
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(180),
+duration:0,
+});
+
+
+gsap.to(".panel.one",{
+x:-calculateVwToPx(180),
+duration:0,
+});
+
+    
 }
 
 
@@ -306,6 +319,7 @@ duration:0,
 
 
 });
+
 
 
 
