@@ -180,17 +180,7 @@ lastScroll=currentScroll;
   </video>
 
 
-<button onclick="restartVideo()">Restart Video</button>
 
-<script>
-    function restartVideo() {
-    var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ type: 'video/mp4', src: 'mp41.mp4' });
-   player.play();
-
-    }
-</script>
 </div>
 	
 	</section>
@@ -231,17 +221,9 @@ lastScroll=currentScroll;
   </video>
 
 
-<button onclick="restartVideo1()">Restart Video</button>
 
-<script>
-    function restartVideo1() {
-    var player = videojs('my-video-1'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ type: 'video/mp4', src: 'mp42.mp4' });
-   player.play();
 
-    }
-</script>
+
 </div>
 
 
@@ -268,15 +250,23 @@ lastScroll=currentScroll;
 
 
 
+  <script>
+    function restartVideo() {
+    var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ src: 'https://vod-adaptive-ak.vimeocdn.com/exp=1761195000~acl=%2F406e34fe-312b-429b-aea2-8f87581d6fd9%2F%2A~hmac=9761074ad8cef1881ef79134f3af07b401c928ae19468d663179641ecd216cf4/406e34fe-312b-429b-aea2-8f87581d6fd9/v2/playlist/av/406e34fe/avf/fa02dd73/media.m3u8?pathsig=8c953e4f~XU2J-PAg4Q3tZf3mPQwGr4cdyoTjfOnowNQldWW_QOc&qsr=1&r=dXMtZWFzdDE%3D&sf=ts&st=video' });
+   player.play();
 
+    }
+</script>
 
 	<div class="flexrows-1">
 <h1> Two Brothers Auto</h1>
 <h2>Addison, IL 60101
 </h2>
 
-		<button class="restartbutton" onclick="restartVideo3()">Restart Video</button>
-<button class="restartbutton" onclick="restartVideo3()">Restart Video</button>
+		<button class="restartbutton" onclick="restartVideo()">Restart Video</button>
+<button class="restartbutton" onclick="restartVideo()">Restart Video</button>
 	</div>	<div class="flexrows-1">
 <h1> Two Brothers Auto</h1>
 <h2>Addison, IL 60101
