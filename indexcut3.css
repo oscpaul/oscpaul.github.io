@@ -3,6 +3,9 @@ height:300px;
 width:300px;
 border:1px solid blue;
 }
+.mp4div video{
+
+}
 body {
   margin: 0;
 
@@ -56,6 +59,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
