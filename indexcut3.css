@@ -1,3 +1,12 @@
+.my-video-dimensions{
+width:168.75px;
+height:300px;
+}
+.my-video-1-dimensions{
+width:168.75px;
+height:300px;
+}
+
 .mp4div{
 height:300px;
 width:300px;
@@ -61,6 +70,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
