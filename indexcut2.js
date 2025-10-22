@@ -28,7 +28,7 @@ x:this.x,
 duration:0,
 });
 
-if (distanceXend >= -calculateVwToPx(230))
+if (distanceXend >= -calculateVwToPx(210))
       // Snap to the target if the threshold is met
 {
 
@@ -84,7 +84,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(190))
+if (distanceXend >= -calculateVwToPx(120))
       // Snap to the target if the threshold is met
 {
 
@@ -173,7 +173,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(100))
+if (distanceXend >= -calculateVwToPx(30))
       // Snap to the target if the threshold is met
 {
 
@@ -278,7 +278,7 @@ x:0,
     const distanceXend = (this.x)
     
 
-if (distanceXend <= - calculateVwToPx(10) ) {
+if (distanceXend <= - calculateVwToPx(55) ) {
       // Snap to the target if the threshold is met
 console.log("distancexend");
 
@@ -318,6 +318,7 @@ duration:0,
 
 
 });
+
 
 
 
