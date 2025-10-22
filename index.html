@@ -248,51 +248,7 @@ lastScroll=currentScroll;
     </section>
     <section class="panel three">
 
-	<div class="mp4div">
 
-   <p>Watch this video to get started with Full-Stack Development:</p>
-
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-
-
-
-  <video
-    id="my-video-3"
-    class="video-js"
-   playsinline
-   autoplay
-    muted
-    preload="auto"
-    width="auto"
-    height="auto"
-    poster="MY_VIDEO_POSTER.jpg"
-    data-setup="{}"
-  >
-    <source src="playlist (1)" type="video/mp4" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
-  </video>
-
-
-<button onclick="restartVideo3()">Restart Video</button>
-
-<script>
-    function restartVideo3() {
-    var player = videojs('playlist (1)'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ type: 'video/mp4', src: 'video2.mp4' });
-   player.play();
-
-    }
-</script>
-</div>
 	</section>
     <section class="panel four">
 
