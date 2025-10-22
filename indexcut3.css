@@ -34,7 +34,8 @@ border:2px solid blue;
   width: 360vw; /* (number of sections) * 100vw */
 }
 .flextext{
-
+  margin-top: 2em;   /* Sets the top margin to 20 pixels */
+  margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
   z-index:2;
 display:flex;
 width:360vw;
@@ -70,6 +71,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
