@@ -1,28 +1,52 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" type="text/css" href="menu.css"/>
+	 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index1.css"/>
-
+  	
 	<link rel="stylesheet" type="text/css" href="fonts.css"/>
   	<link rel="stylesheet" type="text/css" href="fonts2.css"/>
+
+	<link rel="stylesheet" type="text/css" href="menu.css"/>
+
 <link rel="stylesheet" type="text/css" href="index2.css"/>
     <link rel="stylesheet" type="text/css" href="index3.css">
         <link rel="stylesheet" type="text/css" href="fullcss.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Observer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
  <script src="indexcut2.js"></script>  
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
 
 <link rel="stylesheet" type="text/css" href="indexcut3.css"/>
+  
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
 
 <header class="header1">
-
-
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
@@ -31,11 +55,269 @@
     <a href="#">Link 3</a>
   </div>
 </div>
-	
+
 </header>
+
+
+
+
+<script>
+let lastScroll=0;
+	let scrollupdown=0;
+
+
+  window.addEventListener('scroll' ,() => {
+
+    
+const currentScroll=window.pageYOffset;
+
+
+
+
+scrollupdown+=(currentScroll-lastScroll);
+
+if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
+{
+		scrollupdown=0;
+document.querySelector(".header1").classList.remove("scroll-down");
+document.querySelector(".header1").classList.add("scroll-up");
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==1){
+	if (scrollupdown>300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==-1){
+	if (scrollupdown<=-300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+  
+
+
+if (currentScroll<=200){
+  document.querySelector(".header1").classList.remove("scroll-down");
+document.querySelector(".header1").classList.add("scroll-up");
+console.log('ok');  
+}
+
+
+lastScroll=currentScroll;
+
+  });
+</script>
+
+
+
+
+
 
 <section>
 
+
+
+
+  
+
+
+
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
+</section>
+
+
+
+<script>
+	document.querySelector('.h2div').textContent=window.innerWidth;
+</script>
+<div class="flexrows-3"></div>
+
+
+
+
+	 <div class="flexrows-"> 	</div>
+
+<div class="horizontal-container">
+ <div class="flextext">
+    		   <p id="svgtext1" class="svgtext text-black svgtext1">Airloom architecture more efficiently converts kinetic energy into mechanical energy</p>
+		   <p id="svgtext2" class="svgtext text-black svgtext2">Airloom's simple, robust structure enables a high-volume of swept area without massive structures</p>
+		  <p id="svgtext3" class="svgtext text-black svgtext3">Airloom is built to be a 20 year asset and survive in the harshest environments</p>
+		  <p id="svgtext4" class="svgtext  text-black svgtext4">Airloom's site layout and smaller wake means it can create more energy in less space</p>
+
+  </div>
+  <div class="snap-wrapper">
+    <section class="panel one">
+<div class="mp4div">
+
+          <!-- CSS  -->
+    <!-- file source is from: https://gist.github.com/Fazzani/8f89546e188f8086a46073dc5d4e2928 -->
+    <!-- this html page is from: https://stackoverflow.com/questions/19782389/playing-m3u8-files-with-html-video-tag -->
+    <!-- sample page: https://jlypnc.csb.app/ -->
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet" />
+
+    <h1>sample m3u8</h1>
+    <!-- HTML -->
+    <video
+      id="hls-example2"
+         class=""
+          preload="auto"
+          muted=""
+          playsinline=""
+      width="400"
+      height="300"
+    >
+      <source
+        type="application/x-mpegURL"
+        src="playlist (1).m3u8"
+"
+      />
+    </video>
+</div>
+    <!-- JS code -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+    <script>
+      var player = videojs("hls-example2");
+      player.play();
+    </script>
+
+	
+	</section>
+    <section class="panel two">
+
+
+
+
+<div class="mp4div">
+
+          <!-- CSS  -->
+    <!-- file source is from: https://gist.github.com/Fazzani/8f89546e188f8086a46073dc5d4e2928 -->
+    <!-- this html page is from: https://stackoverflow.com/questions/19782389/playing-m3u8-files-with-html-video-tag -->
+    <!-- sample page: https://jlypnc.csb.app/ -->
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet" />
+
+    <h1>sample m3u8</h1>
+    <!-- HTML -->
+    <video
+      id="hls-example"
+         class=""
+          preload="auto"
+          muted=""
+          playsinline=""
+      width="400"
+      height="300"
+    >
+      <source
+        type="application/x-mpegURL"
+        src="playlist (9).m3u8"
+"
+      />
+    </video>
+</div>
+    <!-- JS code -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+    <script>
+      var player = videojs("hls-example");
+      player.play();
+    </script>
+
+
+
+
+
+    </section>
+    <section class="panel three">
+
+	
+	</section>
+    <section class="panel four">
+
+	<div class="mp4div">
+
+          <!-- CSS  -->
+    <!-- file source is from: https://gist.github.com/Fazzani/8f89546e188f8086a46073dc5d4e2928 -->
+    <!-- this html page is from: https://stackoverflow.com/questions/19782389/playing-m3u8-files-with-html-video-tag -->
+    <!-- sample page: https://jlypnc.csb.app/ -->
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet" />
+
+    <h1>sample m3u8</h1>
+    <!-- HTML -->
+    <video
+      id="hls-example3"
+         class=""
+          preload="auto"
+          muted=""
+          playsinline=""
+      width="400"
+      height="300"
+    >
+      <source
+        type="application/x-mpegURL"
+        src="playlist (8).m3u8"
+"
+      />
+    </video>
+</div>
+    <!-- JS code -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+    <script>
+      var player = videojs("hls-example3");
+      player.play();
+    </script>
+	
+	</section>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<section>
+
+
+
+
+
+
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
+</section>
+
+
+<section>
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
+</section>
+
+
+
+<section>
 <h1> Two Brothers Auto</h1>
 <h2>Addison, IL 60101</h2>
 	<h2 class="h2div"></h2>
@@ -48,68 +330,90 @@
 
 
 
+    
+
+
+
+
+  
+
+
+
+<script>
+
+window.onload = function() {
+if (false){
+    // This code will execute once the DOM is fully loaded.
+    const imageContainer = document.getElementById('tooltip'); // Assuming an element exists to hold the image
+    const newImage = document.createElement('img');
+    newImage.src = 'undraw_reviewed-docs_tng3.png'; // Set the source of your image
+    newImage.alt = 'Description of your image'; // Provide alternative text for accessibility
+
+    imageContainer.appendChild(newImage); // Add the image to the container
+
+
+
+  // This code will execute once the DOM is fully loaded.
+    const imageContainer1 = document.getElementById('png1'); // Assuming an element exists to hold the image
+    const newImage1 = document.createElement('img');
+    newImage1.src = 'undraw_certification_i2m0.png'; // Set the source of your image
+    newImage1.alt = 'Description of your image'; // Provide alternative text for accessibility
+
+    imageContainer1.appendChild(newImage1); // Add the image to the container
+
+
+
+	
+    // This code will execute once the DOM is fully loaded.
+    const imageContainer2 = document.getElementById('png2'); // Assuming an element exists to hold the image
+    const newImage2 = document.createElement('img');
+    newImage2.src = 'undraw_car-salesman_ni2a.png'; // Set the source of your image
+    newImage2.alt = 'Description of your image'; // Provide alternative text for accessibility
+
+    imageContainer2.appendChild(newImage2); // Add the image to the container
+
+}
+};
+
+
+
+
+
+</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 		
 
 
+<div class="z-videoModalShadow pointer-events-none bg-black bg-opacity-80 fixed inset-0 opacity-0"></div><div style="aspect-ratio:1280 / 720" class="h-auto aspect-video w-full relative"><div class="absolute inset-0 w-full h-full flex items-center justify-center"><video class="absolute inset-0 w-full h-full max-h-full transition-opacity duration-300 object-cover object-center video opacity-100" preload="auto" muted="" loop="" playsinline="" autoplay="" src="mp42.mp4"></video></div></div>
 
 
 
+ 
+	 <div class="flexrows-3"> </div> 
+
+<section class="pt-48 md:pt-[350px] gutter-p pb-6 module" data-bg="header-bg-white"><div class="md:max-w-[70%] w-full"><h1 class="text-black">Call Two Brothers Auto. <span class="text-grey2">Experts in Muffler, Emmissions, Engine</span></h1></div><div class="flex gap-2.5"></div></section>
 
 
-
-
-	 
-
-	 <div class="flexrows-"> 	</div>
-
-<div class="horizontal-container">
-  <div class="snap-wrapper">
-    <section class="panel one">
-		   <p id="svgtext1" class="svgtext text-black svgtext1">Airloom architecture more efficiently converts kinetic energy into mechanical energy</p>
-
-	
-	</section>
-    <section class="panel two">
-		   <p id="svgtext2" class="svgtext text-black svgtext2">Airloom's simple, robust structure enables a high-volume of swept area without massive structures</p>
-
-	
-	</section>
-    <section class="panel three">
-		  <p id="svgtext3" class="svgtext text-black svgtext3">Airloom is built to be a 20 year asset and survive in the harshest environments</p>
-
-	
-	</section>
-    <section class="panel four">
-		  <p id="svgtext4" class="svgtext  text-black svgtext4">Airloom's site layout and smaller wake means it can create more energy in less space</p>
-
-	
-	
-	</section>
-  </div>
-</div>
-
-
-
-
-
-
-<div class="flexrows-1"></div>
-<div class="flexrows-1"></div>
-<div class="flexrows-1"></div>
-
-
-<div class="lottiewrapper">
-<div class="lottie">
-		<script src='https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV.js' async="true"></script>
-</div>
-
-<div id="tooltip" class="tooltip">This is a tooltip.</div>
-</div>
-
-
-
-
-
+	 <div class="flexrows-3">
+    
+  <div class="col-span-12 md:col-span-6 md:!col-start-7"><p class="text-black">“We spend a ton of time in the hardware, energy and industrials spaces and my sense is that Airloom can not only serve as a catalyst for low-cost utility-scale energy, but also lead to a rapid, mass manufacturable source of resilient energy”</p><p class="">Phil Larochelle</p><p class="text-grey3">Breakthrough Energy Ventures</p></div>
+  
+  </div> 
 
 
 
