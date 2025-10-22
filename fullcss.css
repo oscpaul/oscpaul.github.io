@@ -1,4 +1,21 @@
+.lottie img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
+.lottiewrapper{
+  width:100%;
+  
+  display:flex;
+  justify-content:center;
+  
+}
+.lottie {
+
+  width:300px;
+  height:500px;
+ 
 
 .scroll-container {
   display: flex; /* Arranges children horizontally */
