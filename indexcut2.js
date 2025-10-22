@@ -28,7 +28,7 @@ x:this.x,
 duration:0,
 });
 
-if (distanceXend >= -calculateVwToPx(210))
+if (distanceXend >= -calculateVwToPx(240))
       // Snap to the target if the threshold is met
 {
 
@@ -330,6 +330,7 @@ duration:0,
 
 
 });
+
 
 
 
