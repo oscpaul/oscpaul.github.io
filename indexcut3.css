@@ -1,24 +1,59 @@
-.my-video-dimensions{
-top:-20em;
-width:337.5px;
-height:600px;
 
-}
-.my-video-1-dimensions{
-width:168.75px;
-height:300px;
-}
+.restartbutton{
 
+position:relative;
+border:1px solid blue; 
+}
 .mp4div{
-height:300px;
-width:300px;
-border:1px solid blue;
+position:relative;
+height:100%;
+width:100%;
+border:1px solid green;
+display:flex;
+justify-content:center;
 }
-.mp4div video{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+
+
+.my-video-dimensions{
+position:absolute;
+
+top:0;
+object-fit:contain;
+width:40%;
+height:auto;
 }
+
+
+.my-video-1-dimensions{
+position:absolute;
+
+top:0;
+object-fit:contain;
+width:40%;
+height:auto;
+}
+
+.my-video-2-dimensions{
+position:absolute;
+
+top:0;
+object-fit:contain;
+width:100%;
+height:auto;
+max-height:100%;
+}
+
+
+.my-video-4-dimensions{
+position:absolute;
+
+top:0;
+object-fit:contain;
+width:100%;
+height:auto;
+max-height:100%;
+}
+
 body {
   margin: 0;
 
@@ -26,7 +61,7 @@ body {
 .horizontal-container {
   z-index:-1;
   overflow: hidden;
-  width: 100%;
+  width: 360vw;
 border:2px solid blue;
 
   height: 50vh;
@@ -73,6 +108,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
