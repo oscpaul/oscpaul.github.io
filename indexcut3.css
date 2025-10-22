@@ -1,6 +1,8 @@
 .my-video-dimensions{
-width:168.75px;
-height:300px;
+top:-20em;
+width:337.5px;
+height:600px;
+
 }
 .my-video-1-dimensions{
 width:168.75px;
@@ -71,6 +73,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
