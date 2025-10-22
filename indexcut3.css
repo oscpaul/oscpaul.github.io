@@ -1,3 +1,8 @@
+.mp4div{
+height:300px;
+width:300px;
+border:1px solid blue;
+}
 body {
   margin: 0;
 
@@ -5,11 +10,20 @@ body {
 .horizontal-container {
   overflow: hidden;
   width: 100%;
+border:2px solid blue;
+
   height: 100vh;
 }
 .snap-wrapper {
   display: flex;
   width: 360vw; /* (number of sections) * 100vw */
+}
+.flextext{
+display:flex;
+width:360vw;
+height:10px;
+border:1px solid blue;
+position:relative;
 }
 .panel {
   flex-shrink: 0;
@@ -17,27 +31,25 @@ body {
   height: 50vh;
   display: flex;
   align-items: center;
-
+justify-content:center;
   font-size: 5rem;
   color: white;
   text-align: center;
 }
-.one { background-color: #f7a18f; }
-.two { background-color: #6a9c9f; }
-.three { background-color: #e56b6f; }
-.four { background-color: #4c6a99; 
-       width: 100vw;}
+.one { background-color: #fff; }
+.two { background-color: #fff; }
+.three { background-color: #fff; }
+.four { background-color: #fff;
+width:100vw;
+ }
+
 
 
 
 .svgtext{
+width:90vw;
 border:1px solid blue;
 position:relative;
 top:0;
 left:0;
 }
-
-
-
-
-
