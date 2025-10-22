@@ -157,13 +157,48 @@ lastScroll=currentScroll;
 
 <div class="mp4div">
 
-<video width="320" height="240" autoplay>
-  <source src="video2.mp4" type="video/mp4">
+   <p>Watch this video to get started with Full-Stack Development:</p>
 
-Your browser does not support the video tag.
-</video>
 
-	
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+
+
+  <video
+    id="my-video"
+    class="video-js"
+   playsinline
+   autoplay
+    muted
+    preload="auto"
+    width="auto"
+    height="auto"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="video2.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+
+<button onclick="restartVideo()">Restart Video</button>
+
+<script>
+    function restartVideo() {
+    var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ type: 'video/mp4', src: 'video2.mp4' });
+   player.play();
+
+    }
+</script>
 </div>
 	
 	</section>
@@ -173,15 +208,50 @@ Your browser does not support the video tag.
 
 
 
-  <div class="mp4div">
+<div class="mp4div">
 
-<video width="320" height="240" autoplay>
-  <source src="video4.mp4" type="video/mp4">
+   <p>Watch this video to get started with Full-Stack Development:</p>
 
-Your browser does not support the video tag.
-</video>
 
-	
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
+
+
+  <video
+    id="my-video-2"
+    class="video-js"
+   playsinline
+   autoplay
+    muted
+    preload="auto"
+    width="auto"
+    height="auto"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="video2.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+
+<button onclick="restartVideo()">Restart Video</button>
+
+<script>
+    function restartVideo() {
+    var player = videojs('my-video-2'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ type: 'video/mp4', src: 'video2.mp4' });
+   player.play();
+
+    }
+</script>
 </div>
 
 
