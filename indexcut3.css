@@ -25,7 +25,8 @@ body {
 .one { background-color: #f7a18f; }
 .two { background-color: #6a9c9f; }
 .three { background-color: #e56b6f; }
-.four { background-color: #4c6a99; }
+.four { background-color: #4c6a99; 
+       width: 100vw;}
 
 
 
@@ -35,6 +36,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
