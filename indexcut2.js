@@ -28,7 +28,7 @@ x:this.x,
 duration:0,
 });
 
-if (distanceXend >= -calculateVwToPx(210))
+if (distanceXend >= -calculateVwToPx(230))
       // Snap to the target if the threshold is met
 {
 
@@ -44,7 +44,6 @@ duration:0,
 
 gsap.to(".panel.four",{
 x:-calculateVwToPx(180),
-duration:0,
 });
 
     
@@ -85,7 +84,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(120))
+if (distanceXend >= -calculateVwToPx(140))
       // Snap to the target if the threshold is met
 {
 
@@ -174,7 +173,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(30))
+if (distanceXend >= -calculateVwToPx(50))
       // Snap to the target if the threshold is met
 {
 
@@ -280,7 +279,7 @@ x:0,
     const distanceXend = (this.x)
     
 
-if (distanceXend <= - calculateVwToPx(55) ) {
+if (distanceXend <= - calculateVwToPx(75) ) {
       // Snap to the target if the threshold is met
 console.log("distancexend");
 
@@ -320,6 +319,7 @@ duration:0,
 
 
 });
+
 
 
 
