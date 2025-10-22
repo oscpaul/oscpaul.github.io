@@ -16,6 +16,8 @@ const myDiv = document.getElementById('svgtext2');
 
 let draggable4= Draggable.create(".panel.four",{
 type:"x",
+    inertia:true,
+
 onDrag:function(){
 const distanceXend = (this.x)
 
@@ -73,6 +75,7 @@ draggable4.disable();
 
 let draggable3= Draggable.create(".panel.three",{
 type:"x",
+inertia:true,
 
 onDrag:function(){
 
@@ -159,6 +162,8 @@ let draggable2= Draggable.create(".panel.two",{
 
 
 type:"x",
+    inertia:true,
+
 onDrag:function(){
 
 
@@ -254,7 +259,8 @@ draggable2.disable();
 
 let draggable1= Draggable.create(".panel.one",{
 type:"x",
-intertia:true,
+inertia:true,
+
 
 onDrag:function(){
   const distanceX = (this.x - startX);
@@ -319,6 +325,7 @@ duration:0,
 
 
 });
+
 
 
 
