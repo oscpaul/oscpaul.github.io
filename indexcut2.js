@@ -273,6 +273,7 @@ if (distanceX >= 10 ) {
 console.log("distance");
 gsap.to(".panel.one",{
 x:0,
+duration:0,
 });
 
 gsap.to(".panel.two",{
@@ -329,6 +330,7 @@ duration:0,
 
 
 });
+
 
 
 
