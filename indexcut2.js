@@ -84,7 +84,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(205))
+if (distanceXend >= -calculateVwToPx(230))
       // Snap to the target if the threshold is met
 {
 
@@ -156,7 +156,7 @@ let draggable2= Draggable.create(".panel.two",{
 
 
 type:"x",
-    inertia:true,
+
 
 onDrag:function(){
 
@@ -173,7 +173,7 @@ duration:0,
 });
 
 
-if (distanceXend >= -calculateVwToPx(115))
+if (distanceXend >= -calculateVwToPx(140))
       // Snap to the target if the threshold is met
 {
 
@@ -253,7 +253,6 @@ draggable2.disable();
 
 let draggable1= Draggable.create(".panel.one",{
 type:"x",
-inertia:true,
 
 
 onDrag:function(){
@@ -279,7 +278,7 @@ x:0,
     const distanceXend = (this.x)
     
 
-if (distanceXend <= - calculateVwToPx(15) ) {
+if (distanceXend <= - calculateVwToPx(50) ) {
       // Snap to the target if the threshold is met
 console.log("distancexend");
 
@@ -319,6 +318,7 @@ duration:0,
 
 
 });
+
 
 
 
