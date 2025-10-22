@@ -56,6 +56,17 @@ x:-calculateVwToPx(180),
 
 
 
+else{
+
+if (distanceXend <= -calculateVwToPx(270)) {
+      // Snap to the target if the threshold is met
+gsap.to(".panel.four",{
+x:-calculateVwToPx(270),
+duration:0,
+
+});
+}
+}
 
 
 
@@ -318,6 +329,7 @@ duration:0,
 
 
 });
+
 
 
 
