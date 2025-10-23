@@ -1,9 +1,9 @@
-
 .restartbutton{
 
 position:relative;
 border:1px solid blue; 
 }
+
 .mp4div{
 position:relative;
 height:100%;
@@ -16,44 +16,33 @@ justify-content:center;
 
 .my-video-dimensions{
 position:absolute;
-
 top:0;
 object-fit:contain;
-width:40%;
+width:25%;
 height:auto;
 }
 
 
 .my-video-1-dimensions{
 position:absolute;
-
 top:0;
 object-fit:contain;
-width:40%;
+width:25%;
 height:auto;
 }
 
 .my-video-2-dimensions{
 position:absolute;
-
 top:0;
 object-fit:contain;
-width:100%;
+width:25%;
 height:auto;
-max-height:100%;
 }
 
 
-.my-video-4-dimensions{
-position:absolute;
+.my-video-3-dimensions{
 
-top:0;
-object-fit:contain;
-width:100%;
-height:auto;
-max-height:100%;
 }
-
 body {
   margin: 0;
 
@@ -64,7 +53,7 @@ body {
   width: 360vw;
 border:2px solid blue;
 
-  height: 50vh;
+  height: 75vh;
 }
 .snap-wrapper {
   display: flex;
@@ -83,7 +72,7 @@ position:relative;
 .panel {
   flex-shrink: 0;
   width: 90vw;
-  height: 50vh;
+  height: 100%;
   display: flex;
   align-items: center;
 justify-content:center;
@@ -108,6 +97,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
