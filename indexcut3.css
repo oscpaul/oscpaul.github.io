@@ -55,7 +55,7 @@ width:500px;
 .horizontal-container {
   overflow: hidden;
   width: 360vw; /* (number of sections) * 100vw */
-  height: 75vh;
+  height: 50vh;
 }
 
 .snap-wrapper {
@@ -63,21 +63,12 @@ width:500px;
   width: 360vw; /* (number of sections) * 100vw */
 }
 
-.flextext{
-  margin-top: 2em;   /* Sets the top margin to 20 pixels */
-  margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
-  z-index:1;
-display:flex;
-width:360vw;
-height:10px;
-border:1px solid black;
-position:relative;
-}
+
 
 .panel {
   flex-shrink: 0;
   width: 90vw;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
 justify-content:center;
@@ -104,3 +95,4 @@ position:relative;
 top:0;
 left:0;
 }
+
