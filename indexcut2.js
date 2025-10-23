@@ -104,10 +104,6 @@ if (distanceXend >= -calculateVwToPx(150))
 console.log('three disable');
 this.disable();
 draggable2.enable();
-var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ src: 'mp41.mp4' });
-   player.play();
 
 
     
@@ -203,6 +199,10 @@ console.log('two disable');
 this.disable();
 draggable1.enable();
 
+var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ src: 'mp41.mp4' });
+   player.play();
 
     
 
@@ -343,6 +343,7 @@ duration:0,
 
 
 });
+
 
 
 
