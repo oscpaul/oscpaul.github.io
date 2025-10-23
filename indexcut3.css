@@ -17,8 +17,8 @@ align-items:center;
 .video-js{
 position:absolute;
 top:0;
-height:10%;
-width:10%;
+height:30%;
+width:30%;
 }
 
 .my-video-dimensions{
@@ -97,6 +97,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
