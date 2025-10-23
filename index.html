@@ -20,10 +20,138 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
  <script src="indexcut2.js"></script>  
 
-  <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
+  <script src="https://vjs.zencdn.net/8.23.4/video.min.js">
+
+  </script>
 <link rel="stylesheet" type="text/css" href="indexcut3.css"/>
   
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+<header class="header1">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</header>
+
+
+
+
+<script>
+let lastScroll=0;
+	let scrollupdown=0;
+
+
+  window.addEventListener('scroll' ,() => {
+
+    
+const currentScroll=window.pageYOffset;
+
+
+
+
+scrollupdown+=(currentScroll-lastScroll);
+
+if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
+{
+		scrollupdown=0;
+document.querySelector(".header1").classList.remove("scroll-down");
+document.querySelector(".header1").classList.add("scroll-up");
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==1){
+	if (scrollupdown>300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==-1){
+	if (scrollupdown<=-300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+  
+
+
+if (currentScroll<=200){
+  document.querySelector(".header1").classList.remove("scroll-down");
+document.querySelector(".header1").classList.add("scroll-up");
+console.log('ok');  
+}
+
+
+lastScroll=currentScroll;
+
+  });
+</script>
+
+
+
+
+
+
+<section>
+
+
+
+
+  
+
+
+
+	<div class="flexrows-">
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101
+</h2>
+	</div>	<div class="flexrows-">
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101
+</h2>
+	</div>	<div class="flexrows-">
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101
+</h2>
+	</div>
+
+
+
+
+
+	 <div class="flexrows-"> 	</div>
+ <div class="flextext">
+    		   <p id="svgtext1" class="svgtext text-black svgtext1">Airloom architecture more efficiently converts kinetic energy into mechanical energy</p>
+		  
+  </div>
 <div class="horizontal-container">
 
 
@@ -47,12 +175,19 @@
    autoplay
     muted
     preload="auto"
-
+   
+    poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
     <source src="mp41.mp4">
    
-
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
   </video>
 
 
@@ -81,11 +216,17 @@
     muted
     preload="auto"
   
-
+    poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
     <source src="mp42.mp4" type="video/mp4" />
-  
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
   </video>
 
 
@@ -123,13 +264,20 @@
     data-setup="{}"
   >
     <source src="https://vod-adaptive-ak.vimeocdn.com/exp=1761195000~acl=%2F406e34fe-312b-429b-aea2-8f87581d6fd9%2F%2A~hmac=9761074ad8cef1881ef79134f3af07b401c928ae19468d663179641ecd216cf4/406e34fe-312b-429b-aea2-8f87581d6fd9/v2/playlist/av/406e34fe/avf/fa02dd73/media.m3u8?pathsig=8c953e4f~XU2J-PAg4Q3tZf3mPQwGr4cdyoTjfOnowNQldWW_QOc&qsr=1&r=dXMtZWFzdDE%3D&sf=ts&st=video" />
- 
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
   </video>
 
 
 
 
 </div>
+
 	</section>
     <section class="panel four">
 
@@ -147,8 +295,8 @@
   >
     <source src="https://vod-adaptive-ak.vimeocdn.com/exp=1761195000~acl=%2F38c775a6-a449-4c39-9d3a-a3d4b3dbe224%2F%2A~hmac=0cfebcf269bae7cbbc65c6922a9e7817bb4cde2baa61d943fde3a83acdc8d69a/38c775a6-a449-4c39-9d3a-a3d4b3dbe224/v2/playlist/av/38c775a6/avf/567baf88/media.m3u8?pathsig=8c953e4f~ZNBs0imwZVa0zLd9iSCllTY2xFD6vnaq2NIy8vC3czw&qsr=1&r=dXMtZWFzdDE%3D&sf=ts&st=video" />
    
-  
- 
+      <a href="https://videojs.com/html5-video-support/" target="_blank">
+    </p>
   </video>
 </div>
 	</section>
@@ -156,39 +304,14 @@
 </div>
 
 
-  
- 
-
-	
-<section class="pt-48 md:pt-[350px] gutter-p pb-6 module" data-bg="header-bg-white"><div class="md:max-w-[70%] w-full"><h1 class="text-black">Call Two Brothers Auto. <span class="text-grey2">Experts in Muffler, Emmissions, Engine</span></h1></div><div class="flex gap-2.5"></div></section>
-
-
-	 <div class="flexrows-3">
-    
-  <div class="col-span-12 md:col-span-6 md:!col-start-7"><p class="text-black">“We spend a ton of time in the hardware, energy and industrials spaces and my sense is that Airloom can not only serve as a catalyst for low-cost utility-scale energy, but also lead to a rapid, mass manufacturable source of resilient energy”</p><p class="">Phil Larochelle</p><p class="text-grey3">Breakthrough Energy Ventures</p></div>
-  
-  </div> 
 
 
 
 
 
 
- <div class="flexrows-3"> </div> 
+<section>
 
-
-
-
-		 <div class="flexrows-3"> </div> 
-
-
-
-
-
-<div class="lottiewrapper">
-<div class="lottie">
-		<script src='https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV.js' async="true"></script>
-</div>
 
   <script>
     function restartVideo() {
@@ -199,6 +322,25 @@
 
     }
 </script>
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
+</section>
+<button class="restartbutton" onclick="restartVideo()">Restart Video</button>
+<button class="restartbutton" onclick="restartVideo()">Restart Video</button>
+<section>
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
+</section>
+
+
+
+<section>
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
+</section>
 
 
 
@@ -207,18 +349,19 @@
 
 
 
+    
 
 
 
- 
+
+  
 
 
-		
 
 <script>
 
 window.onload = function() {
-if (false){
+
     // This code will execute once the DOM is fully loaded.
     const imageContainer = document.getElementById('tooltip'); // Assuming an element exists to hold the image
     const newImage = document.createElement('img');
@@ -228,7 +371,7 @@ if (false){
     imageContainer.appendChild(newImage); // Add the image to the container
 
 
-
+if (false){
   // This code will execute once the DOM is fully loaded.
     const imageContainer1 = document.getElementById('png1'); // Assuming an element exists to hold the image
     const newImage1 = document.createElement('img');
@@ -252,4 +395,56 @@ if (false){
 };
 
 
+
+
+
 </script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+		
+
+
+
+
+
+ 
+	 <div class="flexrows-3"> </div> 
+
+<section class="pt-48 md:pt-[350px] gutter-p pb-6 module" data-bg="header-bg-white"><div class="md:max-w-[70%] w-full"><h1 class="text-black">Call Two Brothers Auto. <span class="text-grey2">Experts in Muffler, Emmissions, Engine</span></h1></div><div class="flex gap-2.5"></div></section>
+
+
+	 <div class="flexrows-3">
+    
+  <div class="col-span-12 md:col-span-6 md:!col-start-7"><p class="text-black">“We spend a ton of time in the hardware, energy and industrials spaces and my sense is that Airloom can not only serve as a catalyst for low-cost utility-scale energy, but also lead to a rapid, mass manufacturable source of resilient energy”</p><p class="">Phil Larochelle</p><p class="text-grey3">Breakthrough Energy Ventures</p></div>
+  
+  </div> 
+
+
+
+
+
+
+
+
+
+<div class="lottiewrapper">
+<div class="lottie">
+		<script src='https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV.js' async="true"></script>
+</div>
+
+<div id="tooltip" class="tooltip">This is a tooltip.</div>
+</div>
