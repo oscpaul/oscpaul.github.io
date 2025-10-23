@@ -81,7 +81,7 @@ width:500px;
 .horizontal-container {
   overflow: hidden;
   width: 360vw; /* (number of sections) * 100vw */
-  height: 75vh;
+  height: 85vh;
  
 
 }
@@ -100,7 +100,7 @@ width:500px;
 
   flex-shrink: 0;
   width: 25%;
-  height: 75vh;
+  height: 85vh;
   display: flex;
   align-items: center;
 justify-content:center;
@@ -127,6 +127,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
