@@ -1,3 +1,21 @@
+
+.flextext{
+  margin-top: 2em;   /* Sets the top margin to 20 pixels */
+  margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
+  z-index:1;
+display:flex;
+width:360vw;
+height:10px;
+border:1px solid black;
+position:relative;
+}
+.flextexts{
+height:200px;
+position:relative;
+width:25%;
+border:1px solid blue;
+}
+
 html
 {
   overflow-x: hidden;
@@ -109,6 +127,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
