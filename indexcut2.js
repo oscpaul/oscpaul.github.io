@@ -106,6 +106,10 @@ this.disable();
 draggable2.enable();
 
 
+    var player = videojs('my-video1'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ src: 'mp42.mp4' });
+   player.play();
     
 gsap.to(".panel.three",{
 x:-calculateVwToPx(90),
@@ -201,7 +205,11 @@ draggable1.enable();
 
 
 
-    
+    var player = videojs('my-video_'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ src: 'mp41.mp4' });
+   player.play();
+
 
 gsap.to(".panel.two",{
 x:-calculateVwToPx(0),
@@ -340,6 +348,7 @@ duration:0,
 
 
 });
+
 
 
 
