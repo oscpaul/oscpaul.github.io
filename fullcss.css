@@ -37,6 +37,12 @@ z-index:2;
   /* Other styling for the tooltip */
 }
 
+.tooltip img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
 .scroll-container {
   display: flex; /* Arranges children horizontally */
 
