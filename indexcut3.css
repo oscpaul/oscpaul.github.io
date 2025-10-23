@@ -18,9 +18,7 @@ align-items:center;
 .my-video-dimensions{
 position:absolute;
 top:0;
-object-fit:contain;
-width:25%;
-height:auto;
+height:100%;
 }
 
 
@@ -95,6 +93,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
