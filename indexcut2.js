@@ -106,7 +106,7 @@ this.disable();
 draggable2.enable();
 
 
-    var player = videojs('my-video1'); // 'myVideoId' is the ID of your video element
+    var player = videojs('my-video-1'); // 'myVideoId' is the ID of your video element
   player.reset();
      player.src({ src: 'mp42.mp4' });
    player.play();
@@ -348,6 +348,7 @@ duration:0,
 
 
 });
+
 
 
 
