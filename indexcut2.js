@@ -200,11 +200,7 @@ this.disable();
 draggable1.enable();
 
 
-    var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ src: 'mp41.mp4' });
-   player.play();
-
+    
 
 gsap.to(".panel.two",{
 x:-calculateVwToPx(0),
@@ -343,6 +339,7 @@ duration:0,
 
 
 });
+
 
 
 
