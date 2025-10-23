@@ -16,12 +16,9 @@ width:25%;
 border:1px solid blue;
 }
 
-html
-{
-  overflow-x: hidden;
-
-  
-}
+  html, body {
+        overflow-x: hidden;
+    }
 .restartbutton{
 
 position:relative;
@@ -127,6 +124,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
