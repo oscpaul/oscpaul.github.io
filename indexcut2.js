@@ -36,10 +36,7 @@ console.log('three disable');
 this.disable();
 draggable3.enable();
 
-var player = videojs('my-video2'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ src: 'https://vod-adaptive-ak.vimeocdn.com/exp=1761195000~acl=%2F406e34fe-312b-429b-aea2-8f87581d6fd9%2F%2A~hmac=9761074ad8cef1881ef79134f3af07b401c928ae19468d663179641ecd216cf4/406e34fe-312b-429b-aea2-8f87581d6fd9/v2/playlist/av/406e34fe/avf/fa02dd73/media.m3u8?pathsig=8c953e4f~XU2J-PAg4Q3tZf3mPQwGr4cdyoTjfOnowNQldWW_QOc&qsr=1&r=dXMtZWFzdDE%3D&sf=ts&st=video' });
-   player.play();
+
     
 gsap.to(".panel.three",{
 x:-calculateVwToPx(180),
@@ -108,10 +105,6 @@ console.log('three disable');
 this.disable();
 draggable2.enable();
 
-var player = videojs('my-video1'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ src: 'mp42.mp4' });
-   player.play();
 
     
 gsap.to(".panel.three",{
@@ -155,10 +148,7 @@ this.disable();
 draggable4.enable();
 
 
-var player = videojs('my-video3'); // 'myVideoId' is the ID of your video element
-  player.reset();
-     player.src({ src: 'mp42.mp4' });
-   player.play();
+
     
 }
 
@@ -353,6 +343,7 @@ duration:0,
 
 
 });
+
 
 
 
