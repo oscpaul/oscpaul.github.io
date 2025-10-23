@@ -1,4 +1,6 @@
-
+  html, body {
+        overflow-x: hidden;
+    }
 .flextext{
   margin-top: 2em;   /* Sets the top margin to 20 pixels */
   margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
@@ -16,9 +18,7 @@ width:25%;
 border:1px solid blue;
 }
 
-  html, body {
-        overflow-x: hidden;
-    }
+
 .restartbutton{
 
 position:relative;
@@ -124,6 +124,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
