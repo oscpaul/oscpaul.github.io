@@ -43,6 +43,13 @@ height:auto;
 .my-video-3-dimensions{
 
 }
+
+.video3-div{
+border:1px solid black;
+height:500px;
+width:500px;
+}
+
 body {
   margin: 0;
 
@@ -97,6 +104,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
