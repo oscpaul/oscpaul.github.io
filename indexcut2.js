@@ -368,7 +368,7 @@ if (distanceXend <= -calculateVwToPx(205))
 
 gsap.to(".flextext3",{
 x:-calculateVwToPx(270),
-
+duration:0,
 
 });
 
@@ -576,4 +576,5 @@ duration:0,
 
 
 });
+
 
