@@ -41,6 +41,8 @@ position:relative;
 
 
 .flextexts{
+          z-index:10;
+
 top:-20%;
 height:200px;
 position:relative;
@@ -154,6 +156,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
