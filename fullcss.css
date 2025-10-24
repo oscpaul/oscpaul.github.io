@@ -12,7 +12,7 @@ height:20vh;
 
 .lottiewrapper{
   width:100%;
-  
+  background:rgb(235,235,245);
   display:flex;
   justify-content:center;
   
