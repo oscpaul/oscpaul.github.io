@@ -115,6 +115,7 @@ width:500px;
 
 
 .horizontal-container {
+  position:relative;
   overflow: hidden;
   width: 360vw; /* (number of sections) * 100vw */
   height: 85vh;
@@ -123,6 +124,7 @@ width:500px;
 }
 
 .snap-wrapper {
+  position:relative;
         z-index:-1;
   display: flex;
   width: 100%; /* (number of sections) * 100vw */
@@ -164,6 +166,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
