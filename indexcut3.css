@@ -8,9 +8,13 @@ width:500px;
 height:281px;
 border:1px solid black;
 }
-.flexrows-3{
 
-        
+.flexrows-3{
+background:white;
+  width:100%;
+  display:flex;
+  position:relative;
+height:20vw;
 }
 .section-2{
 background-color:white;
@@ -160,6 +164,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
