@@ -19,7 +19,7 @@ html, body {
 .flextext{
   margin-top: 2em;   /* Sets the top margin to 20 pixels */
   margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
-  z-index:1;
+  z-index:10;
 display:flex;
 width:90vw;
 height:10px;
@@ -154,6 +154,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
