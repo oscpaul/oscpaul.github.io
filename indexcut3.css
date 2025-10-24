@@ -2,19 +2,24 @@
 position:relative;
 }
 .flexrows--{
-margin-top:20vh;
-  position:relative;
-height:20vh;
-background:white;
+position:relative;
+display:flex;
+width:90vw;
+height:10vw;
+border:1px solid black;
+justify-content:center;
 }
+
 
 
 .mp4div2{
+background:white;
 position:relative;
-width:500px;
-height:281px;
-border:1px solid black;
+width:750px;
+height:422px;
+border:1px solid black;  
 }
+
 
 .flexrows-3{
 background:white;
@@ -171,6 +176,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
