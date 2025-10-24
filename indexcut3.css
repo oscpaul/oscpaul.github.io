@@ -8,8 +8,11 @@ width:500px;
 height:281px;
 border:1px solid black;
 }
+.flexrows-3{
 
-.section2{
+        
+}
+.section-2{
 background-color:white;
 }
 html, body {
@@ -157,6 +160,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
