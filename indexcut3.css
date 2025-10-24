@@ -126,10 +126,10 @@ width:500px;
 
 
 .horizontal-container {
- 
+ border:1px solid black;
   overflow: hidden;
   width: 360vw; /* (number of sections) * 100vw */
-  height: 85vh;
+  height: 75vh;
  
 
 }
@@ -176,6 +176,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
