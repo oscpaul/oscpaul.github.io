@@ -25,7 +25,6 @@ height:20vh;
 .tooltip {
 width:20vw;
 height:20vh;
-border:1px solid blue;
 z-index:2;
   position: absolute;
 
