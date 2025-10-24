@@ -7,11 +7,25 @@
   margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
   z-index:1;
 display:flex;
-width:360vw;
+width:90vw;
 height:10px;
 border:1px solid black;
 position:relative;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .flextext{
+  width:360vw;
+
+  
+  }
+  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and phones) */
+}
+
+
+
 .flextexts{
 height:200px;
 position:relative;
@@ -125,6 +139,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
