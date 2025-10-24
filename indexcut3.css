@@ -116,6 +116,7 @@ width:500px;
 }
 
 .snap-wrapper {
+        z-index:-1;
   display: flex;
   width: 100%; /* (number of sections) * 100vw */
     
@@ -156,6 +157,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
