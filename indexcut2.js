@@ -21,8 +21,8 @@ let mm = gsap.matchMedia();
 Match media
 */
 
-    const myDiv = document.getElementById('flextexts2');
-  myDiv.addEventListener('click', function() {
+    const _myDiv_ = document.getElementById('flextexts2');
+  _myDiv_.addEventListener('click', function() {
         // Code to execute when the div is clicked
         console.log('Div with ID "myDivId" was clicked!');
     });
@@ -418,6 +418,7 @@ draggable4.enable();
 
     
 });
+
 
 
 
