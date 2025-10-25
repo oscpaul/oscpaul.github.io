@@ -46,7 +46,7 @@ top:50%;
 }
 
 .twobrothers{
-position:absolute;
+position:relative;
 top:0;
 z-index:1;
 }
@@ -68,12 +68,7 @@ border:1px solid black;
 justify-content:center;
 }
 
-@media screen and (max-width: 768px) {
-  /* CSS rules to apply when the screen width is 768px or less */
-.flexrows--{
-  height:75vh;
-}
-}
+
 .flexrows--img{
 width:100vw;
 height:100%;
@@ -105,6 +100,19 @@ align-items:center;
 justify-content:center;
 }
 
+
+
+@media screen and (max-width: 768px) {
+  /* CSS rules to apply when the screen width is 768px or less */
+.flexrows--{
+  height:75vh;
+}
+.twobrothers{
+position:absolute;
+}
+
+
+}
 
 
 
