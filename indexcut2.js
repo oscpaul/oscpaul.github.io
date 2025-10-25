@@ -321,7 +321,7 @@ draggable2.disable();
 let draggable1= Draggable.create(".panel.one",{
 type:"x",
 inertia:true,
-
+bounds:"snap-container",
 onDrag:function(){
   const distanceX = (this.x);
 if (distanceX >= 10 ) {
@@ -446,6 +446,7 @@ function turnRight1()
   
 
     
+
 
 
 
