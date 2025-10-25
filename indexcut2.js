@@ -338,86 +338,10 @@ duration:0,
 });
 
 
-  function turnRight1()
-      {
-
-gsap.to(".panel.one",{
-x:-calculateVwToPx(100),
-});
-
-gsap.to(".panel.two",{
-x:-calculateVwToPx(100),
-});
-
-gsap.to(".panel.three",{
-x:-calculateVwToPx(100),
-duration:0,
-});
-
-gsap.to(".flextexts1",{
-x:-calculateVwToPx(90),
-});
-gsap.to(".flextexts2",{
-x:-calculateVwToPx(90),
-});
-    
-this.disable();
-draggable2.enable();
-          
-      }
-
-
-    function turnRight2{
-
-gsap.to(".panel.two",{
-x:-calculateVwToPx(200),
-});
-
-gsap.to(".panel.three",{
-x:-calculateVwToPx(200),
-});
-
-gsap.to(".panel.four",{
-x:-calculateVwToPx(200),
-duration:0,
-});
-gsap.to(".flextexts2",{
-x:-calculateVwToPx(180),
-});
-gsap.to(".flextexts3",{
-x:-calculateVwToPx(180),
-});
-
-
-this.disable();
-draggable3.enable();     
-    }
-
-    function turnRight3(){
-
-gsap.to(".panel.three",{
-x:-calculateVwToPx(300),
-});
-
-gsap.to(".panel.four",{
-x:-calculateVwToPx(300),
-});
-
-    gsap.to(".flextexts3",{
-x:-calculateVwToPx(270),
-});
-gsap.to(".flextexts4",{
-x:-calculateVwToPx(270),
-});
+  
 
     
-console.log('snap');
-this.disable();
-draggable4.enable();
-        
-    }
 
-    
 
 
 
