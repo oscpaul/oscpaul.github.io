@@ -13,7 +13,9 @@ const draggableElement = document.querySelector(".panel.one");
 const startX = draggableElement.offsetLeft;
 const myDiv = document.getElementById('svgtext2');
 
-
+    
+let mm = gsap.matchMedia();
+mm.add("(max-width: 767px)", () => {
 let draggable4= Draggable.create(".panel.four",{
 type:"x",
     inertia:true,
@@ -81,9 +83,11 @@ duration:0,
 
 
 })[0];
-draggable4.disable();
+    draggable4.disable();
+}
 
 
+mm.add("(max-width: 767px)", () => {
 let draggable3= Draggable.create(".panel.three",{
 type:"x",
 
@@ -182,6 +186,7 @@ draggable4.enable();
 })[0];
 draggable3.disable();
 
+}
 
 
 
@@ -189,7 +194,7 @@ draggable3.disable();
 
 
 
-
+mm.add("(max-width: 767px)", () => {
 let draggable2= Draggable.create(".panel.two",{
 
 
@@ -290,11 +295,14 @@ draggable3.enable();
 },
 
 })[0];
+    
 draggable2.disable();
 
+}
 
  
 
+mm.add("(max-width: 767px)", () => {
 let draggable1= Draggable.create(".panel.one",{
 type:"x",
 inertia:true,
@@ -365,11 +373,12 @@ duration:0,
 
   }
 })[0];
-
+}
 
 
     
 });
+
 
 
 
