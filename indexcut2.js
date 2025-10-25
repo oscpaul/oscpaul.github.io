@@ -381,6 +381,7 @@ draggable2.enable();
 
 gsap.to(".panel.one",{
 x:-calculateVwToPx(0),
+    duration:2,
 });
 
     
@@ -449,6 +450,7 @@ function turnRight1()
   
 
     
+
 
 
 
