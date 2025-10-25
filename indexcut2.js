@@ -394,7 +394,28 @@ duration:0,
 
     const _myDiv_ = document.getElementById('flextexts2');
   _myDiv_.addEventListener('click', function() {
-      console.log(draggable1);
+      gsap.to(".panel.one",{
+x:-calculateVwToPx(100),
+});
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(100),
+});
+
+gsap.to(".panel.three",{
+x:-calculateVwToPx(100),
+duration:0,
+});
+
+gsap.to(".flextexts1",{
+x:-calculateVwToPx(90),
+});
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(90),
+});
+    
+draggable1.disable();
+draggable2.enable();
         console.log('Div with ID "myDivId" was clicked!');
     });
     const myDiv_ = document.getElementById('flextexts3');
@@ -420,6 +441,7 @@ function turnRight1()
   
 
     
+
 
 
 
