@@ -15,8 +15,8 @@ const myDiv = document.getElementById('svgtext2');
 
     
 let mm = gsap.matchMedia();
+mm.add("(min-width: 768px)", () => {
 
-mm.add("(max-width: 767px)", () => {
 let draggable4= Draggable.create(".panel.four",{
 type:"x",
     inertia:true,
@@ -708,6 +708,7 @@ mm.add("(max-width: 767px)", () => {
 
     
 });
+
 
 
 
