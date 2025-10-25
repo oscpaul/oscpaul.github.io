@@ -440,10 +440,13 @@ const lazyImages=document.querySelectorAll('.lazy');
 
 
 lazyImages.forEach(img=>{
-console.log(img);
-});
-
+if(img.getBoundingClientRect().left<window.innerWidth&&
+img.getBoundingClientRect().bottom>0)
+{
+img.src=img.dataset.src;
+img.classList.remove('lazy');
 }
+});
 
 window.addEventListener('scroll', lazyLoad);
 
@@ -453,6 +456,7 @@ window.addEventListener('scroll', lazyLoad);
 
 
     
+
 
 
 
