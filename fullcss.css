@@ -39,8 +39,8 @@ z-index:2;
 }
 
 .tooltip img {
-  width: 60%;
-  height: 60%;
+  width: 75%;
+  height: 75%;
   object-fit: contain;
 }
 
