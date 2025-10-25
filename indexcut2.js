@@ -114,13 +114,20 @@ x:-calculateVwToPx(90),
 duration:0,
 });
 
-
 gsap.to(".panel.two",{
 x:-calculateVwToPx(90),
-
 });
 
- 
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(90),
+});
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(90),
+});
+gsap.to(".flextexts4",{
+x:-calculateVwToPx(90),
+});
+    
 }
 
 }
@@ -145,6 +152,14 @@ gsap.to(".panel.four",{
 x:-calculateVwToPx(270),
 });
 
+    gsap.to(".flextexts3",{
+x:-calculateVwToPx(270),
+});
+gsap.to(".flextexts4",{
+x:-calculateVwToPx(270),
+});
+
+    
 console.log('snap');
 this.disable();
 draggable4.enable();
@@ -354,6 +369,7 @@ duration:0,
 
     
 });
+
 
 
 
