@@ -1,5 +1,11 @@
 
-
+.flexrows-3{
+background:white;
+  width:100%;
+  display:flex;
+  position:absolute;
+height:20vw;
+}
 
 .textcolor{
 oklch(.705 .213 47.604);
@@ -93,6 +99,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 }
+
 
 
 
