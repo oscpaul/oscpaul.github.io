@@ -34,7 +34,8 @@ justify-content:center;
 
 .mp4div2{
 background:white;
-position:relative;
+position:absolute;
+  bottom:0;
 width:500px;
 height:281px;
 border:1px solid black;  
@@ -196,6 +197,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
