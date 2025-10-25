@@ -379,10 +379,6 @@ draggable2.enable();
 
     } else {
 
-gsap.to(".panel.one",{
-x:-calculateVwToPx(0),
-    duration:2,
-});
 
     
       // Snap back to the original position if not
@@ -450,6 +446,7 @@ function turnRight1()
   
 
     
+
 
 
 
