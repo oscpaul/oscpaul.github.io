@@ -378,13 +378,16 @@ draggable2.enable();
 
 
     } else {
+
+gsap.to(".panel.one",{
+x:-calculateVwToPx(0),
+});
+
+    
       // Snap back to the original position if not
     }
     
-gsap.to(".panel.two",{
-x:this.x,
-duration:0,
-});
+
 
 },
  onDragEnd: function() {
@@ -446,6 +449,7 @@ function turnRight1()
   
 
     
+
 
 
 
