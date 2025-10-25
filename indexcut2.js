@@ -441,7 +441,7 @@ const lazyImages=document.querySelectorAll('.lazy');
 
 lazyImages.forEach(img=>{
 console.log(img);
-}
+});
 
 }
 
@@ -453,6 +453,7 @@ window.addEventListener('scroll', lazyLoad);
 
 
     
+
 
 
 
