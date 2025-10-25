@@ -435,17 +435,33 @@ draggable2.enable();
     });
 
 
+function lazyLoad(){
+const lazyImages=document.querySelectorAll('.lazy');
+
+lazyImages.forEach(img=>{
+if(img.getBoundingClientRect().left<window.innerWidth&&
+img.getBoundingClientRect().bottom>0)
+{
+img.src=img.dataset.src;
+img.classList.remove('lazy');
+}
+});
+
+}
+
+
+lazyLoad();
+window.addEventListener('scroll', lazyLoad);
+
+
+});
     
 });
 
-function turnRight1()
-      {
 
-
-      }
-  
 
     
+
 
 
 
