@@ -76,7 +76,7 @@ justify-content:center;
 }
 .flexrows--img{
 width:100vw;
-height:150vh;
+height:100%;
 
 opacity:.9;
 }
@@ -104,6 +104,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 }
+
 
 
 
