@@ -3,33 +3,7 @@
         return (viewportWidth * vwValue) / 100;
     }
 
-function turnRight1()
-      {
 
-gsap.to(".panel.one",{
-x:-calculateVwToPx(100),
-});
-
-gsap.to(".panel.two",{
-x:-calculateVwToPx(100),
-});
-
-gsap.to(".panel.three",{
-x:-calculateVwToPx(100),
-duration:0,
-});
-
-gsap.to(".flextexts1",{
-x:-calculateVwToPx(90),
-});
-gsap.to(".flextexts2",{
-x:-calculateVwToPx(90),
-});
-    
-draggable1.disable();
-draggable2.enable();
-         return; 
-      }
 
 
 
@@ -369,10 +343,37 @@ duration:0,
 
 });
 
+function turnRight1()
+      {
 
+gsap.to(".panel.one",{
+x:-calculateVwToPx(100),
+});
+
+gsap.to(".panel.two",{
+x:-calculateVwToPx(100),
+});
+
+gsap.to(".panel.three",{
+x:-calculateVwToPx(100),
+duration:0,
+});
+
+gsap.to(".flextexts1",{
+x:-calculateVwToPx(90),
+});
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(90),
+});
+    
+draggable1.disable();
+draggable2.enable();
+         return; 
+      }
   
 
     
+
 
 
 
