@@ -62,7 +62,6 @@ justify-content:center;
 
 }
 .flexrows--img{
-border:10px solid black;
 width:100vw;
 height:150vh;
 
@@ -272,6 +271,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
