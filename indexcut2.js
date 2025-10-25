@@ -448,6 +448,7 @@ img.classList.remove('lazy');
 }
 });
 }
+lazyLoad();
 window.addEventListener('scroll', lazyLoad);
 
     
@@ -456,6 +457,7 @@ window.addEventListener('scroll', lazyLoad);
 
 
     
+
 
 
 
