@@ -99,3 +99,15 @@ svg {
         width: 0;
     }
 }
+
+
+.text-grey2{
+font-family: __LateralStandard_2942cb;
+color:rgb(204,204,204);
+}
+
+.text-black{
+font-family: __LateralStandard_2942cb;
+color:black;
+}
+
