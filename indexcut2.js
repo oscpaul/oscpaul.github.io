@@ -369,7 +369,9 @@ x:-calculateVwToPx(90),
 gsap.to(".flextexts2",{
 x:-calculateVwToPx(90),
 });
-    
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(90),
+});
 draggable1.disable();
 draggable2.enable();
          
@@ -413,6 +415,9 @@ x:-calculateVwToPx(90),
 gsap.to(".flextexts2",{
 x:-calculateVwToPx(90),
 });
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(90),
+});
     
 draggable1.disable();
 draggable2.enable();
@@ -441,6 +446,7 @@ function turnRight1()
   
 
     
+
 
 
 
