@@ -38,13 +38,19 @@ font-weight: bold;
 position:absolute;
 top:50%;
   background-color: orange; /* Sets the background color to orange */
-  padding: 2em;            /* Adds space between the content and the box's edge */
+  padding: 1em;            /* Adds space between the content and the box's edge */
   border: 1px solid #cc6600; /* Optional: adds a border around the box */
   color: white;             /* Optional: sets the text color to white for contrast */
   text-align: center;       /* Optional: centers the text horizontally */
         /* Optional: sets a fixed width for the box */
 }
 
+.orange{
+
+font-family: __LateralStandard_2942cb;
+
+  font-size: 2px;
+}
 .twobrothers{
 position:relative;
 top:0;
@@ -113,6 +119,7 @@ position:relative;
 
 
 }
+
 
 
 
