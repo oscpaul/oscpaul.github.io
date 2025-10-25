@@ -149,7 +149,7 @@ width:500px;
  border:1px solid black;
   overflow: hidden;
   width: 360vw; /* (number of sections) * 100vw */
-  height: 75vh;
+  height: 55vh;
  
 
 }
@@ -196,6 +196,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
