@@ -394,7 +394,7 @@ duration:0,
 
     const _myDiv_ = document.getElementById('flextexts2');
   _myDiv_.addEventListener('click', function() {
-  
+      console.log(draggable1);
         console.log('Div with ID "myDivId" was clicked!');
     });
     const myDiv_ = document.getElementById('flextexts3');
@@ -420,6 +420,7 @@ function turnRight1()
   
 
     
+
 
 
 
