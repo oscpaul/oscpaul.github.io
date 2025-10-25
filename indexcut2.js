@@ -21,7 +21,21 @@ let mm = gsap.matchMedia();
 Match media
 */
 
-
+    const myDiv = document.getElementById('flextexts2');
+  myDiv.addEventListener('click', function() {
+        // Code to execute when the div is clicked
+        console.log('Div with ID "myDivId" was clicked!');
+    });
+    const myDiv_ = document.getElementById('flextexts3');
+  myDiv_.addEventListener('click', function() {
+        // Code to execute when the div is clicked
+        console.log('Div with ID "myDivId" was clicked!');
+    });
+        const myDiv__ = document.getElementById('flextexts4');
+      myDiv__.addEventListener('click', function() {
+        // Code to execute when the div is clicked
+        console.log('Div with ID "myDivId" was clicked!');
+    });
     
 mm.add("(max-width: 767px)", () => {
     
@@ -387,6 +401,7 @@ duration:0,
 
     
 });
+
 
 
 
