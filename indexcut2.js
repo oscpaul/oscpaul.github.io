@@ -431,7 +431,7 @@ draggable2.enable();
     });
 
 
-    
+});
 
 
 function lazyLoad(){
@@ -447,15 +447,16 @@ img.src=img.dataset.src;
 img.classList.remove('lazy');
 }
 });
-
+}
 window.addEventListener('scroll', lazyLoad);
 
     
-});
+
 
 
 
     
+
 
 
 
