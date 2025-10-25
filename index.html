@@ -3,7 +3,6 @@
 
 	 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>
-
   	
 	<link rel="stylesheet" type="text/css" href="fonts.css"/>
   	<link rel="stylesheet" type="text/css" href="fonts2.css"/>
@@ -18,98 +17,242 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
- <script src="indexcut2.js"></script>  
 
   <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
 <link rel="stylesheet" type="text/css" href="indexcut3.css"/>
-    <script src="lottie.js" type="text/javascript"></script>
+  <script src="lottie.js" type="text/javascript"></script>
 
- <div class="flexrows--">
+  <!--
+   <script src="indexcut2.js"></script>  
 
-<h1 style="text-align: center;"> Two Brothers Auto</h1>
-	  </div>
- <div class="flexrows--">
-<h2 style="text-align: center;">Addison, IL 60101</h2>
- </div>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
- <div class="flexrows-3"></div>
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+<header class="header1">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</header>
+
+
+
+
+<script>
+let lastScroll=0;
+	let scrollupdown=0;
+
+
+  window.addEventListener('scroll' ,() => {
+
+    
+const currentScroll=window.pageYOffset;
+
+
+
+
+scrollupdown+=(currentScroll-lastScroll);
+
+if (Math.sign(currentScroll-lastScroll) != Math.sign(scrollupdown) )
+{
+		scrollupdown=0;
+document.querySelector(".header1").classList.remove("scroll-down");
+document.querySelector(".header1").classList.add("scroll-up");
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==1){
+	if (scrollupdown>300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+
+
+if (Math.sign(currentScroll-lastScroll)==-1){
+	if (scrollupdown<=-300)
+	{
+document.querySelector(".header1").classList.remove("scroll-up");
+document.querySelector(".header1").classList.add("scroll-down");
+  }
+}
+  
+
+
+if (currentScroll<=200){
+  document.querySelector(".header1").classList.remove("scroll-down");
+document.querySelector(".header1").classList.add("scroll-up");
+}
+
+
+lastScroll=currentScroll;
+
+  });
+</script>
+
+
+
+
+
 <section>
 
-	   <div class="flextext">
+
+
+	        <div class="flextext">
  <div class="flextexts flextexts1">
         		   <span>11111</span>
 
 		  </div>
          <div class="flextexts flextexts2">
-        		   <span class="" id="flextexts2" class="">2</span>
+        		   <span class="" id="" class="">2</span>
 
 		  </div>
       <div class="flextexts flextexts3">
-        		   <span class="" id="flextexts3" class="">3</span>
+        		   <span class="" id="" class="">3</span>
 
 		  </div>
       <div class="flextexts flextexts4">
-        		   <span class="" id="flextexts4" class="">4</span>
+        		   <span class="" id="" class="">4</span>
 
 		  </div>
       </div>
+
 <div class="horizontal-container">
 
 
   
   <div class="snap-wrapper">
+ 
     <section class="panel one">
+  
+<div class="mp4div2">
+<div style="aspect-ratio:1280 / 720" class=""><video class="lazy w-full h-full object-cover" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="mp41.mp4"></video></div>
+
+
+  </div>
+	 <script>
+    function restartVideo() {
+      console.log('ok');
+    var player = videojs('my-video'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ src: 'mp41.mp4' });
+   player.play();
+
+    }
+</script>
+
+	</section>
+    <section class="panel two">
+
+
 
 <div class="mp4div2">
 <div style="aspect-ratio:1280 / 720" class=""><video class="lazy w-full h-full object-cover" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="mp41.mp4"></video></div>
 
   </div>
 
-	
-	</section>
-    <section class="panel two">
 
-<div class="mp4div2">
-<div style="aspect-ratio:1280 / 720" class=""><video class="lazy w-full h-full object-cover" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="mp42.mp4"></video></div>
+	 <script>
+    function restartVideo1() {
+     
+    var player = videojs('my-video1'); // 'myVideoId' is the ID of your video element
+  player.reset();
+     player.src({ src: 'mp41.mp4' });
+   player.play();
 
-  </div>
-
-
-
-
-
-
+    }
+</script>
 
 
 
     </section>
     <section class="panel three">
 
-<div class="mp4div2">
-<div style="aspect-ratio:1280 / 720" ><video class="lazy w-full h-full object-cover" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="mp41.mp4"  ></video></div>
+
+<div class="mp4div2"><div style="aspect-ratio:1280 / 720" ><video class="lazy w-full" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="playlist (2).mp4"></video></div>
 </div>
+
 
 	</section>
     <section class="panel four">
-<div class="mp4div2">
-	<div style="aspect-ratio:1280 / 720" ><video class="lazy w-full" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="playlist (1).mp4"  type="video/mp4"></video></div>
+
+
+
+
+<div class="mp4div2"><div style="aspect-ratio:1280 / 720" ><video class="lazy w-full" preload="auto" muted="" loop="" playsinline="" autoplay="" data-src="playlist (2).mp4"></video></div>
 </div>
-	</section>
-  </div>
+
 </div>
+
+
+    </section>
+
+
+<section>
+<h1> Two Brothers Auto</h1>
+<h2>Addison, IL 60101</h2>
+	<h2 class="h2div"></h2>
 </section>
+<button class="restartbutton" onclick="restartVideo()">Restart Video</button>
+<button class="restartbutton" onclick="restartVideo1()">Restart Video</button>
 
 
-<section class="section2"><h1 style="text-align: center;" class="text-black">Visit the store inventory shop! </h1>
-<div class="flexrows-3">
-<div class="tooltip1">
-	<a href="https://paul-oscai-development.square.site"><img src="undraw_car-salesman_ni2a.png" alt="""></a>
-</div>
+
+
+
+
+
  
 
-	  </div> 
-</section>
+    
 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+ 
+	 <div class="flexrows-3"> </div> 
 
 <section class="section2"><h1 style="text-align: center;" class="text-black">Call Two Brothers Auto. <span style="text-align: center;" class="text-grey2">Experts in Muffler, Emmissions, Engine</span></h1></section>
 
@@ -119,17 +262,76 @@
   <div class="col-span-12 md:col-span-6 md:!col-start-7"><p style="text-align: center;" class="text-black">“We spend a ton of time in the hardware, energy and industrials spaces and my sense is that Airloom can not only serve as a catalyst for low-cost utility-scale energy, but also lead to a rapid, mass manufacturable source of resilient energy”</p><p  style="text-align: center;" class="">Phil Larochelle</p><p style="text-align: center;" class="text-grey3">Breakthrough Energy Ventures</p></div>
   
   </div> 
-	 <div class="flexrows-3"></div>
 
 
-	 <div class="flexrows-3"></div>
+-->
+<script>
+
+window.onload = function() {
+  var lottieanimation = lottie.loadAnimation({
+        container: document.getElementById('lottie1'), // The DOM element to render the animation in
+        renderer: 'svg', // 'svg', 'canvas', or 'html'
+        loop: true, // Whether the animation should loop
+        autoplay: true, // Whether the animation should start playing automatically
+        path: 'Car Trip.json' // The path to your Lottie JSON file
+    });
+
+    // This code will execute once the DOM is fully loaded.
+    const imageContainer = document.getElementById('tooltip'); // Assuming an element exists to hold the image
+    const newImage = document.createElement('img');
+    newImage.src = 'undraw_reviewed-docs_tng3.png'; // Set the source of your image
+    newImage.alt = 'Description of your image'; // Provide alternative text for accessibility
+
+    imageContainer.appendChild(newImage); // Add the image to the container
+
+
+if (false){
+  // This code will execute once the DOM is fully loaded.
+    const imageContainer1 = document.getElementById('png1'); // Assuming an element exists to hold the image
+    const newImage1 = document.createElement('img');
+    newImage1.src = 'undraw_certification_i2m0.png'; // Set the source of your image
+    newImage1.alt = 'Description of your image'; // Provide alternative text for accessibility
+
+    imageContainer1.appendChild(newImage1); // Add the image to the container
+
+
+
+	
+    // This code will execute once the DOM is fully loaded.
+    const imageContainer2 = document.getElementById('png2'); // Assuming an element exists to hold the image
+    const newImage2 = document.createElement('img');
+    newImage2.src = 'undraw_car-salesman_ni2a.png'; // Set the source of your image
+    newImage2.alt = 'Description of your image'; // Provide alternative text for accessibility
+
+    imageContainer2.appendChild(newImage2); // Add the image to the container
+
+}
+};
+</script>
+
+  <div class="flexrows--">
+
+
+<div class="flexrows--img">
+  <div class="herotext" style="border: 1px solid blue; padding: 10px;">
+        <p class="text-black">This is a paragraph of text contained within a div element. The div acts as a container for this content.</p>
+        <p class="text-grey2">You can have multiple paragraphs inside a single div, each serving to organize your text content.</p>
+    </div>
+<div class="orange-box">
+  Trusted by 100+ customers on Google Reviews.
+</div><img src="https://images.unsplash.com/photo-1631720040176-0d789a643a78?w=1920&q=90">
+</div>
+  </div>
+
 <div class="lottieflex">
 <div id="lottie1" class="lottie1">
   </div>
 </div>
 
 
-	  
+
+
+
 
 <div class="lottiewrapper">
 <div class="lottie">
@@ -138,39 +340,8 @@
 
 <div id="tooltip" class="tooltip">This is a tooltip.</div>
 </div>
-  
- <script>
-
-window.onload = function() {
-
-    // This code will execute once the DOM is fully loaded.
-    const imageContainer = document.getElementById('tooltip'); // Assuming an element exists to hold the image
-    const newImage = document.createElement('img');
-    newImage.src = 'undraw_reviewed-docs_tng3.png'; // Set the source of your image
-    newImage.alt = 'Description of your image'; // Provide alternative text for accessibility
-
-    imageContainer.appendChild(newImage); // Add the image to the 
-
-	
-
-
-	  var lottieanimation = lottie.loadAnimation({
-        container: document.getElementById('lottie1'), // The DOM element to render the animation in
-        renderer: 'svg', // 'svg', 'canvas', or 'html'
-        loop: true, // Whether the animation should loop
-        autoplay: true, // Whether the animation should start playing automatically
-        path: 'Car Trip.json' // The path to your Lottie JSON file
-  
-	  });
-
-}
 
 
 
 
-
-</script>
-
-
-	
-
+<div class="mp4div"><div style="aspect-ratio:1280 / 720" ><img src="IMG_0429.jpeg" alt="Italian Trulli"></div>
