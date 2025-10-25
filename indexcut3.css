@@ -63,7 +63,7 @@ justify-content:center;
 position:relative;
 display:flex;
 width:100vw;
-height:150vh;
+height:75vh;
 border:1px solid black;
 justify-content:center;
 }
@@ -104,6 +104,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 }
+
 
 
 
