@@ -26,7 +26,7 @@ gsap.to(".flextexts2",{
 x:-calculateVwToPx(90),
 });
     
-this.disable();
+draggable1.disable();
 draggable2.enable();
          return; 
       }
@@ -373,6 +373,7 @@ duration:0,
   
 
     
+
 
 
 
