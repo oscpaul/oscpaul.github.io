@@ -3,7 +3,7 @@
 background:white;
   width:100%;
   display:flex;
-  position:absolute;
+  position:relative;
 height:20vw;
 }
 
@@ -107,12 +107,13 @@ justify-content:center;
 .flexrows--{
   height:75vh;
 }
-.twobrothers{
-position:absolute;
+.flexrows-3{
+position:relative;
 }
 
 
 }
+
 
 
 
