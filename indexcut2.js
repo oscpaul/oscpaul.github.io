@@ -36,23 +36,24 @@ console.log('three disable');
 this.disable();
 draggable3.enable();
 
-
-
-
 gsap.to(".panel.three",{
 x:-calculateVwToPx(180),
-
 });
-
 
 gsap.to(".panel.four",{
 x:-calculateVwToPx(180),
 duration:0,
 });
 
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(180),
+});
+gsap.to(".flextexts4",{
+x:-calculateVwToPx(180),
+});
     
-}
 
+}
 
 }
 
@@ -369,6 +370,7 @@ duration:0,
 
     
 });
+
 
 
 
