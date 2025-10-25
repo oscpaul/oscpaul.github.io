@@ -174,25 +174,7 @@ if (distanceXend <= -calculateVwToPx(205))
       // Snap to the target if the threshold is met
 {
 
-gsap.to(".panel.three",{
-x:-calculateVwToPx(300),
-});
-
-gsap.to(".panel.four",{
-x:-calculateVwToPx(300),
-});
-
-    gsap.to(".flextexts3",{
-x:-calculateVwToPx(270),
-});
-gsap.to(".flextexts4",{
-x:-calculateVwToPx(270),
-});
-
-    
-console.log('snap');
-this.disable();
-draggable4.enable();
+turnRight3();
 
 
 
@@ -282,28 +264,7 @@ if (distanceXend <= -calculateVwToPx(120))
 {
 
 
-gsap.to(".panel.two",{
-x:-calculateVwToPx(200),
-});
-
-gsap.to(".panel.three",{
-x:-calculateVwToPx(200),
-});
-
-gsap.to(".panel.four",{
-x:-calculateVwToPx(200),
-duration:0,
-});
-gsap.to(".flextexts2",{
-x:-calculateVwToPx(180),
-});
-gsap.to(".flextexts3",{
-x:-calculateVwToPx(180),
-});
-
-
-this.disable();
-draggable3.enable();
+turnRight2();
 
 }
 
@@ -356,6 +317,28 @@ if (distanceXend <= - calculateVwToPx(25) ) {
       // Snap to the target if the threshold is met
 
 
+turnRight1();
+
+
+    } else {
+      // Snap back to the original position if not
+    }
+    
+gsap.to(".panel.two",{
+x:this.x,
+duration:0,
+});
+
+},
+ onDragEnd: function() {
+
+  }
+})[0];
+
+
+
+  function turnRight1()
+      {
 
 gsap.to(".panel.one",{
 x:-calculateVwToPx(100),
@@ -379,28 +362,63 @@ x:-calculateVwToPx(90),
     
 this.disable();
 draggable2.enable();
+          
+      }
 
-    } else {
-      // Snap back to the original position if not
-    }
-    
+
+    function turnRight2{
+
 gsap.to(".panel.two",{
-x:this.x,
+x:-calculateVwToPx(200),
+});
+
+gsap.to(".panel.three",{
+x:-calculateVwToPx(200),
+});
+
+gsap.to(".panel.four",{
+x:-calculateVwToPx(200),
 duration:0,
 });
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(180),
+});
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(180),
+});
 
-},
- onDragEnd: function() {
 
-  }
-})[0];
+this.disable();
+draggable3.enable();     
+    }
 
+    function turnRight3(){
 
+gsap.to(".panel.three",{
+x:-calculateVwToPx(300),
+});
+
+gsap.to(".panel.four",{
+x:-calculateVwToPx(300),
+});
+
+    gsap.to(".flextexts3",{
+x:-calculateVwToPx(270),
+});
+gsap.to(".flextexts4",{
+x:-calculateVwToPx(270),
+});
 
     
+console.log('snap');
+this.disable();
+draggable4.enable();
+        
+    }
 
     
 });
+
 
 
 
