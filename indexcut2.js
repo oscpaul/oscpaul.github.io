@@ -437,6 +437,12 @@ draggable2.enable();
 function lazyLoad(){
 const lazyImages=document.querySelectorAll('.lazy');
 
+
+
+lazyImages.forEach(img=>{
+console.log(img);
+}
+
 }
 
 window.addEventListener('scroll', lazyLoad);
@@ -447,6 +453,7 @@ window.addEventListener('scroll', lazyLoad);
 
 
     
+
 
 
 
