@@ -88,7 +88,7 @@ duration:0,
 
 
 
-mm.add("(max-width: 767px)", () => {
+
 let draggable3= Draggable.create(".panel.three",{
 type:"x",
 
@@ -193,7 +193,6 @@ draggable3.disable();
 
 
 
-mm.add("(max-width: 767px)", () => {
 let draggable2= Draggable.create(".panel.two",{
 
 
@@ -300,7 +299,7 @@ draggable2.disable();
 
  
 
-mm.add("(max-width: 767px)", () => {
+
 let draggable1= Draggable.create(".panel.one",{
 type:"x",
 inertia:true,
@@ -375,6 +374,7 @@ duration:0,
 
     
 });
+
 
 
 
