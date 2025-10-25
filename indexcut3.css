@@ -1,5 +1,19 @@
 
+.textcolor{
+oklch(.705 .213 47.604);
+}
 
+.herotext2{
+position:absolute;
+left:50%;
+ transform: translateX(-50%);
+top:45%;
+ margin: 0 auto;
+width:50%;
+display:flex;
+justify-content:center;
+
+}
 .herotext{
 position:absolute;
 left:50%;
@@ -258,6 +272,7 @@ position:relative;
 top:0;
 left:0;
 }
+
 
 
 
