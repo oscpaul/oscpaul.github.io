@@ -202,18 +202,24 @@ this.disable();
 draggable1.enable();
 
 
-
-
 gsap.to(".panel.two",{
 x:-calculateVwToPx(0),
 duration:0,
 });
-
-
 gsap.to(".panel.one",{
 x:-calculateVwToPx(0),
-
 });
+
+gsap.to(".flextexts1",{
+x:-calculateVwToPx(0),
+});
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(0),
+});
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(0),
+});
+
 
 }
 
@@ -235,19 +241,22 @@ if (distanceXend <= -calculateVwToPx(120))
 
 gsap.to(".panel.two",{
 x:-calculateVwToPx(180),
-
 });
 
 gsap.to(".panel.three",{
 x:-calculateVwToPx(180),
-
 });
 
 gsap.to(".panel.four",{
 x:-calculateVwToPx(180),
 duration:0,
 });
-
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(180),
+});
+gsap.to(".flextexts3",{
+x:-calculateVwToPx(180),
+});
 
 
 this.disable();
@@ -305,12 +314,10 @@ if (distanceXend <= - calculateVwToPx(25) ) {
 
 gsap.to(".panel.one",{
 x:-calculateVwToPx(90),
-
 });
 
 gsap.to(".panel.two",{
 x:-calculateVwToPx(90),
-
 });
 
 gsap.to(".panel.three",{
@@ -318,6 +325,13 @@ x:-calculateVwToPx(90),
 duration:0,
 });
 
+gsap.to(".flextexts1",{
+x:-calculateVwToPx(90),
+});
+gsap.to(".flextexts2",{
+x:-calculateVwToPx(90),
+});
+    
 this.disable();
 draggable2.enable();
 
@@ -340,6 +354,7 @@ duration:0,
 
     
 });
+
 
 
 
