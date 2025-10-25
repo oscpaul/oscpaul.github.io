@@ -16,6 +16,7 @@ const myDiv = document.getElementById('svgtext2');
     
 let mm = gsap.matchMedia();
 mm.add("(max-width: 767px)", () => {
+});
 let draggable4= Draggable.create(".panel.four",{
 type:"x",
     inertia:true,
@@ -84,7 +85,7 @@ duration:0,
 
 })[0];
     draggable4.disable();
-});
+
 
 
 mm.add("(max-width: 767px)", () => {
@@ -185,8 +186,6 @@ draggable4.enable();
 
 })[0];
 draggable3.disable();
-
-});
 
 
 
@@ -298,7 +297,6 @@ draggable3.enable();
     
 draggable2.disable();
 
-});
 
  
 
@@ -373,11 +371,11 @@ duration:0,
 
   }
 })[0];
-});
 
 
     
 });
+
 
 
 
