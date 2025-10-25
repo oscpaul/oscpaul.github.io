@@ -1,4 +1,3 @@
-
 .textcolor{
 oklch(.705 .213 47.604);
 }
@@ -14,6 +13,8 @@ display:flex;
 justify-content:center;
 
 }
+
+
 .herotext{
 position:absolute;
 left:50%;
@@ -62,6 +63,7 @@ justify-content:center;
 
 }
 .flexrows--img{
+border:10px solid black;
 width:100vw;
 height:150vh;
 
@@ -75,46 +77,9 @@ height:100%;
 object-fit:contain;
 }
 
-.tooltip1{
-
-  position:relative;
-  width:30px;
-  height:50px;
-}
-
-.lottieflex{
-
-width:100%;
-height:25vw;
-border:1px solid black;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-
 .header1{
 position:relative;
 }
-.flexrows--{
-position:relative;
-display:flex;
-width:90vw;
-height:10vw;
-border:1px solid black;
-justify-content:center;
-}
-
-
-
-.mp4div2{
-background:white;
-position:relative;
-width:500px;
-height:281px;
-border:1px solid black;  
-}
-
 
 .flexrows-3{
 background:white;
@@ -123,88 +88,71 @@ background:white;
   position:relative;
 height:20vw;
 }
-.section-2{
+.section2{
 background-color:white;
 }
-html, body {
-        overflow-x: hidden;
-        max-width: 100vw; /* 100vw represents 100% of the viewport width */
-    }
-.flextext{
-  margin-top: 2em;   /* Sets the top margin to 20 pixels */
-  margin-bottom: 3em; /* Sets the bottom margin to 30 pixels */
-display:flex;
-width:90vw;
-height:10px;
-border:1px solid black;
+.flexrows-{
 position:relative;
+height:20vh;
+background:white;
 }
 
+.mp4div2{
 
-@media screen and (max-width: 768px) {
-
-  .flextext{
-  width:360vw;
-
-  
-  }
-  /* CSS rules for screens with a maximum width of 768px (e.g., tablets and phones) */
-}
-
-
-
-.flextexts{
-          z-index:10;
-
-top:-20%;
-height:200px;
+background:white;
 position:relative;
-width:25%;
-border:1px solid blue;
-}
+width:500px;
+height:281px
+border:1px solid black; 
 
+}
 
 .restartbutton{
-
 position:relative;
 border:1px solid blue; 
 }
 
 .mp4div{
+
+background:white;
 position:relative;
-height:100%;
-width:100%;
-border:1px solid green;
-display:flex;
-justify-content:center;
-align-items:center;
+width:500px;
+height:281px
+border:1px solid black; 
 }
+
+
+
 
 .video-js{
 position:absolute;
 top:0;
-height:30%;
-width:30%;
-}
+height:100%;
 
-.my-video_-dimensions{
-
-  width:30%;
-height:30%;
 }
 
 
-.my-video-1-dimensions{
-
-  width:30%;
-height:30%;
-}
-
-.my-video-2-dimensions{
+.my-video-dimensions{
 position:absolute;
 top:0;
 object-fit:contain;
-width:80%;
+width:40%;
+height:auto;
+}
+
+.my-video1-dimensions{
+position:absolute;
+top:0;
+object-fit:contain;
+width:40%;
+height:auto;
+}
+
+.my-video2-dimensions{
+position:absolute;
+top:0;
+object-fit:contain;
+width:40%;
 
 }
 
@@ -214,44 +162,55 @@ width:80%;
 }
 
 .video3-div{
-border:1px solid black;
+
 height:500px;
 width:500px;
 }
 
 
 .horizontal-container {
- border:3px solid black;
+position:relative;
   overflow: hidden;
-  width: 400vw; /* (number of sections) * 100vw */
-  height: 65vh;
- 
+  width: 360vw; /* (number of sections) * 100vw */
+border:3px solid black;
+ height: 65vh;
 
 }
 
 .snap-wrapper {
-  position:relative;
-  display: flex;
-  width: 100%; /* (number of sections) * 100vw */
-    
 
+  display: flex;
+  width: 360vw; /* (number of sections) * 100vw */
 }
 
+.flextext{
 
+display:flex;
+width:90vw;
+height:15vh;
+border:1px solid black;
+position:relative;
+
+}
+.flextexts{
+
+width:25%;
+color:black;
+}
 
 .panel {
-   
 
   flex-shrink: 0;
   width: 25%;
   height: 100%;
   display: flex;
-  align-items: center;
-justify-content:center;
+  justify-content:center;
+align-items:center;
   font-size: 5rem;
-  color: white;
+
   text-align: center;
 }
+
 
 
 .one { background-color: #fff; }
@@ -260,62 +219,6 @@ justify-content:center;
 .four { background-color: #fff;
 width:100vw;
  }
-
-
-
-
-.svgtext{
-width:90vw;
-border:1px solid blue;
-position:relative;
-top:0;
-left:0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
