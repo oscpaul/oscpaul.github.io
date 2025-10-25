@@ -335,6 +335,7 @@ duration:0,
   }
 })[0];
 
+});
 
 
   function turnRight1()
@@ -417,7 +418,7 @@ draggable4.enable();
     }
 
     
-});
+
 
 
 
