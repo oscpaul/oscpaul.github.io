@@ -1,1 +1,98 @@
 
+
+
+.textcolor{
+oklch(.705 .213 47.604);
+}
+
+.herotext2{
+position:absolute;
+left:50%;
+ transform: translateX(-50%);
+top:45%;
+ margin: 0 auto;
+width:50%;
+display:flex;
+justify-content:center;
+
+}
+.herotext{
+position:absolute;
+left:50%;
+ transform: translateX(-50%);
+top:35%;
+text-align:center;
+  margin: 0 auto;
+width:50%;
+font-weight: bold;
+}
+
+
+.orange-box {
+position:absolute;
+top:50%;
+  background-color: orange; /* Sets the background color to orange */
+  padding: 20px;            /* Adds space between the content and the box's edge */
+  border: 1px solid #cc6600; /* Optional: adds a border around the box */
+  color: white;             /* Optional: sets the text color to white for contrast */
+  text-align: center;       /* Optional: centers the text horizontally */
+  width: 300px;             /* Optional: sets a fixed width for the box */
+}
+
+.twobrothers{
+position:absolute;
+top:0;
+z-index:1;
+}
+.lottieflex{
+
+width:100%;
+height:45vw;
+border:1px solid black;
+display:flex;
+justify-content:center;
+}
+
+.flexrows--{
+position:relative;
+display:flex;
+width:100vw;
+height:150vh;
+border:1px solid black;
+justify-content:center;
+
+
+}
+.flexrows--img{
+width:100vw;
+height:150vh;
+
+opacity:.9;
+}
+
+.flexrows--img img{
+
+width:100%;
+height:100%;
+object-fit:contain;
+}
+
+.tooltip1{
+
+  position:relative;
+  width:30px;
+  height:50px;
+}
+
+.lottieflex{
+
+width:100%;
+height:25vw;
+border:1px solid black;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+
