@@ -87,16 +87,7 @@ left:0%;
 }
 
 
-svg {
-    position: relative;
 
- border:1px solid blue;
-    width: 50vw;
-
-    .mask {
-        width: 0;
-    }
-}
 
 
 .text-grey2{
