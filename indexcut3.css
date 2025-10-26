@@ -18,7 +18,7 @@ background:white;
   display:flex;
   position:relative;
   align-items:center;
-height:20vw;
+height:50vw;
    background-color: #cccccc; /* A light grey color */
   border-radius: 50px; /* Adjust the value for desired roundness */
   padding: 20px; /* Optional: Add padding for better visual appearance */
@@ -142,6 +142,7 @@ position:relative;
 
 
 }
+
 
 
 
