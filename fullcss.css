@@ -10,13 +10,7 @@ height:20vh;
   object-fit: contain;
 }
 
-.lottiewrapper{
-  width:100%;
-  background:rgb(235,235,245);
-  display:flex;
-  justify-content:center;
-  
-}
+
 .lottie {
 
   width:300px;
