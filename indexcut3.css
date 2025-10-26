@@ -1,7 +1,8 @@
 .lottiewrapper{
+  position:relative
   height:500px;
   width:600px;
-  background:rgb(235,235,245);
+  background:rgb(205,205,245);
   display:flex;
   justify-content:center;
   
@@ -178,6 +179,7 @@ width:300px;
 }
 
 }
+
 
 
 
