@@ -24,7 +24,7 @@ background:white;
   align-items:center;
 height:30vw;
   
-   background-color: rgba(216, 217, 223);
+   background-color: rgba(250, 250, 250);
   border-radius: 50px; /* Adjust the value for desired roundness */
   padding: 20px; /* Optional: Add padding for better visual appearance */
 }
@@ -150,6 +150,7 @@ position:relative;
 
 
 }
+
 
 
 
