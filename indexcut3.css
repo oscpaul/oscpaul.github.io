@@ -1,3 +1,17 @@
+.flexsquareup{
+display:flex;
+flex-direction:column;
+border:1px solid black;
+left:-10%;
+position:relative;
+}
+.flexsquare{
+left:50%;
+flex:1;
+width:100px;
+border:1px solid black;
+height:100px;
+}
 .headingimage{}
 
 .heading{
@@ -51,6 +65,7 @@ height:50%;
 
 
 iframe{
+bottom:0;
 border-radius:20px;
 }
 
@@ -126,16 +141,24 @@ justify-content:center;
 }
 
 
+.lottie {
+
+  width:300px;
+  height:500px;
+}
 
 @media screen and (max-width: 768px) {
   /* CSS rules to apply when the screen width is 768px or less */
 .flexrows--{
+flex-direction:column;
   height:105vh;
 }
 .flexrows-3{
 position:relative;
 }
-
+.lottie {
+height:500px;
+}
 
 }
 
