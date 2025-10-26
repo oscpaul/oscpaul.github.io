@@ -1,7 +1,10 @@
+
+.flexrows--{
+display:flex;
+  flex-direction:row;
+}
 .flexrows--img{
 position:relative;
-display:flex;
-flex-direction:row;
 width:100%;
 height:30vh;
 border:1px solid black;
