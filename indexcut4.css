@@ -6,6 +6,15 @@ border:1px solid black;
 
 .smallheaderh2{
 font-size:60px;
+ }
+
+.smallsection{
+border:1px solid black;
+ height:15vw;
+ width:100%;
+}
+.smallsectionh2{
+font-size:30px;
  
 }
 .flexrows--{
