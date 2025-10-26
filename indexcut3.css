@@ -7,7 +7,7 @@ background:white;
   align-items:center;
 height:20vw;
    background-color: #cccccc; /* A light grey color */
-  border-radius: 10px; /* Adjust the value for desired roundness */
+  border-radius: 50px; /* Adjust the value for desired roundness */
   padding: 20px; /* Optional: Add padding for better visual appearance */
 }
 .smallbox{
@@ -129,6 +129,7 @@ position:relative;
 
 
 }
+
 
 
 
