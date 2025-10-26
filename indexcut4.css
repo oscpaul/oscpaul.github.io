@@ -1,8 +1,8 @@
-.header{
-
- 
+header {
+  height: 100px; /* Set a fixed height in pixels */
+  width: 100%; /* Make the header span the full width */
+  background-color: lightblue; /* Example styling */
 }
-
 .smallheader{
 border:1px solid black;
  height:30vh;
