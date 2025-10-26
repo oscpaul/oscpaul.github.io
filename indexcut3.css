@@ -19,7 +19,7 @@ background:white;
   position:relative;
   align-items:center;
 height:50vw;
-   background-color: #cccccc; /* A light grey color */
+   background-color: rgba(216, 217, 223);
   border-radius: 50px; /* Adjust the value for desired roundness */
   padding: 20px; /* Optional: Add padding for better visual appearance */
 }
@@ -143,6 +143,7 @@ position:relative;
 
 
 }
+
 
 
 
