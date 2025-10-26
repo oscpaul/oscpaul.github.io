@@ -167,6 +167,7 @@ justify-content:center;
 .flexrows--{
 border:2px solid black;
 flex-direction:column;
+  height:185vh;
 }
 .flexrows-3{
 position:relative;
@@ -176,6 +177,7 @@ width:300px;
 }
 
 }
+
 
 
 
