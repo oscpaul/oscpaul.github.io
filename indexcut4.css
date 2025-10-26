@@ -2,6 +2,7 @@
 .flexrows--{
 display:flex;
   flex-direction:row;
+  justify-content:center;
 }
 .flexrows--img{
 position:relative;
