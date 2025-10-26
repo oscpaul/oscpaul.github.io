@@ -1,19 +1,6 @@
-.mb-0{
 
-  border-radius:10px;
-}
-.main{
-  border:100px solid black;
-}
-.popover-container{
-top:0px;
-}
-.text-black-1{
-  
-}
-svg{
-
-
+.container {
+  text-align: center; /* Centers inline content, including the h1 */
 }
 .flexrows-3{
     border:1px solid blue;
@@ -152,6 +139,7 @@ position:relative;
 
 
 }
+
 
 
 
