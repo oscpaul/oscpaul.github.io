@@ -7,7 +7,7 @@ display:flex;
 .flexrows--img{
 position:relative;
 width:100%;
-height:30vh;
+height:125vh;
 border:1px solid black;
 }
 .flexrows--img img{
