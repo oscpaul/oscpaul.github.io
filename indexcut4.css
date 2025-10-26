@@ -25,6 +25,8 @@ object-fit:contain;
   height:500px;
   width:600px;
   background:rgb(205,205,245);  
+ display:flex;
+ justify-content:center;
 }
 
 
