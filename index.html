@@ -52,16 +52,30 @@ window.onload = function() {
 </script>
 
 
-
-
-
-  <div class="flexrows--">
-<div class="flexrows--img">
-<img src="Untitled design.png">
+<div class="flex-container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
 </div>
 
-   <div class="lottiewrapper"></div>
-  </div>
+<style>
+
+	.flex-container {
+  display: flex;
+  flex-direction: row; /* This is the default, but explicitly stating it is good practice */
+  /* Optional: Add spacing or alignment */
+  justify-content: space-around; /* Distributes space around items */
+  align-items: center; /* Aligns items vertically in the center */
+  height: 100px; /* Example height for visualization */
+  border: 1px solid black;
+}
+
+.item {
+  padding: 10px;
+  background-color: lightblue;
+  margin: 5px;
+}
+</style>
+  
 
 
 
@@ -69,7 +83,13 @@ window.onload = function() {
 <!--
 
 
-   
+   <div class="flexrows--">
+<div class="flexrows--img">
+<img src="Untitled design.png">
+</div>
+
+   <div class="lottiewrapper"></div>
+  </div>
 
 
 	<div class="lottie">
