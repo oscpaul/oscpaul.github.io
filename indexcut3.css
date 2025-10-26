@@ -117,6 +117,7 @@ justify-content:center;
 .flexrows--{
 position:relative;
 display:flex;
+  flex-direction:column;
 width:100vw;
 height:85vh;
 border:1px solid black;
@@ -177,6 +178,7 @@ width:300px;
 }
 
 }
+
 
 
 
