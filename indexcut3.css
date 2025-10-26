@@ -23,10 +23,14 @@ display:flex;
 
 }
 
+.flexrow{
+display:flex;
+width:100%;
+}
 .flexrows-3{
 display:flex;
 justify-content:center;
-
+flex-direction:column;
 height:25vw;
    background-color: rgba(240, 240, 240);
   border-radius: 50px; /* Adjust the value for desired roundness */
@@ -52,6 +56,7 @@ height:30px;
 }
 
 .flex-container {
+top:0%;
   display: flex;
  top:50%;
   gap: 20px; /* Creates a gap of 20px between the items */
@@ -60,7 +65,7 @@ height:30px;
   border: 1px solid #ccc;
 position:relative;
 height:50%;
-
+width:100%;
 }
 
 
@@ -161,4 +166,11 @@ height:500px;
 }
 
 }
+
+
+
+
+
+
+
 
