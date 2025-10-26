@@ -1,6 +1,6 @@
 
 .flexrows--{
- 
+ height:200vh;
 display:flex;
   flex-direction:row;
   justify-content:center;
@@ -50,7 +50,7 @@ height:650px;
   
 .flexrows--{
 
-  height:150vh;
+  
 }
 
 }
