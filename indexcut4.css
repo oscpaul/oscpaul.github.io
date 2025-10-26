@@ -1,4 +1,13 @@
+.smallheader{
+border:1px solid black;
+ height:45vw;
+ width:100%;
+}
 
+.smallheaderh2{
+font-size:40px;
+ 
+}
 .flexrows--{
  height:200vh;
 display:flex;
