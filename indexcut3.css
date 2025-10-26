@@ -10,7 +10,13 @@ height:20vw;
   border-radius: 10px; /* Adjust the value for desired roundness */
   padding: 20px; /* Optional: Add padding for better visual appearance */
 }
-
+.smallbox{
+height:30px;
+  width:30px;
+  border-radus:2px;
+  border:1px solid oklch(.705 .213 47.604);
+  
+}
 .textcolor{
 oklch(.705 .213 47.604);
 }
@@ -123,6 +129,7 @@ position:relative;
 
 
 }
+
 
 
 
