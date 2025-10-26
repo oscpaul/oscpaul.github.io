@@ -149,14 +149,14 @@ justify-content:center;
 .lottie {
 
   width:300px;
-  height:500px;
+  height:85vh;
 }
 
 @media screen and (max-width: 768px) {
   /* CSS rules to apply when the screen width is 768px or less */
 .flexrows--{
 flex-direction:column;
-  height:105vh;
+  height:150vh;
 }
 .flexrows-3{
 position:relative;
@@ -166,6 +166,7 @@ height:500px;
 }
 
 }
+
 
 
 
