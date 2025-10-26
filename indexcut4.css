@@ -9,7 +9,14 @@ border:1px solid black;
  width:100%;
 }
 
+.image1{
 
+  width:1em;
+  height:1em;
+  position:absolute;
+  left:0;
+  top:0;
+}
 
 .smallsection{
 border:1px solid black;
