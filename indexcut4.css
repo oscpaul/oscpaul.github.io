@@ -22,7 +22,7 @@ object-fit:contain;
 
 .lottiewrapper{
   position:relative;
-  height:500px;
+  height:700px;
   width:500px;
   background:rgb(205,205,245);  
  display:flex;
