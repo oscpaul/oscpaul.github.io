@@ -9,6 +9,7 @@ font-size:60px;
  
 }
 .flexrows--{
+ border:2px solid black;
  height:200vh;
 display:flex;
   flex-direction:row;
