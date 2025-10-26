@@ -16,6 +16,7 @@ svg{
   border:1px solid blue;
 }
 .flexrows-3{
+  text-align: center;
 background:white;
   width:100%;
   display:flex;
@@ -149,6 +150,7 @@ position:relative;
 
 
 }
+
 
 
 
