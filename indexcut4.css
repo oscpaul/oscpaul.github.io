@@ -34,10 +34,10 @@ object-fit:contain;
 
 @media screen and (max-width: 768px) {
   /* CSS rules to apply when the screen width is 768px or less */
-.flexrows--{
+.flex-container{
 border:2px solid black;
 flex-direction:column;
-  height:125vh;
+
 }
 .flexrows-3{
 position:relative;
