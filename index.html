@@ -53,8 +53,32 @@ window.onload = function() {
 };
 </script>
 
+<div class="container">
+  <div class="column">Column 1 Content</div>
+  <div class="column">Column 2 Content</div>
+  <div class="column">Column 3 Content</div>
+  <div class="column">Column 4 Content</div>
+</div>
+<style>
 
+	.container {
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+  flex-wrap: wrap; /* Allows items to wrap to the next column */
+  height: 400px; /* Essential for flex-direction: column and flex-wrap: wrap to work */
+  align-content: flex-start; /* Aligns wrapped columns to the start of the container */
+}
 
+.column {
+  flex: 1 1 50%; /* Allows columns to grow/shrink and sets initial width to 50% */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+</style>
+
+<!--
   <div class="flexrows--">
 <div class="flexrows--img">
 
@@ -63,7 +87,7 @@ window.onload = function() {
 	   <div class="lottiewrapper">
  </div>
   </div>
-<!--
+
 
 
 	
