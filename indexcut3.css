@@ -61,6 +61,8 @@ font-weight: bold;
 .orange-box {
 position:absolute;
 top:50%;
+  width: 50%; /* Or any other specific width */
+  margin: 0 auto
   background-color: orange; /* Sets the background color to orange */
   padding: 1em;            /* Adds space between the content and the box's edge */
   border: 1px solid #cc6600; /* Optional: adds a border around the box */
@@ -143,6 +145,7 @@ position:relative;
 
 
 }
+
 
 
 
