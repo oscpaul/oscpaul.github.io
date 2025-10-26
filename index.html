@@ -53,28 +53,28 @@ window.onload = function() {
 };
 </script>
 
-<div class="container">
-  <div class="column">Column 1 Content</div>
-  <div class="column">Column 2 Content</div>
-  <div class="column">Column 3 Content</div>
-  <div class="column">Column 4 Content</div>
+
+
+<div class="flex-container">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
 </div>
 <style>
 
-	.container {
+	.flex-container-1 {
   display: flex;
-  flex-direction: column; /* Arranges items vertically */
-  flex-wrap: wrap; /* Allows items to wrap to the next column */
-  height: 400px; /* Essential for flex-direction: column and flex-wrap: wrap to work */
-  align-content: flex-start; /* Aligns wrapped columns to the start of the container */
+  flex-direction: column; /* Arranges items in a column */
+  align-items: center; /* Horizontally centers items within the column */
+  justify-content: center; /* Vertically centers items within the column */
+  height: 300px; /* Example height for demonstration */
+  border: 1px solid black;
 }
 
-.column {
-  flex: 1 1 50%; /* Allows columns to grow/shrink and sets initial width to 50% */
+.flex-container-1 div {
   padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
   margin: 5px;
+  background-color: lightblue;
 }
 </style>
 
