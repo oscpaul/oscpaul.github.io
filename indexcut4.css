@@ -6,6 +6,13 @@ border:1px solid black;
 
 .smallheaderh2{
 font-size:60px;
+
+ p{
+
+   margin-top: 0;
+        margin-bottom: 0;
+  
+ }
  }
 
 .smallsection{
