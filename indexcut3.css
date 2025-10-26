@@ -134,7 +134,7 @@ justify-content:center;
 @media screen and (max-width: 768px) {
   /* CSS rules to apply when the screen width is 768px or less */
 .flexrows--{
-  height:45vh;
+  height:85vh;
 }
 .flexrows-3{
 position:relative;
@@ -142,6 +142,7 @@ position:relative;
 
 
 }
+
 
 
 
