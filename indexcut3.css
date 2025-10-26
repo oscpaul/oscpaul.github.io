@@ -82,7 +82,7 @@ justify-content:center;
 position:relative;
 display:flex;
 width:100vw;
-height:75vh;
+height:45vh;
 border:1px solid black;
 justify-content:center;
 }
@@ -124,7 +124,7 @@ justify-content:center;
 @media screen and (max-width: 768px) {
   /* CSS rules to apply when the screen width is 768px or less */
 .flexrows--{
-  height:75vh;
+  height:45vh;
 }
 .flexrows-3{
 position:relative;
@@ -132,6 +132,7 @@ position:relative;
 
 
 }
+
 
 
 
