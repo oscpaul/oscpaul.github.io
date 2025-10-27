@@ -68,8 +68,8 @@ object-fit:contain;
 
 .lottiewrapper{
   position:relative;
-  height:800px;
-  width:600px;
+  height:700px;
+  width:500px;
   background:rgb(205,205,245);  
  display:flex;
  justify-content:center;
