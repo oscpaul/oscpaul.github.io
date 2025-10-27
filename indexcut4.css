@@ -12,7 +12,13 @@ header {
 border:1px solid black;
  height:30vh;
  width:100%;
+
+h2{
+    font-family: "San Francisco", sans-serif;
 }
+}
+
+
 
 .image1{
 
@@ -29,17 +35,7 @@ object-fit:contain;
 }
 
 
-.smallsection{
-border:1px solid black;
- height:15vw;
- width:100%;
-}
-.smallsectionh2{
-font-size:50px;
-  
-  font-family: "San Francisco", sans-serif;
 
-}
 .flexrows--{
  border:2px solid black;
  height:160vh;
