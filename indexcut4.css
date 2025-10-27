@@ -3,6 +3,11 @@
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
+iframe{
+
+border-radius:20px;
+}
+
 header {
   height: 100px; /* Set a fixed height in pixels */
   width: 100%; /* Make the header span the full width */
