@@ -35,7 +35,7 @@ font-size:30px;
 }
 .flexrows--{
  border:2px solid black;
- height:160vh;
+ height:175vh;
 display:flex;
   flex-direction:row;
   justify-content:center;
