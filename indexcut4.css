@@ -4,7 +4,7 @@ position:absolute;
 border:3px solid blue;
 width: 50%;
       height: 50vh;
-z-index:4;
+z-index:0;
 top:0%;
 right:0%;
  
@@ -33,6 +33,7 @@ header {
 border:1px solid black;
  height:30vh;
  width:100%;
+ z-index:1;
 
 h1{
   font-family: "Square Sans Display VF",
