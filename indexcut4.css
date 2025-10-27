@@ -1,10 +1,8 @@
 @font-face {
   font-family: "San Francisco";
-  src: url("path/to/sanfranciscodisplay-regular-webfont.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
-
 header {
   height: 100px; /* Set a fixed height in pixels */
   width: 100%; /* Make the header span the full width */
