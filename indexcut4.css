@@ -11,7 +11,7 @@ border:10px solid blue;
 width: 40vh;
       height: 40vh;
 z-index:-1;
-top:-75%;
+top:-50%;
 left:75%;
 }
 .smallimage1 img{
