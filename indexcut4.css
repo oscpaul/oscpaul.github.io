@@ -1,20 +1,19 @@
 .mobilehref{
 position:absolute;
       top:0%;
-      right:0%;
+      right:7%;
       
 }
 .smallimage1{
-position:absolute;
+position:relative;
 
-border:1px solid blue;
-width: 10vh;
-      height: 10vh;
+border:10px solid blue;
+width: 40vh;
+      height: 40vh;
 z-index:0;
-top:0%;
-right:0%;
+top:-75%;
+left:75%;
 }
-
 .smallimage1 img{
 
 max-width:100%;
