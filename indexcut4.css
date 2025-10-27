@@ -10,7 +10,7 @@ position:relative;
 border:10px solid blue;
 width: 40vh;
       height: 40vh;
-z-index:0;
+z-index:-1;
 top:-75%;
 left:75%;
 }
