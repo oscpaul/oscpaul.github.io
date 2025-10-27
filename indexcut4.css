@@ -7,8 +7,12 @@ width: 50%;
 z-index:-1;
 top:-60%;
 right:10%;
+ 
 
 
+}
+.backgroundimage1 img{
+ object-fit:cover;
 }
 
 
