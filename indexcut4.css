@@ -33,9 +33,11 @@ header {
 border:1px solid black;
  height:30vh;
  width:100%;
- z-index:1;
+
 
 h1{
+ 
+  z-index:1;
   font-family: "Square Sans Display VF",
       "Square Sans Display", Helvetica, Arial, sans-serif;
 }
