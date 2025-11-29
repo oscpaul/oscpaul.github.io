@@ -4,6 +4,7 @@ import Features from '@/app/components/Home/Features'
 import Cook from '@/app/components/Home/Cook'
 import Expert from '@/app/components/Home/Expert'
 import Gallery from '@/app/components/Home/Gallery'
+import Link from 'next/link';
 import Newsletter from '@/app/components/Home/Newsletter'
 import { Metadata } from 'next'
 import ContactForm from './components/Contact/Form'
@@ -13,14 +14,21 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
+
     <main>
+      
+    <div>
+           
+
+    </div>
       <Hero />
-      <Features />
-      <Cook />
+    
       <Expert />
-      <Gallery />
-      <ContactForm />
-      <Newsletter />
+           <Link href="/about">
+            Go to First Post
+          </Link>
+ 
+    
     </main>
   )
 }
