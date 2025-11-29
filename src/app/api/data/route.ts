@@ -61,25 +61,56 @@ const ExpertChiefData: ExpertChiefType[] = [
 
 const GalleryImagesData: GalleryImagesType[] = [
   {
-    src: '/images/Gallery/foodone.webp',
-    name: 'Caesar Salad(187 Kcal)',
+    src: '/images/Gallery/friedrice.jfif',
+    name: 'Fried Rice Chicken',
     price: 35,
   },
   {
-    src: '/images/Gallery/foodtwo.webp',
-    name: 'Christmas salad(118 Kcal)',
+    src: '/images/Gallery/ricebowl.jfif',
+    name: 'Rice Bowl Chicken',
     price: 17,
   },
   {
-    src: '/images/Gallery/foodthree.webp',
-    name: 'Sauteed mushrooms with pumpkin bowl(238 kcal)',
+    src: '/images/Gallery/shrimp.jfif',
+    name: 'Shrimp and Pork',
     price: 45,
   },
   {
-    src: '/images/Gallery/foodfour.webp',
-    name: 'BBQ Chicken Feast Pizza(272 kcal)',
+    src: '/images/Gallery/miso.jfif',
+    name: 'Miso Soup',
     price: 27,
   },
+
+    {
+    src: '/images/Gallery/edemame.jfif',
+    name: 'Edemame',
+    price: 27,
+  },
+
+    {
+    src: '/images/Gallery/edemame.jfif',
+    name: 'Edemame Garlic',
+    price: 27,
+  },
+
+    {
+    src: '/images/Gallery/chili.jfif',
+    name: 'Chili Crisp',
+    price: 27,
+  },
+
+    {
+    src: '/images/Gallery/teriyaki.png',
+    name: 'Teriyaki Sauce',
+    price: 27,
+  },
+
+    {
+    src: '/images/Gallery/download.jfif',
+    name: 'Wasabi Mayo',
+    price: 27,
+  },
+
 ]
 
 const FullMenuData: FullMenuType[] = [
