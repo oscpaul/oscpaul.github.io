@@ -17,7 +17,7 @@ const Hero = () => {
               day.
             </p>
             <div className='flex flex-col sm:flex-row gap-5 items-center justify-center lg:justify-start'>
-              <Link href='/#menu'>
+              <Link href='/about'>
                 <button className='text-xl font-medium rounded-full text-white py-3 px-8 bg-primary hover:text-primary border border-primary hover:bg-transparent hover:cursor-pointer transition ease-in-out duration-300'>
                   View Menu
                 </button>
