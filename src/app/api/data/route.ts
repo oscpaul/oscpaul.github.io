@@ -111,6 +111,13 @@ const GalleryImagesData: GalleryImagesType[] = [
     price: 27,
   },
 
+      {
+    src: '/images/Gallery/download.jfif',
+    name: 'Wasabi Mayo',
+    price: 27,
+  },
+
+
 ]
 
 const FullMenuData: FullMenuType[] = [
