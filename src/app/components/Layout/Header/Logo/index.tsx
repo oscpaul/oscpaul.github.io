@@ -4,7 +4,9 @@ import Link from 'next/link'
     import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
 import { headers } from 'next/headers';
 
-
+export function isServerMobile() {
+ 
+}
 
 const Logo: React.FC = () => {
 
@@ -27,7 +29,7 @@ const Logo: React.FC = () => {
 
   else
     {
-console.log('ok mobile');
+console.log('ok mobile!');
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
