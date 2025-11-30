@@ -33,8 +33,8 @@ console.log('ok mobile');
       <Image
         src='/images/Logo/Logo.svg'
         alt='logo'
-        width={width_}
-        height={height_}
+        width={117}
+        height={34}
         className='w-fit'
         quality={100}
       />
