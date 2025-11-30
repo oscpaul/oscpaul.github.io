@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
     import { usePathname } from 'next/navigation';
+    import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
 
 
 const Logo: React.FC = () => {
@@ -24,13 +25,23 @@ const Logo: React.FC = () => {
 
   else
     {
+
+      const { device } = userAgentFromString(userAgent); // Use userAgentFromString for parsing
+ const isMobile = device.type === "mobile"
+        var width_=117;
+        var height_=34;
+        if (isMobile )
+        {
+            var width_=30;
+            var height_=10;
+        }
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
         src='/images/Logo/Logo.svg'
         alt='logo'
-        width={117}
-        height={34}
+        width={width_}
+        height={height_}
         className='w-fit'
         quality={100}
       />
