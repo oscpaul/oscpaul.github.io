@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
     import { usePathname } from 'next/navigation';
     import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
-
+      
 
 const Logo: React.FC = () => {
 
@@ -32,9 +32,13 @@ const Logo: React.FC = () => {
         var height_=34;
         if (isMobile )
         {
+          console.log("mobile")
             var width_=30;
             var height_=10;
         }
+        else
+                      console.log("else")
+
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
