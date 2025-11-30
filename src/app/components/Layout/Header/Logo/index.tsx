@@ -4,12 +4,7 @@ import Link from 'next/link'
     import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
 import { headers } from 'next/headers';
 
-export function isServerMobile() {
-  const headersList = headers();
-  const userAgent = headersList.get("user-agent");
-  const { device } = userAgentFromString(userAgent || undefined);
-  return device.type === "mobile";
-}
+
 
 const Logo: React.FC = () => {
 
