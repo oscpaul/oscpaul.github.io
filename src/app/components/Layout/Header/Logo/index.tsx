@@ -30,8 +30,8 @@ const Logo: React.FC = () => {
           const headersList = headers();
   const userAgent = headersList.get("user-agent");
   const { device } = userAgentFromString(userAgent || ''); // userAgentFromString from 'next/server' or a custom implementation
-  return device.type === "mobile";
-console.log('ok mobile!');
+ 
+console.log(  device.type === "mobile");
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
