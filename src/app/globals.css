@@ -18,6 +18,10 @@
   --font-body: 'Cormorant Garamond', serif;
 }
 
+.textgold{
+color:#f7f0dc
+  
+}
 @media (max-width: 768px) { /* Example breakpoint for mobile */
       .header-nav {
         display: flex; 
