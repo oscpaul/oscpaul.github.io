@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Logo: React.FC = () => {
 
-    console.log("desk")
+    
       const pathname = usePathname();
   if (pathname === '/') {
   return (
