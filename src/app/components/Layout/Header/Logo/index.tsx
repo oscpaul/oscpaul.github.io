@@ -1,17 +1,17 @@
+  src='/images/lantern.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
     import { usePathname } from 'next/navigation';
-    import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
+
 
 const Logo: React.FC = () => {
 
-    
       const pathname = usePathname();
   if (pathname === '/') {
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
-        src='/images/lantern.jpg'
+  src='/images/lantern.jpg'
         alt='logo'
         width={117}
         height={34}
@@ -25,12 +25,10 @@ const Logo: React.FC = () => {
 
   else
     {
-
-       
   return (
-    <Link href='/' className='flex items-center  gap-0'>
+    <Link href='/' className='flex items-center gap-4'>
       <Image
-        src='/images/lantern.jpg'
+  src='/images/lantern.jpg'
         alt='logo'
         width={117}
         height={34}
