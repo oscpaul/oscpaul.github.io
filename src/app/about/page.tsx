@@ -1,7 +1,25 @@
+import { Great_Vibes, Cormorant_Garamond } from "next/font/google";
+
+const titleFont = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-title",
+});
+
+const bodyFont = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-body",
+});
+
+export const metadata = {
+  title: "Golden Lantern Menu",
+};
+
 export default function MenuPage() {
   return (
     <main
-      className="main-1 min-h-screen bg-cover bg-center bg-no-repeat flex justify-center px-4 py-12"
+      className="`${titleFont.variable}` main-1 min-h-screen bg-cover bg-center bg-no-repeat flex justify-center px-4 py-12"
       style={{
         backgroundImage: "url('/images/golden-bg.jpg')",
       }}
