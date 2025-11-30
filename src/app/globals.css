@@ -22,6 +22,7 @@
       .header-nav {
         display: flex; 
         flex-direction:column;
+        margin:0rem;
       }
       .mobile-menu-icon {
         display: block; /* Show mobile menu icon */
