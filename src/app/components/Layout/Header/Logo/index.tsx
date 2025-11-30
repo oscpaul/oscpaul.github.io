@@ -34,20 +34,6 @@ const Logo: React.FC = () => {
   else
     {
 
-      
-   const isMobile = isServerMobile();
-
-        var width_=117;
-        var height_=34;
-        if (isMobile )
-        {
-          console.log("mobile")
-            var width_=30;
-            var height_=10;
-        }
-        else
-                      console.log("else")
-
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
