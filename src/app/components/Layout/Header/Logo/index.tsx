@@ -33,7 +33,7 @@ const Logo: React.FC = () => {
 
   else
     {
-
+console.log('ok mobile');
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
