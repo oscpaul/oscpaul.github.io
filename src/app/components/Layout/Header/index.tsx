@@ -97,7 +97,7 @@ const Header: React.FC = () => {
             Home
           </Link>
 
-          <Link href="/menu" className="hover:text-gray-300 transition">
+          <Link href="/about" className="hover:text-gray-300 transition">
             Menu
           </Link>
 
