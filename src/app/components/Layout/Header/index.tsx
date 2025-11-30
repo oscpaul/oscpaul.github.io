@@ -12,6 +12,14 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import { HeaderItem } from '@/app/types/menu'
     import { usePathname } from 'next/navigation';
 
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: 'cover', // Optional, for full-screen experience on some devices
+};
+
 const Header: React.FC = () => {
 
       const pathname = usePathname();
