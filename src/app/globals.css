@@ -17,6 +17,11 @@
   --font-title: 'Great Vibes', cursive;
   --font-body: 'Cormorant Garamond', serif;
 }
+
+.globalMarginTopClass {
+      margin-top: 30vh; /* Adjust the value as needed */
+    }
+
 .golden-text {
   /* Define the gradient that gives the gold appearance */
   background-image: -webkit-linear-gradient(#FFF65C, #E0CF00 52%, #A86800 55%, #A86800);
