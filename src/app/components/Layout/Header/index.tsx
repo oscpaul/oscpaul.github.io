@@ -134,7 +134,47 @@ const Header: React.FC = () => {
   )
   }
   else
-     return (
+
+   if (window.innerWidth <=768)
+   {
+   return (
+    <header
+      className={`absolute top-0 z-40  w-full transition-all duration-500 
+       ${sticky ? 1 : 0}`}>
+      <div>
+        <div className='backgroundDiv container flex items-center justify-between' style={{ }}>
+          
+          <div>
+            <Logo />
+          </div>
+             <nav className="header-nav flex gap-0 text-lg font-medium">
+          <Link href="/" className="hover:text-gray-300 transition">
+            Home
+          </Link>
+
+          <Link href="/about" className="hover:text-gray-300 transition">
+            Menu
+          </Link>
+
+          <Link
+            href="/order"
+            className="bg-white text-blue-700 px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition"
+          >
+            Order Now
+          </Link>
+        </nav>
+  
+        </div>
+      
+  
+      </div>
+    </header>
+  )
+   }
+ else
+    
+    { 
+    return (
     <header
       className={`absolute top-0 z-40  w-full transition-all duration-500 
        ${sticky ? 1 : 0}`}>
@@ -167,6 +207,10 @@ const Header: React.FC = () => {
       </div>
     </header>
   )
+}
+
+
+
 }
 
 export default Header
