@@ -16,7 +16,7 @@
 .backgroundDiv{
       background-image: none;
           object-fit: cover; /* Or other desired values like 'contain', 'auto' */
- padding: 0rem; 
+ padding: 2rem; 
  height:auto;
 }
 .height-auto{
