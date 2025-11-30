@@ -35,15 +35,15 @@ export default function Home() {
 <section className="grid grid-cols-1 md:grid-cols-3 min-h-[1000px]">
   {/* Left (2/3) */}
   <div className="md:col-span-2 p-8 bg-gray-200">
-    <h2 className="text-2xl font-bold mb-2">About Us</h2>
-    <p >Welcome to The Golden Lantern, a neighborhood pan-Asian take-out spot in the heart of Shaw, DC. We’re a small kitchen with a big love for the flavors we grew up with - wok-tossed fried rice, crispy katsu, fragrant dumplings, and comforting bowls inspired by kitchens across East and Southeast Asia.</p>
+    <h2 className= {`text-2xl font-bold mb-2 ${myCustomFont.className}`}>About Us</h2>
+    <p className={myCustomFont.className} >Welcome to The Golden Lantern, a neighborhood pan-Asian take-out spot in the heart of Shaw, DC. We’re a small kitchen with a big love for the flavors we grew up with - wok-tossed fried rice, crispy katsu, fragrant dumplings, and comforting bowls inspired by kitchens across East and Southeast Asia.</p>
   </div>
 
   {/* Right (1/3) */}
   <div className="md:col-span-1 p-8 bg-gray-300">
     <h2 className="text-2xl font-bold mb-2"></h2>
-    <p >Kitchen Hours:  4 PM–1 AM Daily</p>
-    <p >Phone Number: 312-379-9882</p>
+    <p className={myCustomFont.className}>Kitchen Hours:  4 PM–1 AM Daily</p>
+    <p className={myCustomFont.className}>Phone Number: 312-379-9882</p>
   </div>
 </section>
 
