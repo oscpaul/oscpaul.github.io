@@ -16,11 +16,12 @@
 :root {
   --font-title: 'Great Vibes', cursive;
   --font-body: 'Cormorant Garamond', serif;
+    --font-bask: 'Cormorant Garamond', serif;
 }
 
 .textgold{
 color:#f7f0dc;
-  
+   font-family: var(--font-bask);
 }
 @media (max-width: 768px) { /* Example breakpoint for mobile */
       .header-nav {
