@@ -109,7 +109,7 @@ const Header: React.FC = () => {
           <div>
             <Logo />
           </div>
-             <nav className="header-nav flex gap-0 text-lg font-medium">
+             <nav className="header-nav flex gap-6 text-lg font-medium">
           <Link href="/" className="hover:text-gray-300 transition">
             Home
           </Link>
@@ -134,12 +134,9 @@ const Header: React.FC = () => {
   )
   }
   else
-
-   if (true)
-   {
-   return (
+     return (
     <header
-      className={`absolute top-0 z-40  w-full transition-all duration-500 
+      className={`fixed top-0 z-40  w-full transition-all duration-500 
        ${sticky ? 1 : 0}`}>
       <div>
         <div className='backgroundDiv container flex items-center justify-between' style={{ }}>
@@ -147,7 +144,7 @@ const Header: React.FC = () => {
           <div>
             <Logo />
           </div>
-             <nav className="header-nav flex gap-0 text-lg font-medium">
+             <nav className="flex gap-6 text-lg font-medium">
           <Link href="/" className="hover:text-gray-300 transition">
             Home
           </Link>
@@ -170,47 +167,6 @@ const Header: React.FC = () => {
       </div>
     </header>
   )
-   }
- else
-    
-    { 
-    return (
-    <header
-      className={`absolute top-0 z-40  w-full transition-all duration-500 
-       ${sticky ? 1 : 0}`}>
-      <div>
-        <div className='backgroundDiv container flex items-center justify-between' style={{ }}>
-          
-          <div>
-            <Logo />
-          </div>
-             <nav className="header-nav flex gap-6 text-lg font-medium">
-          <Link href="/" className="hover:text-gray-300 transition">
-            Home
-          </Link>
-
-          <Link href="/about" className="hover:text-gray-300 transition">
-            Menu
-          </Link>
-
-          <Link
-            href="/order"
-            className="bg-white text-blue-700 px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition"
-          >
-            Order Now
-          </Link>
-        </nav>
-  
-        </div>
-      
-  
-      </div>
-    </header>
-  )
-}
-
-
-
 }
 
 export default Header
