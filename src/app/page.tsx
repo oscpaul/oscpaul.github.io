@@ -8,6 +8,18 @@ import Link from 'next/link';
 import Newsletter from '@/app/components/Home/Newsletter'
 import { Metadata } from 'next'
 import ContactForm from './components/Contact/Form'
+    import localFont from 'next/font/local';
+   const myCustomFont = localFont({
+      src: [
+        {
+          path: '../../public/fonts/Regular.woff2',
+          weight: '400',
+          style: 'normal',
+        }
+      ]
+
+    });
+
 export const metadata: Metadata = {
   title: 'Kitchen',
 }
