@@ -13,6 +13,11 @@
 
   --radius-Newsletter: 30px 400px 30px 30px;
 }
+.backgroundDiv{
+      background-image: url('/images/header-bg.jpg');
+          background-size: cover; /* Or other desired values like 'contain', 'auto' */
+ padding: 1rem; 
+}
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
