@@ -13,6 +13,15 @@
 
   --radius-Newsletter: 30px 400px 30px 30px;
 }
+:root {
+  --font-title: 'Great Vibes', cursive;
+  --font-body: 'Cormorant Garamond', serif;
+}
+
+.main-1 {
+  font-family: var(--font-body);
+}
+
 .backgroundDiv{
       background-image: none;
           object-fit: cover; /* Or other desired values like 'contain', 'auto' */
