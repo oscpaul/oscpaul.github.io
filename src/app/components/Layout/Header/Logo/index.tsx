@@ -3,8 +3,6 @@ import Link from 'next/link'
     import { usePathname } from 'next/navigation';
     import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
 
-if (window.innerWidth>1)
-console.log("desk")
 const Logo: React.FC = () => {
 
       const pathname = usePathname();
