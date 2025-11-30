@@ -17,6 +17,19 @@
   --font-title: 'Great Vibes', cursive;
   --font-body: 'Cormorant Garamond', serif;
 }
+.golden-text {
+  /* Define the gradient that gives the gold appearance */
+  background-image: -webkit-linear-gradient(#FFF65C, #E0CF00 52%, #A86800 55%, #A86800);
+  
+  /* Clip the background to the shape of the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Make the text transparent so the background shows through */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Standard property for non-webkit browsers */
+
+}
 
 .main-1 {
   font-family: var(--font-body);
