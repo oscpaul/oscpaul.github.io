@@ -11,7 +11,7 @@ const Logo: React.FC = () => {
   return (
     <Link href='/' className='flex items-center gap-4'>
       <Image
-        src='/images/Logo/Logo.svg'
+        src='/images/lantern.jpg'
         alt='logo'
         width={117}
         height={34}
@@ -30,7 +30,7 @@ const Logo: React.FC = () => {
   return (
     <Link href='/' className='flex items-center  gap-0'>
       <Image
-        src='/images/Logo/Logo.svg'
+        src='/images/lantern.jpg'
         alt='logo'
         width={117}
         height={34}
