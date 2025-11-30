@@ -135,7 +135,7 @@ const Header: React.FC = () => {
   }
   else
 
-   if (window.innerWidth <=768)
+   if (true)
    {
    return (
     <header
