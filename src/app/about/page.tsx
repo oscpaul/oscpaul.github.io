@@ -1,7 +1,7 @@
 export default function MenuPage() {
   return (
     <main
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex justify-center px-4 py-12"
+      className="main-1 min-h-screen bg-cover bg-center bg-no-repeat flex justify-center px-4 py-12"
       style={{
         backgroundImage: "url('/images/golden-bg.jpg')",
       }}
