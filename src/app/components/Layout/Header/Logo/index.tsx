@@ -3,6 +3,14 @@ import Link from 'next/link'
     import { usePathname } from 'next/navigation';
     import { userAgentFromString } from "next/server"; // For Next.js 13+ App Router
       
+export function isServerMobile() {
+  const headersList = headers();
+  const userAgent = headersList.get("user-agent");
+    import { headers } from 'next/headers';
+  const { device } = userAgentFromString(userAgent || undefined); // Use a library to parse for more detailed device info
+  return device.type === "mobile";
+}
+
 
 const Logo: React.FC = () => {
 
@@ -26,8 +34,9 @@ const Logo: React.FC = () => {
   else
     {
 
-      const { device } = userAgentFromString(userAgent); // Use userAgentFromString for parsing
- const isMobile = device.type === "mobile"
+      
+   const isMobile = isServerMobile();
+
         var width_=117;
         var height_=34;
         if (isMobile )
