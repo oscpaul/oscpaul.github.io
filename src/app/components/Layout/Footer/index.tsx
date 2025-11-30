@@ -25,7 +25,8 @@ const Footer: FC = () => {
 
   return (
     <footer className='pt-8'>
-     
+      <div className='container'>
+      
         <div className='border-t border-grey/15 py-5 flex flex-col sm:flex-row justify-between sm:items-center gap-5'>
           <p className='text-sm text-black/70'>
             @2025 - Chef's kitchen. All Rights Reserved by{' '}
