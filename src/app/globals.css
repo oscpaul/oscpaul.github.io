@@ -18,6 +18,16 @@
   --font-body: 'Cormorant Garamond', serif;
 }
 
+@media (max-width: 768px) { /* Example breakpoint for mobile */
+      .header-nav {
+        display: flex; 
+        flex-direction:column;
+      }
+      .mobile-menu-icon {
+        display: block; /* Show mobile menu icon */
+      }
+    }
+
 .globalMarginTopClass {
       margin-top: 30vh; /* Adjust the value as needed */
     }
