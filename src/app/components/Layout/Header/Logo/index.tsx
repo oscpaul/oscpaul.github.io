@@ -15,7 +15,7 @@ const Logo: React.FC = () => {
         alt='logo'
         width={117}
         height={34}
-        className='w-fit'
+        className='w-contain'
         quality={100}
       />
       <p className='text-black text-2xl font-semibold '>The Golden Lantern</p>
@@ -32,7 +32,7 @@ const Logo: React.FC = () => {
         alt='logo'
         width={117}
         height={34}
-        className='w-fit'
+        className='w-contain'
         quality={100}
       />
       <p className='golden-text text-black text-2xl font-semibold '>The Golden Lantern</p>
