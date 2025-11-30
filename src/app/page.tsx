@@ -18,9 +18,8 @@ export default function Home() {
     <main className="min-h-screen">
 
       {/* --- Banner --- */}
-      <section className="w-full bg-blue-600 text-white py-20 text-center">
-        <h1 className="text-4xl font-bold">Welcome to My Next.js Site</h1>
-        <p className="text-lg mt-2 opacity-90">This is the banner section</p>
+      <section className="w-full bg-gray-100 text-white py-20 text-center">
+     
       </section>
 
       {/* --- Section 1: Centered Button --- */}
@@ -37,14 +36,15 @@ export default function Home() {
 <section className="grid grid-cols-1 md:grid-cols-3 min-h-[1000px]">
   {/* Left (2/3) */}
   <div className="md:col-span-2 p-8 bg-gray-200">
-    <h2 className="text-2xl font-bold mb-2">Left Section (2/3)</h2>
-    <p>This section takes two-thirds of the width on medium+ screens.</p>
+    <h2 className="text-2xl font-bold mb-2">About Us”</h2>
+    <p>Welcome to The Golden Lantern, a neighborhood pan-Asian take-out spot in the heart of Shaw, DC. We’re a small kitchen with a big love for the flavors we grew up with - wok-tossed fried rice, crispy katsu, fragrant dumplings, and comforting bowls inspired by kitchens across East and Southeast Asia.</p>
   </div>
 
   {/* Right (1/3) */}
   <div className="md:col-span-1 p-8 bg-gray-300">
-    <h2 className="text-2xl font-bold mb-2">Right Section (1/3)</h2>
-    <p>This section takes one-third of the width.</p>
+    <h2 className="text-2xl font-bold mb-2"></h2>
+    <p>Kitchen Hours:  4 PM–1 AM Daily</p>
+    <p>Phone Number: 312-379-9882</p>
   </div>
 </section>
 
