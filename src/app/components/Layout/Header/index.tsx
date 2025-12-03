@@ -12,7 +12,17 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import { HeaderItem } from '@/app/types/menu'
     import { usePathname } from 'next/navigation';
 
+    import localFont from 'next/font/local';
+   const myCustomFont = localFont({
+      src: [
+        {
+          path: '../../public/fonts/Regular.woff2',
+          weight: '400',
+          style: 'normal',
+        }
+      ]
 
+    });
 
 const Header: React.FC = () => {
 
