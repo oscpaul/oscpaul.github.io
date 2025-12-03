@@ -36,7 +36,7 @@ export default function Home() {
       {/* --- Section 1: Centered Button --- */}
       <section className="flex items-center justify-center h-64 bg-gray-100">
       <Link href='/about'>
-                <button className={`${myCustonFont.className} orderbutton text-xl font-medium rounded-full text-white py-3 px-8 bg-primary hover:text-primary border border-primary hover:bg-transparent hover:cursor-pointer transition ease-in-out duration-300`}>
+                <button className='myCustonFont.className} orderbutton text-xl font-medium rounded-full text-white py-3 px-8 bg-primary hover:text-primary border border-primary hover:bg-transparent hover:cursor-pointer transition ease-in-out duration-300'>
                   Order-To-Go
                 </button>
               </Link>
