@@ -33,7 +33,7 @@ const Footer: FC = () => {
             <Link
               href='https://getnextjstemplates.com/'
               className='hover:text-primary hover:underline'>
-              GetNextjsTemplates
+              The Golden Lantern
             </Link>
           </p>
 
