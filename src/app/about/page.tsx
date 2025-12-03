@@ -30,13 +30,13 @@ export const metadata = {
 export default function MenuPage() {
   return (
     <main
-      className="`${titleFont.variable}` globalMarginTopClass main-1 min-h-screen bg-cover bg-center bg-no-repeat flex justify-center px-4 py-12"
+      className={`${titleFont.variable} globalMarginTopClass main-1 min-h-screen bg-cover bg-center bg-no-repeat flex justify-center px-4 py-12`}
       style={{
         backgroundImage: "url('/images/golden-bg.jpg')",
       }}
     >
-      
-      <div className="max-w-2xl text-center text-black">
+   
+      <div className={`${myCustomFont.className} max-w-2xl text-center text-black`}>
 
         {/* Title */}
         <h1
