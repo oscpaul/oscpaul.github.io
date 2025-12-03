@@ -1,4 +1,15 @@
 import { Great_Vibes, Cormorant_Garamond } from "next/font/google";
+   import localFont from 'next/font/local';
+   const myCustomFont = localFont({
+      src: [
+        {
+          path: '../../../public/fonts/Regular.woff2',
+          weight: '400',
+          style: 'normal',
+        }
+      ]
+
+    });
 
 const titleFont = Great_Vibes({
   subsets: ["latin"],
@@ -24,6 +35,7 @@ export default function MenuPage() {
         backgroundImage: "url('/images/golden-bg.jpg')",
       }}
     >
+      
       <div className="max-w-2xl text-center text-black">
 
         {/* Title */}
