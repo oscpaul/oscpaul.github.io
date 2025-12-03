@@ -19,6 +19,12 @@
     --font-bask: 'Cormorant Garamond', serif;
 }
 
+.orderbutton{
+background-color:#C8A869;
+  color:#C8A869;
+  
+}
+
 .textgold{
 color:#f7f0dc;
    font-family: var(--font-bask);
