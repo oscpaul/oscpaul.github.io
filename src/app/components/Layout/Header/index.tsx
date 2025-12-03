@@ -16,7 +16,7 @@ import { HeaderItem } from '@/app/types/menu'
    const myCustomFont = localFont({
       src: [
         {
-          path: '../../public/fonts/Regular.woff2',
+          path: '../../../../../public/fonts/Regular.woff2',
           weight: '400',
           style: 'normal',
         }
