@@ -121,19 +121,18 @@ const Header: React.FC = () => {
           </div>
              <nav className="header-nav flex gap-6 text-lg font-medium">
           <Link href="/" className="hover:text-gray-300 transition">
-            Home
+            <p class={myCustomFont.className}></p> Home </p>
           </Link>
 
           <Link href="/about" className="hover:text-gray-300 transition">
-            Menu
+           <p class={myCustomFont.className}></p> Menu </p>
           </Link>
 
           <Link
             href="/order"
             className="bg-white text-blue-700 px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition"
           >
-            Order Now
-          </Link>
+<p class={myCustomFont.className}></p> Order Now </p>          </Link>
         </nav>
   
         </div>
