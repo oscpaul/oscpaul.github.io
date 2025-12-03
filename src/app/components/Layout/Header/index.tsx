@@ -115,7 +115,7 @@ const Header: React.FC = () => {
       }, ${sticky ? '  p-0' : 'height-auto p-4'}`}>
       <div>
 
-          ${myCustomFont.className}
+        
         <div className={`${myCustomFont.className} backgroundDiv container flex items-center justify-between`} style={{ }}>
           
           <div>
