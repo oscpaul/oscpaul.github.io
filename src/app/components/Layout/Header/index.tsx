@@ -110,7 +110,7 @@ const Header: React.FC = () => {
   
   return (
     <header
-      className={`fixed top-10 z-40  w-full transition-all duration-300 ${
+      className={`fixed top-0 z-40  w-full transition-all duration-300 ${
         sticky ? ' shadow-lg bg-white' : 'shadow-none'
       }, ${sticky ? 'height-auto  p-0' : 'height-auto p-4 p-0'}`}>
       <div>
