@@ -110,18 +110,18 @@ const Header: React.FC = () => {
   
   return (
     <header
-      className={`fixed top-0 z-40  w-full transition-all duration-300 ${
+      className={`fixed top0 z-40  w-full transition-all duration-300 ${
         sticky ? 1 : 0
       }, ${sticky ? 'height-auto' : 'height-auto'}`}>
       <div>
 
         
-        <div className={`${myCustomFont.className} backgroundDiv container flex items-center justify-between`} style={{ }}>
+        <div className={`${myCustomFont.className} top0 backgroundDiv container flex items-center justify-between`} style={{ }}>
           
           <div>
             <Logo />
           </div>
-             <nav className="header-nav flex">
+             <nav className="top0 header-nav flex">
           <Link href="/" className="hover:text-gray-300 transition">
            Home
           </Link>
