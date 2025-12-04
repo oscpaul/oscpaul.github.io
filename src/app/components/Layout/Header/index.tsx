@@ -112,7 +112,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 z-40  w-full transition-all duration-300 ${
         sticky ? 1 : 0
-      }, ${sticky ? 'height-auto  p-0' : 'height-auto p-4 p-0'}`}>
+      }, ${sticky ? 'height-auto' : 'height-auto'}`}>
       <div>
 
         
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
           <div>
             <Logo />
           </div>
-             <nav className="header-nav flex gap-0">
+             <nav className="header-nav flex">
           <Link href="/" className="hover:text-gray-300 transition">
            Home
           </Link>
