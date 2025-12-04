@@ -121,7 +121,7 @@ const Header: React.FC = () => {
           <div>
             <Logo />
           </div>
-             <nav className="header-nav flex gap-6 text-lg font-medium">
+             <nav className="header-nav flex gap-0">
           <Link href="/" className="hover:text-gray-300 transition">
            Home
           </Link>
