@@ -1,4 +1,4 @@
-.https://github.com/oscpaul/oscpaul.github.io/blob/main/src/app/globals.css@import 'tailwindcss';
+@import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -13,33 +13,26 @@
 
   --radius-Newsletter: 30px 400px 30px 30px;
 }
-
-
 :root {
   --font-title: 'Great Vibes', cursive;
   --font-body: 'Cormorant Garamond', serif;
-    --font-bask: 'Cormorant Garamond', serif;
 }
 
-.orderbutton{
-background-color:#C8A869;
-  color:white;
-  }
+.font-baskerville{
+  
+ font-family: var(--font-my-custom);
+
+}
 
 .top0{
 position:absolute;
-top:-100%;
+top:100%;
 }
 
-.textgold{
-color:#f7f0dc;
-   font-family: var(--font-bask);
-}
 @media (max-width: 768px) { /* Example breakpoint for mobile */
       .header-nav {
         display: flex; 
         flex-direction:column;
-        margin:0rem;
       }
       .mobile-menu-icon {
         display: block; /* Show mobile menu icon */
