@@ -147,8 +147,9 @@ const Header: React.FC = () => {
   else
      return (
     <header
-      className={`absolute top-0 z-40  w-full transition-all duration-500 
-       ${sticky ? 1 : 0}`}>
+       className={`fixed top-0 z-40  w-full transition-all duration-300 ${
+        sticky ? ' shadow-lg bg-white' : 'shadow-none'
+      }, ${sticky ? 'height-auto  p-0' : 'height-auto p-4 p-0'}`}>
       <div>
         <div className='backgroundDiv container flex items-center justify-between' style={{ }}>
           
