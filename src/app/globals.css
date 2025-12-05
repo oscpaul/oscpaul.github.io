@@ -28,10 +28,11 @@ position:absolute;
 .flex2{
   left:0%;
 position:relative;
-
+flex:1;
   
 }
 .flex3{
+  flex:1;
   left:75%;
   position:relative;
     border:1px solid black;
