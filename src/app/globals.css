@@ -22,7 +22,7 @@
  font-family: var(--font-my-custom);
 }
 
-.flex1
+.flex1{
 position:absolute;
 }
 .flex2{
