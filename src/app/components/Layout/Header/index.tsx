@@ -110,11 +110,9 @@ const Header: React.FC = () => {
   
   return (
 <header
-       className={`fixed z-40 flex w-full transition-all duration-300 ${
-        sticky ? ' shadow-lg bg-white' : 'shadow-none'
-      }, ${sticky ? 'height-auto  p-0' : 'height-auto p-0'}`}>
+       className='flex1'>
       <div>
-        <div className='backgroundDiv flex1 container' style={{ }}>
+        <div className='flex2' style={{ }}>
           
           <div>
             <Logo />
