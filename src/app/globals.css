@@ -22,9 +22,9 @@
  font-family: var(--font-my-custom);
 }
 
-.flex1{display:flex;
-    justify-content:space-between;
-      }
+.flex1{
+position:absolute;
+}
 .flex2{
   left:0;
 position:relative;
