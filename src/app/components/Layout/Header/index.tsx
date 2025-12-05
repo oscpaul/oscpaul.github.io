@@ -116,7 +116,7 @@ const Header: React.FC = () => {
       <div>
 
         
-        <div className={`${myCustomFont.className} backgroundDiv container flex items-center justify-between`} style={{ }}>
+        <div className={`${myCustomFont.className} top0 backgroundDiv container flex items-center justify-between`} style={{ }}>
           
           <div>
             <Logo />
