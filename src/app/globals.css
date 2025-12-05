@@ -19,9 +19,18 @@
 }
 
 .font-baskerville{
-  
  font-family: var(--font-my-custom);
+}
 
+.flex1{display:flex;
+    justify-content:space-between;
+      }
+.flex2{
+position:relative;
+  
+}
+.flex3{
+  position:relative;
 }
 
 .top0{
