@@ -118,7 +118,7 @@ const Header: React.FC = () => {
         
         <div className={`${myCustomFont.className} top0`} style={{ }}>
           
-          <div className="flex2">
+          <div className="flex2 justify-center w-full">
             <Logo />
           </div>
              <nav className="header-nav flex gap-6 text-lg font-medium">
