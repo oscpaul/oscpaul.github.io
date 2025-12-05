@@ -114,9 +114,9 @@ const Header: React.FC = () => {
         sticky ? ' shadow-lg bg-white' : 'shadow-none'
       }, ${sticky ? 'height-auto  p-0' : 'height-auto p-0'}`}>
       <div>
-        <div className='backgroundDiv container' style={{ }}>
+        <div className='backgroundDiv flex1 container' style={{ }}>
           
-          <div className=top0>
+          <div className='top0'>
             <Logo />
           </div>
              <nav className="header-nav flex text-lg font-medium">
