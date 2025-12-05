@@ -22,7 +22,7 @@
  font-family: var(--font-my-custom);
 }
 
-.flex1{
+.flex1
 position:absolute;
 }
 .flex2{
@@ -33,7 +33,8 @@ flex:1;
 }
 .flex3{
   flex:1;
-  left:75%;
+  top:0%;
+  left:150%;
   position:relative;
     border:1px solid black;
 
