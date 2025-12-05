@@ -110,7 +110,7 @@ const Header: React.FC = () => {
   
   return (
     <header
-       className={`fixed top-0 z-40  w-full transition-all duration-300 ${
+       className={`fixed top-0 top0 z-40  w-full transition-all duration-300 ${
         sticky ? ' shadow-lg bg-white' : 'shadow-none'
       }, ${sticky ? 'height-auto  p-0' : 'height-auto p-4 p-0'}`}>
       <div className="flex1">
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
           <div className="">
             <Logo />
           </div>
-             <nav className="flex3  w-full header-nav flex gap-6 text-lg font-medium">
+             <nav className="flex3 top0 w-full header-nav flex gap-6 text-lg font-medium">
           <Link href="/" className="">
            Home
           </Link>
