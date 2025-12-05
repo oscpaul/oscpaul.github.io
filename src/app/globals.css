@@ -26,10 +26,12 @@
     justify-content:space-between;
       }
 .flex2{
+  left:0;
 position:relative;
   
 }
 .flex3{
+  right:0;
   position:relative;
 }
 
