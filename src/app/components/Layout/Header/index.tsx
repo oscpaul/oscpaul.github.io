@@ -116,7 +116,7 @@ const Header: React.FC = () => {
       <div>
         <div className='backgroundDiv container' style={{ }}>
           
-          <div>
+          <div className=top0>
             <Logo />
           </div>
              <nav className="header-nav flex text-lg font-medium">
