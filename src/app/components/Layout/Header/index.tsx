@@ -119,7 +119,7 @@ const Header: React.FC = () => {
           <div className="flex2">
             <Logo />
           </div>
-             <nav className="flex-3 header-nav  flex">
+             <nav className="flex-3">
           <Link href="/" className="">
            Home
           </Link>
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
 
           <Link
             href="/order"
-            className="bg-white text-blue-700 px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition"
+            className=""
           >
             Order Now        </Link>
         </nav>
