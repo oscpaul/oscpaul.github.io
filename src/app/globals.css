@@ -23,6 +23,7 @@
 }
 
 .flex1{
+  display:flex;
   position:relative;
   width:100%;
   border:1px solid black;
@@ -34,7 +35,7 @@
 position:absolute;
   right:50px;
 width:50%;
-  border:1px solid blue;
+  border:1px solid black;
   height:25vh;
   
 }
