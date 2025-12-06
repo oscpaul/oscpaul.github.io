@@ -112,12 +112,12 @@ const Header: React.FC = () => {
 <header
        className='flex1'>
       <div>
-        <div className='flex2' style={{ }}>
+        <div className='' style={{ }}>
           
           <div>
             <Logo />
           </div>
-             <nav className="header-nav flex text-lg font-medium">
+             <nav className="flex2 header-nav flex text-lg font-medium">
           <Link href="/" className="hover:text-gray-300 transition">
             Home
           </Link>
