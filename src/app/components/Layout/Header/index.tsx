@@ -110,11 +110,11 @@ const Header: React.FC = () => {
   
   return (
 <header
-       className='flex1'>
+       className=''>
       <div>
-        <div className='flex1-1' style={{ }}>
+        <div className='flex1' style={{ }}>
           
-          <div>
+       <div className='flex3'>
             <Logo />
           </div>
              <nav className="flex2 header-nav flex text-lg font-medium">
