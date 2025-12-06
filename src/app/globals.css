@@ -27,19 +27,19 @@
   justify-content:space-between;
   flex-direction:row;
   width:100%;
-  border:1px solid blue;
+
   top:0%;
     height:25vh;
 }
 .flex2{
 position:relative;
-border:1px solid black;
+border:1px solid blue;
 
 }
 
 .flex3{
 position:relative;
-border:1px solid black;
+border:1px solid blue;
 
 }
 
