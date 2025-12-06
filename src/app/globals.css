@@ -24,21 +24,25 @@
 
 .flex1{
   display:flex;
-  position:relative;
+  justify-content:space-between;
+  flex-direction:row;
   width:100%;
-  border:1px solid black;
+  border:1px solid blue;
   top:0%;
     height:25vh;
 }
 .flex2{
- 
-position:absolute;
-  right:50px;
-width:50%;
-  border:1px solid black;
-  height:25vh;
-  
+position:relative;
+border:1px solid black;
+
 }
+
+.flex3{
+position:relative;
+border:1px solid black;
+
+}
+
 
 
 @media (max-width: 768px) { /* Example breakpoint for mobile */
