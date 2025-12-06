@@ -23,19 +23,18 @@
 }
 
 .flex1{
-  display:flex;
   position:relative;
   width:100%;
-  border:1px solid black;
+  border:1px solid blue;
   top:0%;
     height:25vh;
 }
 .flex2{
  
 position:absolute;
-  right:50%;
+  right:50px;
 width:50%;
-  border:1px solid black;
+  border:1px solid blue;
   height:25vh;
   
 }
