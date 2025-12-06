@@ -112,7 +112,7 @@ const Header: React.FC = () => {
 <header
        className='flex1'>
       <div>
-        <div className='' style={{ }}>
+        <div className='flex1-1' style={{ }}>
           
           <div>
             <Logo />
