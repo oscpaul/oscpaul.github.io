@@ -31,7 +31,8 @@
 }
 .flex2{
  
-position:relative;
+position:absolute;
+  right:50%;
 width:50%;
   border:1px solid blue;
   height:25vh;
