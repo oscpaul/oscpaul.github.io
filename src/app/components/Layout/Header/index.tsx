@@ -119,7 +119,7 @@ const Header: React.FC = () => {
        <div className='flex3'>
             <Logo />
           </div>
-             <nav className="flex2 header-nav flex text-lg font-medium">
+             <nav className="flex2 gap-6 header-nav flex text-lg font-medium">
           <Link href="/" className="hover:text-gray-300 transition">
             Home
           </Link>
