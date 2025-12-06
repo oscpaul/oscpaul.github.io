@@ -13,8 +13,9 @@ const Logo: React.FC = () => {
       <Image
   src='/images/lantern.jpg'
         alt='logo'
-        width={117}
-        height={34}
+      width={1}
+       height={1}
+             style={{ height: '25vh', width: 'auto' }} // Inline style
         className='w-contain'
         quality={100}
       />
@@ -30,8 +31,9 @@ const Logo: React.FC = () => {
       <Image
   src='/images/lantern.jpg'
         alt='logo'
-        width={117}
-        height={34}
+     width={1}
+       height={1}
+             style={{ height: '25vh', width: 'auto' }} // Inline style
         className='w-contain'
         quality={100}
       />
