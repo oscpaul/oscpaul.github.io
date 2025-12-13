@@ -68,25 +68,26 @@ export default function Home() {
   );
 
 */
-const [isDesktop,setIsDesktop] = useState(true);
-const checkWindowSize= () => {
-  let windowWidth;
-  if (typeof window !== 'undefined'){
-   windowWidth= window.innerWidth;
-}
-if (windowWidth >=1024){
-  setIsDesktop(true)
-}
-  else{
-    setIsDesktop(false)
-  }
-}
+import React, { useState, useEffect } from 'react';
 
-return (
-<main className="">
-{
-isDesktop?(<p> Desktop </p>): (<p>Mobile </p>)
- }
-</main>
-);
+const MyComponent = () => {
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+
+  useEffect(() => {
+    // This code only runs in the browser after the component mounts
+    setWindowWidth(window.innerWidth);
+  }, []); // Empty dependency array ensures it runs once after initial render
+
+  if (windowWidth === null) {
+    return <p>Loading...</p>; // Optional: Render a placeholder while loading
   }
+
+  return (
+    <div>
+      <p>Current window width: {windowWidth}px</p>
+    </div>
+  );
+};
+
+export default MyComponent;
+
