@@ -2,6 +2,7 @@
 import Image from "next/image";
 import {useState,useEffect} from 'react'
 
+import React, { useState, useEffect } from 'react';
 export default function Home() {
  
  /*
@@ -68,7 +69,6 @@ export default function Home() {
   );
 
 */
-import React, { useState, useEffect } from 'react';
 
 const MyComponent = () => {
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
