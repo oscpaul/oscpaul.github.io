@@ -70,7 +70,7 @@ export default function Home() {
 
 */
 
-const MyComponent = () => {
+
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
 
   useEffect(() => {
@@ -89,5 +89,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
 
