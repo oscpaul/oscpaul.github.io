@@ -12,7 +12,7 @@ const FullScreenPicture = () => {
 <div className="relative">
 <div className="relative w-full block overflow-hidden">
     <div className="hidden md:block"></div>
-    <div className="block md:hidden" style={{paddingTop:'100%'}}></div>
+    <div className="block md:hidden" style={{paddingTop:'0%'}}></div>
     <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
       <Image
         src="/airloom_wyoming_placeholder.avif" // Local static image (or remote URL)

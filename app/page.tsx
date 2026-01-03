@@ -1,6 +1,8 @@
 import { BlogPosts } from 'app/components/posts'
 import  AnimatedBox  from 'app/components/AnimatedBox'
 import  FullScreenPicture  from 'app/components/FullScreenPicture'
+import  FullScreenVideo  from 'app/components/FullScreenVideo'
+import  SmallSlider  from 'app/components/SmallSlider'
 
 export default function Page() {
   return (
@@ -18,7 +20,9 @@ export default function Page() {
       </p>
       <div className="my-8">
         <BlogPosts />
+          <SmallSlider />
           <FullScreenPicture />
+          <FullScreenVideo />
       </div>
     </section>
   )
