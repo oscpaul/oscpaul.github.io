@@ -2,7 +2,6 @@ import { BlogPosts } from 'app/components/posts'
 import  AnimatedBox  from 'app/components/AnimatedBox'
 import  FullScreenPicture  from 'app/components/FullScreenPicture'
 import  FullScreenVideo  from 'app/components/FullScreenVideo'
-import  SmallSlider  from 'app/components/SmallSlider'
 import  SectionText  from 'app/components/SectionText'
 import  VideoPlay  from 'app/components/VideoPlay'
 import  Logos  from 'app/components/Logos'
@@ -22,13 +21,12 @@ export default function Page() {
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
-                         <FullScreenPicture />
+                         
           <VideoPlay />
      
     
       <div className="my-8">
         <BlogPosts />
-          <SmallSlider />
 
 
          <FullScreenVideo />

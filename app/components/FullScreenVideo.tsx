@@ -30,18 +30,17 @@ const FullScreenVideo = ({  }) => {
 
 
 return (
-<section className="mb-[72px] md:mb-48 ">
-    <div className="module transparent-header" data-bg="header-bg-transparent">
-        <div className="relative"><div className="gutter-p absolute inset-0 z-md grid-layout py-6">
-            <div className="col-span-12 medium:col-span-6 medium:!col-start-7">
-                <h2 className="text-white sticky top-[68px] h1">Deploy anywhere</h2>
-            </div></div>
-        <figure className="mx-auto w-auto">
-    <div className="z-videoModalShadow pointer-events-none bg-black bg-opacity-80 fixed inset-0 opacity-0"></div>
-    <div className="h-screen w-full relative">
-            
-            <div className="absolute inset-0 w-full h-full flex items-center justify-center">
-                 <video
+
+
+      
+
+<figure className="mx-auto w-auto">
+<div style={{aspectRatio:'1280 / 720'}} className="h-auto aspect-video w-full relative">
+<button className="absolute w-full h-full inset-0 group z-[1] flex items-center justify-center" aria-label="play video">
+  </button>
+  <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+
+             <video
         ref={videoRef}
         src={videos[currentVideoIndex]}
         autoPlay // Muted is often required for autoplay to work
@@ -51,18 +50,15 @@ return (
         onEnded={handleVideoEnd}
         style={{ width: '100%' }} // Basic styling
       />
-      {/* Optionally show status */}
-      
-                </div></div>
-                
-                
-                
-                <div className="z-videoModal fixed top-5 right-5 opacity-0 pointer-events-none"><button aria-label="Close Video"><div className="w-3.5 relative"><span className="translate-y-0 rotate-45 block w-full h-px bg-white absolute duration-[var(--duration)] ease transition-transform"></span><span className="translate-y-0 -rotate-45 block w-full h-px bg-white absolute duration-[var(--duration)] ease transition-transform"></span>
-                </div></button></div>
-    </figure>
-                    </div></div>
-                
-                </section>
+      </div></div>
+      </figure>
+
+
+
+
+
+
+
     );
 };
 
