@@ -35,15 +35,18 @@ return (
       
 
 // Use h-dvh and w-screen to ensure the container spans the full screen
-<figure>
-  <div style={{aspectRatio:'1280 / 720'}} className="h-dvh aspect-video w-full relative">
 
-    <div className="h-dvh w-screen overflow-hidden">
-         <div className="gutter-p absolute inset-0 z-md grid-layout py-6">
-            <div className="col-span-12 medium:col-span-6 medium:!col-start-7">
-                <h2 className="text-white sticky top-[68px] h1">Deploy anywhere</h2>
-            </div></div>
+    <div className="h-dvh w-screen classname3">
+             <h2 className="text-white sticky top-[68px] h1 classname4">Deploy anywhere</h2>
+              
+            
+              
+            
+         
+   
+
       <video
+      
         ref={videoRef}
         src={videos[currentVideoIndex]}
         autoPlay // Muted is often required for autoplay to work
@@ -52,14 +55,15 @@ return (
         controls={false} // Set to true if you want controls
         onEnded={handleVideoEnd}
         // Ensure the video itself fills the container using object-cover
-        className="h-full w-full object-cover"
+        className="classname2 h-full w-full object-cover"
         
       >
         Your browser does not support the video tag.
+        
       </video>
+      
     </div>
-    </div>
-</figure>
+
 
 
 
