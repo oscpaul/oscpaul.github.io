@@ -368,10 +368,7 @@ audio,canvas,embed,iframe,img,object,svg,video {
     vertical-align: middle
 }
 
-img,video {
-    max-width: 100%;
-    height: auto
-}
+
 
 [hidden] {
     display: none
@@ -883,7 +880,7 @@ a,ol,p,ul {
 }
 
 .col-span-12 {
-    grid-column: span 4/span 1
+    grid-column: span 3/span 1
 }
 
 .col-span-3 {
@@ -1032,7 +1029,11 @@ a,ol,p,ul {
 }
 
 .classname1{
-opacity:.2
+object-position: 50% 50%
+}
+
+.classname1{
+opacity: 1
 }
 
 .hidden3{
@@ -2215,3 +2216,40 @@ body {
     content: var(--tw-content);
     transition-timing-function: cubic-bezier(.4,0,.2,1)
 }
+
+
+.md\:top-1\/2 {
+top: 50%;
+bottom: auto;
+align-items: center;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

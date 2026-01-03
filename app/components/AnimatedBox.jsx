@@ -29,6 +29,7 @@ const AnimatedBox = () => {
     <div
       ref={boxRef}
       style={{
+        position:'relative',
         width: 100,
         height: 100,
         backgroundColor: '#4CAF50',

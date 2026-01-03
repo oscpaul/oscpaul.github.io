@@ -3,26 +3,36 @@ import  AnimatedBox  from 'app/components/AnimatedBox'
 import  FullScreenPicture  from 'app/components/FullScreenPicture'
 import  FullScreenVideo  from 'app/components/FullScreenVideo'
 import  SmallSlider  from 'app/components/SmallSlider'
+import  SectionText  from 'app/components/SectionText'
+import  VideoPlay  from 'app/components/VideoPlay'
+import  Logos  from 'app/components/Logos'
 
 export default function Page() {
   return (
     <section>
-         <AnimatedBox />
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+               <AnimatedBox />
+               <Logos />
+                <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
-      <p className="mb-4">
+        <p className="mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
         preferences. This extends to my support for static typing, where its
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
+                         <FullScreenPicture />
+          <VideoPlay />
+     
+    
       <div className="my-8">
         <BlogPosts />
           <SmallSlider />
-          <FullScreenPicture />
-          <FullScreenVideo />
+
+
+         <FullScreenVideo />
+          <SectionText />
       </div>
     </section>
   )

@@ -15,7 +15,7 @@ const SmallSlider = ({  }) => {
 </div>
 <div className="pb-12 md:pb-24 pt-[18px] md:pt-12">
     <div className="mb-9 md:mb-24 gutter-p w-full">
-        <div className="grid-layout !gap-x-0 keen-slider gutter-p">
+        <div className="grid-layout !gap-x-0 keen-slider">
 
 
 
@@ -112,6 +112,17 @@ const SmallSlider = ({  }) => {
       
       
       
+
+
+
+
+  
+
+
+
+
+
+
       
       
       
