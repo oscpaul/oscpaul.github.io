@@ -1,7 +1,7 @@
 import { BlogPosts } from 'app/components/posts'
 import  AnimatedBox  from 'app/components/AnimatedBox'
 import  FullScreenPicture  from 'app/components/FullScreenPicture'
-import  FullScreenVideo  from 'app/components/FullScreenVideo'
+import  VideoFullScreen  from 'app/components/VideoFullScreen'
 import  SectionText  from 'app/components/SectionText'
 import  VideoPlay  from 'app/components/VideoPlay'
 import  Logos  from 'app/components/Logos'
@@ -29,7 +29,7 @@ export default function Page() {
         <BlogPosts />
 
 
-         <FullScreenVideo />
+         <VideoFullScreen />
           <SectionText />
       </div>
     </section>
