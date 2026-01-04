@@ -70,6 +70,14 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
           strategy="beforeInteractive" // Load before the page becomes interactive
         />
+        
+
+        <Script
+          src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+          strategy="beforeInteractive" // Load before the page becomes interactive
+        />
         {/* Add additional plugins if needed, after the main GSAP script */}
         {/* <Script src="cdnjs.cloudflare.com" ... /> */}
 

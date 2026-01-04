@@ -4,13 +4,15 @@ import  FullScreenPicture  from 'app/components/FullScreenPicture'
 import  VideoFullScreen  from 'app/components/VideoFullScreen'
 import  SectionText  from 'app/components/SectionText'
 import  VideoPlay  from 'app/components/VideoPlay'
-import  Logos  from 'app/components/Logos'
+import  Logo  from 'app/components/Logo'
 
 export default function Page() {
   return (
     <section>
+      
+   
                <AnimatedBox />
-               <Logos />
+            <Logo />
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
