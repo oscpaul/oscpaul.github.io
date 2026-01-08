@@ -8,7 +8,7 @@ import  Logo  from 'app/components/Logo'
 
 export default function Page() {
   return (
-        <section>
+      <html lang="en">
 
     <body>
       
@@ -28,14 +28,14 @@ export default function Page() {
                          
           <VideoPlay />
      
-    
+    </body>
       <div className="my-8">
         <BlogPosts />
 
-</body>
+
          <VideoFullScreen />
           <SectionText />
       </div>
-    </section>
+    </html>
   )
 }
