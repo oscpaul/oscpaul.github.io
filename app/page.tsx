@@ -8,6 +8,7 @@ import  Logo  from 'app/components/Logo'
 
 export default function Page() {
   return (
+    <body>
     <section>
       
    
@@ -30,7 +31,7 @@ export default function Page() {
       <div className="my-8">
         <BlogPosts />
 
-
+</body>
          <VideoFullScreen />
           <SectionText />
       </div>
