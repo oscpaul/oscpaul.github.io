@@ -8,8 +8,9 @@ import  Logo  from 'app/components/Logo'
 
 export default function Page() {
   return (
+        <section>
+
     <body>
-    <section>
       
    
                <AnimatedBox />
