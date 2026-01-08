@@ -10,10 +10,10 @@ export default function Page() {
   return (
       <section>
 
-    <section className="section2">
       
    
                <AnimatedBox />
+        
             <Logo />
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
@@ -28,7 +28,6 @@ export default function Page() {
                          
           <VideoPlay />
      
-    </section>
       <div className="my-8">
         <BlogPosts />
 
