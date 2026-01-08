@@ -8,9 +8,9 @@ import  Logo  from 'app/components/Logo'
 
 export default function Page() {
   return (
-      <html lang="en">
+      <section>
 
-    <body>
+    <section className="section2">
       
    
                <AnimatedBox />
@@ -28,7 +28,7 @@ export default function Page() {
                          
           <VideoPlay />
      
-    </body>
+    </section>
       <div className="my-8">
         <BlogPosts />
 
@@ -36,6 +36,6 @@ export default function Page() {
          <VideoFullScreen />
           <SectionText />
       </div>
-    </html>
+   </section>
   )
 }
