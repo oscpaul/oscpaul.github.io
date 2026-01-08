@@ -52,7 +52,7 @@ return (
         autoPlay // Muted is often required for autoplay to work
         muted
         playsInline
-        controls={false} // Set to true if you want controls
+    
         onEnded={handleVideoEnd}
         // Ensure the video itself fills the container using object-cover
         className="classname2 h-full w-full object-cover"
