@@ -8,6 +8,7 @@
 
 
 .section2 {
+  border:1px solid blue;
   overflow-x: hidden; /* Hides the horizontal scrollbar and disables horizontal scrolling */
   width: 100%; /* Ensures elements conform to the full width without exceeding it */
   max-width: 100%; /* A helpful fallback to ensure no element exceeds the viewport width */
