@@ -8,20 +8,16 @@ import  Logo  from 'app/components/Logo'
 
 export default function Page() {
   return (
-      <section>
-
+    <section>
       
-   
+
+      <div className="section2">
                <AnimatedBox />
-        <div className="section2">
-          <Logo />
-        </div>
-        <div className="section2">
+        
+            <Logo />
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
-        </div>
-          <div className="section2">
         <p className="mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
@@ -29,19 +25,23 @@ export default function Page() {
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
-          </div>                
+         </div>                
           <VideoPlay />
      
+    
       <div className="my-8">
-        <div className="section2">
+                      <div className="section2">
+
         <BlogPosts />
-        </div>
-      </div>
-      </section>
+                      </div>
 
          <VideoFullScreen />
-          <SectionText />
+          
+              <div className="section2">
+
+        <SectionText />
+              </div>
       </div>
-   </section>
+    </section>
   )
 }
