@@ -20,6 +20,7 @@ export default function Page() {
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
+        </div>
           <div className="section2">
         <p className="mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
@@ -28,13 +29,15 @@ export default function Page() {
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
-                         
+          </div>                
           <VideoPlay />
      
       <div className="my-8">
         <div className="section2">
         <BlogPosts />
-<div className="section2">
+        </div>
+      </div>
+      </section>
 
          <VideoFullScreen />
           <SectionText />
