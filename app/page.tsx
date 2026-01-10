@@ -11,36 +11,34 @@ export default function Page() {
     <section>
       
 
-      <div className="section2">
+      
                <AnimatedBox />
         
             <Logo />
-                <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+                <h1 className="section2 mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
-        <p className="mb-4">
+        <p className="section2 mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
         preferences. This extends to my support for static typing, where its
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
-         </div>                
+                  
           <VideoPlay />
      
     
       <div className="my-8">
-                      <div className="section2">
 
         <BlogPosts />
-                      </div>
+                 
 
          <VideoFullScreen />
           
-              <div className="section2">
+             
 
         <SectionText />
-              </div>
       </div>
     </section>
   )
