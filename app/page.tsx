@@ -11,10 +11,12 @@ export default function Page() {
     <section>
       
 
-      
+       <div className="section2">
                <AnimatedBox />
-        
+      </div>
+        <div className="section2">
             <Logo />
+          </div>
                 <h1 className="section2 mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
