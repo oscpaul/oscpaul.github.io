@@ -5,13 +5,14 @@
   color: #fefefe;
 }
 
-html{
- overflow-x: hidden; /* Hides the horizontal scrollbar and disables horizontal scrolling */
-  width: 100%; /* Ensures elements conform to the full width without exceeding it */
-  max-width: 100%; /* A helpful fallback to ensure no element exceeds the
-  
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+
+  
 .section2 {
   height:40vh;
   border:1px solid blue;
