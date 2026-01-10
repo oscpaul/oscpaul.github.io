@@ -16,9 +16,11 @@ export default function Page() {
         <div className="section2">
           <Logo />
         </div>
+        <div className="section2">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
+          <div className="section2">
         <p className="mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
@@ -30,8 +32,9 @@ export default function Page() {
           <VideoPlay />
      
       <div className="my-8">
+        <div className="section2">
         <BlogPosts />
-
+<div className="section2">
 
          <VideoFullScreen />
           <SectionText />
