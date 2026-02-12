@@ -1,0 +1,80 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="min-h-[50vh] bg-neutral-900 text-neutral-200 flex flex-col justify-between">
+      {/* Main content */}
+      <div className="max-w-7xl mx-auto w-full px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        {/* Address / Contact */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Contact</h3>
+          <address className="not-italic text-sm leading-relaxed">
+            123 Main Street<br />
+            Suite 400<br />
+            San Diego, CA 92101<br />
+            <span className="block mt-4">
+              <a
+                href="tel:+15551234567"
+                className="hover:underline"
+              >
+                (555) 123-4567
+              </a>
+            </span>
+          </address>
+        </div>
+
+        {/* Navigation / Social */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+          <ul className="space-y-3 text-sm">
+            <li>
+              <Link
+                href="https://twitter.com/yourhandle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Twitter
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.linkedin.com/company/yourcompany"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.instagram.com/yourhandle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Instagram
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Optional brand / message */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">About</h3>
+          <p className="text-sm leading-relaxed text-neutral-400">
+            Building high-quality digital products with performance,
+            accessibility, and reliability at the core.
+          </p>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-neutral-800 py-6 text-center text-xs text-neutral-500">
+        © {new Date().getFullYear()} Your Company Name. All rights reserved.
+      </div>
+    </footer>
+  );
+}
