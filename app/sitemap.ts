@@ -1,6 +1,6 @@
-export const dynamic = 'force-static'; // ensures static sitemap
+export const dynamic = 'force-static'; // ensure static generation
 
-const SITE_URL = "https://www.devwordpressspace.site/";
+const SITE_URL = "https://www.yourwebsite.com";
 
 const serviceAreas = [
   "lombard-il",
@@ -10,6 +10,7 @@ const serviceAreas = [
 ];
 
 export default function sitemap() {
+  // static URLs
   const urls = [
     "",
     "services/brake-repair",
@@ -19,6 +20,7 @@ export default function sitemap() {
     "service-areas"
   ];
 
+  // generate <url> entries for all pages
   const sitemapEntries = [
     ...urls.map((path) => `
   <url>
@@ -36,6 +38,7 @@ export default function sitemap() {
 `)
   ].join("");
 
+  // return a valid XML Response
   return new Response(
     `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
