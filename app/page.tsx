@@ -8,7 +8,7 @@ import ImageClickSlider from "@/components/ImageClickSlider"
 import Header from "@/components/Header"
 import MobileAwareSection from "@/components/MobileAwareSection"
 import Footer from "@/components/Footer"
-
+import Script from 'next/script';
 export default function Home() {
 
 const jsonLd=
@@ -58,6 +58,10 @@ const jsonLd=
   
 <Header />
       <Hero />
+              <Script
+          src="https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV.js"
+          strategy="afterInteractive"
+        />
       <Services />
       <About />
       <Story />

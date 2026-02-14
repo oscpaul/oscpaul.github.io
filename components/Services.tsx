@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Script from 'next/script';
 
 const services = [
   {
@@ -24,6 +25,8 @@ const services = [
 export default function Services() {
   return (
     <section className="px-2 py-24 max-w-6xl mx-auto">
+     
+      
       <h2 className="text-3xl font-semibold mb-16 text-center">
         Services That Keep You Moving
       </h2>
@@ -80,7 +83,9 @@ export default function Services() {
             </div>
           </div>
         ))}
+        
       </div>
+  
     </section>
   )
 }
