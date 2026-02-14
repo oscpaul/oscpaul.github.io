@@ -69,12 +69,43 @@ export default function Footer() {
             accessibility, and reliability at the core.
           </p>
         </div>
+            <div>
+          <h3 className="text-lg font-semibold mb-3">
+  <Link href="/service-areas">
+    All Service Areas
+  </Link>          </h3>
+       
+          <ul className="space-y-2">
+            <li>
+              <Link href="/service-areas/lombard-il">
+                Auto Repair in Lombard, IL
+              </Link>
+            </li>
+            <li>
+              <Link href="/service-areas/villa-park-il">
+                Auto Repair in Villa Park, IL
+              </Link>
+            </li>
+            <li>
+              <Link href="/service-areas/elmhurst-il">
+                Auto Repair in Elmhurst, IL
+              </Link>
+            </li>
+            <li>
+              <Link href="/service-areas/bensenville-il">
+                Auto Repair in Bensenville, IL
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Bottom bar */}
       <div className="border-t border-neutral-800 py-6 text-center text-xs text-neutral-500">
         © {new Date().getFullYear()} Your Company Name. All rights reserved.
       </div>
+       
+
     </footer>
   );
 }
