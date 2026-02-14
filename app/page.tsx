@@ -8,6 +8,9 @@ import ImageClickSlider from "@/components/ImageClickSlider"
 import Header from "@/components/Header"
 import MobileAwareSection from "@/components/MobileAwareSection"
 import Footer from "@/components/Footer"
+import SquareEmbed from "@/components/SquareEmbed"
+import SquareEmbed2 from "@/components/SquareEmbed2"
+
 import Script from 'next/script';
 export default function Home() {
 
@@ -58,10 +61,10 @@ const jsonLd=
   
 <Header />
       <Hero />
-              <Script
-          src="https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV.js"
-          strategy="afterInteractive"
-        />
+     <div className="w-full h-[500px] squareembed">
+      
+      </div>
+      <SquareEmbed />
       <Services />
       <About />
       <Story />
