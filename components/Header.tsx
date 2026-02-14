@@ -10,6 +10,8 @@ export default function Header() {
   const links = [
     { name: 'Products', href: '/products' },
     { name: 'About', href: '/about' },
+    { name: 'About Us', href: '/about-us' },
+
   ];
 
   return (
@@ -34,7 +36,7 @@ export default function Header() {
 
         {/* Right side: Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800">
-          MyShop
+        2 Brothers Auto/Muffler
         </Link>
 
         {/* Mobile Hamburger (appears on small screens) */}

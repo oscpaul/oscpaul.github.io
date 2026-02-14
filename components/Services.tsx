@@ -28,8 +28,11 @@ export default function Services() {
      
       
       <h2 className="text-3xl font-semibold mb-16 text-center">
-        Services That Keep You Moving
-      </h2>
+Schedule Your Auto Repair in Addison Today
+
+If your vehicle needs service, trust the experienced team at 2 Brothers Auto & Muffler. We are committed to providing reliable, affordable, and professional auto repair services in Addison, Illinois.
+
+Call today to schedule an appointment or stop by our shop in Addison. We look forward to serving you and becoming your trusted neighborhood auto repair shop.      </h2>
 
       <div className="grid md:grid-cols-3 mx-auto">
         {services.map((service, index) => (
