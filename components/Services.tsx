@@ -50,7 +50,7 @@ Call today to schedule an appointment or stop by our shop in Addison. We look fo
                 alt={service.title}
                 fill
                 className="
-                  object-cover
+                  object-contain
                   transition-all duration-700 ease-out
                   group-hover:scale-105
                   group-hover:opacity-0
@@ -64,6 +64,7 @@ Call today to schedule an appointment or stop by our shop in Addison. We look fo
                 alt={`${service.title} detail`}
                 fill
                 className="
+                  object-contain
                   absolute inset-0
                   opacity-0
                   scale-105
