@@ -13,55 +13,45 @@ import SquareEmbed2 from "@/components/SquareEmbed2"
 
 import Script from 'next/script';
 export default function Home() {
+  const faqs = [
+    {
+      question: "Do you offer same-day muffler repair in Addison, IL?",
+      answer:
+        "Yes, most muffler and exhaust repairs can be completed the same day depending on parts availability.",
+    },
+    {
+      question: "Do you provide free brake inspections?",
+      answer:
+        "Yes, we offer free brake inspections for customers in Addison and surrounding areas.",
+    },
+    {
+      question: "What types of vehicles do you service?",
+      answer:
+        "We service most domestic and foreign vehicles including cars, trucks, and SUVs.",
+    },
+  ];
 
-const jsonLd=
-{
-  "@context": "https://schema.org",
-  "@type": "AutoRepair",
-  "name": "2 BROTHERS AUTO SERVICE/MUFFLERS",
-  "image": "",
-  "@id": "",
-  "url": "",
-  "telephone": "(630) 229-7330",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "915 S Westwood Ave",
-    "addressLocality": "Addison",
-    "addressRegion": "IL",
-    "postalCode": "60101",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 41.9095969,
-    "longitude": -87.9977708
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "08:30",
-    "closes": "18:30"
-  } 
-}
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     
     <main className="bg-sand text-charcoal">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+  
   
 <Header />
       <Hero />
-     <div className="w-full h-[500px] squareembed">
+     <div className="w-full squareembed">
       
       </div>
       <SquareEmbed />
@@ -71,7 +61,22 @@ const jsonLd=
       <Reviews />
       <CTA />
       <Footer />
+    <section className="faq-section">
+        <h2>Frequently Asked Questions</h2>
 
+        {faqs.map((faq, index) => (
+          <div key={index} style={{ marginBottom: "20px" }}>
+            <h3>{faq.question}</h3>
+            <p>{faq.answer}</p>
+          </div>
+        ))}
+      </section>
+ <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
     </main>
   )
 }
