@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://devwordpressspace.site"),
 
   title: {
-    default: "Create Next App",
+    default: "Auto Repair in Addison, IL | 2 Brothers Auto & Muffler",
     template: "%s | 2 Brothers Auto & Muffler",
   },
 
