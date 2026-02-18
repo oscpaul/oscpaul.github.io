@@ -26,12 +26,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://devwordpressspace.site"),
 
   title: {
-    default: "Auto Repair in Addison, IL | 2 Brothers Auto & Muffler",
-    template: "%s | 2 Brothers Auto & Muffler",
+    default: "Auto Repair in Addison, IL | 2 Brothers Auto & Muffler"
   },
 
   description:
-    "2 Brothers Auto & Muffler in Addison, IL provides expert muffler repair, exhaust systems, brake service, engine diagnostics, and suspension repair. Trusted local auto repair shop serving Addison and surrounding areas.",
+    "Expert muffler repair, brakes, exhaust systems, and engine diagnostics in Addison, IL. Trusted local auto repair shop. Call today.",
 
   keywords: [
     "Auto repair Addison IL",
