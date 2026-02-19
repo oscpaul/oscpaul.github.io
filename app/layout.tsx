@@ -158,13 +158,7 @@ const schema = {
         }
       }
     ]
-  },
-  {
-    "@type": "Organization",
-    "name": "2 Brothers Auto & Muffler",
-    "url": "https://devwordpressspace.site",
-    
-  },
+  }
 };
 
 
