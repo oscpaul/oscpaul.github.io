@@ -6,7 +6,7 @@ export default function About() {
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold mb-4">About AutoCare</h2>
           <p className="text-gray-600 mb-6 text-lg">
-            At AutoCare, we believe car maintenance should be simple, honest, and stress-free. 
+            At 2 Brothers Auto Muffler, we believe car maintenance should be simple, honest, and stress-free. 
             Our team of expert technicians provides thoughtful repairs, transparent pricing, 
             and an experience that makes you feel confident on the road.
           </p>
@@ -20,7 +20,7 @@ export default function About() {
         <div className="md:w-1/2">
           <img
             src="/images/2brothers-3.webp"
-            alt="About AutoCare"
+            alt="About 2 Brothers Auto Muffler"
             className="rounded-3xl shadow-lg object-cover w-full h-full"
           />
         </div>
