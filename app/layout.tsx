@@ -189,7 +189,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
+   <Head>
+      <link rel="icon" href="https://devwordpressspace.site/images/services/logo.jpg" /> {/* Adjust the href if you use a different name/format */}
+    </Head>
          <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
