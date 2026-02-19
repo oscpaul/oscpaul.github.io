@@ -10,12 +10,11 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
           <address className="not-italic text-sm leading-relaxed">
-            123 Main Street<br />
-            Suite 400<br />
-            San Diego, CA 92101<br />
+            915 S Westwood Ave<br />
+            Addison, IL 60101<br />
             <span className="block mt-4">
               <a
-                href="tel:+15551234567"
+                href="tel:+16302297330"
                 className="hover:underline"
               >
                 (555) 123-4567
