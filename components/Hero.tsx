@@ -6,11 +6,12 @@ export default function Hero() {
         <div className="max-w-6xl mx-auto px-2">
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6">
          Welcome to 2 Brothers Auto & Muffler – Addison, IL
-
+        </h1>
+          <h3>
 If you're looking for trusted, affordable, and experienced auto repair in Addison, IL, 2 Brothers Auto & Muffler is your local, family-owned solution. Conveniently located in Addison, we proudly serve drivers throughout Illinois, including nearby communities like Lombard, Villa Park, Bensenville, Elmhurst, and Wood Dale.
 
 With decades of combined experience, our certified mechanics specialize in muffler repair, exhaust systems, brakes, engine diagnostics, suspension work, and complete auto repair services for domestic and foreign vehicles.
-          </h1>
+          </h3>
           <p className="text-stone-700 max-w-2xl mx-auto text-lg mb-10">
             Thoughtful repairs. Honest pricing. A better experience for your car —
             and for you.
