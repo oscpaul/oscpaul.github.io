@@ -163,7 +163,7 @@ const schema = {
     "@type": "Organization",
     "name": "2 Brothers Auto & Muffler",
     "url": "https://devwordpressspace.site",
-    "logo": "https://devwordpressspace.site/images/services/logo.jpg"
+    
   }
 };
 
