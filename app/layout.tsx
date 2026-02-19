@@ -73,6 +73,7 @@ const schema = {
   "@type": "AutoRepair",
   name: "2 Brothers Auto & Muffler",
   image: "https://devwordpressspace.site/images/services/logo.jpg",
+  logo: "https://devwordpressspace.site/images/services/logo.jpg",
   url: "https://devwordpressspace.site",
   telephone: "+1-630-229-7330",
   address: {
