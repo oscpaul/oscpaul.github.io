@@ -25,10 +25,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://devwordpressspace.site"),
 
-  title: {
-    default: "Auto Repair in Addison, IL | 2 Brothers Auto & Muffler"
-  },
 
+  title: {
+    default: "Create Next App",
+    template: "%s | 2 Brothers Auto & Muffler",
+  },
   description:
     "Expert muffler repair, brakes, exhaust systems, and engine diagnostics in Addison, IL. Trusted local auto repair shop. Call today.",
 
