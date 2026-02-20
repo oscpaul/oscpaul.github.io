@@ -25,6 +25,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.devwordpressspace.site"),
 
+    alternates: {
+    canonical: 'https://www.devwordpressspace.site',
+  },
 
   title: {
     default: "2 Brothers Auto Service & Muffler",
