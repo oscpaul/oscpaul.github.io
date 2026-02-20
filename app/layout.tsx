@@ -69,14 +69,6 @@ export const metadata: Metadata = {
 
 
 
-const schema = {
- 
-};
-
-
-
-
-
 
 
 
