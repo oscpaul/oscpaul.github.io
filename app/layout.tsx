@@ -173,7 +173,43 @@ const schema = {
 
 
 
-
+  const schema2 = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.yourwebsite.com/#organization",
+        "name": "Your Business Name",
+        "url": "https://www.yourwebsite.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.yourwebsite.com/#logo",
+          "url": "https://www.yourwebsite.com/images/logo.png",
+          "width": 300,
+          "height": 100
+        }
+      },
+      {
+        "@type": "AutoRepair",
+        "@id": "https://www.yourwebsite.com/#autorepair",
+        "name": "Your Business Name",
+        "url": "https://www.yourwebsite.com/",
+        "telephone": "+1-000-000-0000",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Main Street",
+          "addressLocality": "City",
+          "addressRegion": "State",
+          "postalCode": "00000",
+          "addressCountry": "US"
+        },
+        "parentOrganization": {
+          "@id": "https://www.yourwebsite.com/#organization"
+        }
+      }
+    ]
+  };
 
 
 export default function RootLayout({
