@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 
   title: {
-    default: "Create Next App",
+    default: "2 Brothers Auto Service & Muffler",
     template: "%s | 2 Brothers Auto & Muffler",
   },
   description:
