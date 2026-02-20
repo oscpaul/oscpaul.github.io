@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devwordpressspace.site"),
+  metadataBase: new URL("https://www.devwordpressspace.site"),
 
 
   title: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://devwordpressspace.site",
+    url: "https://www.devwordpressspace.site",
     title: "2 Brothers Auto & Muffler | Auto Repair in Addison, IL",
     description:
       "Expert muffler repair, exhaust systems, brakes, engine diagnostics, and suspension work in Addison, IL.",
@@ -98,14 +98,14 @@ const schema = {
        
   "@type": "AutoRepair",
   name: "2 Brothers Auto & Muffler",
-  image: "https://devwordpressspace.site/images/services/logo.jpg",
+  image: "https://www.devwordpressspace.site/images/services/logo.jpg",
    "logo": {
     "@type": "ImageObject",
-    "url": "https://devwordpressspace.site/images/services/logo.jpg",
+    "url": "https://www.devwordpressspace.site/images/services/logo.jpg",
     "width": 300,
     "height": 100
   },
-  url: "https://devwordpressspace.site",
+  url: "https://www.devwordpressspace.site",
   telephone: "+1-630-229-7330",
   address: {
     "@type": "PostalAddress",
@@ -214,7 +214,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
    <Head>
-      <link rel="icon" href="https://devwordpressspace.site/images/services/logo.jpg" /> {/* Adjust the href if you use a different name/format */}
+      <link rel="icon" href="https://www.devwordpressspace.site/images/services/logo.jpg" /> {/* Adjust the href if you use a different name/format */}
     </Head>
          <script
           type="application/ld+json"
