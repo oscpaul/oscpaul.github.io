@@ -82,123 +82,46 @@ export const metadata: Metadata = {
 
 
 const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.yourwebsite.com/#organization",
-        "name": "Your Business Name",
-        "url": "https://www.yourwebsite.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://www.yourwebsite.com/#logo",
-          "url": "https://www.yourwebsite.com/images/logo.png",
-          "width": 300,
-          "height": 100
-        }
-      },
-      {
-       
-  "@type": "AutoRepair",
-  name: "2 Brothers Auto & Muffler",
-  image: "https://www.devwordpressspace.site/images/services/logo.jpg",
-   "logo": {
-    "@type": "ImageObject",
-    "url": "https://www.devwordpressspace.site/images/services/logo.jpg",
-    "width": 300,
-    "height": 100
-  },
-  url: "https://www.devwordpressspace.site",
-  telephone: "+1-630-229-7330",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "915 S Westwood Ave",
-    addressLocality: "Addison",
-    addressRegion: "IL",
-    postalCode: "60101",
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "41.9095969",
-    longitude: "-87.9977708",
-  },
-  openingHoursSpecification: [
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      opens: "08:00",
-      closes: "18:00"
+      "@type": "Organization",
+      "@id": "https://devwordpressspace.site/#organization",
+      "name": "2 Brothers Auto & Muffler",
+      "url": "https://devwordpressspace.site",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://devwordpressspace.site/images/services/logo.jpg",
+        "width": 300,
+        "height": 100
+      },
+      "telephone": "+1-630-229-7330",
+      "sameAs": [
+        "https://www.facebook.com/YOURPAGE",
+        "https://www.google.com/maps?cid=YOURCID"
+      ]
     },
     {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "08:00",
-      closes: "14:00"
+      "@type": "AutoRepair",
+      "name": "2 Brothers Auto & Muffler",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "915 S Westwood Ave",
+        "addressLocality": "Addison",
+        "addressRegion": "IL",
+        "postalCode": "60101",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-630-229-7330",
+      "url": "https://devwordpressspace.site",
+      // Note: remove areaServed here or leave generic
+      "areaServed": {
+        "@type": "Place",
+        "name": "Greater Addison Area"
+      }
     }
-  ],
-  priceRange: "$$",
-  areaServed: {
-    "@type": "City",
-    name: "Addison"
-  },
-  sameAs: [
-    "https://www.facebook.com/YOURPAGE",
-    "https://www.google.com/maps?cid=YOURCID"
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Auto Repair Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Muffler Repair"
-        }
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Exhaust System Repair"
-        }
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Brake Repair"
-        }
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Engine Diagnostics"
-        }
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Suspension Repair"
-        }
-      }
-    ]
-  },
-        "parentOrganization": {
-          "@id": "https://www.yourwebsite.com/#organization"
-        }
-      }
-    ]
-  };
+  ]
+};
 
 
 
