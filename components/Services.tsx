@@ -100,6 +100,8 @@ export default function Services() {
         { "@type": "City", "name": "Villa Park" },
         { "@type": "City", "name": "Lombard" },
         { "@type": "City", "name": "Chicago" }
+          
+      ]
       },
       {
         "@type": "FAQPage",
