@@ -1,49 +1,125 @@
 import Link from "next/link";
-import React from "react"; // optional but safe
+import React from "react";
+import Script from "next/script";
 
 export const metadata = {
-  title: "Auto Repair Near Lombard IL | 2 Brothers Auto & Muffler",
+  title: "Auto Repair Near Lombard, IL | 2 Brothers Auto & Muffler",
   description:
-    "Looking for trusted auto repair near Lombard, IL? 2 Brothers Auto & Muffler provides muffler, brake, exhaust repair, and engine diagnostics just minutes away in Addison, IL."
+    "Need auto repair near Lombard, IL? 2 Brothers Auto & Muffler in Addison provides muffler repair, brake service, exhaust repair and engine diagnostics just minutes away.",
 };
 
-// ✅ Default export function component
 export default function LombardPage() {
+  const faq = [
+    {
+      question: "How far is your shop from Lombard?",
+      answer:
+        "We are located in Addison, just minutes from Lombard via Roosevelt Road (Route 38) and I-355.",
+    },
+    {
+      question: "Do you offer same-day exhaust or muffler repair?",
+      answer:
+        "Yes, many muffler and exhaust repairs can be completed the same day depending on the vehicle and parts availability.",
+    },
+    {
+      question: "Do you service all vehicle makes and models?",
+      answer:
+        "Absolutely! Our ASE-certified technicians handle all makes and models with precision and care.",
+    },
+  ];
+
+  // JSON-LD: only areaServed and FAQ for this page
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AutoRepair",
+        "name": "2 Brothers Auto & Muffler",
+        "areaServed": {
+          "@type": "City",
+          "name": "Lombard"
+        },
+        "url": "https://devwordpressspace.site/locations/lombard-il"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faq.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
-    <main className="container mx-auto px-6 py-12">
+    <main
+      className="container mx-auto px-6 py-12"
+      itemScope
+      itemType="https://schema.org/AutoRepair"
+    >
+      {/* JSON-LD specific to this page */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Business Info */}
+      <meta itemProp="name" content="2 Brothers Auto & Muffler" />
+      <meta itemProp="telephone" content="+1-630-229-7330" />
+      <meta itemProp="url" content="https://devwordpressspace.site/locations/lombard-il" />
+
+      {/* Address */}
+      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+        <meta itemProp="streetAddress" content="915 S Westwood Ave" />
+        <meta itemProp="addressLocality" content="Addison" />
+        <meta itemProp="addressRegion" content="IL" />
+        <meta itemProp="postalCode" content="60101" />
+        <meta itemProp="addressCountry" content="US" />
+      </div>
+
+      {/* Area Served */}
+      <div itemProp="areaServed" itemScope itemType="https://schema.org/City">
+        <meta itemProp="name" content="Lombard" />
+      </div>
+
       <h1 className="text-3xl font-bold mb-6">
-        Auto Repair & Muffler Shop Serving Lombard, IL
+        Auto Repair & Muffler Shop Near Lombard, IL
       </h1>
 
       <p className="mb-6">
-        Looking for reliable auto repair near Lombard, IL? <strong>2 Brothers Auto & Muffler</strong> in Addison, IL is your trusted local shop. 
-        We offer high-quality brake repair, muffler and exhaust services, engine diagnostics, and full-service auto repair for all makes and models.
+        Looking for reliable <strong>auto repair near Lombard, IL</strong>?{" "}
+        <span itemProp="name">2 Brothers Auto & Muffler</span> proudly serves
+        Lombard residents from our Addison location. We specialize in muffler repair, brake service,
+        exhaust repair, engine diagnostics, and full auto repair for all makes and models.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">Our Services</h2>
-      <ul className="list-disc ml-6 space-y-2">
-        <li>Muffler repair & replacement</li>
-        <li>Exhaust system repair</li>
-        <li>Brake repair & pad replacement</li>
-        <li>Engine diagnostics & check engine light repair</li>
-        <li>Suspension & steering repair</li>
-        <li>Catalytic converter replacement</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mt-6 mb-4">Why Lombard Drivers Choose Us</h2>
-      <ul className="list-disc ml-6 space-y-2">
+      <h2 className="text-2xl font-semibold mb-4">Why Lombard Drivers Choose Us</h2>
+      <ul className="list-disc ml-6 space-y-2 mb-6">
         <li>Family-owned & operated</li>
-        <li>Honest pricing & transparent service</li>
-        <li>Experienced mechanics working on all makes and models</li>
-        <li>Fast, reliable service and repairs</li>
+        <li>Transparent pricing and honest recommendations</li>
+        <li>ASE-certified technicians</li>
+        <li>Fast, reliable service</li>
+        <li>Convenient Addison location just minutes from Lombard</li>
       </ul>
 
-      <p className="mt-6">
-        Conveniently located in Addison, we are just minutes from Lombard via North Avenue (Route 64) and Route 53.{" "}
-        <Link href="/contact" className="text-blue-600 hover:underline">
-          Schedule your appointment today!
-        </Link>
+      <h2 className="text-2xl font-semibold mb-4">Conveniently Located Near Lombard</h2>
+      <p className="mb-6">
+        Our Addison shop is just a short drive from Lombard via Roosevelt Road (Route 38) and I-355,
+        making us a trusted choice for quality auto repair near Lombard.
       </p>
+
+      {/* FAQ Microdata */}
+   
+
+      <div className="bg-gray-100 p-6 rounded-lg text-center mt-10">
+        <h2 className="text-xl font-bold mb-4">Schedule Auto Repair Near Lombard Today</h2>
+        <Link href="/contact" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+          Book Your Appointment
+        </Link>
+      </div>
     </main>
   );
 }
