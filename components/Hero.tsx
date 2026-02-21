@@ -44,10 +44,13 @@ With decades of combined experience, our certified mechanics specialize in muffl
         ></div>
 
         {/* Right half */}
-        <div
-          className="w-full md:w-1/2 h-96 bg-cover bg-center rounded-3xl shadow-lg"
-          style={{ backgroundImage: `url(/images/2brother1.png)` }}
-        ></div>
+      <div className="w-full md:w-1/2 aspect-[4/3] rounded-3xl shadow-lg overflow-hidden">
+  <img
+    src="/images/2brother1.png"
+    className="w-full h-full object-cover"
+    alt="Two brothers"
+  />
+</div>
       </section>
     </>
   );
