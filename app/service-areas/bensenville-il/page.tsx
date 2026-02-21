@@ -130,31 +130,7 @@ export default function BensenvillePage() {
       </p>
 
       {/* FAQ Microdata */}
-      <section itemScope itemType="https://schema.org/FAQPage" className="mt-10">
-        <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
-
-        <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-          <h3 itemProp="name" className="font-semibold">
-            How far is your shop from Bensenville?
-          </h3>
-          <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-            <p itemProp="text">
-              We are located in Addison, just minutes from Bensenville via Route 83.
-            </p>
-          </div>
-        </div>
-
-        <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="mt-4">
-          <h3 itemProp="name" className="font-semibold">
-            Do you provide same-day muffler repair?
-          </h3>
-          <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-            <p itemProp="text">
-              In many cases, yes. Most muffler and exhaust repairs can be completed the same day.
-            </p>
-          </div>
-        </div>
-      </section>
+  
 
       <div className="bg-gray-100 p-6 rounded-lg text-center mt-10">
         <h2 className="text-xl font-bold mb-4">Schedule Auto Repair Near Bensenville Today</h2>
