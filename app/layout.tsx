@@ -103,6 +103,8 @@ const schema = {
     },
     {
       "@type": "AutoRepair",
+            "@id": "https://devwordpressspace.site/#autoRepair",
+
       "name": "2 Brothers Auto & Muffler",
       "address": {
         "@type": "PostalAddress",
