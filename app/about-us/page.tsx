@@ -68,7 +68,7 @@ If you’re searching for:
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="/images/2brothers-3.webp"
+            src="/images/2brother2.png"
             alt="About AutoCare"
             className="rounded-3xl shadow-lg object-cover w-full h-full"
           />
