@@ -46,7 +46,7 @@ With decades of combined experience, our certified mechanics specialize in muffl
         {/* Right half */}
         <div
           className="w-full md:w-1/2 h-96 bg-cover bg-center rounded-3xl shadow-lg"
-          style={{ backgroundImage: `url(/images/2brothers-2.webp)` }}
+          style={{ backgroundImage: `url(/images/2brother1.png)` }}
         ></div>
       </section>
     </>
