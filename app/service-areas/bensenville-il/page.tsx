@@ -1,43 +1,165 @@
 import Link from "next/link";
+import React from "react";
+import Script from "next/script";
 
 export const metadata = {
-  title: "Auto Repair Near Bensenville IL | 2 Brothers Auto & Muffler",
+  title: "Auto Repair Near Bensenville, IL | 2 Brothers Auto & Muffler",
   description:
-    "2 Brothers Auto & Muffler offers trusted auto repair near Bensenville, IL. Services include brake repair, muffler and exhaust repair, engine diagnostics, and full-service auto repair in Addison."
+    "Need auto repair near Bensenville, IL? 2 Brothers Auto & Muffler in Addison provides muffler repair, brake service, exhaust repair and engine diagnostics just minutes away.",
 };
 
 export default function BensenvillePage() {
+  const faq = [
+    {
+      question: "How far is your shop from Bensenville?",
+      answer:
+        "We are located in Addison, just minutes from Bensenville via Route 83.",
+    },
+    {
+      question: "Do you offer same-day exhaust or muffler repair?",
+      answer:
+        "Yes, many muffler and exhaust repairs can be completed the same day depending on the vehicle and parts availability.",
+    },
+    {
+      question: "Do you service all vehicle makes and models?",
+      answer:
+        "Absolutely! Our ASE-certified technicians handle all makes and models with precision and care.",
+    },
+  ];
+
+  // JSON-LD: only areaServed and FAQ for this page
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AutoRepair",
+        "name": "2 Brothers Auto & Muffler",
+        "areaServed": {
+          "@type": "City",
+          "name": "Bensenville"
+        },
+        "url": "https://devwordpressspace.site/locations/Bensenville-il"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faq.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
-    <main className="container mx-auto px-6 py-12">
+    <main
+      className="container mx-auto px-6 py-12"
+      itemScope
+      itemType="https://schema.org/AutoRepair"
+    >
+      {/* JSON-LD specific to this page */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Business Info */}
+      <meta itemProp="name" content="2 Brothers Auto & Muffler" />
+      <meta itemProp="telephone" content="+1-630-229-7330" />
+      <meta itemProp="url" content="https://devwordpressspace.site/locations/bensenville-il" />
+
+      {/* Address */}
+      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+        <meta itemProp="streetAddress" content="915 S Westwood Ave" />
+        <meta itemProp="addressLocality" content="Addison" />
+        <meta itemProp="addressRegion" content="IL" />
+        <meta itemProp="postalCode" content="60101" />
+        <meta itemProp="addressCountry" content="US" />
+      </div>
+
+      {/* Area Served */}
+      <div itemProp="areaServed" itemScope itemType="https://schema.org/City">
+        <meta itemProp="name" content="Bensenville" />
+      </div>
+
       <h1 className="text-3xl font-bold mb-6">
-        Auto Repair & Muffler Shop Serving Bensenville, IL
+        Auto Repair & Muffler Shop Near Bensenville, IL
       </h1>
 
       <p className="mb-6">
-        Need reliable auto repair near Bensenville, IL? <strong>2 Brothers Auto & Muffler</strong> in Addison provides professional brake repair, muffler and exhaust service, engine diagnostics, and full-service auto repair for all types of vehicles.
+        Looking for reliable <strong>auto repair near Bensenville, IL</strong>?{" "}
+        <span itemProp="name">2 Brothers Auto & Muffler</span> serves Bensenville
+        residents from our Addison location. We specialize in muffler repair, brake service,
+        exhaust repair, engine diagnostics, and full auto repair for all makes and models.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">Our Services</h2>
-      <ul className="list-disc ml-6 space-y-2">
-        <li>Muffler repair & replacement</li>
-        <li>Exhaust system repair</li>
-        <li>Brake repair & pad replacement</li>
-        <li>Engine diagnostics & check engine light repair</li>
-        <li>Suspension & steering repair</li>
-        <li>Catalytic converter replacement</li>
-      </ul>
+      <h2 className="text-2xl font-semibold mb-4">
+        Muffler & Exhaust Repair Near Bensenville
+      </h2>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-4">Why Choose 2 Brothers Auto for Bensenville Drivers</h2>
-      <ul className="list-disc ml-6 space-y-2">
-        <li>Family-owned & operated business</li>
-        <li>Honest, upfront pricing with no hidden fees</li>
-        <li>Experienced mechanics working on all makes and models</li>
-        <li>Quick, high-quality repairs</li>
-      </ul>
+      <div itemProp="makesOffer" itemScope itemType="https://schema.org/Offer">
+        <div itemProp="itemOffered" itemScope itemType="https://schema.org/Service">
+          <meta itemProp="name" content="Muffler Repair" />
+          <meta itemProp="areaServed" content="Bensenville IL" />
+        </div>
+      </div>
 
-      <p className="mt-6">
-        Our Addison location is conveniently close to Bensenville via I-294 and Route 83. <Link href="/contact" className="text-blue-600 hover:underline">Schedule your appointment today!</Link>
+      <p className="mb-6">
+        If your vehicle is excessively loud, rattling, or failing emissions testing, we provide
+        professional muffler repair and full exhaust replacement for Bensenville residents.
       </p>
+
+      <h2 className="text-2xl font-semibold mb-4">Why Bensenville Drivers Choose Us</h2>
+      <ul className="list-disc ml-6 space-y-2 mb-6">
+        <li>Family-owned & operated</li>
+        <li>Honest pricing & transparent recommendations</li>
+        <li>ASE-certified technicians</li>
+        <li>Fast, reliable service</li>
+        <li>Convenient Addison location just minutes away</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mb-4">Conveniently Located Near Bensenville</h2>
+      <p className="mb-6">
+        Our Addison shop is just a short drive from Bensenville via Route 83 and Lake Street,
+        making us a trusted choice for quality auto repair near Bensenville.
+      </p>
+
+      {/* FAQ Microdata */}
+      <section itemScope itemType="https://schema.org/FAQPage" className="mt-10">
+        <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+
+        <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
+          <h3 itemProp="name" className="font-semibold">
+            How far is your shop from Bensenville?
+          </h3>
+          <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+            <p itemProp="text">
+              We are located in Addison, just minutes from Bensenville via Route 83.
+            </p>
+          </div>
+        </div>
+
+        <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question" className="mt-4">
+          <h3 itemProp="name" className="font-semibold">
+            Do you provide same-day muffler repair?
+          </h3>
+          <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+            <p itemProp="text">
+              In many cases, yes. Most muffler and exhaust repairs can be completed the same day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-gray-100 p-6 rounded-lg text-center mt-10">
+        <h2 className="text-xl font-bold mb-4">Schedule Auto Repair Near Bensenville Today</h2>
+        <Link href="/contact" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+          Book Your Appointment
+        </Link>
+      </div>
     </main>
   );
 }
