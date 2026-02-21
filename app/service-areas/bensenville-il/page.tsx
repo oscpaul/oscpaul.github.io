@@ -33,6 +33,8 @@ export default function BensenvillePage() {
     "@graph": [
       {
         "@type": "AutoRepair",
+              "@id": "https://devwordpressspace.site/#autoRepair",
+
         "name": "2 Brothers Auto & Muffler",
         "areaServed": {
           "@type": "City",
