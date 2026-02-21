@@ -93,7 +93,13 @@ export default function Services() {
           "@type": "Organization",
           "name": "2 Brothers Auto & Muffler"
         },
-        "areaServed": "Addison, IL"
+        "areaServed": [
+        { "@type": "City", "name": "Addison" },
+        { "@type": "City", "name": "Elmhurst" },
+        { "@type": "City", "name": "Bensenville" },
+        { "@type": "City", "name": "Villa Park" },
+        { "@type": "City", "name": "Lombard" },
+        { "@type": "City", "name": "Chicago" }
       },
       {
         "@type": "FAQPage",
