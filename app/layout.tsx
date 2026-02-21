@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | 2 Brothers Auto & Muffler",
   },
   description:
-    "Expert muffler repair, brakes, exhaust systems, and engine diagnostics in Addison, IL. Trusted local auto repair shop. Call today.",
+    "Expert muffler repair, exhaust systems, brake service,  and engine maintenance in Addison, IL. Trusted local auto repair shop. Call today.",
 
   keywords: [
     "Auto repair Addison IL",
