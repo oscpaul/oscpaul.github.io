@@ -19,7 +19,7 @@ export default function About() {
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="/images/2brothers-3.webp"
+            src="/images/2brother2.png"
             alt="About 2 Brothers Auto Muffler"
             className="rounded-3xl shadow-lg object-cover w-full h-full"
           />
