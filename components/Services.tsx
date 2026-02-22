@@ -80,7 +80,23 @@ const services = [
     ]
   }
 ];
-
+const additionalFaq = [
+  {
+    question: "Do you offer same-day muffler repair in Addison, IL?",
+    answer:
+      "Yes, most muffler and exhaust repairs can be completed the same day depending on parts availability.",
+  },
+  {
+    question: "Do you provide free brake inspections?",
+    answer:
+      "Yes, we offer free brake inspections for customers in Addison and surrounding areas.",
+  },
+  {
+    question: "What types of vehicles do you service?",
+    answer:
+      "We service most domestic and foreign vehicles including cars, trucks, and SUVs.",
+  },
+];
 export default function Services() {
 const jsonLd = {
   "@context": "https://schema.org",
@@ -113,7 +129,12 @@ const jsonLd = {
           name: f.question,
           acceptedAnswer: { "@type": "Answer", text: f.answer }
         }))
-      )
+      ),
+          ...additionalFaq.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
     }
   ]
 };
