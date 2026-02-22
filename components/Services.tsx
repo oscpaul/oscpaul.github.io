@@ -82,41 +82,41 @@ const services = [
 ];
 
 export default function Services() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": services.flatMap(service => [
-      {
-        "@type": "Service",
-        "name": service.title,
-        "description": service.overview,
-        "provider": {
-          "@type": "Organization",
-          "name": "2 Brothers Auto & Muffler"
-        },
-        "areaServed": [
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    // Keep each Service as a separate object
+    ...services.map(service => ({
+      "@type": "Service",
+      "name": service.title,
+      "description": service.overview,
+      "provider": {
+        "@type": "Organization",
+        "name": "2 Brothers Auto & Muffler"
+      },
+      "areaServed": [
         { "@type": "City", "name": "Addison" },
         { "@type": "City", "name": "Elmhurst" },
         { "@type": "City", "name": "Bensenville" },
         { "@type": "City", "name": "Villa Park" },
         { "@type": "City", "name": "Lombard" },
         { "@type": "City", "name": "Chicago" }
-          
       ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": service.faq.map(f => ({
-          "@type": "Question",
-          "name": f.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": f.answer
-          }
-        }))
-      }
-    ])
-  };
+    })),
 
+    // ONE FAQPage for all services
+    {
+      "@type": "FAQPage",
+      "mainEntity": services.flatMap(service =>
+        service.faq.map(f => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer }
+        }))
+      )
+    }
+  ]
+};
   return (
     <section className="px-2 py-24 max-w-6xl mx-auto">
       {/* FAQ JSON-LD for all services */}
