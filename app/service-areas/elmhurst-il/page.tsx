@@ -15,11 +15,7 @@ export default function ElmhurstPage() {
       answer:
         "We are located in Addison, just minutes from Elmhurst via North Avenue (Route 64) and I-290.",
     },
-    {
-      question: "Do you offer same-day exhaust or muffler repair?",
-      answer:
-        "Yes, many muffler and exhaust repairs can be completed the same day depending on the vehicle and parts availability.",
-    },
+
     {
       question: "Do you service all vehicle makes and models?",
       answer:
