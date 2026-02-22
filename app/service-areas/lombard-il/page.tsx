@@ -40,7 +40,6 @@ export default function LombardPage() {
         "addressCountry": "US"
       },
       "telephone": "+1-630-229-7330",
-      "url": "https://devwordpressspace.site",
 "image": "https://devwordpressspace.site/images/services/oil-1.png",
         "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
         "areaServed": {
