@@ -15,11 +15,7 @@ export default function BensenvillePage() {
       answer:
         "We are located in Addison, just minutes from Bensenville via Route 83.",
     },
-    {
-      question: "Do you offer same-day exhaust or muffler repair?",
-      answer:
-        "Yes, many muffler and exhaust repairs can be completed the same day depending on the vehicle and parts availability.",
-    },
+
     {
       question: "Do you service all vehicle makes and models?",
       answer:
