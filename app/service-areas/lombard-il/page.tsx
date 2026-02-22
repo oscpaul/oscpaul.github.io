@@ -77,6 +77,8 @@ export default function LombardPage() {
       {/* Business Info */}
       <meta itemProp="telephone" content="+1-630-229-7330" />
       <meta itemProp="url" content="https://devwordpressspace.site/service-areas/lombard-il" />
+  <meta itemprop="priceRange" content="$$" />
+  <meta itemprop="image" content="https://devwordpressspace.site/images/services/oil-1.png" />
 
       {/* Address */}
       <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
@@ -85,6 +87,7 @@ export default function LombardPage() {
         <meta itemProp="addressRegion" content="IL" />
         <meta itemProp="postalCode" content="60101" />
         <meta itemProp="addressCountry" content="US" />
+        
       </div>
 
       {/* Area Served */}
