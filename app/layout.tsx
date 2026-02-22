@@ -95,6 +95,14 @@ const schema = {
         "width": 300,
         "height": 100
       },
+         "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "915 S Westwood Ave",
+        "addressLocality": "Addison",
+        "addressRegion": "IL",
+        "postalCode": "60101",
+        "addressCountry": "US"
+      },
       "telephone": "+1-630-229-7330",
       "sameAs": [
         "https://www.facebook.com/YOURPAGE",
