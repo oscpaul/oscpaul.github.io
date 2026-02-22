@@ -22,7 +22,16 @@ export default function Footer() {
             </span>
           </address>
         </div>
-
+ <div className="mt-6 rounded-lg overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101&output=embed"
+      width="100%"
+      height="250"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+    ></iframe>
+  </div>
         {/* Navigation / Social */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
