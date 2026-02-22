@@ -148,10 +148,53 @@ const schema = {
       "addressCountry": "US"
     },
         ]
-    }
+    },
+
+    {
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "DuPage County",
+  "description": "DuPage County is a county located in the state of Illinois, part of the Chicago metropolitan area.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wheaton",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.8500,
+    "longitude": -88.0900
+  },
+  "containedInPlace": {
+    "@type": "State",
+    "name": "Illinois",
+    "addressCountry": "US"
+  },
+  "hasPart": [
+    {
+      "@type": "City",
+      "name": "Wheaton",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "City",
+      "name": "Lombard",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+  ]
+} 
+  
+  
+
+
+
+
+
   ]
 }
- 
   ;
 
 
