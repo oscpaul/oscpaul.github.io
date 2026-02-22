@@ -75,7 +75,6 @@ export default function LombardPage() {
       />
 
       {/* Business Info */}
-      <meta itemProp="name" content="2 Brothers Auto & Muffler" />
       <meta itemProp="telephone" content="+1-630-229-7330" />
       <meta itemProp="url" content="https://devwordpressspace.site/service-areas/lombard-il/lombard-il" />
 
