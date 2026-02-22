@@ -130,7 +130,7 @@ export default function BensenvillePage() {
 
       <div className="bg-gray-100 p-6 rounded-lg text-center mt-10">
         <h2 className="text-xl font-bold mb-4">Schedule Auto Repair Near Bensenville Today</h2>
-        <Link href="/contact" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+        <Link href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
           Book Your Appointment
         </Link>
       </div>
