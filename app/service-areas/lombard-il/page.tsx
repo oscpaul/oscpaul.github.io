@@ -29,7 +29,7 @@ export default function LombardPage() {
     "@graph": [
       {
         "@type": "AutoRepair",
-        "@id": "https://devwordpressspace.site/#autoRepair",
+        "@id": "https://devwordpressspace.site/lombard-il/#autoRepair",
         "name": "2 Brothers Auto & Muffler",
         "areaServed": {
           "@type": "City",
