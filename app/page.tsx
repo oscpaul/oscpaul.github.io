@@ -14,35 +14,9 @@ import SquareEmbed2 from "@/components/SquareEmbed2"
 import Script from 'next/script';
 export default function Home() {
   const faqs = [
-    {
-      question: "Do you offer same-day muffler repair in Addison, IL?",
-      answer:
-        "Yes, most muffler and exhaust repairs can be completed the same day depending on parts availability.",
-    },
-    {
-      question: "Do you provide free brake inspections?",
-      answer:
-        "Yes, we offer free brake inspections for customers in Addison and surrounding areas.",
-    },
-    {
-      question: "What types of vehicles do you service?",
-      answer:
-        "We service most domestic and foreign vehicles including cars, trucks, and SUVs.",
-    },
+ 
   ];
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
 
   return (
     
