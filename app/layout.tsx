@@ -116,6 +116,7 @@ const schema = {
       },
       "telephone": "+1-630-229-7330",
       "url": "https://devwordpressspace.site",
+"image": "https://devwordpressspace.site/images/services/oil-1.png",
       // Note: remove areaServed here or leave generic
       "areaServed": {
         "@type": "Place",
