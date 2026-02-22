@@ -128,10 +128,26 @@ const schema = {
         "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
 
       // Note: remove areaServed here or leave generic
-      "areaServed": {
+      "areaServed": 
+      [
+      
+      {
         "@type": "Place",
         "name": "Greater Addison Area"
-      }
+      },
+        {
+      "@type": "County",
+      "name": "DuPage County",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+          {
+      "@type": "AdministrativeArea",
+      "name": "Chicagoland / Western Suburbs",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+        ]
     }
   ]
 };
