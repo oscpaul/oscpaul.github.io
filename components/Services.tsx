@@ -121,21 +121,23 @@ const jsonLd = {
     })),
 
     // ONE FAQPage for all services
-    {
-      "@type": "FAQPage",
-      "mainEntity": services.flatMap(service =>
-        service.faq.map(f => ({
-          "@type": "Question",
-          name: f.question,
-          acceptedAnswer: { "@type": "Answer", text: f.answer }
-        }))
-      ),
-          ...additionalFaq.map((f) => ({
-            "@type": "Question",
-            name: f.question,
-            acceptedAnswer: { "@type": "Answer", text: f.answer },
-          })),
-    }
+{
+  "@type": "FAQPage",
+  "mainEntity": [
+    ...services.flatMap(service =>
+      service.faq.map(f => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer }
+      }))
+    ),
+    ...additionalFaq.map(f => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    }))
+  ]
+}
   ]
 };
   return (
