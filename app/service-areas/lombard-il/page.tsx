@@ -31,7 +31,6 @@ export default function LombardPage() {
         "@type": "AutoRepair",
         "@id": "https://devwordpressspace.site/lombard-il/#autoRepair",
         "name": "2 Brothers Auto & Muffler",
-         "name": "2 Brothers Auto & Muffler",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "915 S Westwood Ave",
