@@ -13,7 +13,7 @@ import SquareEmbed2 from "@/components/SquareEmbed2"
 
 import Script from 'next/script';
 export default function Home() {
- \
+ 
 
 
   return (
