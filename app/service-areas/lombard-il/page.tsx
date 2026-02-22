@@ -31,6 +31,19 @@ export default function LombardPage() {
         "@type": "AutoRepair",
         "@id": "https://devwordpressspace.site/lombard-il/#autoRepair",
         "name": "2 Brothers Auto & Muffler",
+         "name": "2 Brothers Auto & Muffler",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "915 S Westwood Ave",
+        "addressLocality": "Addison",
+        "addressRegion": "IL",
+        "postalCode": "60101",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-630-229-7330",
+      "url": "https://devwordpressspace.site",
+"image": "https://devwordpressspace.site/images/services/oil-1.png",
+        "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
         "areaServed": {
           "@type": "City",
           "name": "Lombard"
