@@ -72,9 +72,10 @@ export default function Footer() {
         {/* Optional brand / message */}
         <div>
           <h3 className="text-lg font-semibold mb-4">About</h3>
-          <p className="text-sm leading-relaxed text-neutral-400">
-            Building high-quality digital products with performance,
-            accessibility, and reliability at the core.
+            <p className="text-sm text-neutral-400 leading-relaxed">
+            Trusted auto repair serving Addison, IL and surrounding communities.
+            We specialize in diagnostics, brake repair, exhaust systems, and
+            complete vehicle maintenance with honest pricing and dependable service.
           </p>
         </div>
             <div>
