@@ -36,19 +36,8 @@ export default function Home() {
     <section className="faq-section">
         <h2>Frequently Asked Questions</h2>
 
-        {faqs.map((faq, index) => (
-          <div key={index} style={{ marginBottom: "20px" }}>
-            <h3>{faq.question}</h3>
-            <p>{faq.answer}</p>
-          </div>
-        ))}
       </section>
- <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-      />
+
     </main>
   )
 }
