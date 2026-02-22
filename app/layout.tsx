@@ -99,6 +99,8 @@ const schema = {
     "postalCode": "60101",
     "addressCountry": "US"
   },
+              "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
+
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
