@@ -31,7 +31,6 @@ export default function LombardPage() {
         "@type": "AutoRepair",
         "@id": "https://devwordpressspace.site/service-areas/lombard-il/#autoRepair",
         "name": "2 Brothers Auto & Muffler",
-        "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
       "address": {
         "@type": "PostalAddress",
         "url": "https://devwordpressspace.site/service-areas/lombard-il/lombard-il",
