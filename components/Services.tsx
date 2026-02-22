@@ -141,7 +141,7 @@ const jsonLd = {
   ]
 };
   return (
-    <section className="px-2 py-24 max-w-6xl mx-auto">
+    <section id="services" className="px-2 py-24 max-w-6xl mx-auto">
       {/* FAQ JSON-LD for all services */}
       <Script
         type="application/ld+json"
