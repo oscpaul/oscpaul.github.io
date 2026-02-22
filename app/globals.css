@@ -22,7 +22,8 @@ body {
 
 HTML CSS JS
 * {
- 
+  scroll-behavior: smooth;
+
 }
 
 
