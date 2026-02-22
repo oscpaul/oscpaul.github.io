@@ -85,6 +85,39 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "2 Brothers Auto & Muffler",
+  "image": "https://www.devwordpressspace.site/path-to-your-logo.png",
+  "url": "https://www.devwordpressspace.site/",
+  "telephone": "+1-630-229-7330",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "915 S Westwood Ave",
+    "addressLocality": "Addison",
+    "addressRegion": "IL",
+    "postalCode": "60101",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "41.8500",
+    "longitude": "--88.0900"
+  },
+  "hasMap": "https://maps.google.com/?q=915+S+Westwood+Ave+Addison+IL+60101"
+},
+    {
       "@type": "Organization",
       "@id": "https://devwordpressspace.site/#organization",
       "name": "2 Brothers Auto & Muffler",
