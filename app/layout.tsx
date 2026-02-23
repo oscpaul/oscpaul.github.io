@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | 2 Brothers Auto & Muffler",
   },
   description:
-    "Expert muffler repair, exhaust systems, brake service,  and engine maintenance in Addison, Lombard, Villa Park IL and surrounding areas. Trusted local auto repair shop. Call today.",
+    "Expert muffler repair, exhaust systems, brake service,  suspension service, and engine diagnostics in Addison, Lombard, Villa Park IL and surrounding areas. Trusted local auto repair shop. Call today.",
 
   keywords: [
     "Auto repair Addison IL",
