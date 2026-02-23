@@ -124,6 +124,7 @@ const schema = {
       "@id": "https://devwordpressspace.site/#organization",
       "name": "2 Brothers Auto & Muffler",
       "url": "https://devwordpressspace.site",
+      "image": "https://devwordpressspace.site/images/services/oil-1.png",
       "logo": {
         "@type": "ImageObject",
         "url": "https://devwordpressspace.site/images/services/logo.jpg",
