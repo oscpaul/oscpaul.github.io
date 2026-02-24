@@ -6,10 +6,10 @@ export default function About() {
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold mb-4">Why Choose 2 Brothers Auto Service?</h2>
           <p className="text-gray-600 mb-6 text-lg">
-        At 2 Brothers Auto Service, Addison drivers trust us for honest, reliable, and fast auto repairs. Here’s why our customers keep coming back.
+        At 2 Brothers Auto Service, Addison drivers trust us for honest, reliable, and fast muffler and exhaust repairs. Here’s why our customers keep coming back.
           </p>
           <ul>
-  <li><strong>Experienced Technicians:</strong> Our team has years of hands-on experience with mufflers, brakes, and full-service auto repair.</li>
+  <li><strong>Experienced Technicians:</strong> Our team has years of hands-on experience with muffler repair, exhaust systems, muffler replacement, and full-service auto repair.</li>
   <li><strong>Transparent Pricing:</strong> No surprises—just fair, upfront pricing for every repair.</li>
   <li><strong>Fast, Efficient Service:</strong> We value your time and aim to get you back on the road quickly.</li>
   <li><strong>Local & Accessible:</strong> Conveniently located at 915 S Westwood Ave, we serve Addison and nearby neighborhoods.</li>
