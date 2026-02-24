@@ -4,15 +4,22 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-4xl font-bold mb-4">About 2 Brothers Auto Muffler</h2>
+          <h2 className="text-4xl font-bold mb-4">Conveniently Located in Addison, IL</h2>
           <p className="text-gray-600 mb-6 text-lg">
-            At 2 Brothers Auto Muffler, we believe car maintenance should be simple, honest, and stress-free. 
-            Our team of expert technicians provides thoughtful repairs, transparent pricing, 
-            and an experience that makes you feel confident on the road.
+        At 2 Brothers Auto Service, Addison drivers trust us for honest, reliable, and fast auto repairs. Here’s why our customers keep coming back.
           </p>
+          <ul>
+  <li><strong>Experienced Technicians:</strong> Our team has years of hands-on experience with mufflers, brakes, and full-service auto repair.</li>
+  <li><strong>Transparent Pricing:</strong> No surprises—just fair, upfront pricing for every repair.</li>
+  <li><strong>Fast, Efficient Service:</strong> We value your time and aim to get you back on the road quickly.</li>
+  <li><strong>Local & Accessible:</strong> Conveniently located at 915 S Westwood Ave, we serve Addison and nearby neighborhoods.</li>
+  <li><strong>Community-Focused:</strong> We’re a locally-owned shop dedicated to keeping Addison drivers safe and satisfied.</li>
+</ul>
+                    <h3 className="text-4xl font-bold mb-4">Conveniently Located in Addison, IL</h3>
+
           <p className="text-gray-600 text-lg">
-            From routine check-ups to unexpected repairs, we’re committed to keeping your car running safely and smoothly. 
-            Your trust is our top priority, and our services are designed with you in mind.
+Finding reliable auto service near you in Addison has never been easier. Our shop is located at 915 S Westwood Ave, just off Lake Street and minutes from Army Trail Rd. Whether you’re coming from the downtown area, nearby neighborhoods, or commuting through Addison, our location is quick and easy to reach.
+Stop by today for a muffler inspection, brake service, or full auto repair—experience local service you can trust, right in the heart of Addison.
           </p>
         </div>
 
