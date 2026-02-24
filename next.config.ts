@@ -1,12 +1,15 @@
-import { NextConfig } from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',       // all paths
-        has: [{ type: 'host', value: 'devwordpressspace.site' }], // optional, can remove if all domains
-        destination: 'https://devwordpressspace.site/:path*',  // force HTTPS
+        source: '/:path*',
+        has: [
+          { type: 'host', value: 'devwordpressspace.site' }, // non-www
+          { type: 'host', value: 'http://devwordpressspace.site' }, // optional
+        ],
+        destination: 'https://www.devwordpressspace.site/:path*',
         permanent: true,
       },
     ];
