@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 
   title: {
-    default: "2 Brothers Auto Service & Muffler",
+    default: "Muffler & Brake Repair in Addison, IL | 2 Brothers Auto Service",
     template: "%s | 2 Brothers Auto & Muffler",
   },
   description:
