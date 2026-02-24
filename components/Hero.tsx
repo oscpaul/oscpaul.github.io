@@ -8,9 +8,7 @@ export default function Hero() {
        2 Brothers Auto & Muffler Service – Muffler & Brake Repair in Addison, IL
         </h1>
           <h3>
-If you're looking for trusted, affordable, and experienced auto repair in Addison, IL, 2 Brothers Auto & Muffler is your local, family-owned solution. Conveniently located in Addison, we proudly serve drivers throughout Illinois, including nearby communities like Lombard, Villa Park, Bensenville, Elmhurst, and Wood Dale.
-
-With decades of combined experience, our certified mechanics specialize in muffler repair, exhaust systems, brakes, engine diagnostics, suspension work, and complete auto repair services for domestic and foreign vehicles.
+Need fast, reliable muffler or brake repair in Addison, IL? 2 Brothers Auto Service has you covered. Located at 915 S Westwood Ave, just off Lake Street and minutes from Army Trail Rd, we keep Addison drivers safely on the road. From loud exhausts to worn brakes, our expert technicians provide honest diagnostics, quality repairs, and same-day service when possible. Stop by today or call to get your car running like new — trusted, local auto service is just around the corner
           </h3>
           <p className="text-stone-700 max-w-2xl mx-auto text-lg mb-10">
             Thoughtful repairs. Honest pricing. A better experience for your car —
