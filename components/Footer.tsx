@@ -88,41 +88,44 @@ export default function Footer() {
         </div>
 
         {/* Social */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-          <ul className="space-y-3 text-sm">
-            <li>
-              <Link
-                href="https://twitter.com/yourhandle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                Twitter
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.linkedin.com/company/yourcompany"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                LinkedIn
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.instagram.com/yourhandle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                Instagram
-              </Link>
-            </li>
-          </ul>
-        </div>
+       <div className="flex space-x-6 items-center">
+        <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+
+  {/* Facebook */}
+  <svg className="w-6 h-6 text-gray-400 hover:text-gray-600 transition"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-6 h-6 text-gray-500"
+    aria-label="Facebook icon"
+  >
+    <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.61.77-1.61 1.56V12h2.74l-.44 2.89h-2.3v6.99A10 10 0 0 0 22 12z" />
+  </svg>
+
+  {/* LinkedIn */}
+  <svg className="w-7 h-7"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-6 h-6 text-gray-500"
+    aria-label="LinkedIn icon"
+  >
+    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 0 3.5 1.12 1 2.49 1s2.49 1.12 2.49 2.5zM0 8h5v16H0V8zm7.5 0h4.78v2.2h.07c.66-1.25 2.28-2.56 4.69-2.56C22.42 7.64 24 10 24 14.08V24h-5v-8.73c0-2.08-.04-4.75-2.89-4.75-2.89 0-3.33 2.26-3.33 4.6V24h-5V8z"/>
+  </svg>
+
+  {/* Instagram */}
+  <svg className="w-6 h-6 text-gray-400"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-6 h-6 text-gray-500"
+    aria-label="Instagram icon"
+  >
+    <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.55 4 20 5.45 20 7.75v8.5C20 18.55 18.55 20 16.25 20h-8.5C5.45 20 4 18.55 4 16.25v-8.5C4 5.45 5.45 4 7.75 4zm4.25 2.75A5.25 5.25 0 1 0 17.25 12 5.26 5.26 0 0 0 12 6.75zm0 8.5A3.25 3.25 0 1 1 15.25 12 3.25 3.25 0 0 1 12 15.25zM17.5 6.5a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 17.5 6.5z"/>
+  </svg>
+
+</div>
+        
       </div>
 
       {/* Bottom bar */}
