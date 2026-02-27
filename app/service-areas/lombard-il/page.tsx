@@ -1,132 +1,131 @@
 import Link from "next/link";
-import React from "react";
 import Script from "next/script";
 
 export const metadata = {
   title: "Auto Repair Near Lombard, IL | 2 Brothers Auto & Muffler",
   description:
-    "Need auto repair near Lombard, IL? 2 Brothers Auto & Muffler in Addison provides muffler repair, brake service, exhaust repair and engine diagnostics just minutes away.",
+    "Looking for trusted auto repair near Lombard, IL? 2 Brothers Auto & Muffler in Addison provides brake repair, muffler service, exhaust repair, and engine diagnostics just minutes from Lombard.",
+  alternates: {
+    canonical:
+      "https://www.devwordpressspace.site/service-areas/lombard-il",
+  },
 };
 
 export default function LombardPage() {
   const faq = [
     {
-      question: "How far is your shop from Lombard?",
+      question: "How far is your shop from Lombard, IL?",
       answer:
-        "We are located in Addison, just minutes from Lombard via Roosevelt Road (Route 38) and I-355.",
+        "Our Addison auto repair shop is just minutes from Lombard via Roosevelt Road (Route 38) and I-355.",
     },
-
     {
-      question: "Do you service all vehicle makes and models?",
+      question: "Do you service all makes and models?",
       answer:
-        "Absolutely! Our ASE-certified technicians handle all makes and models with precision and care.",
+        "Yes. Our ASE-certified technicians service all makes and models including domestic, Asian, and European vehicles.",
     },
   ];
 
-  // JSON-LD: only areaServed and FAQ for this page
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "AutoRepair",
-        "@id": "https://devwordpressspace.site/service-areas/lombard-il/#autoRepair",
+        "@id": "https://www.devwordpressspace.site/#autoRepair",
         "name": "2 Brothers Auto & Muffler",
-      "address": {
-        "@type": "PostalAddress",
-        "url": "https://devwordpressspace.site/service-areas/lombard-il",
-        "streetAddress": "915 S Westwood Ave",
-        "addressLocality": "Addison",
-        "addressRegion": "IL",
-        "postalCode": "60101",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-630-229-7330",
-"image": "https://devwordpressspace.site/images/services/oil-1.png",
-        "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
+        "url": "https://www.devwordpressspace.site/",
+        "telephone": "+1-630-229-7330",
+        "priceRange": "$$",
+        "image":
+          "https://www.devwordpressspace.site/images/services/oil-1.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "915 S Westwood Ave",
+          "addressLocality": "Addison",
+          "addressRegion": "IL",
+          "postalCode": "60101",
+          "addressCountry": "US",
+        },
         "areaServed": {
           "@type": "City",
-          "name": "Lombard"
+          "name": "Lombard",
+          "addressRegion": "IL",
+          "addressCountry": "US",
         },
       },
       {
         "@type": "FAQPage",
-        "mainEntity": faq.map(item => ({
+        "@id":
+          "https://www.devwordpressspace.site/service-areas/lombard-il/#faq",
+        "mainEntity": faq.map((item) => ({
           "@type": "Question",
           "name": item.question,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": item.answer
-          }
-        }))
-      }
-    ]
+            "text": item.answer,
+          },
+        })),
+      },
+    ],
   };
 
   return (
-    <main
-      className="container mx-auto px-6 py-12"
-      itemScope
-      itemType="https://schema.org/AutoRepair"
-    >
-      {/* JSON-LD specific to this page */}
+    <main className="container mx-auto px-6 py-12">
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      {/* Business Info */}
-      <meta itemProp="telephone" content="+1-630-229-7330" />
-      <meta itemProp="url" content="https://devwordpressspace.site/service-areas/lombard-il" />
-  <meta itemProp="priceRange" content="$$" />
-  <meta itemProp="image" content="https://devwordpressspace.site/images/services/oil-1.png" />
-
-      {/* Address */}
-      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-        <meta itemProp="streetAddress" content="915 S Westwood Ave" />
-        <meta itemProp="addressLocality" content="Addison" />
-        <meta itemProp="addressRegion" content="IL" />
-        <meta itemProp="postalCode" content="60101" />
-        <meta itemProp="addressCountry" content="US" />
-        
-      </div>
-
-      {/* Area Served */}
-      <div itemProp="areaServed" itemScope itemType="https://schema.org/City">
-        <meta itemProp="name" content="Lombard" />
-      </div>
 
       <h1 className="text-3xl font-bold mb-6">
         Auto Repair & Muffler Shop Near Lombard, IL
       </h1>
 
       <p className="mb-6">
-        Looking for reliable <strong>auto repair near Lombard, IL</strong>?{" "}
-        <span itemProp="name">2 Brothers Auto & Muffler</span> proudly serves
-        Lombard residents from our Addison location. We specialize in muffler repair, brake service,
-        exhaust repair, engine diagnostics, and full auto repair for all makes and models.
+        If you’re searching for reliable <strong>auto repair near Lombard, IL</strong>,
+        2 Brothers Auto & Muffler proudly serves Lombard drivers from our
+        Addison location just minutes away. We provide expert brake repair,
+        muffler replacement, exhaust system repair, engine diagnostics, oil
+        changes, and complete auto maintenance services.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">Why Lombard Drivers Choose Us</h2>
+      <h2 className="text-2xl font-semibold mb-4">
+        Complete Auto Repair Services for Lombard Drivers
+      </h2>
+
+      <p className="mb-6">
+        Our shop regularly serves customers from Lombard and throughout
+        DuPage County. Whether you're commuting along Roosevelt Road,
+        Finley Road, or I-355, our Addison location offers convenient,
+        dealership-quality auto repair without dealership pricing.
+      </p>
+
       <ul className="list-disc ml-6 space-y-2 mb-6">
-        <li>Family-owned & operated</li>
-        <li>Transparent pricing and honest recommendations</li>
-        <li>ASE-certified technicians</li>
-        <li>Fast, reliable service</li>
-        <li>Convenient Addison location just minutes from Lombard</li>
+        <li>Brake repair & brake pad replacement</li>
+        <li>Muffler & exhaust system repair</li>
+        <li>Catalytic converter service</li>
+        <li>Check engine light diagnostics</li>
+        <li>Suspension & steering repair</li>
+        <li>Oil changes & preventative maintenance</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mb-4">Conveniently Located Near Lombard</h2>
+      <h2 className="text-2xl font-semibold mb-4">
+        Why Lombard Customers Choose 2 Brothers Auto
+      </h2>
+
       <p className="mb-6">
-        Our Addison shop is just a short drive from Lombard via Roosevelt Road (Route 38) and I-355,
-        making us a trusted choice for quality auto repair near Lombard.
+        As a family-owned auto repair shop serving Addison and surrounding
+        communities, we focus on honest recommendations, transparent pricing,
+        and quality workmanship. Many Lombard residents trust us for long-term
+        vehicle maintenance because we treat every vehicle like it’s our own.
       </p>
 
-      {/* FAQ Microdata */}
-   
-
       <div className="bg-gray-100 p-6 rounded-lg text-center mt-10">
-        <h2 className="text-xl font-bold mb-4">Schedule Auto Repair Near Lombard Today</h2>
-        <Link href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+        <h2 className="text-xl font-bold mb-4">
+          Schedule Auto Repair Near Lombard Today
+        </h2>
+        <Link
+          href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
+        >
           Book Your Appointment
         </Link>
       </div>
