@@ -102,7 +102,7 @@ View all of the areas we serve here:
 >
   View All Service Areas in DuPage County
 </Link>
-Why This Help
+
 
       <p className="mb-6">
         Our shop regularly serves customers from Lombard and throughout
