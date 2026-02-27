@@ -76,68 +76,20 @@ export const metadata: Metadata = {
 
 
 
-
-
-
-
-
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    {
 
-  "@type": "LocalBusiness",
-  "name": "2 Brothers Auto & Muffler",
-  "image": "https://www.devwordpressspace.site/path-to-your-logo.png",
-  "url": "https://www.devwordpressspace.site/",
-  "telephone": "+1-630-229-7330",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "915 S Westwood Ave",
-    "addressLocality": "Addison",
-    "addressRegion": "IL",
-    "postalCode": "60101",
-    "addressCountry": "US"
-  },
-              "priceRange": "$$", // optional, can be $ / $$ / $$$ depending on service
-
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday",
-        "Thursday", "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "18:00"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 41.9312,
-  "longitude": -87.9883
-  },
-  "hasMap": "https://maps.google.com/?q=915+S+Westwood+Ave+Addison+IL+60101"
-},
     {
       "@type": "Organization",
       "@id": "https://devwordpressspace.site/#organization",
       "name": "2 Brothers Auto & Muffler",
-      "url": "https://devwordpressspace.site",
-      "image": "https://devwordpressspace.site/images/services/oil-1.png",
+      "url": "https://devwordpressspace.site/",
       "logo": {
         "@type": "ImageObject",
         "url": "https://devwordpressspace.site/images/services/logo.jpg",
         "width": 300,
         "height": 100
-      },
-         "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "915 S Westwood Ave",
-        "addressLocality": "Addison",
-        "addressRegion": "IL",
-        "postalCode": "60101",
-        "addressCountry": "US"
       },
       "telephone": "+1-630-229-7330",
       "sameAs": [
@@ -145,11 +97,15 @@ const schema = {
         "https://www.google.com/maps?cid=YOURCID"
       ]
     },
+
     {
       "@type": "AutoRepair",
-            "@id": "https://devwordpressspace.site/#autoRepair",
-
+      "@id": "https://devwordpressspace.site/#autorepair",
       "name": "2 Brothers Auto & Muffler",
+      "url": "https://devwordpressspace.site/",
+      "image": "https://devwordpressspace.site/images/services/oil-1.png",
+      "telephone": "+1-630-229-7330",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "915 S Westwood Ave",
@@ -158,78 +114,55 @@ const schema = {
         "postalCode": "60101",
         "addressCountry": "US"
       },
-      "telephone": "+1-630-229-7330",
-      "url": "https://devwordpressspace.site",
-"image": "https://devwordpressspace.site/images/services/oil-1.png",
-        "priceRange": "$$", 
-
-      "areaServed": 
-      [
-      
-      {
-        "@type": "Place",
-        "name": "Greater Addison Area"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.9312,
+        "longitude": -87.9883
       },
+      "openingHoursSpecification": [
         {
-      "@type": "County",
-      "name": "DuPage County",
-      "addressRegion": "IL",
-      "addressCountry": "US"
-    },
-          {
-      "@type": "AdministrativeArea",
-      "name": "Chicagoland / Western Suburbs",
-      "addressRegion": "IL",
-      "addressCountry": "US"
-    },
-        ]
-    },
-
-    {
-  "@type": "Place",
-  "name": "DuPage County",
-  "description": "DuPage County is a county located in the state of Illinois, part of the Chicago metropolitan area.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Wheaton",
-    "addressRegion": "IL",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
- "latitude": 41.9312,
-  "longitude": -87.9883
-  },
-  "containedInPlace": {
-    "@type": "State",
-    "name": "Illinois",
-    "addressCountry": "US"
-  },
-  "hasPart": [
-    {
-      "@type": "City",
-      "name": "Wheaton",
-      "addressRegion": "IL",
-      "addressCountry": "US"
-    },
-    {
-      "@type": "City",
-      "name": "Lombard",
-      "addressRegion": "IL",
-      "addressCountry": "US"
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Greater Addison Area"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "DuPage County",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Chicagoland / Western Suburbs",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        }
+      ],
+      "hasMap": "https://maps.google.com/?q=915+S+Westwood+Ave+Addison+IL+60101",
+      "parentOrganization": {
+        "@id": "https://devwordpressspace.site/#organization"
+      }
     }
-  ]
-} 
-  
-  
-
-
-
-
 
   ]
-}
-  ;
+};
+
+
+
+
 
 
 
