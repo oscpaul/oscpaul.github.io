@@ -218,7 +218,7 @@ const schema = {
       "name": "Lombard",
       "addressRegion": "IL",
       "addressCountry": "US"
-    },
+    }
   ]
 } 
   
