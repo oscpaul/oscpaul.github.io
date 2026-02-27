@@ -85,7 +85,7 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-  "@context": "https://schema.org",
+
   "@type": "LocalBusiness",
   "name": "2 Brothers Auto & Muffler",
   "image": "https://www.devwordpressspace.site/path-to-your-logo.png",
