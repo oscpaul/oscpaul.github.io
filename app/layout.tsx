@@ -114,8 +114,8 @@ const schema = {
   ],
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "41.9312",
-  "longitude": "-87.9883"
+    "latitude": 41.9312,
+  "longitude": -87.9883
   },
   "hasMap": "https://maps.google.com/?q=915+S+Westwood+Ave+Addison+IL+60101"
 },
@@ -197,8 +197,8 @@ const schema = {
   },
   "geo": {
     "@type": "GeoCoordinates",
- "latitude": "41.9312",
-  "longitude": "-87.9883"
+ "latitude": 41.9312,
+  "longitude": -87.9883
   },
   "containedInPlace": {
     "@type": "State",
