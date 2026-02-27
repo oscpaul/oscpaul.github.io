@@ -132,6 +132,9 @@ is ready to help.
         <h2 className="text-xl font-bold mb-4">
           Schedule Auto Repair Near Lombard Today
         </h2>
+        <p>
+  Back to our <a href="https://www.devwordpressspace.site/">Homepage</a>
+</p>
         <Link
           href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
