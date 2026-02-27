@@ -186,7 +186,6 @@ const schema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "Place",
   "name": "DuPage County",
   "description": "DuPage County is a county located in the state of Illinois, part of the Chicago metropolitan area.",
