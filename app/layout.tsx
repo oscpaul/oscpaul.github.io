@@ -74,12 +74,11 @@ export const metadata: Metadata = {
 
 
 
-
-
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
 
+    // Organization
     {
       "@type": "Organization",
       "@id": "https://devwordpressspace.site/#organization",
@@ -98,6 +97,7 @@ const schema = {
       ]
     },
 
+    // AutoRepair
     {
       "@type": "AutoRepair",
       "@id": "https://devwordpressspace.site/#autorepair",
@@ -155,71 +155,130 @@ const schema = {
       "parentOrganization": {
         "@id": "https://devwordpressspace.site/#organization"
       },
-        "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://devwordpressspace.site/"
-  }
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://devwordpressspace.site/"
+      }
     },
+
+    // Service: Brake Repair
     {
-  "@type": "Service",
-  "@id": "https://devwordpressspace.site/#brake-repair",
-  "name": "Brake Repair",
-  "description": "Professional brake inspection, brake pad replacement, and full brake system repair services in Addison, IL.",
-  "provider": {
-    "@id": "https://devwordpressspace.site/#autorepair"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "DuPage County",
-    "addressRegion": "IL",
-    "addressCountry": "US"
-  },
-        "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://devwordpressspace.site/"
-  }
-},
+      "@type": "Service",
+      "@id": "https://devwordpressspace.site/#brake-repair",
+      "name": "Brake Repair",
+      "serviceType": "Brake Repair",
+      "description": "Professional brake inspection, brake pad replacement, and full brake system repair services in Addison, IL.",
+      "provider": {
+        "@id": "https://devwordpressspace.site/#autorepair"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "DuPage County",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "price": "99",
+          "priceValidUntil": "2026-12-31"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://devwordpressspace.site/",
+        "servicePhone": "+1-630-229-7330",
+        "availableLanguage": "English"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://devwordpressspace.site/"
+      }
+    },
 
-{
-  "@type": "Service",
-  "@id": "https://devwordpressspace.site/#oil-change",
-  "name": "Oil Change Service",
-  "description": "Full synthetic and conventional oil change services for all vehicle types in Addison, Illinois.",
-  "provider": {
-    "@id": "https://devwordpressspace.site/#autorepair"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "DuPage County",
-    "addressRegion": "IL",
-    "addressCountry": "US"
-  },
-    "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://devwordpressspace.site/"
-  }
-  
-},
+    // Service: Oil Change
+    {
+      "@type": "Service",
+      "@id": "https://devwordpressspace.site/#oil-change",
+      "name": "Oil Change Service",
+      "serviceType": "Oil Change",
+      "description": "Full synthetic and conventional oil change services for all vehicle types in Addison, Illinois.",
+      "provider": {
+        "@id": "https://devwordpressspace.site/#autorepair"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "DuPage County",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "price": "49",
+          "priceValidUntil": "2026-12-31"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://devwordpressspace.site/",
+        "servicePhone": "+1-630-229-7330",
+        "availableLanguage": "English"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://devwordpressspace.site/"
+      }
+    },
 
-{
-  "@type": "Service",
-  "@id": "https://devwordpressspace.site/#muffler-repair",
-  "name": "Muffler & Exhaust Repair",
-  "description": "Complete muffler replacement and exhaust system repair services in Addison and surrounding areas.",
-  "provider": {
-    "@id": "https://devwordpressspace.site/#autorepair"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "DuPage County",
-    "addressRegion": "IL",
-    "addressCountry": "US"
-  }
-
-}
+    // Service: Muffler & Exhaust Repair
+    {
+      "@type": "Service",
+      "@id": "https://devwordpressspace.site/#muffler-repair",
+      "name": "Muffler & Exhaust Repair",
+      "serviceType": "Muffler & Exhaust Repair",
+      "description": "Complete muffler replacement and exhaust system repair services in Addison and surrounding areas.",
+      "provider": {
+        "@id": "https://devwordpressspace.site/#autorepair"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "DuPage County",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "price": "129",
+          "priceValidUntil": "2026-12-31"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://devwordpressspace.site/",
+        "servicePhone": "+1-630-229-7330",
+        "availableLanguage": "English"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://devwordpressspace.site/"
+      }
+    }
 
   ]
 };
+
+
 
 
 
