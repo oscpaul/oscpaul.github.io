@@ -154,8 +154,69 @@ const schema = {
       "hasMap": "https://maps.google.com/?q=915+S+Westwood+Ave+Addison+IL+60101",
       "parentOrganization": {
         "@id": "https://devwordpressspace.site/#organization"
-      }
-    }
+      },
+        "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devwordpressspace.site/"
+  }
+    },
+    {
+  "@type": "Service",
+  "@id": "https://devwordpressspace.site/#brake-repair",
+  "name": "Brake Repair",
+  "description": "Professional brake inspection, brake pad replacement, and full brake system repair services in Addison, IL.",
+  "provider": {
+    "@id": "https://devwordpressspace.site/#autorepair"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "DuPage County",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  },
+        "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devwordpressspace.site/"
+  }
+},
+
+{
+  "@type": "Service",
+  "@id": "https://devwordpressspace.site/#oil-change",
+  "name": "Oil Change Service",
+  "description": "Full synthetic and conventional oil change services for all vehicle types in Addison, Illinois.",
+  "provider": {
+    "@id": "https://devwordpressspace.site/#autorepair"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "DuPage County",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  },
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devwordpressspace.site/"
+  }
+  
+},
+
+{
+  "@type": "Service",
+  "@id": "https://devwordpressspace.site/#muffler-repair",
+  "name": "Muffler & Exhaust Repair",
+  "description": "Complete muffler replacement and exhaust system repair services in Addison and surrounding areas.",
+  "provider": {
+    "@id": "https://devwordpressspace.site/#autorepair"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "DuPage County",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  }
+
+}
 
   ]
 };
