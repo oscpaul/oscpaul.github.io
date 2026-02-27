@@ -7,12 +7,12 @@ export default function Hero() {
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6">
        2 Brothers Auto & Muffler Service – Muffler & Brake Repair in Addison, IL
         </h1>
+          <h2>
+                      Serving Addison, Lombard, Elmhurst, Villa Park, and all of DuPage County.
+          </h2>
           <h3>
-Need fast, reliable muffler repair or exhaust system service near you in Addison, IL? 2 Brothers Auto Service has you covered. Conveniently located at 915 S Westwood Ave, just off Lake Street and minutes from Army Trail Rd, we specialize in muffler replacement, exhaust repair, and full exhaust system maintenance for all vehicles. Our experienced technicians provide honest diagnostics, quality parts, and same-day service whenever possible. Stop by today or call to restore your car’s performance, reduce noise, and get back on the road safely.          </h3>
-          <p className="text-stone-700 max-w-2xl mx-auto text-lg mb-10">
-            Thoughtful repairs. Honest pricing. A better experience for your car —
-            and for you.
-          </p>
+            Need fast, reliable muffler repair or exhaust system service near you in Addison, IL? 2 Brothers Auto Service has you covered. Conveniently located at 915 S Westwood Ave, just off Lake Street and minutes from Army Trail Rd, we specialize in muffler replacement, exhaust repair, and full exhaust system maintenance for all vehicles. Our experienced technicians provide honest diagnostics, quality parts, and same-day service whenever possible. Stop by today or call to restore your car’s performance, reduce noise, and get back on the road safely.  
+          </h3>
 
           <div className="flex justify-center">
               <a
