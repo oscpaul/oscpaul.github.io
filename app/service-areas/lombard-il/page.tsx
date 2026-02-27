@@ -92,9 +92,6 @@ Lombard, Addison, Elmhurst, or Villa Park, our experienced team
 is ready to help.
 </p>
 
-<p className="mb-6">
-View all of the areas we serve here:
-</p>
 
 <Link
   href="/service-areas"
