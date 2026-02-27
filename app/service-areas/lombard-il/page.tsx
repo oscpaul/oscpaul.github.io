@@ -70,6 +70,15 @@ export default function LombardPage() {
 
   return (
     <main className="container mx-auto px-6 py-12">
+
+      <nav aria-label="Breadcrumb">
+  <ol>
+    <li><a href="https://www.devwordpressspace.site/">Home</a></li>
+    <li><a href="https://www.devwordpressspace.site/service-areas/">Service Areas</a></li>
+    <li>Lombard, IL</li>
+  </ol>
+</nav>
+      
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -79,7 +88,9 @@ export default function LombardPage() {
         Auto Repair & Muffler Shop Near Lombard, IL
       </h1>
 
-     <hr className="my-10" />
+
+    <hr className="my-10" />
+
 
 <h2 className="text-2xl font-semibold mb-4">
 Serving Lombard & Surrounding DuPage County Areas
