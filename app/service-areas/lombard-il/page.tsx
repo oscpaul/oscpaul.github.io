@@ -79,17 +79,30 @@ export default function LombardPage() {
         Auto Repair & Muffler Shop Near Lombard, IL
       </h1>
 
-      <p className="mb-6">
-        If you’re searching for reliable <strong>auto repair near Lombard, IL</strong>,
-        2 Brothers Auto & Muffler proudly serves Lombard drivers from our
-        Addison location just minutes away. We provide expert brake repair,
-        muffler replacement, exhaust system repair, engine diagnostics, oil
-        changes, and complete auto maintenance services.
-      </p>
+     <hr className="my-10" />
 
-      <h2 className="text-2xl font-semibold mb-4">
-        Complete Auto Repair Services for Lombard Drivers
-      </h2>
+<h2 className="text-2xl font-semibold mb-4">
+Serving Lombard & Surrounding DuPage County Areas
+</h2>
+
+<p className="mb-6">
+We proudly provide auto repair services to drivers throughout 
+DuPage County. If you're searching for trusted auto repair near 
+Lombard, Addison, Elmhurst, or Villa Park, our experienced team 
+is ready to help.
+</p>
+
+<p className="mb-6">
+View all of the areas we serve here:
+</p>
+
+<Link
+  href="/service-areas"
+  className="text-blue-600 font-semibold hover:underline"
+>
+  View All Service Areas in DuPage County
+</Link>
+Why This Help
 
       <p className="mb-6">
         Our shop regularly serves customers from Lombard and throughout
