@@ -319,7 +319,6 @@ export default function RootLayout({
                                     "@id": "https://devwordpressspace.site/#autoRepair",
 
             name: "2 Brothers Auto & Muffler",
-            url: "https://devwordpressspace.site",
 
   
           }),
