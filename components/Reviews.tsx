@@ -47,7 +47,6 @@ export default function Reviews() {
             "@context": "https://schema.org",
             "@type": "AutoRepair",
             name: "2 Brothers Auto & Muffler",
-            url: "https://devwordpressspace.site",
             "@id": "https://devwordpressspace.site/#autoRepair",
               aggregateRating: {
               "@type": "AggregateRating",
