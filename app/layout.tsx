@@ -84,6 +84,15 @@ const schema = {
       "@id": "https://devwordpressspace.site/#organization",
       "name": "2 Brothers Auto & Muffler",
       "url": "https://devwordpressspace.site/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "915 S Westwood Ave",
+        "addressLocality": "Addison",
+        "addressRegion": "IL",
+        "postalCode": "60101",
+        "addressCountry": "US"
+      },
+            "image": "https://devwordpressspace.site/images/services/oil-1.png",
       "logo": {
         "@type": "ImageObject",
         "url": "https://devwordpressspace.site/images/services/logo.jpg",
