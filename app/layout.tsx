@@ -316,10 +316,8 @@ export default function RootLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AutoRepair",
-                                    "@id": "https://devwordpressspace.site/#autoRepair",
-
+      "@id": "https://devwordpressspace.site/#autoRepair",
             name: "2 Brothers Auto & Muffler",
-
   
           }),
         }}
