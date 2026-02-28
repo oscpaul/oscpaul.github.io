@@ -321,18 +321,7 @@ export default function RootLayout({
             name: "2 Brothers Auto & Muffler",
             url: "https://devwordpressspace.site",
 
-          aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: 5,
-              reviewCount: 55,
-            },
-            review: reviews.map((r) => ({
-              "@type": "Review",
-              author: { "@type": "Person", name: r.author_name },
-              reviewBody: r.text,
-              reviewRating: { "@type": "Rating", ratingValue: r.rating, bestRating: 5 },
-              datePublished: new Date().toISOString(),
-            })),
+  
           }),
         }}
       />
