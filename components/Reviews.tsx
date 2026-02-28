@@ -46,15 +46,12 @@ export default function Reviews() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AutoRepair",
-                                    "@id": "https://devwordpressspace.site/#autoRepair",
-
             name: "2 Brothers Auto & Muffler",
             url: "https://devwordpressspace.site",
-
-          aggregateRating: {
+              aggregateRating: {
               "@type": "AggregateRating",
-              ratingValue: 5,
-              reviewCount: 55,
+              ratingValue: averageRating,
+              reviewCount: reviews.length,
             },
             review: reviews.map((r) => ({
               "@type": "Review",
