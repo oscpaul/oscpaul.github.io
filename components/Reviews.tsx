@@ -40,7 +40,32 @@ export default function Reviews() {
       ))}
 
       {/* JSON-LD Schema */}
-    
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+                                    "@id": "https://devwordpressspace.site/#autoRepair",
+
+            name: "2 Brothers Auto & Muffler",
+            url: "https://devwordpressspace.site",
+
+          aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: 5,
+              reviewCount: 55,
+            },
+            review: reviews.map((r) => ({
+              "@type": "Review",
+              author: { "@type": "Person", name: r.author_name },
+              reviewBody: r.text,
+              reviewRating: { "@type": "Rating", ratingValue: r.rating, bestRating: 5 },
+              datePublished: new Date().toISOString(),
+            })),
+          }),
+        }}
+      />
     </section>
   );
 }
