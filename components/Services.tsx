@@ -107,8 +107,8 @@ const jsonLd = {
       "name": service.title,
       "description": service.overview,
       "provider": {
-        "@type": "Organization",
-        "name": "2 Brothers Auto & Muffler"
+             "@id": "https://devwordpressspace.site/#organization",
+
       },
       "areaServed": [
         { "@type": "City", "name": "Addison" },
