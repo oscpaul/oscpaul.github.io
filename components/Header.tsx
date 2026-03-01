@@ -8,7 +8,7 @@ export default function Header() {
   const pathname = usePathname();
 
   const links = [
-    { name: 'Products', href: '/products' },
+    { name: 'Service Areas', href: '/service-areas/lombard-il/' },
     { name: 'About', href: '/about' },
     { name: 'About Us', href: '/about-us' },
 
