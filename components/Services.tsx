@@ -165,17 +165,17 @@ const jsonLd = {
             </div>
 
             <div className="p-8 border rounded-lg shadow-sm" itemScope itemType="https://schema.org/Service">
-              <h2 className="text-xxl font-medium mb-3" itemProp="name">{service.title}</h2>
-              <p className="text-stone text-lg leading-relaxed mb-3" itemProp="description">{service.overview}</p>
+              <h2 className="text-xxxl font-medium mb-3" itemProp="name">{service.title}</h2>
+              <p className="text-stone text-xlg leading-relaxed mb-3" itemProp="description">{service.overview}</p>
               {service.details && (
-                <ul className="list-disc ml-5 mb-3 text-lg text-stone space-y-1">
+                <ul className="list-disc ml-5 mb-3 text-xlg text-stone space-y-1">
                   {service.details.map((detail, index) => (
                     <li key={index} itemProp="serviceType">{detail}</li>
                   ))}
                 </ul>
               )}
               {service.whyChooseUs && (
-                <p className="text-stone text-lg leading-relaxed" itemProp="provider">
+                <p className="text-stone text-xlg leading-relaxed" itemProp="provider">
                   <span itemScope itemType="https://schema.org/Organization">
                     <span itemProp="name">2 Brothers Auto & Muffler</span> – {service.whyChooseUs}
                   </span>
