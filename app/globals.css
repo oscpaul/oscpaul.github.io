@@ -424,60 +424,7 @@ border:1px solid black;
             .flow-80>*+* {
                 margin-block-start:var(--flow-space-80,8rem)}
 
-            :root {
-                --size-1:1px;
-                --size-2: 2px;
-                --size-4: 4px;
-                --size-5: 5px;
-                --size-6: 6px;
-                --size-8: 8px;
-                --size-10: 1rem;
-                --size-12: 1.2rem;
-                --size-14: 1.4rem;
-                --size-16: 1.6rem;
-                --size-18: 1.8rem;
-                --size-20: 2rem;
-                --size-24: 2.4rem;
-                --size-28: 2.8rem;
-                --size-30: 3rem;
-                --size-32: 3.2rem;
-                --size-34: 3.4rem;
-                --size-36: 3.6rem;
-                --size-40: 4rem;
-                --size-44: 4.4rem;
-                --size-48: 4.8rem;
-                --size-50: 5rem;
-                --size-52: 5.2rem;
-                --size-54: 5.4rem;
-                --size-56: 5.6rem;
-                --size-60: 6rem;
-                --size-64: 6.4rem;
-                --size-68: 6.8rem;
-                --size-70: 7rem;
-                --size-72: 7.2rem;
-                --size-76: 7.6rem;
-                --size-80: 8rem;
-                --size-84: 8.4rem;
-                --size-88: 8.8rem;
-                --size-92: 9.2rem;
-                --size-96: 9.6rem;
-                --size-100: 10rem;
-                --size-120: 12rem;
-                --size-180: 18rem;
-                --size-200: 20rem;
-                --size-220: 22rem;
-                --size-250: 25rem;
-                --size-278: 27.8rem;
-                --size-300: 30rem;
-                --size-360: 36rem;
-                --size-480: 48rem;
-                --size-540: 54rem;
-                --size-650: 6.5rem;
-                --size-720: 72rem;
-                --size-960: 96rem;
-                --size-1200: 120rem
-            }
-
+           
           
          
 
