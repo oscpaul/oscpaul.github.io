@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <>
       {/* Hero section */}
-      <section className="hero mb-100 margin-inline-flex flow-30">
+      <section className="hero margin-inline-flex flow-30">
   <header>
     <h1 className="hero__heading">2 Brothers Auto & Muffler – Addison, IL</h1>
     </header>
@@ -62,7 +62,7 @@ export default function Hero() {
       </section>
 
       {/* Rounded split images section */}
-      <section className="flex flex-col md:flex-row justify-center items-center w-full py-2 gap-6 max-w-6xl mx-auto px-2">
+      <section className="w-full md:w-1/2 aspect-[4/3] rounded-3xl shadow-lg overflow-hidden">
         {/* Left half */}
         <div
           className="w-full md:w-1/2 h-96 bg-cover bg-center rounded-3xl shadow-lg"
