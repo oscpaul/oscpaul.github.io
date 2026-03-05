@@ -68,7 +68,7 @@ export default function LombardPage() {
     ],
   };
 
-  return (
+
 return (
     <main className="container mx-auto px-6 py-12">
 
