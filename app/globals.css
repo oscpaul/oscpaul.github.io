@@ -108,6 +108,26 @@ border:1px solid black;
 }
 
 
+ :root {
+                --black: #0e1e25;
+                --white: #fff;
+                --gray-darkest: #141414;
+                --gray-darker: #414141;
+                --gray-darker2: #999;
+                --gray-dark: #bbb;
+                --gray-medium: #ddd;
+                --gray-lighten: #ededed;
+                --gray-light: #f5f5f5;
+                --gray-very-light: #f9f9f9;
+                --purple: #639;
+                --light-blue: #add8e6;
+                --lighter-blue: #f4f6fc;
+                --light-yellow: #fbe5ba;
+                --lighter-yellow: #fdf5e2;
+                --light-purple: #d8bfd8;
+                --lighter-purple: #fff0f5;
+                --text-color: var(--black)
+            }
 
   .hero {
                 max-width: var(--size-960)
@@ -118,11 +138,69 @@ border:1px solid black;
             }
 
             .hero__heading {
+                       color: var(--black);
+                line-height: var(--line-height-1);
                 font-size: var(--font-size-28);
                 line-height: var(--line-height-1);
-                text-align: center
+                text-align: center;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-1-8);
+
+--font-primary: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    /* --font-secondary: Georgia, "Times New Roman", Times, serif; */
+    /* --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+    --font-size-10: 1rem;
+    --font-size-12: 1.2rem;
+    --font-size-14: 1.4rem;
+    --font-size-16: 1.6rem;
+    --font-size-18: 1.8rem;
+    --font-size-20: 2rem;
+    --font-size-22: 2.2rem;
+    --font-size-24: 2.4rem;
+    --font-size-25: 2.5rem;
+    --font-size-26: 2.6rem;
+    --font-size-28: 2.8rem;
+    --font-size-30: 3rem;
+    --font-size-32: 3.2rem;
+    --font-size-34: 3.4rem;
+    --font-size-35: 3.5rem;
+    --font-size-36: 3.6rem;
+    --font-size-38: 3.8rem;
+    --font-size-40: 4rem;
+    --font-size-42: 4.2rem;
+    --font-size-44: 4.4rem;
+    --font-size-46: 4.6rem;
+    --font-size-48: 4.8rem;
+    --font-size-50: 5rem;
+    --font-size-60: 6rem;
+    --font-size-65: 6.5rem;
+    --font-size-80: 8rem;
+    --font-size-100: 10rem;
+    --font-size-140: 14rem;
+    --weight-100: 100;
+    --weight-200: 200;
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+    --weight-900: 900;
+    --line-height-1: 1;
+    --line-height-1-1: 1.1;
+    --line-height-1-2: 1.2;
+    --line-height-1-4: 1.4;
+    --line-height-1-5: 1.5;
+    --line-height-1-8: 1.8;
+    --line-height-2: 2;
+    --line-height-2-4: 2.4;
+    --small-h2: var(--font-size-24);
+    --small-h3: var(--font-size-18);
+    
             }
 
+      
             @media (width >= 48rem) {
                 .hero__heading {
                     font-size: var(--font-size-50)
@@ -150,7 +228,11 @@ border:1px solid black;
             .hero__subheading {
                 font-size: var(--font-size-20);
                 font-weight: var(--weight-400);
-                text-align: center
+                text-align: center;
+                  color: var(--gray-darker);
+                font-family: var(--font-primary);
+                font-size: var(--font-size-20);
+                line-height: var(--line-height-1-8)
             }
 
             @media (width >= 48rem) {
@@ -192,172 +274,101 @@ border:1px solid black;
             }
 
 
+  .button:not(.button--link):hover {
+                --bg: var(--black);
+                --text: var(--white)
+            }
+
+     .button:not(.button--link).button--reverse:hover {
+                --bg: var(--white);
+                --border: var(--black);
+                --text: var(--black)
+            }
+
+
+  
+         .button:not(.button--link).button--skip-link {
+                left: 50%;
+                position: absolute;
+                top: .5rem;
+                transform: translateX(-50%);
+                z-index: var(--highest)
+            }
+
+            .button:not(.button--link).button--skip-link:not(:focus) {
+                clip: rect(1px,1px,1px,1px);
+                height: 1px;
+                overflow: hidden;
+                position: absolute;
+                width: 1px;
+                word-wrap: normal
+            }
+          
+           
+
+            
+                  .button:not(.button--link) {
+    --bg: var(--white);
+    --border: var(--black);
+    --text: var(--black);
+    align-items: center;
+    background-color: var(--bg);
+    border-color: var(--border);
+    border-radius: var(--size-40);
+    border-width: 1px;
+    color: var(--text);
+    display: inline-flex;
+    font-size: var(--font-size-12);
+    font-weight: var(--weight-700);
+    inline-size: -moz-fit-content;
+    inline-size: fit-content;
+    justify-content: center;
+    letter-spacing: .2em;
+    padding: var(--size-8) var(--size-20);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--transition-background-color-04s), var(--transition-color-04s), var(--transition-border-color-04s);
+    white-space: nowrap;
+}
+
+
+        
+     
+
+
 
 
 
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
+
+
+          
+         
 
           
            
 
-            
-          
-
-            :root {
-               
-                --font-size-10: 1rem;
-                --font-size-12: 1.2rem;
-                --font-size-14: 1.4rem;
-                --font-size-16: 1.6rem;
-                --font-size-18: 1.8rem;
-                --font-size-20: 2rem;
-                --font-size-22: 2.2rem;
-                --font-size-24: 2.4rem;
-                --font-size-25: 2.5rem;
-                --font-size-26: 2.6rem;
-                --font-size-28: 2.8rem;
-                --font-size-30: 3rem;
-                --font-size-32: 3.2rem;
-                --font-size-34: 3.4rem;
-                --font-size-35: 3.5rem;
-                --font-size-36: 3.6rem;
-                --font-size-38: 3.8rem;
-                --font-size-40: 4rem;
-                --font-size-42: 4.2rem;
-                --font-size-44: 4.4rem;
-                --font-size-46: 4.6rem;
-                --font-size-48: 4.8rem;
-                --font-size-50: 5rem;
-                --font-size-60: 6rem;
-                --font-size-65: 6.5rem;
-                --font-size-80: 8rem;
-                --font-size-100: 10rem;
-                --font-size-140: 14rem;
-                --weight-100: 100;
-                --weight-200: 200;
-                --weight-300: 300;
-                --weight-400: 400;
-                --weight-500: 500;
-                --weight-600: 600;
-                --weight-700: 700;
-                --weight-800: 800;
-                --weight-900: 900;
-                --line-height-1: 1;
-                --line-height-1-1: 1.1;
-                --line-height-1-2: 1.2;
-                --line-height-1-4: 1.4;
-                --line-height-1-5: 1.5;
-                --line-height-1-8: 1.8;
-                --line-height-2: 2;
-                --line-height-2-4: 2.4;
-                --small-h2: var(--font-size-24);
-                --small-h3: var(--font-size-18)
-            }
-
-            
-
-         
-            body {
-                color: var(--gray-darker);
-                font-family: var(--font-primary);
-                font-size: var(--font-size-20);
-                line-height: var(--line-height-1-8)
-            }
-
-        
-
          
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-            @media (width >= 63rem) {
-                .margin-inline,.margin-inline-flex {
-                    margin-inline: auto
-                }
-            }
-
-          
-      
-            
-
-            :root {
-                --size-1:1px;
-                --size-2: 2px;
-                --size-4: 4px;
-                --size-5: 5px;
-                --size-6: 6px;
-                --size-8: 8px;
-                --size-10: 1rem;
-                --size-12: 1.2rem;
-                --size-14: 1.4rem;
-                --size-16: 1.6rem;
-                --size-18: 1.8rem;
-                --size-20: 2rem;
-                --size-24: 2.4rem;
-                --size-28: 2.8rem;
-                --size-30: 3rem;
-                --size-32: 3.2rem;
-                --size-34: 3.4rem;
-                --size-36: 3.6rem;
-                --size-40: 4rem;
-                --size-44: 4.4rem;
-                --size-48: 4.8rem;
-                --size-50: 5rem;
-                --size-52: 5.2rem;
-                --size-54: 5.4rem;
-                --size-56: 5.6rem;
-                --size-60: 6rem;
-                --size-64: 6.4rem;
-                --size-68: 6.8rem;
-                --size-70: 7rem;
-                --size-72: 7.2rem;
-                --size-76: 7.6rem;
-                --size-80: 8rem;
-                --size-84: 8.4rem;
-                --size-88: 8.8rem;
-                --size-92: 9.2rem;
-                --size-96: 9.6rem;
-                --size-100: 10rem;
-                --size-120: 12rem;
-                --size-180: 18rem;
-                --size-200: 20rem;
-                --size-220: 22rem;
-                --size-250: 25rem;
-                --size-278: 27.8rem;
-                --size-300: 30rem;
-                --size-360: 36rem;
-                --size-480: 48rem;
-                --size-540: 54rem;
-                --size-650: 6.5rem;
-                --size-720: 72rem;
-                --size-960: 96rem;
-                --size-1200: 120rem
-            }
-
-        
+         
