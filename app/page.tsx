@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <SquareEmbed />
       <Services />
-     
+     <About />
       <Story />
       <Reviews />
       <CTA />
