@@ -108,7 +108,40 @@ border:1px solid black;
 }
 
 
- :root {
+       .hero__heading {
+                 
+font-weight: bold;
+                       color: var(--black);
+                font-size: var(--font-size-50);
+                
+                text-align: center;
+    font-family: var(--font-primary);
+
+--font-primary: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    /* --font-secondary: Georgia, "Times New Roman", Times, serif; */
+    /* --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+   
+            }
+
+            .hero p{
+
+                text-align: center;
+
+            }
+
+               .hero__subheading {
+    --font-size-35: 3.5rem;
+                font-size: var(--font-size-20);
+                                text-align: center;
+
+                  color: var(--gray-darker);
+                font-family: var(--font-primary);
+                font-size: var(--font-size-20);
+            }
+
+            :root {
+                    --font-size-20: 2rem;
+                    --font-size-50: 5rem;
                 --black: #0e1e25;
                 --white: #fff;
                 --gray-darkest: #141414;
@@ -129,148 +162,9 @@ border:1px solid black;
                 --text-color: var(--black)
             }
 
-  .hero {
-                max-width: var(--size-960)
-            }
-
-            .hero .social__items {
-                justify-content: center
-            }
-
-            .hero__heading {
-                    --font-size-100: 5rem;
-
-                       color: var(--black);
-                line-height: var(--line-height-1);
-                font-size: var(--font-size-28);
-                line-height: var(--line-height-1);
-                text-align: center;
-    font-family: var(--font-primary);
-    font-size: var(--font-size-20);
-    line-height: var(--line-height-1-8);
-
---font-primary: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
-    /* --font-secondary: Georgia, "Times New Roman", Times, serif; */
-    /* --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
-   
-            }
-
-      
-            @media (width >= 48rem) {
-                .hero__heading {
-                    font-size: var(--font-size-50)
-                }
-            }
-
-            @media (width >= 63rem) {
-                .hero__heading {
-                    font-size: var(--font-size-60)
-                }
-            }
-
-            @media (width >= 75rem) {
-                .hero__heading {
-                    font-size: var(--font-size-80)
-                }
-            }
-
-            @media (width >= 90rem) {
-                .hero__heading {
-                    font-size: var(--font-size-100)
-                }
-            }
-
-            .hero__subheading {
-    --font-size-35: 3.5rem;
-                font-size: var(--font-size-20);
-                font-weight: var(--weight-400);
-                text-align: center;
-                  color: var(--gray-darker);
-                font-family: var(--font-primary);
-                font-size: var(--font-size-20);
-                line-height: var(--line-height-1-8)
-            }
-        
-            @media (width >= 48rem) {
-                .hero__subheading {
-                    font-size: var(--font-size-30)
-                }
-            }
-
-            @media (width >= 63rem) {
-                .hero__subheading {
-                    font-size: var(--font-size-35)
-                }
-            }
-
-            .hero__cta {
-                text-align: center
-            }
-
- .visually-hidden {
-                border: 0;
-                clip: rect(0 0 0 0);
-                height: 1px;
-                margin: 0;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                white-space: nowrap;
-                width: 1px
-            }
 
 
-            .social__items {
-                align-items: center;
-                display: flex
-            }
-
-            .social__item {
-                margin: 0 var(--size-10)
-            }
-
-            .social__item--icon {
-                align-items: center;
-                display: flex
-            }
-
-            .social__item--icon img {
-                height: var(--size-32);
-                width: var(--size-32)
-            }
-
-
-  .button:not(.button--link):hover {
-                --bg: var(--black);
-                --text: var(--white)
-            }
-
-     .button:not(.button--link).button--reverse:hover {
-                --bg: var(--white);
-                --border: var(--black);
-                --text: var(--black)
-            }
-
-
-  
-         .button:not(.button--link).button--skip-link {
-                left: 50%;
-                position: absolute;
-                top: .5rem;
-                transform: translateX(-50%);
-                z-index: var(--highest)
-            }
-
-            .button:not(.button--link).button--skip-link:not(:focus) {
-                clip: rect(1px,1px,1px,1px);
-                height: 1px;
-                overflow: hidden;
-                position: absolute;
-                width: 1px;
-                word-wrap: normal
-            }
-          
-                  .button:not(.button--link) {
+          .button:not(.button--link) {
     --bg: var(--white);
     --border: var(--black);
     --text: var(--black);
@@ -296,40 +190,45 @@ border:1px solid black;
 }
 
 
+ .button:not(.button--link):hover {
+                --bg: var(--black);
+                --text: var(--white)
+            }
+
+     .button:not(.button--link).button--reverse:hover {
+                --bg: var(--white);
+                --border: var(--black);
+                --text: var(--black)
+            }
 
 
+             .visually-hidden {
+                border: 0;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                white-space: nowrap;
+                width: 1px
+            }
+               .social__items {
+                align-items: center;
+                display: flex
+            }
+                 .hero .social__items {
+                      
+                justify-content: center
+            }
+      
+   .hero__cta {
+                text-align: center;
+
+            }
+            
+
+              
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
+            
