@@ -3,10 +3,14 @@ export default function Hero() {
     <>
       {/* Hero section */}
       <section className="hero margin-inline-flex flow-30">
-  <header>
-    <h1 className="hero__heading">2 Brothers Auto & Muffler – Addison, IL</h1>
-    </header>
-    <h2 className="hero__subheading">Muffler & Brake Repair in Addison, IL</h2>
+  <header className="space-y-10">
+    <h1 className="hero__heading">2 Brothers Auto & Muffler</h1>
+
+    
+    <h2 className="hero__subheading m-0">Muffler & Brake Repair in Addison, IL</h2>
+   
+   <p className="m-0">915 S Westwood Ave, Addison, IL 60101</p>
+   <p className="">(630) 229-7330</p>
     <ul className="social__items" role="list">
       <li className="social__item"><span className="visually-hidden">Instagram </span><span className="social__item--icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"></path></svg></span></li>
       <li className="social__item"><span className="visually-hidden">Twitter </span><span className="social__item--icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M21.3 21.1 9.9 2.9H2.7l11.4 18.2zM2.7 21.1l7.2-6.6M14.1 9.5l7.2-6.6" className="st0"></path></svg></span></li>
@@ -14,19 +18,45 @@ export default function Hero() {
       <li className="social__item"><span className="visually-hidden">LinkedIn </span><span className="social__item--icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg></span></li>
       </ul>
       <div className="hero__cta"><a className="button" href="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101">Learn more</a></div>
-      
-      
-       <div className="mt-6 rounded-lg overflow-hidden">
-    <iframe
-      src="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101&output=embed"
-      width="100%"
-      height="250"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-    ></iframe>
+     </header> 
+<div className="w-full flex flex-col gap-6 mt-50">
+
+  {/* Top row of images */}
+  <div className="w-full flex gap-4">
+    <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="/images/2brothers-4.webp"
+        alt="Image 1"
+        className="w-full aspect-[4/3] object-cover"
+      />
+    </div>
+
+    <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="/images/2brother1.png"
+        alt="Image 2"
+        className="w-full aspect-[4/3] object-cover"
+      />
+    </div>
+
+  
   </div>
-      
+
+  {/* Centered map */}
+  <div className="w-full flex justify-center">
+    <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101&output=embed"
+        width="100%"
+        height="400"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+
+</div>
       </section>
       
       <section className="relative w-full bg-white py-2 text-center">
@@ -64,19 +94,7 @@ export default function Hero() {
       {/* Rounded split images section */}
       <section className="flex flex-col md:flex-row justify-center items-center w-full py-2 gap-6 max-w-6xl mx-auto px-2">
         {/* Left half */}
-        <div
-          className="w-full md:w-1/2 aspect-[4/3] rounded-3xl shadow-lg overflow-hidden"
-          style={{ backgroundImage: `url(/images/2brothers-1.webp)` }}
-        ></div>
-
-        {/* Right half */}
-      <div className="w-full md:w-1/2 aspect-[4/3] rounded-3xl shadow-lg overflow-hidden">
-  <img
-    src="/images/2brother1.png"
-    className="w-full h-full object-cover"
-    alt="Two brothers"
-  />
-</div>
+    
       </section>
     </>
   );
