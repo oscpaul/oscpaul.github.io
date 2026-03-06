@@ -29,6 +29,7 @@ export default function Reviews() {
     return "⭐".repeat(rating);
   };
 
+ 
   return (
     <section className="py-16 bg-gray-50">
 
@@ -58,9 +59,7 @@ export default function Reviews() {
               ⭐⭐⭐⭐⭐
             </span>
 
-            <span className="text-gray-600 text-sm">
-              ({reviews.length} reviews)
-            </span>
+      
           </div>
 
           <p className="text-gray-600">
@@ -71,7 +70,7 @@ export default function Reviews() {
           <div className="flex justify-center gap-4 mt-6 flex-wrap">
 
             <a
-              href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID"
+              href="https://search.google.com/local/writereview?placeid=ChIJif2lgB6tD4gR4tYawFkaKP0"
               target="_blank"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
@@ -79,7 +78,7 @@ export default function Reviews() {
             </a>
 
             <a
-              href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK"
+              href="https://www.google.com/search?sca_esv=a2755a786bd8ce70&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOX5g8qepDJr5so1FdwQcPHgdBsTbZ6K5C8fzUBCX0HXbZPfhpOsDFxYXCpsrDLaK3v42H936f1jXg0AoUC9oiYuo2BpIkBEGS5vbKJ0cl9Pkcjn9nf0OndfEc1jm_q1CIf0wYsM%3D&q=2+BROTHERS+AUTO+SERVICE/MUFFLERS+Reviews&sa=X&ved=2ahUKEwju77b-r4qTAxX5CnkGHaqrAqQQ0bkNegQINxAF&biw=1896&bih=878&dpr=1"
               target="_blank"
               className="border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
             >
