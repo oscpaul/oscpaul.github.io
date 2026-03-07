@@ -223,7 +223,10 @@ font-weight: bold;
 
             }
             
-
+ .social__items {
+    justify-content: center;
+}
+      
               
 
 
