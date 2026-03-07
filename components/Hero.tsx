@@ -19,36 +19,39 @@ export default function Hero() {
       </ul>
       <div className="hero__cta"><a className="button" href="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101">Learn more</a></div>
      </header> 
-<div className="w-full flex flex-col gap-6 mt-50">
 
-  {/* Top row of images */}
-  <div className="w-full flex gap-4">
-    <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+
+
+        
+<div className="w-full flex flex-col gap-6 mt-20 px-4">
+
+  {/* Images */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+    
+    <div className="rounded-lg overflow-hidden shadow-lg">
       <img
         src="/images/2brothers-4.webp"
         alt="Image 1"
-        className="w-full aspect-[4/3] object-cover"
+        className="w-full h-full object-cover aspect-[4/3]"
       />
     </div>
 
-    <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+    <div className="rounded-lg overflow-hidden shadow-lg">
       <img
         src="/images/2brother1.png"
         alt="Image 2"
-        className="w-full aspect-[4/3] object-cover"
+        className="w-full h-full object-cover aspect-[4/3]"
       />
     </div>
 
-  
   </div>
 
-  {/* Centered map */}
+  {/* Map */}
   <div className="w-full flex justify-center">
     <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
       <iframe
         src="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101&output=embed"
-        width="100%"
-        height="400"
+        className="w-full h-[300px] md:h-[400px]"
         style={{ border: 0 }}
         allowFullScreen
         loading="lazy"
@@ -57,6 +60,11 @@ export default function Hero() {
   </div>
 
 </div>
+
+
+
+
+        
       </section>
       
       <section className="relative w-full bg-white py-2 text-center">
