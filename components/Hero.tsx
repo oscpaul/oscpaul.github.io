@@ -43,16 +43,8 @@ export default function Hero() {
         </li></ul>
 
   {/* CTA */}
-  <div className="pt-2">
-    <a
-      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-      href="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Get Directions
-    </a>
-  </div>
+ <div className="hero__cta">
+  <a className="button" href="#aboutme">Learn more</a></div>
 
 </section>
       
