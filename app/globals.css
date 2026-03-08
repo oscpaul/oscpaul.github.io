@@ -161,6 +161,8 @@ font-weight: bold;
 
 
           .button:not(.button--link) {
+                padding:2vh;
+
     --bg: var(--white);
     --border: var(--black);
     --text: var(--black);
