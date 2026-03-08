@@ -44,62 +44,16 @@ export default function Hero() {
 
   {/* CTA */}
  <div className="hero__cta">
-  <a className="button" href="#aboutme">Learn more</a></div>
+  <a className="button" href="/about">Learn more</a></div>
 
 </section>
       
 
 
-<div className="w-full flex flex-col gap-6 mt-12 px-4 md:px-6 lg:px-8">
-
-  {/* Images */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-    <div className="rounded-lg overflow-hidden shadow-lg">
-      <img
-        src="/images/2brothers-4_Nero_AI_Image_Sharpener_Balanced_Face.webp"
-        alt="Restaurant patio seating"
-        className="w-full h-full object-cover aspect-[4/3]"
-      />
-    </div>
-
-    <div className="rounded-lg overflow-hidden shadow-lg">
-      <img
-        src="/images/2brother1.png"
-        alt="Restaurant interior"
-        className="w-full h-full object-cover aspect-[4/3]"
-      />
-    </div>
-
-  </div>
-
-  {/* Map */}
-  <div className="w-full flex justify-center">
-    <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
-      <iframe
-        src="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101&output=embed"
-        className="w-full h-[250px] sm:h-[300px] md:h-[400px]"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-
-</div>
 
 
-      <section className="relative w-full bg-white py-2 text-center">
-        <div className="max-w-6xl mx-auto px-2">
-          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6">
-       2 Brothers Auto & Muffler Service – Muffler & Brake Repair in Addison, IL
-        </h1>
-          <h2>
-                      Serving Addison, Lombard, Elmhurst, Villa Park, and all of DuPage County.
-          </h2>
-          <h3>
-            Need fast, reliable muffler repair or exhaust system service near you in Addison, IL? 2 Brothers Auto Service has you covered. Conveniently located at 915 S Westwood Ave, just off Lake Street and minutes from Army Trail Rd, we specialize in muffler replacement, exhaust repair, and full exhaust system maintenance for all vehicles. Our experienced technicians provide honest diagnostics, quality parts, and same-day service whenever possible. Stop by today or call to restore your car’s performance, reduce noise, and get back on the road safely.  
-          </h3>
+
+    
 
           <div className="flex justify-center">
               <a
@@ -118,8 +72,7 @@ export default function Hero() {
               <span className="relative z-10">Our Services</span>
             </a>
           </div>
-        </div>
-      </section>
+     
 
       {/* Rounded split images section */}
       <section className="flex flex-col md:flex-row justify-center items-center w-full py-2 gap-6 max-w-6xl mx-auto px-2">
