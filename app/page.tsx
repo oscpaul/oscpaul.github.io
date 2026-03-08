@@ -33,10 +33,7 @@ export default function Home() {
       <Reviews />
       <CTA />
       <Footer />
-    <section className="faq-section">
-        <h2>Frequently Asked Questions</h2>
 
-      </section>
 
     </main>
   )
