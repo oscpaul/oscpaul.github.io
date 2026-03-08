@@ -21,7 +21,7 @@ export default function Home() {
     <main className="bg-sand text-charcoal">
   
   
-<Header />
+
       <Hero />
      <div className="w-full squareembed">
       
