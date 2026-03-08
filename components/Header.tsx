@@ -10,7 +10,7 @@ export default function Header() {
   const links = [
     { name: 'Service Areas', href: '/service-areas/lombard-il/' },
     { name: 'About', href: '/about' },
-    { name: 'About Us', href: '/about-us' },
+    { name: 'About Us', href: '/about' },
 
   ];
 
