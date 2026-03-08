@@ -5,7 +5,7 @@ export default function NotFound() {
       <div className="max-w-xl text-center">
 
         <img
-          src="/images/monster-404.webp"
+          src="/images/019be20938.webp"
           alt="404 monster under construction"
           className="mx-auto w-72 mb-8"
         />
