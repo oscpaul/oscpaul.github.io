@@ -57,7 +57,7 @@ export default function Hero() {
 
     <div className="rounded-lg overflow-hidden shadow-lg">
       <img
-        src="/images/2brothers-4.webp"
+        src="/images/2brothers-4_Nero_AI_Image_Sharpener_Balanced_Face.webp"
         alt="Restaurant patio seating"
         className="w-full h-full object-cover aspect-[4/3]"
       />
