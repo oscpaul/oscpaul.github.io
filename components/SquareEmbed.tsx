@@ -41,7 +41,7 @@ export default function SquareWithImageAndMap() {
         {/* Right: Image */}
         <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg min-h-[350px] md:min-h-[400px]">
           <img
-            src="/images/2brothers-4.webp" // Replace with your image
+            src="/images/2brothers-4_Nero_AI_Image_Sharpener_Sharp_Face.webp" // Replace with your image
             alt="Garage or service image"
             className="w-full h-full object-cover rounded-lg"
           />
