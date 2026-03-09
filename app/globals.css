@@ -179,7 +179,6 @@ font-weight: bold;
     inline-size: fit-content;
     justify-content: center;
     letter-spacing: .2em;
-    padding: var(--size-8) var(--size-20);
     text-decoration: none;
     text-transform: uppercase;
     transition: var(--transition-background-color-04s), var(--transition-color-04s), var(--transition-border-color-04s);
