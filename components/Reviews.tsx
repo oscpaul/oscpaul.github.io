@@ -140,7 +140,11 @@ export default function Reviews() {
             "@type": "AutoRepair",
             name: "2 Brothers Auto & Muffler",
             url: "https://devwordpressspace.site",
-         
+                       "aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": "5",
+  "reviewCount": "5"
+},
             review: reviews.map((r) => ({
               "@type": "Review",
               author: { "@type": "Person", name: r.author_name },
@@ -150,11 +154,7 @@ export default function Reviews() {
                 ratingValue: r.rating,
                 bestRating: 5,
               },
-              "aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "5",
-  "reviewCount": "5"
-},
+
               datePublished: new Date().toISOString(),
             })),
           }),
