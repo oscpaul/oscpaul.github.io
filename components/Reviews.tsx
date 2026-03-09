@@ -154,7 +154,7 @@ export default function Reviews() {
   "@type": "AggregateRating",
   "ratingValue": "5",
   "reviewCount": "5"
-}
+},
               datePublished: new Date().toISOString(),
             })),
           }),
