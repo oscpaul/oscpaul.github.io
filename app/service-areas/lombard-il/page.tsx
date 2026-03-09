@@ -126,7 +126,7 @@ return (
       </p>
 
       <img
-  src="/images/services/2brother1.png"
+  src="/images/services/2brothers-1.webp"
   alt="Auto repair shop serving Lombard Illinois at 2 Brothers Auto & Muffler"
   className="w-full rounded-lg shadow mb-8"
 />
@@ -168,7 +168,7 @@ return (
       </h2>
 
 <img
-  src="/images/services/brake-repair.webp"
+  src="/images/services/2brother1.png"
   alt="Brake repair service near Lombard IL"
   className="w-full rounded-lg shadow mb-8"
 />
