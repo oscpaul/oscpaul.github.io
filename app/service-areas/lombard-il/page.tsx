@@ -180,14 +180,15 @@ return (
         using professional diagnostic tools and proven repair methods.
       </p>
 
-      <ul className="list-disc ml-6 space-y-2 mb-8">
-        <li>Brake repair and brake pad replacement</li>
-        <li>Muffler and exhaust system repair</li>
-        <li>Catalytic converter replacement</li>
-        <li>Check engine light diagnostics</li>
-        <li>Suspension and steering repair</li>
-        <li>Oil changes and preventative maintenance</li>
-      </ul>
+<ul className="list-disc ml-6 space-y-2 mb-8">
+  <li>
+    <Link href="/">Brake repair and brake pad replacement</Link>
+  </li>
+  <li>
+    <Link href="/about">Muffler and exhaust system repair</Link>
+  </li>
+
+</ul>
 
 <div className="rounded-lg overflow-hidden shadow mt-10">
 <iframe
