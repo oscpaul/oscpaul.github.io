@@ -189,6 +189,14 @@ return (
         <li>Oil changes and preventative maintenance</li>
       </ul>
 
+<div className="rounded-lg overflow-hidden shadow mt-10">
+<iframe
+src="https://www.google.com/maps?q=Lombard,IL&output=embed"
+className="w-full h-[350px] border-0"
+loading="lazy"
+/>
+</div>
+      
       <h2 className="text-2xl font-semibold mb-4">
         Why Lombard Customers Choose 2 Brothers Auto
       </h2>
