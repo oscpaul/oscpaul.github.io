@@ -79,7 +79,7 @@ export default function LombardPage() {
       },
       {
   "@type": "ImageObject",
-  "contentUrl": "https://www.devwordpressspace.site/images/services/brake-repair.webp",
+  "contentUrl": "https://www.devwordpressspace.site/images/2brothers-1.webp",
   "description": "Brake repair service near Lombard Illinois"
 },
 
@@ -126,7 +126,7 @@ return (
       </p>
 
       <img
-  src="/images/services/auto-repair-addison.webp"
+  src="/images/services/2brother1.png"
   alt="Auto repair shop serving Lombard Illinois at 2 Brothers Auto & Muffler"
   className="w-full rounded-lg shadow mb-8"
 />
