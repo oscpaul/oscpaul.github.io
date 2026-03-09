@@ -37,7 +37,7 @@ export default function Hero() {
 
             {/* CTA */}
             <div className="hero__cta">
-              <a className="button" href="#aboutme">Learn more</a>
+              <a className="button" href="/about">Learn more</a>
             </div>
 
             {/* Social Icons */}
