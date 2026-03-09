@@ -92,8 +92,7 @@ return (
     <main className="container mx-auto px-6 py-12">
 
 
-    
-      {/* Breadcrumb */}
+     {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mb-6 text-sm">
         <ol className="flex gap-2">
           <li>
@@ -191,6 +190,92 @@ return (
   </li>
 
 </ul>
+
+<div className="rounded-lg overflow-hidden shadow mt-10">
+<iframe
+src="https://www.google.com/maps?q=Lombard,IL&output=embed"
+className="w-full h-[350px] border-0"
+loading="lazy"
+/>
+</div>
+      
+      <h2 className="text-2xl font-semibold mb-4">
+        Why Lombard Customers Choose 2 Brothers Auto
+      </h2>
+
+      <p className="mb-6">
+        As a family-owned auto repair shop serving Addison and nearby
+        communities, we focus on honest recommendations, transparent
+        pricing, and quality workmanship. Many Lombard residents trust
+        us with long-term vehicle maintenance because we take the time
+        to explain repairs clearly and treat every vehicle as if it were
+        our own.
+      </p>
+
+      <p className="mb-6">
+        Our goal is simple: provide dependable auto repair services that
+        help Lombard drivers stay safe on the road while avoiding the
+        high costs often associated with dealership service centers.
+      </p>
+
+      <hr className="my-10" />
+
+      <h2 className="text-2xl font-semibold mb-4">
+        Serving Lombard & Surrounding DuPage County Areas
+      </h2>
+
+      <p className="mb-6">
+        We proudly provide auto repair services to drivers throughout
+        DuPage County. If you're searching for trusted auto repair near
+        Lombard, Addison, Elmhurst, or Villa Park, our experienced team
+        is ready to help.
+      </p>
+
+      <Link
+        href="/service-areas"
+        className="text-blue-600 font-semibold hover:underline"
+      >
+        View All Service Areas in DuPage County
+      </Link>
+
+      <hr className="my-10" />
+
+      {/* FAQ Section */}
+      <h2 className="text-2xl font-semibold mb-6">Frequently Asked Questions</h2>
+
+      <div className="space-y-6">
+        {faq.map((item, index) => (
+          <div key={index}>
+            <h3 className="font-semibold">{item.question}</h3>
+            <p className="text-gray-700">{item.answer}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="bg-gray-100 p-6 rounded-lg text-center mt-12">
+        <h2 className="text-xl font-bold mb-4">
+          Schedule Auto Repair Near Lombard Today
+        </h2>
+
+        <p className="mb-4">
+          Looking for dependable auto repair near Lombard? Schedule your
+          appointment with our experienced mechanics today.
+        </p>
+
+        <p className="mb-6">
+          Back to our{" "}
+          <Link href="/" className="text-blue-600 underline">
+            Homepage
+          </Link>
+        </p>
+
+        <Link
+          href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
+        >
+          Book Your Appointment
+        </Link>
+      </div>
 
       
     </main>
