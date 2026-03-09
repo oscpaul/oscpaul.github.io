@@ -60,21 +60,9 @@ export default function Footer() {
                 Lombard, IL
               </Link>
             </li>
-            <li>
-              <Link href="/service-areas/villa-park-il" className="hover:text-white">
-                Villa Park, IL
-              </Link>
-            </li>
-            <li>
-              <Link href="/service-areas/elmhurst-il" className="hover:text-white">
-                Elmhurst, IL
-              </Link>
-            </li>
-            <li>
-              <Link href="/service-areas/bensenville-il" className="hover:text-white">
-                Bensenville, IL
-              </Link>
-            </li>
+          
+        
+       
           </ul>
         </div>
 
