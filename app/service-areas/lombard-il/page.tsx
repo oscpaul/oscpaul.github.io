@@ -53,6 +53,18 @@ export default function LombardPage() {
         },
       },
       {
+      "@type": "Service",
+      "name": "Auto Repair Near Lombard IL",
+      "serviceType": "Auto Repair",
+      "areaServed": {
+        "@type": "City",
+        "name": "Lombard"
+      },
+      "provider": {
+        "@id": "https://www.devwordpressspace.site/#autoRepair"
+      }
+    },
+      {
         "@type": "FAQPage",
         "@id":
           "https://www.devwordpressspace.site/service-areas/lombard-il/#faq",
@@ -65,6 +77,13 @@ export default function LombardPage() {
           },
         })),
       },
+      {
+  "@type": "ImageObject",
+  "contentUrl": "https://www.devwordpressspace.site/images/services/brake-repair.webp",
+  "description": "Brake repair service near Lombard Illinois"
+},
+
+      
     ],
   };
 
@@ -106,6 +125,12 @@ return (
         preventative maintenance, and high-quality repairs.
       </p>
 
+      <img
+  src="/images/services/auto-repair-addison.webp"
+  alt="Auto repair shop serving Lombard Illinois at 2 Brothers Auto & Muffler"
+  className="w-full rounded-lg shadow mb-8"
+/>
+
       <p className="mb-6">
         Located just minutes from Lombard, our shop is easily accessible
         via Roosevelt Road (Route 38), Highland Avenue, and Interstate 355.
@@ -142,6 +167,12 @@ return (
         Common Auto Repairs for Lombard Drivers
       </h2>
 
+<img
+  src="/images/services/brake-repair.webp"
+  alt="Brake repair service near Lombard IL"
+  className="w-full rounded-lg shadow mb-8"
+/>
+      
       <p className="mb-6">
         Vehicles driven in the Lombard area often experience wear related
         to commuting and seasonal Midwest weather conditions. Our
