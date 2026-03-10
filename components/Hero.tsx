@@ -22,7 +22,7 @@ export default function Hero() {
             </h1>
 
             <h2 className="hero__subheading text-lg md:text-2xl">
-              Muffler & Brake Repair in Addison, IL
+              Reliable and Convenient Auto Service in Addison, IL
             </h2>
 
             <div className="hero__subheading text-sm md:text-base space-y-1">
