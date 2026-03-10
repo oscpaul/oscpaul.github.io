@@ -27,8 +27,18 @@ export default function SquareWithImageAndMap() {
 
       {/* Two-column section: Widget + Picture */}
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-stretch">
+
+ {/* Left: Square Embed */}
+   <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg min-h-[350px] md:min-h-[400px]">
+          <img
+            src="/images/2brothers-4_Nero_AI_Image_Sharpener_Sharp_Face.webp" // Replace with your image
+            alt="Garage or service image"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+
         
-        {/* Left: Square Embed */}
+        {/* Right: Image */}
         <div
           ref={widgetRef}
           className="
@@ -38,14 +48,8 @@ export default function SquareWithImageAndMap() {
           "
         />
 
-        {/* Right: Image */}
-        <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg min-h-[350px] md:min-h-[400px]">
-          <img
-            src="/images/2brothers-4_Nero_AI_Image_Sharpener_Sharp_Face.webp" // Replace with your image
-            alt="Garage or service image"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
+       
+     
 
       </div>
 
