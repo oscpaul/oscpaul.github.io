@@ -54,16 +54,7 @@ export default function SquareWithImageAndMap() {
       </div>
 
       {/* Map below */}
-      <div className="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
-        <div className="w-full aspect-[4/3]">
-          <iframe
-            src="https://www.google.com/maps?q=915+S+Westwood+Ave,+Addison,+IL+60101&output=embed"
-            className="w-full h-full border-0"
-            allowFullScreen
-            loading="lazy"
-          />
-        </div>
-      </div>
+   
 
     </div>
   );
