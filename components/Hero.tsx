@@ -3,11 +3,9 @@ export default function Hero() {
     <>
       {/* Hero section */}
       <section className="w-full px-4 py-8">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6">
-
+<div className="max-w-6xl mx-auto flex flex-row items-center gap-4 md:gap-6">
           {/* Logo on the left */}
-          <div className="flex-shrink-0 w-24 md:w-32 lg:w-40">
-            <img
+<div className="flex-shrink-0 w-16 sm:w-20 md:w-28 lg:w-36">            <img
               src="/images/logo.png" // Replace with your logo path
               alt="2 Brothers Auto & Muffler Logo"
               className="w-full h-auto object-contain"
@@ -15,7 +13,7 @@ export default function Hero() {
           </div>
 
           {/* Text content (everything else stays exactly the same) */}
-          <div className="flex-1 text-center md:text-left space-y-6 md:space-y-8">
+          <div className="flex-1 text-left space-y-6 md:space-y-8">
 
             <h1 className="hero__heading text-3xl md:text-5xl font-bold">
               2 Brothers Auto & Muffler
