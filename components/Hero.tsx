@@ -3,8 +3,8 @@ export default function Hero() {
     <section className="w-full px-4 py-12 relative">
       <div className="max-w-6xl mx-auto">
 
-        {/* Desktop Logo (left) */}
-        <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-28 lg:w-36">
+        {/* Desktop Logo (left, slightly inset) */}
+        <div className="hidden md:block absolute left-8 top-1/2 transform -translate-y-1/2 w-28 lg:w-36">
           <img
             src="/images/logo.png"
             alt="2 Brothers Auto & Muffler Logo"
