@@ -16,8 +16,7 @@ export default function Hero() {
           <div className="flex-1 text-center space-y-6 md:space-y-8">
 
             <h1 className="hero__heading text-3xl md:text-5xl font-bold">
-              2 Brothers Auto & Muffler
-            </h1>
+        Auto Repair, Muffler & Brake Service in Addison, IL            </h1>
 
             <h2 className="hero__subheading text-lg md:text-2xl">
               Reliable and Convenient Auto Service in Addison, IL
