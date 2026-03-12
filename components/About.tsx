@@ -1,79 +1,67 @@
-export default function About() {
-  return (
-    <section className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        {/* Text Content */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-4xl font-bold mb-4">About Two Brothers Auto Service / Muffler</h2>
-          <p className="text-gray-600 mb-6 text-lg">
-  Full-Service Auto Repair in Addison, IL
+<section className="w-full px-4 py-10">
+  <div className="max-w-6xl mx-auto space-y-8">
 
-At 2 Brothers Auto & Muffler, we understand how important your vehicle is to your daily life. Whether you’re commuting, running a business, or transporting your family, you need reliable transportation. That’s why we provide comprehensive automotive repair and maintenance services designed to keep your vehicle running safely and efficiently.
+    <h2 className="text-2xl md:text-4xl font-bold text-center">
+      Muffler, Exhaust, and Brake Repair in Addison, IL
+    </h2>
 
-Our Auto Repair Services Include:
+    <p className="text-center max-w-3xl mx-auto">
+      At 2 Brothers Auto & Muffler, we specialize in professional muffler repair,
+      exhaust system service, and brake repair for drivers in Addison and across
+      DuPage County. Our experienced mechanics provide reliable and affordable
+      auto repair to keep your vehicle safe, quiet, and running efficiently.
+      If you are searching for muffler repair near me, brake repair near me, or
+      exhaust repair near me, our local auto shop is here to help.
+    </p>
 
-Muffler repair & replacement
+    <div className="grid md:grid-cols-3 gap-8">
 
-Exhaust system repair
-
-Catalytic converter replacement
-
-Brake repair & brake pad replacement
-
-Engine diagnostics & check engine light repair
-
-Suspension & steering repair
-
-Struts & shocks
-
-Oil changes & preventative maintenance
-
-Custom exhaust work
-
-Welding & fabrication
-
-No job is too big or too small. From minor repairs to major engine and exhaust work, we deliver honest diagnostics and high-quality workmanship every time.
-          </p>
-          <p className="text-gray-600 text-lg">
-We are conveniently located in Addison, IL, making us the trusted auto repair shop for drivers throughout DuPage County. Customers visit us from:
-
-Addison, IL
-
-Lombard, IL
-
-Villa Park, IL
-
-Bensenville, IL
-
-Elmhurst, IL
-
-Wood Dale, IL
-
-If you’re searching for:
-
-“Muffler repair near me”
-
-“Auto repair Addison IL”
-
-“Brake repair Addison Illinois”
-
-“Exhaust shop near Addison”
-
-“Catalytic converter replacement Addison IL”
-
-2 Brothers Auto & Muffler is your go-to local repair shop.          </p>
-        </div>
-
-        {/* Image */}
-      <div className="md:w-1/2">
-          <img
-            src="/images/2brother2.png"
-            alt="About AutoCare"
-            className="rounded-3xl shadow-lg object-cover w-full h-full"
-          />
-        </div>
+      <div className="space-y-3">
+        <h3 className="text-xl font-semibold">
+          Muffler Repair & Replacement
+        </h3>
+        <p>
+          We diagnose and repair damaged mufflers, rusted pipes, and loud exhaust
+          systems. Our shop provides affordable muffler replacement and exhaust
+          repairs for drivers throughout Addison and nearby communities.
+        </p>
       </div>
-      
-    </section>
-  );
-}
+
+      <div className="space-y-3">
+        <h3 className="text-xl font-semibold">
+          Exhaust System Repair
+        </h3>
+        <p>
+          From catalytic converters to exhaust pipes and resonators, we service
+          complete exhaust systems. If your car is loud, losing power, or failing
+          emissions tests, our technicians can quickly identify the problem and
+          restore proper performance.
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        <h3 className="text-xl font-semibold">
+          Brake Repair & Brake Service
+        </h3>
+        <p>
+          Your brakes are critical for safety. We offer brake pad replacement,
+          rotor resurfacing, brake fluid service, and full brake system repair
+          for vehicles in Addison and DuPage County.
+        </p>
+      </div>
+
+    </div>
+
+    <p className="text-center max-w-3xl mx-auto">
+      Conveniently located in Addison, our shop proudly serves drivers from
+      surrounding areas throughout DuPage County looking for trusted muffler,
+      exhaust, and brake repair near them.
+    </p>
+
+    {/* Service Area Line */}
+    <p className="text-center text-sm md:text-base font-medium">
+      Serving Addison, Lombard, Elmhurst, Villa Park, and surrounding DuPage County communities.
+    </p>
+
+  </div>
+</section>
