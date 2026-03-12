@@ -2,18 +2,18 @@ export default function Hero() {
   return (
     <>
       {/* Hero section */}
-      <section className="w-full px-4 py-8">
+        <section className="w-full px-4 py-8">
 <div className="max-w-6xl mx-auto flex flex-row items-center gap-4 md:gap-6">
           {/* Logo on the left */}
+
 <div className="flex-shrink-0 w-16 sm:w-20 md:w-28 lg:w-36">            <img
               src="/images/logo.png" // Replace with your logo path
               alt="2 Brothers Auto & Muffler Logo"
               className="w-full h-auto object-contain"
             />
           </div>
-
           {/* Text content (everything else stays exactly the same) */}
-    <div className="flex-1 text-center md:text-left space-y-4 md:space-y-6">
+          <div className="flex-1 text-center space-y-6 md:space-y-8">
 
             <h1 className="hero__heading text-3xl md:text-5xl font-bold">
               2 Brothers Auto & Muffler
@@ -23,15 +23,16 @@ export default function Hero() {
               Reliable and Convenient Auto Service in Addison, IL
             </h2>
 
-              <div className="mt-8 md:mt-0 text-sm md:text-base space-y-1">
-        <p>915 S Westwood Ave, Addison, IL 60101</p>
+            <div className="hero__subheading text-sm md:text-base space-y-1">
+              <p>915 S Westwood Ave, Addison, IL 60101</p>
 
-        <p className="font-semibold">
-          <a href="tel:16302297330" className="hover:text-blue-600">
-            (630) 229-7330
-          </a>
-        </p>
-      </div>
+              <p className="hero__subheading font-semibold">
+                <a href="tel:16302297330" className="hover:text-blue-600">
+                  (630) 229-7330
+                </a>
+              </p>
+            </div>
+
 
             {/* CTA */}
             <div className="hero__cta">
