@@ -1,4 +1,8 @@
-<section className="w-full px-4 py-10">
+export default function About() {
+  return (
+ 
+
+    <section className="w-full px-4 py-10">
   <div className="max-w-6xl mx-auto space-y-8">
 
     <h2 className="text-2xl md:text-4xl font-bold text-center">
@@ -65,3 +69,5 @@
 
   </div>
 </section>
+  );
+}
