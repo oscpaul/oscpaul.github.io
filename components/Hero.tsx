@@ -13,7 +13,7 @@ export default function Hero() {
           </div>
 
           {/* Text content (everything else stays exactly the same) */}
-          <div className="flex-1 text-left space-y-6 md:space-y-8">
+    <div className="flex-1 text-center md:text-left space-y-4 md:space-y-6">
 
             <h1 className="hero__heading text-3xl md:text-5xl font-bold">
               2 Brothers Auto & Muffler
@@ -23,15 +23,15 @@ export default function Hero() {
               Reliable and Convenient Auto Service in Addison, IL
             </h2>
 
-            <div className="hero__subheading text-sm md:text-base space-y-1">
-              <p>915 S Westwood Ave, Addison, IL 60101</p>
+              <div className="mt-8 md:mt-0 text-sm md:text-base space-y-1">
+        <p>915 S Westwood Ave, Addison, IL 60101</p>
 
-              <p className="hero__subheading font-semibold">
-                <a href="tel:16302297330" className="hover:text-blue-600">
-                  (630) 229-7330
-                </a>
-              </p>
-            </div>
+        <p className="font-semibold">
+          <a href="tel:16302297330" className="hover:text-blue-600">
+            (630) 229-7330
+          </a>
+        </p>
+      </div>
 
             {/* CTA */}
             <div className="hero__cta">
