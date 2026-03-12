@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
-    <section className="w-full px-4 py-12">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6">
+    <section className="w-full px-4 py-12 relative">
+      <div className="max-w-6xl mx-auto">
 
-        {/* Desktop Logo */}
-        <div className="hidden md:flex flex-shrink-0 w-28 lg:w-36">
+        {/* Desktop Logo (left) */}
+        <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-28 lg:w-36">
           <img
             src="/images/logo.png"
             alt="2 Brothers Auto & Muffler Logo"
@@ -12,9 +12,8 @@ export default function Hero() {
           />
         </div>
 
-        {/* Hero Text + CTA */}
-        <div className="flex-1 flex flex-col items-center text-center md:items-start md:text-left space-y-6 md:space-y-8">
-
+        {/* Text Section */}
+        <div className="flex flex-col items-center text-center space-y-6 md:space-y-8">
           <h1 className="hero__heading text-3xl md:text-5xl font-bold">
             Auto Repair, Muffler & Brake Service in Addison, IL
           </h1>
@@ -43,6 +42,7 @@ export default function Hero() {
               />
             </div>
 
+            {/* CTA Button */}
             <a
               className="button px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition"
               href="/service-areas/lombard-il"
@@ -53,9 +53,8 @@ export default function Hero() {
 
           {/* Social Icons */}
           <ul className="social__items flex flex-row gap-4 mt-4">
-            {/* repeat your social icons here */}
+            {/* social icons here */}
           </ul>
-
         </div>
       </div>
     </section>
