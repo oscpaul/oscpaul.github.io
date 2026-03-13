@@ -23,7 +23,7 @@ export default function SquareWithImageAndMap() {
   }, []);
 
   return (
-    <div className="w-full bg-gray-50 px-4 py-8 space-y-10">
+    <div className="w-full bg-gray-50 px-4 py-0 space-y-10">
 
       {/* Two-column section: Widget + Picture */}
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-stretch">
