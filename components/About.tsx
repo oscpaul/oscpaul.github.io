@@ -8,7 +8,7 @@ export default function About() {
         {/* Responsive Lazy-Loaded Image */}
         <div className="w-full mx-auto">
           <Image
-            src="/images/about-auto-shop.jpg" // replace with your image path
+            src="/images/2brother2.png" // replace with your image path
             alt="2 Brothers Auto & Muffler Shop in Addison, IL"
             width={1200}           // original image width
             height={600}           // original image height
