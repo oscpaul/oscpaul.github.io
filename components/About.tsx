@@ -44,7 +44,19 @@ export default function About() {
 
         {/* Service Area Line */}
         <p className="text-center text-sm md:text-base font-medium">
-          Serving Addison, Lombard, Elmhurst, Villa Park, and surrounding DuPage County communities.
+   If you’re searching for:
+
+“Muffler repair near me”
+
+“Auto repair Addison IL”
+
+“Brake repair Addison Illinois”
+
+“Exhaust shop near Addison”
+
+“Catalytic converter replacement Addison IL”
+
+2 Brothers Auto & Muffler is your go-to local repair shop. 
         </p>
 
       </div>
