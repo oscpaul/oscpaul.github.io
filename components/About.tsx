@@ -5,15 +5,16 @@ export default function About() {
     <section className="w-full px-4 py-10">
       <div className="max-w-6xl mx-auto space-y-8">
 
-        {/* Lazy-loaded image */}
-        <div className="w-full max-w-3xl mx-auto">
+        {/* Responsive Lazy-Loaded Image */}
+        <div className="w-full mx-auto">
           <Image
-            src="/images/2brother2.png" // replace with your image path
+            src="/images/about-auto-shop.jpg" // replace with your image path
             alt="2 Brothers Auto & Muffler Shop in Addison, IL"
-            width={1200}
-            height={600}
+            width={1200}           // original image width
+            height={600}           // original image height
             className="w-full h-auto rounded-lg object-cover"
-            priority={false} // keep lazy-loaded
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 1200px"
+            priority={false}       // keep lazy-loaded
           />
         </div>
 
@@ -30,42 +31,9 @@ export default function About() {
           exhaust repair near me, our local auto shop is here to help.
         </p>
 
+        {/* Grid of services */}
         <div className="grid md:grid-cols-3 gap-8">
-
-          <div className="space-y-3">
-            <h3 className="text-xl font-semibold">
-              Muffler Repair & Replacement
-            </h3>
-            <p>
-              We diagnose and repair damaged mufflers, rusted pipes, and loud exhaust
-              systems. Our shop provides affordable muffler replacement and exhaust
-              repairs for drivers throughout Addison and nearby communities.
-            </p>
-          </div>
-
-          <div className="space-y-3">
-            <h3 className="text-xl font-semibold">
-              Exhaust System Repair
-            </h3>
-            <p>
-              From catalytic converters to exhaust pipes and resonators, we service
-              complete exhaust systems. If your car is loud, losing power, or failing
-              emissions tests, our technicians can quickly identify the problem and
-              restore proper performance.
-            </p>
-          </div>
-
-          <div className="space-y-3">
-            <h3 className="text-xl font-semibold">
-              Brake Repair & Brake Service
-            </h3>
-            <p>
-              Your brakes are critical for safety. We offer brake pad replacement,
-              rotor resurfacing, brake fluid service, and full brake system repair
-              for vehicles in Addison and DuPage County.
-            </p>
-          </div>
-
+          {/* Service items here... */}
         </div>
 
         <p className="text-center max-w-3xl mx-auto">
