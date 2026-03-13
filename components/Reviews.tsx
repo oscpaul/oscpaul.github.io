@@ -140,7 +140,7 @@ export default function Reviews() {
             url: "https://devwordpressspace.site",
             aggregateRating: {
               "@type": "AggregateRating",
-              ratingValue: 0,
+              ratingValue: 5,
               reviewCount: 50,
             },
             review: reviews.map((r) => ({
