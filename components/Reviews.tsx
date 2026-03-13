@@ -131,31 +131,7 @@ export default function Reviews() {
 
       </div>
 
-      {/* Schema for Google */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "AutoRepair",
-            name: "2 Brothers Auto & Muffler",
-            url: "https://devwordpressspace.site",
-                  
-            review: reviews.map((r) => ({
-              "@type": "Review",
-              author: { "@type": "Person", name: r.author_name },
-              reviewBody: r.text,
-              reviewRating: {
-                "@type": "Rating",
-                ratingValue: r.rating,
-                bestRating: 5,
-              },
-
-              datePublished: new Date().toISOString(),
-            })),
-          }),
-        }}
-      />
+ 
     </section>
   );
 }
