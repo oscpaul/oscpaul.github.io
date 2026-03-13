@@ -38,6 +38,7 @@ export default function Hero() {
               <img
                 src="/images/logo.png"
                 alt="2 Brothers Auto & Muffler Logo"
+                  loading="lazy"
                 className="w-full h-auto object-contain"
               />
             </div>
