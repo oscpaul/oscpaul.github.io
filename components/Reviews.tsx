@@ -136,6 +136,7 @@ export default function Reviews() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AutoRepair",
+            "@id": "https://devwordpressspace.site/#autoRepair",
             name: "2 Brothers Auto & Muffler",
             url: "https://devwordpressspace.site",
             aggregateRating: {
